@@ -8,6 +8,18 @@ const choose = (page: Page, text: string | RegExp) =>
 
 const next = (page: Page) => page.getByRole("button", { name: "Continue" }).click();
 
+/** Answers the arithmetic quick check by reading its question from the label. */
+async function solveQuickCheck(page: Page) {
+  const input = page.getByLabel(/Quick check/);
+  await expect(input).toBeVisible();
+  const label = await page.locator("label").filter({ hasText: /Quick check/ }).innerText();
+  const m = label.match(/(\d+)\s*([+\-\u00d7])\s*(\d+)/);
+  if (!m) throw new Error(`could not read the quick check: ${label}`);
+  const a = Number(m[1]);
+  const b = Number(m[3]);
+  await input.fill(String(m[2] === "+" ? a + b : m[2] === "-" ? a - b : a * b));
+}
+
 /** Fills only what is required: one service, a name, an email and consent. */
 async function fillRequired(page: Page) {
   await page.goto("/contact");
@@ -17,6 +29,7 @@ async function fillRequired(page: Page) {
   await page.getByLabel("Email", { exact: true }).fill("test@example.com");
   await page.locator("label").filter({ hasText: /I agree/ }).click({ position: { x: 4, y: 4 } });
   await expect(page.getByRole("checkbox", { name: /I agree/ })).toBeChecked();
+  await solveQuickCheck(page);
 }
 
 test("the form has two short steps and validates the first before moving on", async ({ page }) => {
@@ -55,6 +68,7 @@ test("the website address is optional for every situation and is only checked wh
   await page.getByLabel("Your name").fill("Test Person");
   await page.getByLabel("Email", { exact: true }).fill("test@example.com");
   await page.locator("label").filter({ hasText: /I agree/ }).click({ position: { x: 4, y: 4 } });
+  await solveQuickCheck(page);
 
   // A malformed address is flagged, and the optional section opens so the message is visible.
   await page.getByText("Add more detail").click();

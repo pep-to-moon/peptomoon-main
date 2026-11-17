@@ -1,5 +1,5 @@
 import AxeBuilder from "@axe-core/playwright";
-import { expect, test } from "@playwright/test";
+import { expect, test, type APIRequestContext } from "@playwright/test";
 import { allArticles } from "../../src/content/articles";
 import { caseStudies } from "../../src/content/case-studies";
 import { services } from "../../src/content/services";
@@ -20,6 +20,16 @@ const routes = [
   "/disclaimer",
   "/cookie-policy",
 ];
+
+/** Fetches a quick-check question from the API and answers it, as the form does. */
+async function solvedChallenge(request: APIRequestContext) {
+  const c = (await (await request.get("/api/challenge")).json()) as { question: string; token: string };
+  const m = c.question.match(/(\d+)\s*([+\-\u00d7])\s*(\d+)/);
+  if (!m) throw new Error(`unreadable question: ${c.question}`);
+  const a = Number(m[1]);
+  const b = Number(m[3]);
+  return { captchaToken: c.token, captchaAnswer: String(m[2] === "+" ? a + b : m[2] === "-" ? a - b : a * b) };
+}
 
 // The API rate-limits per client address, so each API test presents its own address.
 const uniqueIp = () => `203.0.113.${Math.floor(Math.random() * 250) + 1}`;
@@ -145,11 +155,37 @@ test.describe("site infrastructure", () => {
         email: "test@example.com",
         consent: true,
         startedAt: Date.now() - 10_000,
+        ...(await solvedChallenge(request)),
       },
     });
-    // No email provider or spam keys are configured in the test build, so the only honest answers are 503 or 502.
+    // No email provider is configured in the test build, so the only honest answers are 503 or 502.
     expect([502, 503]).toContain(res.status());
     expect((await res.json()).ok).toBe(false);
+  });
+
+  test("the quick check issues a question and rejects wrong or missing answers", async ({ request }) => {
+    const c = (await (await request.get("/api/challenge")).json()) as { question: string; token: string };
+    expect(c.question).toMatch(/^What is \d+ [+\-\u00d7] \d+\?$/);
+    expect(c.token.length).toBeGreaterThan(20);
+    const base = {
+      status: "new-business",
+      services: ["payment-processing"],
+      websiteUrl: "",
+      requirements: "",
+      challenges: "",
+      name: "Test Person",
+      business: "",
+      email: "test@example.com",
+      consent: true,
+      startedAt: Date.now() - 10_000,
+    };
+    const wrong = await request.post("/api/inquiry", { headers: { "x-forwarded-for": uniqueIp() }, data: { ...base, captchaToken: c.token, captchaAnswer: "999" } });
+    expect(wrong.status()).toBe(400);
+    expect((await wrong.json()).error).toBe("captcha_failed");
+    const forged = await request.post("/api/inquiry", { headers: { "x-forwarded-for": uniqueIp() }, data: { ...base, captchaToken: `${c.token}x`, captchaAnswer: "1" } });
+    expect((await forged.json()).error).toBe("captcha_failed");
+    const missing = await request.post("/api/inquiry", { headers: { "x-forwarded-for": uniqueIp() }, data: base });
+    expect((await missing.json()).error).toBe("captcha_failed");
   });
 
   test("the contact API rejects invalid input", async ({ request }) => {

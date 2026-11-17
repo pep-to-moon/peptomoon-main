@@ -105,6 +105,7 @@ export type InquiryValues = z.infer<typeof inquirySchema>;
 export const requestSchema = inquiryFields.extend({
   company_website: z.string().max(0).optional(),
   startedAt: z.number(),
-  turnstileToken: z.string().max(4000).optional(),
+  captchaToken: z.string().max(400).optional(),
+  captchaAnswer: z.string().max(12).optional(),
 });
 export type InquiryRequest = z.infer<typeof requestSchema>;

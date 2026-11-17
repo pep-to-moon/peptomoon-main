@@ -20,7 +20,6 @@ import {
   type ServiceValue,
   type StatusValue,
 } from "@/lib/inquiry-schema";
-import { TurnstileWidget } from "./turnstile-widget";
 
 /** Two short steps. Only the services, a name, an email and consent are required. Everything else is optional. */
 type StepKey = "needs" | "contact";
@@ -79,7 +78,7 @@ function Field({
 const chipBase =
   "flex min-h-14 items-center gap-3 rounded-2xl bg-white px-4 py-3 font-semibold ring-1 ring-ink/15 transition-all peer-checked:bg-blue peer-checked:text-white peer-checked:ring-blue peer-focus-visible:outline-[3px] peer-focus-visible:outline-offset-[3px] peer-focus-visible:outline-blue hover:ring-blue/50";
 
-export function Quiz({ fallbackEmail, turnstileSiteKey }: { fallbackEmail: string; turnstileSiteKey: string }) {
+export function Quiz({ fallbackEmail }: { fallbackEmail: string }) {
   const params = useSearchParams();
   const base = useId();
 
@@ -125,7 +124,24 @@ export function Quiz({ fallbackEmail, turnstileSiteKey }: { fallbackEmail: strin
   const [submit, setSubmit] = useState<Submit>({ kind: "idle" });
   const [stepError, setStepError] = useState<string | null>(null);
   const [moreOpen, setMoreOpen] = useState(false);
-  const [token, setToken] = useState("");
+  // The quick check: a simple arithmetic question issued and verified by this site's own server.
+  const [challenge, setChallenge] = useState<{ question: string; token: string } | null>(null);
+  const [challengeFailed, setChallengeFailed] = useState(false);
+  const [answer, setAnswer] = useState("");
+  const [answerError, setAnswerError] = useState("");
+  const loadChallenge = useCallback(() => {
+    fetch("/api/challenge", { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error("challenge"))))
+      .then((c: { question: string; token: string }) => setChallenge(c))
+      .catch(() => setChallengeFailed(true));
+  }, []);
+  useEffect(() => {
+    loadChallenge();
+  }, [loadChallenge]);
+  const retryChallenge = () => {
+    setChallengeFailed(false);
+    loadChallenge();
+  };
   const [honeypot, setHoneypot] = useState("");
   const startedAt = useRef(0);
   const headingRef = useRef<HTMLHeadingElement>(null);
@@ -148,7 +164,6 @@ export function Quiz({ fallbackEmail, turnstileSiteKey }: { fallbackEmail: strin
   // Open the optional details if one of them needs attention, so an error is never hidden.
   const optionalHasError = Boolean(errors.websiteUrl || errors.requirements || errors.business);
 
-  const onToken = useCallback((t: string) => setToken(t), []);
 
   const toggleService = (value: ServiceValue) => {
     let next: ServiceValue[];
@@ -178,12 +193,17 @@ export function Quiz({ fallbackEmail, turnstileSiteKey }: { fallbackEmail: strin
   };
 
   const onSubmit = async (values: InquiryValues) => {
+    if (!answer.trim()) {
+      setAnswerError("Answer the quick check to send your enquiry.");
+      return;
+    }
+    setAnswerError("");
     setSubmit({ kind: "sending" });
     try {
       const res = await fetch("/api/inquiry", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ ...values, company_website: honeypot, startedAt: startedAt.current, turnstileToken: token }),
+        body: JSON.stringify({ ...values, company_website: honeypot, startedAt: startedAt.current, captchaToken: challenge?.token ?? "", captchaAnswer: answer }),
       });
       const data = (await res.json().catch(() => null)) as { ok?: boolean; error?: string; fieldErrors?: Record<string, string[]> } | null;
 
@@ -203,7 +223,10 @@ export function Quiz({ fallbackEmail, turnstileSiteKey }: { fallbackEmail: strin
         return;
       }
       if (data?.error === "captcha_failed") {
-        setSubmit({ kind: "error", message: "The spam check did not pass. Please complete it again and resubmit." });
+        setSubmit({ kind: "error", message: "The quick check answer was not right, or it timed out. Please answer the new question and send again." });
+        setAnswer("");
+        setChallenge(null);
+        loadChallenge();
         return;
       }
       setSubmit({ kind: "error", message: "We could not send your enquiry, so nothing was submitted." });
@@ -424,7 +447,38 @@ export function Quiz({ fallbackEmail, turnstileSiteKey }: { fallbackEmail: strin
                     </label>
                   </div>
 
-                  {turnstileSiteKey && <TurnstileWidget siteKey={turnstileSiteKey} onToken={onToken} />}
+                  <Field
+                    id={`${base}-check`}
+                    label={challenge ? `Quick check: ${challenge.question}` : "Quick check"}
+                    hint="A simple sum that keeps automated spam out."
+                    error={answerError}
+                  >
+                    {challenge ? (
+                      <input
+                        id={`${base}-check`}
+                        type="text"
+                        inputMode="numeric"
+                        autoComplete="off"
+                        value={answer}
+                        onChange={(e) => {
+                          setAnswer(e.target.value);
+                          if (answerError) setAnswerError("");
+                        }}
+                        aria-invalid={answerError ? true : undefined}
+                        aria-describedby={`${base}-check-hint${answerError ? ` ${base}-check-error` : ""}`}
+                        className={cn(inputClass, "max-w-40")}
+                      />
+                    ) : challengeFailed ? (
+                      <p className="mt-3 text-[0.95rem]">
+                        We could not load the quick check.{" "}
+                        <button type="button" onClick={retryChallenge} className="font-semibold text-blue underline underline-offset-4">
+                          Try again
+                        </button>
+                      </p>
+                    ) : (
+                      <p className="mt-3 text-[0.95rem] text-ink-soft">Loading the quick check.</p>
+                    )}
+                  </Field>
                 </div>
               )}
             </motion.div>
@@ -456,7 +510,7 @@ export function Quiz({ fallbackEmail, turnstileSiteKey }: { fallbackEmail: strin
             </span>
           </Button>
           {lastStep ? (
-            <Button type="submit" size="lg" disabled={submit.kind === "sending" || (Boolean(turnstileSiteKey) && !token)} arrow>
+            <Button type="submit" size="lg" disabled={submit.kind === "sending" || !challenge} arrow>
               {submit.kind === "sending" ? "Sending" : "Send enquiry"}
             </Button>
           ) : (
@@ -465,9 +519,6 @@ export function Quiz({ fallbackEmail, turnstileSiteKey }: { fallbackEmail: strin
             </Button>
           )}
         </div>
-        {lastStep && Boolean(turnstileSiteKey) && !token && (
-          <p className="mt-3 text-right text-[0.85rem] text-ink-soft">Complete the spam check to send.</p>
-        )}
       </form>
     </MotionConfig>
   );

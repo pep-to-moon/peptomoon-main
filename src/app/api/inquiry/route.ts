@@ -3,7 +3,7 @@ import { z } from "zod";
 import { requestSchema } from "@/lib/inquiry-schema";
 import { notifyInquiry } from "@/lib/notifiers";
 import { rateLimit } from "@/lib/rate-limit";
-import { verifyTurnstile } from "@/lib/turnstile";
+import { verifyChallenge } from "@/lib/challenge";
 
 export const runtime = "nodejs";
 
@@ -44,9 +44,8 @@ export async function POST(req: Request) {
   if (data.company_website) return reply({ ok: false, error: "rejected" }, 400);
   if (Date.now() - data.startedAt < MIN_FILL_MS) return reply({ ok: false, error: "too_fast" }, 400);
 
-  const captcha = await verifyTurnstile(data.turnstileToken, ip);
-  if (captcha === "misconfigured") return reply({ ok: false, error: "not_configured" }, 503);
-  if (captcha === "failed") return reply({ ok: false, error: "captcha_failed" }, 400);
+  // The arithmetic question: the token is signed by this server, so the answer cannot be forged.
+  if (!verifyChallenge(data.captchaToken, data.captchaAnswer)) return reply({ ok: false, error: "captcha_failed" }, 400);
 
   const { accepted, results } = await notifyInquiry(data);
   if (!accepted) {

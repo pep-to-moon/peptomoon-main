@@ -6,7 +6,7 @@ Peptomoon (peptomoon.com) is the confirmed name. Strategy, research and decision
 ## Stack
 
 Next.js 16 (App Router, Turbopack), React 19, TypeScript 6, Tailwind CSS 4, Motion, GSAP with ScrollTrigger, Lenis,
-React Hook Form with Zod, Resend, Cloudflare Turnstile. Package manager: pnpm. Node 20.9 or newer.
+React Hook Form with Zod, Resend. Package manager: pnpm. Node 20.9 or newer.
 
 TypeScript is pinned to 6 because `typescript-eslint` does not support TypeScript 7 yet. Revisit when it does.
 
@@ -44,15 +44,18 @@ docs/strategy/      research, strategy, design and technology decisions
 Edit `src/config/site.ts` (name, legal name, contact, analytics) and replace
 `src/components/ui/logo.tsx` and `src/app/icon.svg`. Colours are tokens at the top of `src/app/globals.css`.
 
-## Settings and the production guard
+## Settings and the launch check
 
-Nothing on the site is a made-up value. Contact details and keys come from environment variables and are shown only when
-set (the contact email line, for example, appears on the contact page only once `NEXT_PUBLIC_CONTACT_EMAIL` exists).
-`pnpm build` on the live production deploy (`VERCEL_ENV=production`) fails until these settings exist:
+Nothing on the site is a made-up value. The contact email defaults to `peptomoon@gmail.com` and can be overridden with
+`NEXT_PUBLIC_CONTACT_EMAIL`. Optional settings: `NEXT_PUBLIC_GA_ID`, `NEXT_PUBLIC_GSC_VERIFICATION`, `FORM_SECRET`.
 
-`NEXT_PUBLIC_SITE_URL`, `RESEND_API_KEY`, `RESEND_FROM_EMAIL`, `INQUIRY_TO_EMAIL`, `NEXT_PUBLIC_TURNSTILE_SITE_KEY`,
-`TURNSTILE_SECRET_KEY`. Optional: `NEXT_PUBLIC_CONTACT_EMAIL`, `NEXT_PUBLIC_GA_ID`, `NEXT_PUBLIC_GSC_VERIFICATION`.
-Local and preview builds only print a warning. Legal pages are drafted text and should be reviewed by qualified counsel.
+Online enquiries need `RESEND_API_KEY` and `RESEND_FROM_EMAIL` (an address on a domain verified in Resend), and arrive at
+`INQUIRY_TO_EMAIL` or, when that is not set, at the contact email. The spam check is a simple arithmetic question that the
+site's own server issues and verifies, so there are no other keys to set up.
+
+`pnpm check:placeholders` runs before every build. On the live deploy it blocks only a wrong `NEXT_PUBLIC_SITE_URL` (leave it
+unset, or use `https://peptomoon.com`). Missing email settings only print a warning, and until they exist the live contact
+page offers a plain email link instead of the form. Set `STRICT_LAUNCH_CHECK=1` to make missing email settings block the build.
 
 ## Content rules enforced by `pnpm check:content`
 
@@ -67,7 +70,7 @@ Regulatory articles (`needsCounselReview: true`) are excluded from production un
 ## Contact form
 
 `POST /api/inquiry` validates with the same Zod schema as the browser, checks a honeypot, minimum fill time, rate limit and
-Turnstile, then sends through Resend. It returns success only when Resend accepts the message. Add WhatsApp later by
+a simple arithmetic question signed by the server, then sends through Resend. It returns success only when Resend accepts the message. Add WhatsApp later by
 implementing `src/lib/notifiers/whatsapp.ts`. The form and route do not change.
 
 ## Search Console reach section

@@ -1,23 +1,36 @@
 /**
- * Blocks PRODUCTION deploys while required settings are missing (email delivery and the spam check).
- * Local and preview builds only print a warning, so work can continue without them.
- * "Production" means VERCEL_ENV=production (the live domain on Vercel).
+ * Checks launch settings. Run before every build.
+ *
+ * - The site address, when set on the live deploy, must be the real https address. This always blocks, because a wrong
+ *   address would put the wrong canonical URLs and sitemap in front of search engines.
+ * - Email delivery settings only warn by default. Until they exist, the live contact page offers a plain email link
+ *   instead of the form. Set STRICT_LAUNCH_CHECK=1 to make missing email settings block the build as well.
+ *
+ * "Live" means VERCEL_ENV=production (the real domain on Vercel).
  */
-const isProd = process.env.VERCEL_ENV === "production";
-const problems: string[] = [];
+const live = process.env.VERCEL_ENV === "production";
+const strict = process.env.STRICT_LAUNCH_CHECK === "1";
 
-// Required production settings.
-// INQUIRY_TO_EMAIL is optional: enquiries go to the contact email when it is not set.
-const need = ["RESEND_API_KEY", "RESEND_FROM_EMAIL", "NEXT_PUBLIC_TURNSTILE_SITE_KEY", "TURNSTILE_SECRET_KEY"];
-for (const key of need) if (!process.env[key]) problems.push(`environment: ${key} is not set`);
+const blocking: string[] = [];
+const warnings: string[] = [];
+
 const url = process.env.NEXT_PUBLIC_SITE_URL ?? "";
-if (url && (!url.startsWith("https://") || url.includes("localhost"))) problems.push("environment: NEXT_PUBLIC_SITE_URL must be the live https address");
-
-if (problems.length === 0) {
-  console.log("check-placeholders: all required settings are present.");
-  process.exit(0);
+if (live && url && (!url.startsWith("https://") || url.includes("localhost"))) {
+  blocking.push("NEXT_PUBLIC_SITE_URL must be the live https address, or be left unset (it defaults to https://peptomoon.com)");
 }
 
-const header = isProd ? "check-placeholders: PRODUCTION BUILD BLOCKED" : "check-placeholders: warning (allowed outside production)";
-console.log(`${header}\n${problems.length} setting(s) to provide before launch:\n - ${problems.join("\n - ")}`);
-process.exit(isProd ? 1 : 0);
+for (const key of ["RESEND_API_KEY", "RESEND_FROM_EMAIL"]) {
+  if (!process.env[key]) warnings.push(`${key} is not set, so the online contact form cannot send yet`);
+}
+
+if (blocking.length === 0 && warnings.length === 0) {
+  console.log("check-placeholders: all launch settings are present.");
+  process.exit(0);
+}
+if (blocking.length) console.log(`check-placeholders: BUILD BLOCKED\n - ${blocking.join("\n - ")}`);
+if (warnings.length) {
+  console.log(
+    `check-placeholders: ${live && strict ? "BUILD BLOCKED" : "warning"}\n - ${warnings.join("\n - ")}\n   Until then the contact page shows a plain email link instead of the form.`,
+  );
+}
+process.exit(blocking.length || (live && strict && warnings.length) ? 1 : 0);

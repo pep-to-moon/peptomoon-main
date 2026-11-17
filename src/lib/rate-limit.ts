@@ -1,6 +1,6 @@
 /**
  * Small in-memory limiter. It is per server instance, so it slows down casual abuse but is not a hard guarantee
- * on serverless platforms. Turnstile and the honeypot do the heavy lifting. Swap this for Redis (for example
+ * on serverless platforms. The arithmetic check and the honeypot do the heavy lifting. Swap this for Redis (for example
  * Upstash) if the form ever sees sustained abuse.
  */
 const hits = new Map<string, { count: number; resetAt: number }>();

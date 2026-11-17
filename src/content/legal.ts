@@ -38,7 +38,7 @@ export const legalDocs: LegalDoc[] = [
         list: [
           "Details you submit in the project questionnaire: the service or situation you choose, your name, your email address and your consent. If you add them, we also receive your business name, website address and the written details you give about your needs.",
           "Technical information that reaches our servers whenever a page or form is requested, such as your IP address, browser type and the time of the request. We use it to deliver the site, to rate-limit abuse and to keep the site secure.",
-          "The result of a spam check when you submit the questionnaire, produced by Cloudflare Turnstile.",
+          "Your answer to a simple arithmetic question on the questionnaire. We use it only to tell people from automated spam, and we do not keep it.",
           "Analytics information about how pages are used, but only if analytics is switched on for this site and you accept analytics cookies.",
         ],
       },
@@ -72,7 +72,6 @@ export const legalDocs: LegalDoc[] = [
         list: [
           "A hosting and delivery provider that serves the website and holds standard server logs.",
           "An email delivery provider that carries your questionnaire from the site to our inbox. Your enquiry is delivered by email. The site does not keep enquiries in its own database.",
-          "Cloudflare, which runs the Turnstile spam check and receives your IP address and browser signals for that purpose.",
           "Google, which provides Google Analytics, only if analytics is configured and you accept it.",
         ],
       },
@@ -290,7 +289,6 @@ export const legalDocs: LegalDoc[] = [
           head: ["Name or source", "Purpose", "Type", "How long"],
           rows: [
             ["pm-consent (local storage)", "Remembers whether you accepted or declined analytics, so we do not ask on every visit. It never leaves your browser.", "Essential", "Until you change it or clear your browser data"],
-            ["Cloudflare Turnstile", "Runs a short check in your browser to tell people from automated software when you use the questionnaire. It may store or read limited data for that purpose.", "Security", "Set by Cloudflare, usually for the length of the visit"],
             ["_ga and _ga_ followed by an identifier (Google Analytics)", "Distinguish visitors and count page views so we can see which pages are useful. Loaded only if you accept analytics.", "Analytics, optional", "Up to two years"],
           ],
         },
