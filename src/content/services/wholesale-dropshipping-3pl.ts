@@ -82,6 +82,6 @@ export const wholesaleDropshipping3pl: Service = {
   ],
   related: ["fulfillment-logistics", "supplier-verification", "business-dashboards"],
   caseStudies: [],
-  articles: ["infrastructure-behind-an-ruo-peptide-business"],
+  articles: ["wholesale-vs-dropshipping-vs-3pl-for-ruo-brands", "infrastructure-behind-an-ruo-peptide-business"],
   cta: { label: "Discuss wholesale or 3PL" },
 };
