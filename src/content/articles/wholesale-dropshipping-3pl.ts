@@ -1,6 +1,6 @@
 import { siteConfig } from "@/config/site";
 import type { Article } from "../types";
-import { callout, h2, h3, ol, p, table, ul } from "./helpers";
+import { callout, h2, ol, p, table, ul } from "./helpers";
 
 const brand = siteConfig.name;
 

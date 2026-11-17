@@ -9,6 +9,7 @@ export const primaryNav = [
 
 export const companyNav = [
   { label: "About", href: "/about" },
+  { label: "Why Peptomoon", href: "/why-peptomoon" },
   { label: "Case studies", href: "/case-studies" },
   { label: "Resources", href: "/resources" },
   { label: "Glossary", href: "/glossary" },
