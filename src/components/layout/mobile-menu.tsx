@@ -6,7 +6,7 @@ import { useCallback, useEffect, useRef, useState, type CSSProperties } from "re
 import { ArrowUpRight, ChevronDown, X } from "lucide-react";
 import { Logo } from "@/components/ui/logo";
 import { ButtonLink } from "@/components/ui/button";
-import { primaryCta } from "@/config/nav";
+import { primaryCta, type NavItem } from "@/config/nav";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 
@@ -29,7 +29,7 @@ const stagger = (i: number) => ({ "--i": i }) as CSSProperties;
  * close, so it reads as the button opening and closing. Its top bar sits exactly where the header pill is, so the pill
  * appears to turn into the menu. Rows rise in one after another. With reduced motion it simply appears and disappears.
  */
-export function MobileMenu({ columns, nav }: { columns: Column[]; nav: { label: string; href: string }[] }) {
+export function MobileMenu({ columns, nav }: { columns: Column[]; nav: NavItem[] }) {
   const pathname = usePathname();
   const dialogRef = useRef<HTMLDialogElement>(null);
   const openerRef = useRef<HTMLButtonElement>(null);
@@ -233,6 +233,9 @@ export function MobileMenu({ columns, nav }: { columns: Column[]; nav: { label: 
                         {num}
                       </span>
                       <span className={cn(label, "transition-colors group-hover:text-sky", isActive(item.href) && "text-sky")}>{item.label}</span>
+                      {item.badge && (
+                        <span className="label rounded-full bg-sky px-2 py-1 leading-none text-ink">{item.badge}</span>
+                      )}
                       <ArrowUpRight
                         aria-hidden
                         className="ml-auto size-6 shrink-0 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"

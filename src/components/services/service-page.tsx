@@ -5,6 +5,7 @@ import { ButtonLink, TextLink } from "@/components/ui/button";
 import { CtaBand } from "@/components/ui/cta-band";
 import { FaqList } from "@/components/ui/faq-list";
 import { PageHero } from "@/components/ui/page-hero";
+import { PaymentsOffer } from "@/components/ui/payments-offer";
 import { Reveal, Section } from "@/components/ui/section";
 import { getArticle } from "@/content/articles";
 import { getCaseStudy } from "@/content/case-studies";
@@ -73,7 +74,9 @@ export function ServicePage({ service }: { service: Service }) {
             </ButtonLink>
           </>
         }
-      />
+      >
+        {service.slug === "payment-processing" && <PaymentsOffer className="mt-10" />}
+      </PageHero>
 
       <Section labelledBy="what-title" className="pt-0">
         <div className="container-x grid gap-12 lg:grid-cols-12">
@@ -316,6 +319,13 @@ export function ServicePage({ service }: { service: Service }) {
         <div className="mt-4">
           <TextLink href="/services">View the full ecosystem</TextLink>
         </div>
+        <p className="mt-4 text-[0.95rem]">
+          Need more than one layer? See our{" "}
+          <Link href="/all-in-one" className="font-semibold text-blue underline underline-offset-4">
+            all-in-one peptide business infrastructure
+          </Link>
+          .
+        </p>
       </CtaBand>
     </>
   );

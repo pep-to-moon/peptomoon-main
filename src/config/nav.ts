@@ -1,7 +1,10 @@
 import { siteConfig } from "./site";
 
-export const primaryNav = [
+export type NavItem = { label: string; href: string; badge?: string };
+
+export const primaryNav: NavItem[] = [
   { label: "Services", href: "/services" },
+  { label: "All-in-one", href: "/all-in-one", badge: "New" },
   { label: "Case studies", href: "/case-studies" },
   { label: "Resources", href: "/resources" },
   { label: "About", href: "/about" },
@@ -10,6 +13,7 @@ export const primaryNav = [
 export const companyNav = [
   { label: "About", href: "/about" },
   { label: "Why Peptomoon", href: "/why-peptomoon" },
+  { label: "All-in-one", href: "/all-in-one" },
   { label: "Case studies", href: "/case-studies" },
   { label: "Resources", href: "/resources" },
   { label: "Glossary", href: "/glossary" },

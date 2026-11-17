@@ -16,6 +16,7 @@ export function PageHero({
   className,
   titleClassName,
   children,
+  crumbSchema = true,
 }: {
   id: string;
   crumbs: { name: string; path: string }[];
@@ -26,12 +27,14 @@ export function PageHero({
   className?: string;
   titleClassName?: string;
   children?: ReactNode;
+  /** False when the page emits its own BreadcrumbList. */
+  crumbSchema?: boolean;
 }) {
   return (
     <section aria-labelledby={id} className={cn("pb-[clamp(2.5rem,6vw,5rem)] pt-[clamp(6.25rem,8.5vw,7.75rem)]", className)}>
       <div className="container-x">
         <div className="flex flex-wrap items-center gap-3">
-          <Breadcrumbs items={crumbs} />
+          <Breadcrumbs items={crumbs} schema={crumbSchema} />
           {chip}
         </div>
         <h1 id={id} className={cn("display display-xl mt-6 max-w-[20ch]", titleClassName)}>

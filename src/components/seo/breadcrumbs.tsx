@@ -3,7 +3,8 @@ import { ChevronRight } from "lucide-react";
 import { JsonLd } from "./json-ld";
 import { breadcrumbSchema } from "@/lib/seo/schema";
 
-export function Breadcrumbs({ items }: { items: { name: string; path: string }[] }) {
+/** Pass `schema={false}` when the page already outputs its own BreadcrumbList (for example inside a JSON-LD @graph). */
+export function Breadcrumbs({ items, schema = true }: { items: { name: string; path: string }[]; schema?: boolean }) {
   const all = [{ name: "Home", path: "/" }, ...items];
   return (
     <>
@@ -28,7 +29,7 @@ export function Breadcrumbs({ items }: { items: { name: string; path: string }[]
           })}
         </ol>
       </nav>
-      <JsonLd data={breadcrumbSchema(all)} />
+      {schema && <JsonLd data={breadcrumbSchema(all)} />}
     </>
   );
 }

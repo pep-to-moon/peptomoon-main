@@ -107,6 +107,7 @@ const cards: Card[] = [
   { file: "resources", kicker: "Guides and resources", title: "Guides for the business behind RUO.", visual: "strip" },
   { file: "about", kicker: "About", title: "Built for the business behind RUO.", visual: "strip" },
   { file: "contact", kicker: "Contact", title: "Tell us what you need.", visual: "strip" },
+  { file: "all-in-one", kicker: "All-in-one", title: "All-in-one infrastructure for RUO peptide and telehealth businesses.", visual: "strip" },
   ...services.map((s): Card => ({
     file: `service-${s.slug}`,
     kicker: `Service · ${pillars.find((p) => p.key === s.pillar)?.label ?? ""}`,
@@ -132,7 +133,10 @@ async function main() {
   await page.addStyleTag({ content: "nextjs-portal,#__next-build-watcher,[data-nextjs-toast]{display:none!important}html{overflow:hidden!important}" });
   await page.evaluate(() => document.fonts.ready);
 
-  for (const c of cards) {
+  // Optional file names on the command line limit the run, for example: pnpm make:og all-in-one
+  const only = process.argv.slice(2);
+  const selected = only.length ? cards.filter((c) => only.includes(c.file)) : cards;
+  for (const c of selected) {
     await page.evaluate(
       ([html]) => {
         let el = document.getElementById("__og");
@@ -153,7 +157,7 @@ async function main() {
     console.log("og", c.file);
   }
   await browser.close();
-  console.log(`make-og: wrote ${cards.length} images to public/og`);
+  console.log(`make-og: wrote ${selected.length} images to public/og`);
 }
 
 void main();

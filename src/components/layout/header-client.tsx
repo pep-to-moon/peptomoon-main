@@ -8,7 +8,7 @@ import { ArrowRight, ArrowUpRight, ChevronDown } from "lucide-react";
 import { Logo } from "@/components/ui/logo";
 import { ButtonLink } from "@/components/ui/button";
 import { MobileMenu } from "./mobile-menu";
-import { primaryCta } from "@/config/nav";
+import { primaryCta, type NavItem } from "@/config/nav";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 
@@ -22,7 +22,7 @@ type Column = {
 };
 
 /** Floating pill navigation. It tucks away while scrolling down and returns on scroll up. */
-export function HeaderClient({ columns, nav }: { columns: Column[]; nav: { label: string; href: string }[] }) {
+export function HeaderClient({ columns, nav }: { columns: Column[]; nav: NavItem[] }) {
   const pathname = usePathname();
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
@@ -77,7 +77,7 @@ export function HeaderClient({ columns, nav }: { columns: Column[]; nav: { label
                   aria-controls="mega-menu"
                   onClick={() => setMegaAt(mega ? null : pathname)}
                   className={cn(
-                    "flex h-10 items-center gap-1.5 rounded-full px-4 font-display text-[0.8rem] font-bold uppercase tracking-[0.06em] transition-colors hover:bg-sky-soft",
+                    "flex h-10 items-center gap-1.5 whitespace-nowrap rounded-full px-3 xl:px-4 font-display text-[0.8rem] font-bold uppercase tracking-[0.06em] transition-colors hover:bg-sky-soft",
                     (mega || active(item.href)) && "bg-sky-soft",
                   )}
                 >
@@ -90,11 +90,14 @@ export function HeaderClient({ columns, nav }: { columns: Column[]; nav: { label
                   href={item.href}
                   aria-current={active(item.href) ? "page" : undefined}
                   className={cn(
-                    "flex h-10 items-center rounded-full px-4 font-display text-[0.8rem] font-bold uppercase tracking-[0.06em] transition-colors hover:bg-sky-soft",
+                    "flex h-10 items-center whitespace-nowrap rounded-full px-3 xl:px-4 font-display text-[0.8rem] font-bold uppercase tracking-[0.06em] transition-colors hover:bg-sky-soft",
                     active(item.href) && "bg-sky-soft",
                   )}
                 >
                   {item.label}
+                  {item.badge && (
+                    <span className="ml-1.5 rounded-full bg-blue px-1.5 py-0.5 text-[0.6rem] leading-none tracking-[0.04em] text-white">{item.badge}</span>
+                  )}
                 </Link>
               ),
             )}

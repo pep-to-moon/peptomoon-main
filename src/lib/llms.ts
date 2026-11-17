@@ -106,6 +106,7 @@ export function buildLlmsTxt(): string {
     "",
     `- [About](${absoluteUrl("/about")}): what ${siteConfig.name} does, how it works and what it will not do.`,
     `- [Services overview](${absoluteUrl("/services")}): all ${services.length} services in four groups.`,
+    `- [All-in-one](${absoluteUrl("/all-in-one")}): one team for website or telehealth platform, high-risk payment processing (from 3% with no rolling reserve for merchants who qualify, decided by the acquiring bank), fulfillment, COAs and SEO, GEO and AEO.`,
     `- [Resources](${absoluteUrl("/resources")}): all guides.`,
     `- [Case studies](${absoluteUrl("/case-studies")}): selected work and the live sites.`,
     `- [Contact](${absoluteUrl("/contact")}): a short questionnaire. A website address is never required.`,

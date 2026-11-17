@@ -15,6 +15,7 @@ import { Dashboards } from "@/components/sections/home/dashboards";
 import { Process } from "@/components/sections/home/process";
 import { WhyUs } from "@/components/sections/home/why-us";
 import { HomeFaq } from "@/components/sections/home/faq";
+import { PaymentsOffer } from "@/components/ui/payments-offer";
 import { siteConfig } from "@/config/site";
 import { gscSites } from "@/content/gsc-data";
 import { buildMetadata } from "@/lib/seo/metadata";
@@ -30,6 +31,9 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <section aria-label="Payment processing" className="container-x pt-6">
+        <PaymentsOffer />
+      </section>
       <Statement />
       <Problems />
       <Ecosystem />

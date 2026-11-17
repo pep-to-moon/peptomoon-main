@@ -14,6 +14,7 @@ export function ogImageFor(pathname: string): string {
   else if (parts[0] === "resources") file = parts[1] ? `article-${parts[1]}` : "resources";
   else if (parts[0] === "about") file = "about";
   else if (parts[0] === "contact") file = "contact";
+  else if (parts[0] === "all-in-one") file = "all-in-one";
   if (!fs.existsSync(path.join(process.cwd(), "public", "og", `${file}.jpg`))) file = "default";
   return absoluteUrl(`/og/${file}.jpg`);
 }

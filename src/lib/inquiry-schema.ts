@@ -65,6 +65,12 @@ export const serviceSlugToOption: Record<string, ServiceValue> = {
   "customer-support": "customer-support",
 };
 
+/** Maps the contact page's ?topic= values (used by /all-in-one) to quiz options. */
+export const topicToOption: Record<string, ServiceValue> = {
+  "all-in-one": "complete-infrastructure",
+  payments: "payment-processing",
+};
+
 /** Accepts "example.com" as well as "https://example.com", so nobody is stopped over a missing protocol. */
 const isWebsite = (v: string) => {
   try {

@@ -120,7 +120,7 @@ for (const file of files) {
     if (p.startsWith("/api") || p.startsWith("/portfolio") || p.startsWith("/icon") || p.startsWith("/_next") || p === "/") continue;
     if (/^\/(services|resources|case-studies)$/.test(p) || known.has(p)) continue;
     // Ignore obvious non-routes such as regular expression fragments and Tailwind-like tokens.
-    if (!/^\/(services|resources|case-studies|about|contact|glossary|why-peptomoon|privacy-policy|terms-of-service|disclaimer|cookie-policy|editorial-policy)(\/|$)/.test(p)) continue;
+    if (!/^\/(services|resources|case-studies|about|contact|glossary|why-peptomoon|all-in-one|privacy-policy|terms-of-service|disclaimer|cookie-policy|editorial-policy)(\/|$)/.test(p)) continue;
     fail(`${rel(file)}: link to unknown route ${p}`);
   }
 }
