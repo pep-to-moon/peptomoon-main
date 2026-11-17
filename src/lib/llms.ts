@@ -60,7 +60,7 @@ function intro() {
     "",
     `> ${siteConfig.description}`,
     "",
-    `${siteConfig.name} is a business-to-business agency for research-use-only (RUO) peptide businesses. It organises its ${services.length} services in four groups: ${groups}. It has built and maintains 50+ RUO e-commerce sites. Its services include wholesale supply, fulfillment, dropshipping and 3PL for business customers. It does not sell to consumers.`,
+    `${siteConfig.name} is a business-to-business agency for research-use-only (RUO) peptide businesses. It organises its ${services.length} services in four groups: ${groups}. Its portfolio shows six RUO stores designed and built by its partner. Its services include wholesale supply, fulfillment, dropshipping and 3PL for business customers. It does not sell to consumers.`,
     "",
     "Key facts:",
     "",

@@ -11,12 +11,12 @@ export const veracueLabs: CaseStudy = {
   seo: {
     title: `Veracue Labs Website Case Study | ${brand}`,
     description:
-      "How we designed, built and maintain veracuelabs.com: a CMS-managed RUO peptide store with 95 product pages, hosted checkout and a blog pipeline.",
+      "How our partner built veracuelabs.com: a CMS-managed RUO peptide store with 95 product pages, hosted checkout and a blog pipeline.",
   },
   primaryKeyword: "Veracue Labs website case study",
   headline: "A 95-product RUO catalogue on a CMS-managed storefront",
   intro: verified(
-    "Veracue Labs is an online store for research-use-only peptides at veracuelabs.com, supplying customers in the United States. We designed and built the storefront and its content system and continue to maintain it.",
+    "Veracue Labs is an online store for research-use-only peptides at veracuelabs.com, supplying customers in the United States. Our partner designed and built the storefront and its content system.",
     `${SITE}; owner statement`,
   ),
   overview: verified(
@@ -86,7 +86,7 @@ export const veracueLabs: CaseStudy = {
   ),
   maintenance: verified(
     [
-      "We continue to maintain the site. The repository documents routines for database migrations, content updates, maintenance scripts and a blog import pipeline for new articles.",
+      "The repository documents routines for database migrations, content updates, maintenance scripts and a blog import pipeline for new articles.",
     ],
     `${REPO}; owner statement`,
   ),

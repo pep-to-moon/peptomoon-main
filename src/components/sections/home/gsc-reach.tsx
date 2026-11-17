@@ -160,7 +160,7 @@ export function GscReach({ sites }: { sites: GscSite[] }) {
     <Section labelledBy="reach-title" id="reach">
       <div className="container-x">
         <SectionIntro label="Search reach" titleId="reach-title" title={<>What one of our stores reaches in Google.</>}>
-          <p>Real figures from Google Search Console for an RUO store we build and maintain. The dates are shown beneath.</p>
+          <p>Real figures from Google Search Console for an RUO store in our portfolio. The dates are shown beneath.</p>
         </SectionIntro>
 
         <Reveal>
@@ -360,7 +360,7 @@ export function GscReach({ sites }: { sites: GscSite[] }) {
           <p className="mt-8 max-w-[70ch] text-[0.85rem] text-ink-soft">
             Source: Google Search Console performance report (search results), exported by the store owner
             {` on ${data.map((s) => s.exportedOn).sort().slice(-1)[0] ?? ""}.`} Weekly figures add up each day&apos;s clicks and
-            impressions, and average position is weighted by impressions. The figures describe the store shown and not every store we build. Individual
+            impressions, and average position is weighted by impressions. The figures describe the store shown and not every store in the portfolio. Individual
             search terms are not published.
           </p>
         </Reveal>

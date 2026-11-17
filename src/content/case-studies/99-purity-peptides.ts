@@ -11,12 +11,12 @@ export const purity99: CaseStudy = {
   seo: {
     title: `99 Purity Peptides Website Case Study | ${brand}`,
     description:
-      "How we designed, built and maintain 99puritypeptides.com: a bilingual RUO store with a members-only tier, pack-size pricing and batch certificate links.",
+      "How our partner built 99puritypeptides.com: a bilingual RUO store with a members-only tier, pack-size pricing and batch certificate links.",
   },
   primaryKeyword: "99 Purity Peptides website case study",
   headline: "A bilingual RUO storefront with a members-only catalogue tier",
   intro: verified(
-    "99 Purity Peptides is a research-use-only peptide store at 99puritypeptides.com with an English and Spanish storefront. We designed and built the site and continue to maintain it.",
+    "99 Purity Peptides is a research-use-only peptide store at 99puritypeptides.com with an English and Spanish storefront. Our partner designed and built the site.",
     `${SITE}; owner statement`,
   ),
   overview: verified(
@@ -80,7 +80,7 @@ export const purity99: CaseStudy = {
     "Homepage HTML, response headers, sitemap and robots file, 17 November 2026",
   ),
   maintenance: verified(
-    ["We continue to maintain the site. The repository documents launch checks, environment settings and the affiliate system."],
+    ["The repository documents launch checks, environment settings and the affiliate system."],
     `${REPO}; owner statement`,
   ),
   outcomes: unconfirmed([]),

@@ -50,7 +50,7 @@ export function Hero() {
         <div className="hero-rise mt-6 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between" style={style(4)}>
           <p className="max-w-[52ch] text-[1.125rem] leading-relaxed text-ink/80">
             Websites, payments, supplier documentation, fulfillment, compliance review, marketing systems and reporting,
-            planned and maintained together by a team that already builds and runs sites in this industry.
+            planned and maintained together by one accountable team.
           </p>
           <div className="flex flex-wrap items-center gap-3">
             <Magnetic>
@@ -93,9 +93,9 @@ export function Hero() {
       <div className="container-x mt-8 flex flex-wrap items-center gap-x-8 gap-y-3 text-[0.9rem] text-ink-soft">
         <p className="flex items-center gap-3">
           <span className="font-display text-[2.4rem] font-bold leading-none text-ink">
-            <NumberTicker value={50} />+
+            <NumberTicker value={6} />
           </span>
-          RUO stores we built and still maintain
+          partner-built RUO stores in our portfolio
         </p>
         <p>Next.js and a headless CMS behind every one of them</p>
       </div>

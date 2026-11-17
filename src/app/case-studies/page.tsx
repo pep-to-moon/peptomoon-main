@@ -16,7 +16,7 @@ import { webPageSchema } from "@/lib/seo/schema";
 
 const title = `RUO Peptide Website Case Studies | ${siteConfig.name}`;
 const description =
-  "RUO peptide e-commerce sites we designed, built and maintain, with screenshots, verified facts and full case studies where the material is confirmed.";
+  "RUO peptide stores designed and built by our partner, with screenshots, verified facts and full case studies where the material is confirmed.";
 
 export const metadata: Metadata = buildMetadata({ title, description, path: "/case-studies" });
 
@@ -29,12 +29,12 @@ export default function CaseStudiesPage() {
         crumbs={[{ name: "Case studies", path: "/case-studies" }]}
         title={
           <>
-            Selected work from 50+ sites we built and still maintain.
+            Selected RUO stores built by our partner.
           </>
         }
         lead={
           <p>
-            We have designed, developed and continue to maintain websites for brands in the RUO peptide and research-product
+            Our partner designed and built these websites for brands in the RUO peptide and research-product
             space. Every site below is live. Facts come from the sites and the projects themselves, and a case study appears
             only when its material has been confirmed.
           </p>

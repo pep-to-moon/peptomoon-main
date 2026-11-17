@@ -11,12 +11,12 @@ export const primetimeBioLabs: CaseStudy = {
   seo: {
     title: `PrimeTime BioLabs Website Case Study | ${brand}`,
     description:
-      "How we built and maintain primetimebiolabs.com: a dark, high-contrast RUO peptide store with 21 products, 33 articles and a documented SEO audit trail.",
+      "How our partner built primetimebiolabs.com: a dark, high-contrast RUO peptide store with 21 products, 33 articles and a documented SEO audit trail.",
   },
   primaryKeyword: "PrimeTime BioLabs website case study",
   headline: "A dark, high-contrast RUO store with a documented SEO audit trail",
   intro: verified(
-    "PrimeTime BioLabs is a research-use-only peptide store at primetimebiolabs.com. We designed and built the site and continue to maintain it.",
+    "PrimeTime BioLabs is a research-use-only peptide store at primetimebiolabs.com. Our partner designed and built the site.",
     `${SITE}; owner statement`,
   ),
   overview: verified(
@@ -76,7 +76,7 @@ export const primetimeBioLabs: CaseStudy = {
   ),
   maintenance: verified(
     [
-      "We continue to maintain the site. In September 2026 read-only technical audits were produced covering canonical URL consistency, duplicate product URLs, page title length, FAQ hub structure, and social tags and image alt text.",
+      "In September 2026 read-only technical audits were produced covering canonical URL consistency, duplicate product URLs, page title length, FAQ hub structure, and social tags and image alt text.",
     ],
     `${REPO}; owner statement`,
   ),

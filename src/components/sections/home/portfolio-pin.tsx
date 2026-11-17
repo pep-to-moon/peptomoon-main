@@ -79,11 +79,11 @@ export function PortfolioPin({ items }: { items: PortfolioItem[] }) {
         <div className="lg:col-span-8">
           <p className="eyebrow">Our work</p>
           <h2 id="portfolio-title" className="display display-lg mt-5">
-            50+ RUO stores, built and maintained by us.
+            RUO stores built by our partner.
           </h2>
         </div>
         <p className="text-[1.05rem] text-ink-soft lg:col-span-4">
-          We have already designed, developed and continue to maintain websites for brands operating in the RUO peptide and
+          Our partner has designed and built websites for brands operating in the RUO peptide and
           research-product space. A selection of live work is below.
         </p>
       </div>

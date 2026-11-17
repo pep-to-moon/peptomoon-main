@@ -247,7 +247,7 @@ export function ServicePage({ service }: { service: Service }) {
               <Reveal>
                 <Rule>
                   <h2 id="proof-title" className="display display-md">
-                    Sites we built
+                    Partner-built sites
                   </h2>
                 </Rule>
                 <ul className="mt-8">

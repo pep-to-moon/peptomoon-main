@@ -89,7 +89,7 @@ export default function AboutPage() {
             <p>
               In this industry those joins also carry regulatory and platform risk. A partner who understands the whole picture
               can plan the pieces together, spot the contradictions and keep one record of what was decided. That is the value
-              of working with a team that already builds and maintains sites here.
+              of working with one team that plans the whole system together.
             </p>
           </Reveal>
         </div>

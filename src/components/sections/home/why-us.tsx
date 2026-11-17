@@ -2,7 +2,7 @@ import { Reveal, Section, SectionIntro } from "@/components/ui/section";
 import { siteConfig } from "@/config/site";
 
 const rows = [
-  ["Industry knowledge", "General e-commerce experience", "Sites built and maintained inside this industry"],
+  ["Industry knowledge", "General e-commerce experience", "A partner with RUO stores in its portfolio"],
   ["Scope", "One system at a time, handed between vendors", "Website, payments, fulfillment and reporting planned together"],
   ["Documentation", "Left for you to manage", "Treated as data tied to products and batches"],
   ["Compliance", "A disclaimer and a promise", "A review, clear limits and coordination with your counsel"],

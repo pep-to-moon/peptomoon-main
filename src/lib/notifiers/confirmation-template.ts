@@ -24,7 +24,7 @@ const firstName = (i: InquiryValues) => (i.name.split(/\s+/)[0] || "there").slic
 const base = (m: ConfirmationMeta) => m.siteUrl.replace(/\/+$/, "");
 
 const links = [
-  { title: "Case studies", text: "A selection of the sites we have designed, built and maintain.", path: "/case-studies" },
+  { title: "Case studies", text: "A selection of RUO stores built by our partner.", path: "/case-studies" },
   { title: "Services", text: "Websites, payments, search, audits and the rest of what we do.", path: "/services" },
   { title: "Guides", text: "Sourced guides on payments, store architecture and search for peptide businesses.", path: "/resources" },
 ] as const;
