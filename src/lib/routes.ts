@@ -18,6 +18,7 @@ export function getStaticRoutes(): RouteEntry[] {
     { path: "/services", lastModified: SITE_UPDATED, priority: 0.9, changeFrequency: "monthly" },
     { path: "/case-studies", lastModified: SITE_UPDATED, priority: 0.8, changeFrequency: "monthly" },
     { path: "/resources", lastModified: SITE_UPDATED, priority: 0.8, changeFrequency: "weekly" },
+    { path: "/why-peptomoon", lastModified: SITE_UPDATED, priority: 0.8, changeFrequency: "monthly" },
     { path: "/glossary", lastModified: SITE_UPDATED, priority: 0.7, changeFrequency: "monthly" },
     { path: "/about", lastModified: SITE_UPDATED, priority: 0.6, changeFrequency: "yearly" },
     { path: "/contact", lastModified: SITE_UPDATED, priority: 0.8, changeFrequency: "yearly" },
