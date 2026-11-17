@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { Fragment, useRef } from "react";
 import { motion, type MotionValue, useScroll, useTransform } from "motion/react";
 
 /**
@@ -23,9 +23,13 @@ export function ScrollStatement({ text, label }: { text: string; label: string }
               const start = (i / words.length) * 0.85;
               const end = start + 0.9 / words.length;
               return (
-                <Word key={`${w}-${i}`} progress={scrollYProgress} range={[start, end]}>
-                  {w}
-                </Word>
+                <Fragment key={`${w}-${i}`}>
+                  {/* Whitespace between flex items is not rendered, but it keeps the words apart in extracted text. */}
+                  {i > 0 ? " " : null}
+                  <Word progress={scrollYProgress} range={[start, end]}>
+                    {w}
+                  </Word>
+                </Fragment>
               );
             })}
           </p>

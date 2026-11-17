@@ -59,6 +59,20 @@ export function NumberTicker({
     [springValue, decimalPlaces]
   )
 
+  // The server HTML carries the real value so crawlers and no-script readers see it. Once the page has loaded the span
+  // is reset to its start value and revealed, so visitors still watch it count up exactly as before.
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    el.textContent = Intl.NumberFormat("en-US", {
+      minimumFractionDigits: decimalPlaces,
+      maximumFractionDigits: decimalPlaces,
+    }).format(direction === "down" ? value : startValue)
+    el.style.visibility = "visible"
+    // Runs once on mount on purpose: later changes are driven by the spring below.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   return (
     <span
       ref={ref}
@@ -67,8 +81,13 @@ export function NumberTicker({
         className
       )}
       {...props}
+      style={{ visibility: "hidden", ...props.style }}
+      suppressHydrationWarning
     >
-      {startValue}
+      {Intl.NumberFormat("en-US", {
+        minimumFractionDigits: decimalPlaces,
+        maximumFractionDigits: decimalPlaces,
+      }).format(value)}
     </span>
   )
 }
