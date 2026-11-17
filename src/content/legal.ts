@@ -36,7 +36,7 @@ export const legalDocs: LegalDoc[] = [
         heading: "What we collect",
         paragraphs: ["We collect only what we need to respond to you and to run a secure website."],
         list: [
-          "Details you submit in the project questionnaire: the service or situation you choose, your name, your email address and your consent. If you add them, we also receive your business name, website address and the written details you give about your needs.",
+          "Details you submit in the project questionnaire: the service or situation you choose, your name, your email address and your consent. If you add them, we also receive your business name, phone number, website address and the written details you give about your needs.",
           "Technical information that reaches our servers whenever a page or form is requested, such as your IP address, browser type and the time of the request. We use it to deliver the site, to rate-limit abuse and to keep the site secure.",
           "Your answer to a simple arithmetic question on the questionnaire. We use it only to tell people from automated spam, and we do not keep it.",
           "Analytics information about how pages are used, but only if analytics is switched on for this site and you accept analytics cookies.",
@@ -54,7 +54,7 @@ export const legalDocs: LegalDoc[] = [
           caption: "Purposes and the reason each is allowed",
           head: ["Purpose", "What it involves", "Basis"],
           rows: [
-            ["Replying to your enquiry", "Reading your questionnaire and answering by email.", "Taking steps you asked for before any agreement, and our legitimate interest in running our business."],
+            ["Replying to your enquiry", "Sending you an automatic confirmation that we have it, reading your questionnaire, and answering by email, or by phone if you gave a number.", "Taking steps you asked for before any agreement, and our legitimate interest in running our business."],
             ["Security and abuse prevention", "Spam checks, rate limits and server logs.", "Our legitimate interest in keeping the site and its forms working."],
             ["Improving the site", "Seeing which pages are used, only after you accept analytics.", "Your consent, which you can withdraw at any time."],
             ["Meeting legal duties", "Responding to lawful requests and keeping records the law requires.", "Legal obligation."],

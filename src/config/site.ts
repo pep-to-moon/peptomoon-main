@@ -15,9 +15,12 @@ export const siteConfig = {
   description:
     "Peptomoon plans, builds and maintains the connected systems behind RUO peptide businesses: websites, payments, supplier documentation, fulfillment, marketing infrastructure, reporting and compliance review.",
   contact: {
-    // The public contact address. Override with NEXT_PUBLIC_CONTACT_EMAIL. Enquiries are delivered to INQUIRY_TO_EMAIL,
-    // or to this address when that is not set. There is no phone number yet; add one here when there is.
-    email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "peptomoon@gmail.com",
+    // The public contact address, shown across the site. Override with NEXT_PUBLIC_CONTACT_EMAIL.
+    // Enquiries are delivered to INQUIRY_TO_EMAIL. There is no public phone number yet; add one here when there is.
+    email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "inquiry@peptomoon.com",
+    // Where enquiries are delivered when INQUIRY_TO_EMAIL is not set. This needs RESEND_FROM_EMAIL to be an address on a
+    // domain verified in Resend. (Resend's free test sender can only deliver to the Resend account owner's own address.)
+    deliveryFallback: "inquiry@peptomoon.com",
   },
   social: [] as { label: string; url: string }[],
   analytics: {

@@ -46,12 +46,14 @@ Edit `src/config/site.ts` (name, legal name, contact, analytics) and replace
 
 ## Settings and the launch check
 
-Nothing on the site is a made-up value. The contact email defaults to `peptomoon@gmail.com` and can be overridden with
+Nothing on the site is a made-up value. The contact email defaults to `inquiry@peptomoon.com` and can be overridden with
 `NEXT_PUBLIC_CONTACT_EMAIL`. Optional settings: `NEXT_PUBLIC_GA_ID`, `NEXT_PUBLIC_GSC_VERIFICATION`, `FORM_SECRET`.
 
-Online enquiries need `RESEND_API_KEY` and `RESEND_FROM_EMAIL` (an address on a domain verified in Resend), and arrive at
-`INQUIRY_TO_EMAIL` or, when that is not set, at the contact email. The spam check is a simple arithmetic question that the
-site's own server issues and verifies, so there are no other keys to set up.
+Online enquiries need `RESEND_API_KEY` and `RESEND_FROM_EMAIL` (an address on a domain verified in Resend, for example
+`noreply@peptomoon.com`). They arrive at `INQUIRY_TO_EMAIL` (one address or a comma-separated list) or, when that is not
+set, at `inquiry@peptomoon.com`. The site sets the sender name itself: the alert we receive comes from "Peptomoon Website"
+and the confirmation the visitor receives comes from "Peptomoon", with replies going to `inquiry@peptomoon.com`. The spam
+check is a simple arithmetic question that the site's own server issues and verifies, so there are no other keys to set up.
 
 `pnpm check:placeholders` runs before every build. On the live deploy it blocks only a wrong `NEXT_PUBLIC_SITE_URL` (leave it
 unset, or use `https://peptomoon.com`). Missing email settings only print a warning, and until they exist the live contact

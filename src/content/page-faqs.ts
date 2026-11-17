@@ -103,7 +103,7 @@ export const aboutFaqs: Faq[] = [
 export const contactFaqs: Faq[] = [
   {
     q: "What happens after I send the questionnaire?",
-    a: "We read every answer and reply to you directly by email. The first conversation covers what you need and what you already have, and decides the scope.",
+    a: "We read every answer and reply to you directly by email, or by phone if you gave a number. The first conversation covers what you need and what you already have, and decides the scope.",
   },
   {
     q: "I do not have a website yet. Can I still get in touch?",

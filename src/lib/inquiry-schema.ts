@@ -95,6 +95,12 @@ export const inquiryFields = z.object({
     .trim()
     .max(200)
     .regex(/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/, { error: "Enter a valid email address." }),
+  phone: z
+    .string()
+    .trim()
+    .refine((v) => v === "" || /^\+?[0-9][0-9\s().-]{6,19}$/.test(v), {
+      error: "Enter a phone number with its country code, or leave it blank.",
+    }),
   consent: z.boolean().refine((v) => v === true, { error: "Please agree so we can contact you about your enquiry." }),
 });
 

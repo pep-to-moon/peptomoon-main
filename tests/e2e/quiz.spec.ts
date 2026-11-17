@@ -82,6 +82,19 @@ test("the website address is optional for every situation and is only checked wh
   await expect(page.getByText("Thank you. We have your enquiry.")).toBeVisible();
 });
 
+test("a phone number is optional and only checked when given", async ({ page }) => {
+  await page.route("**/api/inquiry", (route) => route.fulfill({ status: 202, contentType: "application/json", body: JSON.stringify({ ok: true }) }));
+  await fillRequired(page);
+  const phone = page.getByLabel("Phone number");
+  await expect(phone).toBeVisible();
+  await phone.fill("not a number");
+  await page.getByRole("button", { name: "Send enquiry" }).click();
+  await expect(page.getByText(/Enter a phone number with its country code/)).toBeVisible();
+  await phone.fill("+1 555 010 0100");
+  await page.getByRole("button", { name: "Send enquiry" }).click();
+  await expect(page.getByText("Thank you. We have your enquiry.")).toBeVisible();
+});
+
 test("choosing complete infrastructure clears the other services", async ({ page }) => {
   await page.goto("/contact");
   await choose(page, "Payment processing");

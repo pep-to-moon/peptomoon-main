@@ -153,6 +153,7 @@ test.describe("site infrastructure", () => {
         name: "Test Person",
         business: "Test Business",
         email: "test@example.com",
+        phone: "",
         consent: true,
         startedAt: Date.now() - 10_000,
         ...(await solvedChallenge(request)),
@@ -176,6 +177,7 @@ test.describe("site infrastructure", () => {
       name: "Test Person",
       business: "",
       email: "test@example.com",
+      phone: "",
       consent: true,
       startedAt: Date.now() - 10_000,
     };

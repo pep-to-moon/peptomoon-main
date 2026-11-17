@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { requestSchema } from "@/lib/inquiry-schema";
 import { notifyInquiry } from "@/lib/notifiers";
+import { sendConfirmation } from "@/lib/notifiers/confirmation";
 import { rateLimit } from "@/lib/rate-limit";
 import { verifyChallenge } from "@/lib/challenge";
 
@@ -54,6 +55,10 @@ export async function POST(req: Request) {
     console.error("inquiry not delivered", results.map((r) => ({ channel: r.channel, ok: r.ok, error: r.error })));
     return reply({ ok: false, error: notConfigured ? "not_configured" : "delivery_failed" }, notConfigured ? 503 : 502);
   }
+
+  // The enquiry has reached us. Now tell the visitor we have it. This is best effort and never changes the response.
+  const confirmation = await sendConfirmation(data);
+  if (!confirmation.ok) console.warn("confirmation not sent", { error: confirmation.error });
 
   return reply({ ok: true }, 202);
 }

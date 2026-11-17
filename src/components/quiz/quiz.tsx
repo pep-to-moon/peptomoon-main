@@ -110,6 +110,7 @@ export function Quiz({ fallbackEmail }: { fallbackEmail: string }) {
       name: "",
       business: "",
       email: "",
+      phone: "",
       consent: false,
     },
   });
@@ -365,6 +366,21 @@ export function Quiz({ fallbackEmail }: { fallbackEmail: string }) {
                     </Field>
                     <Field id={`${base}-email`} label="Email" error={errors.email?.message}>
                       <input id={`${base}-email`} type="email" autoComplete="email" inputMode="email" aria-invalid={errors.email ? true : undefined} aria-describedby={errors.email ? `${base}-email-error` : undefined} className={inputClass} {...register("email")} />
+                    </Field>
+                  </div>
+
+                  <div className="grid gap-6 sm:grid-cols-2">
+                    <Field id={`${base}-phone`} label="Phone number" optional hint="With country code, if you would like a call." error={errors.phone?.message}>
+                      <input
+                        id={`${base}-phone`}
+                        type="tel"
+                        autoComplete="tel"
+                        inputMode="tel"
+                        aria-invalid={errors.phone ? true : undefined}
+                        aria-describedby={`${base}-phone-hint${errors.phone ? ` ${base}-phone-error` : ""}`}
+                        className={inputClass}
+                        {...register("phone")}
+                      />
                     </Field>
                   </div>
 
