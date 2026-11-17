@@ -15,7 +15,7 @@ export function Ecosystem() {
           titleId="ecosystem-title"
           title={
             <>
-              Beyond the storefront. Twelve systems, one partner.
+              Beyond the storefront. Thirteen systems, one partner.
             </>
           }
         >

@@ -33,7 +33,7 @@ export const startOptions = [
 
 /** Short form of the Disclaimer page, shown in the footer on every page. Keep the two consistent. */
 export const footerDisclaimer = [
-  `${siteConfig.name} provides services to businesses in the research-use-only peptide industry and also provides research-use-only products.`,
+  `${siteConfig.name} provides services to businesses in the research-use-only peptide industry, including wholesale supply, fulfillment, dropshipping and 3PL. It does not sell to consumers.`,
   "All research products referred to on this site, whether offered by us or by our clients, are labelled for laboratory research use only and are not for human or veterinary use.",
   "Content on this site is general information, not legal, regulatory or medical advice. A research-use-only label does not make a product or its marketing compliant, so speak to qualified counsel.",
   "Client websites are operated by their owners, and we make no guarantee of approvals, rankings or business results.",

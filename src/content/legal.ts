@@ -144,7 +144,7 @@ export const legalDocs: LegalDoc[] = [
       {
         heading: "Research-use-only products",
         paragraphs: [
-          "Where we provide research-use-only products, they are labelled for laboratory research use only and are not for human or veterinary use. Availability and the terms of supply are confirmed with you when an order is agreed. Nothing on this site is guidance about using any product.",
+          "Where we supply research-use-only products to business customers, they are labelled for laboratory research use only and are not for human or veterinary use. Availability and the terms of supply are confirmed with you when an order is agreed. Nothing on this site is guidance about using any product.",
         ],
       },
       {
@@ -228,7 +228,7 @@ export const legalDocs: LegalDoc[] = [
       {
         heading: "What we provide",
         paragraphs: [
-          `${brand} provides services to businesses in the research-use-only peptide industry and also provides research-use-only products. Information on this site describes those services and products in general terms and is not guidance about using any product.`,
+          `${brand} provides services to businesses in the research-use-only peptide industry, including wholesale supply, fulfillment, dropshipping and 3PL. Information on this site describes those services in general terms and is not guidance about using any product.`,
         ],
       },
       {

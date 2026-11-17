@@ -102,7 +102,7 @@ function markup(c: Card) {
 
 const cards: Card[] = [
   { file: "default", kicker: "RUO peptide business infrastructure", title: "One partner. Every moving part of your RUO peptide business.", accent: "RUO peptide business.", visual: "strip" },
-  { file: "services", kicker: "Services", title: "Twelve services. One partner.", visual: "strip" },
+  { file: "services", kicker: "Services", title: "Thirteen services. One partner.", visual: "strip" },
   { file: "case-studies", kicker: "Case studies", title: "Selected work from 50+ sites.", visual: "strip" },
   { file: "resources", kicker: "Guides and resources", title: "Guides for the business behind RUO.", visual: "strip" },
   { file: "about", kicker: "About", title: "Built for the business behind RUO.", visual: "strip" },

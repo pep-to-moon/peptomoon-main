@@ -11,12 +11,14 @@ import { seoGeoAeo } from "./seo-geo-aeo";
 import { siteAudits } from "./site-audits";
 import { supplierVerification } from "./supplier-verification";
 import { websiteDevelopment } from "./website-development";
+import { wholesaleDropshipping3pl } from "./wholesale-dropshipping-3pl";
 
 /** Order matters: it is the order used in navigation, the hub page and the footer. */
 export const services: Service[] = [
   websiteDevelopment,
   paymentProcessing,
   fulfillmentLogistics,
+  wholesaleDropshipping3pl,
   businessDashboards,
   customerSupport,
   metaAdvertising,

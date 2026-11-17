@@ -8,7 +8,7 @@ const brand = siteConfig.name;
 const items: Faq[] = [
   {
     q: `Does ${brand} also provide peptides?`,
-    a: `Yes. Alongside services for businesses (websites, payments, supplier documentation, fulfillment, reporting, marketing infrastructure and review), ${brand} also provides research-use-only products. They are labelled for laboratory research use only and are not for human or veterinary use. Tell us what you are looking for through the questionnaire and we will reply directly.`,
+    a: `${brand} is a business-to-business company and does not sell to consumers. Among its services for businesses are wholesale supply of research-use-only peptides, fulfillment, dropshipping and 3PL, alongside websites, payments, supplier documentation, reporting, marketing infrastructure and review. Research-use-only products are labelled for laboratory research use only and are not for human or veterinary use. Tell us what you are looking for through the questionnaire and we will reply directly.`,
   },
   {
     q: "Why do payment providers keep declining or limiting RUO stores, and what can we do about it?",

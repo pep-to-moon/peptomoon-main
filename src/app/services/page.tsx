@@ -16,7 +16,7 @@ import { webPageSchema } from "@/lib/seo/schema";
 
 const title = `RUO Peptide Business Services | ${siteConfig.name}`;
 const description =
-  "Twelve connected services for RUO peptide businesses: websites, payments, fulfillment, reporting, marketing, search, audits, supplier checks and compliance review.";
+  "Thirteen connected services for RUO peptide businesses: websites, payments, fulfillment, wholesale and 3PL, reporting, marketing, search, audits, supplier checks and compliance review.";
 
 export const metadata: Metadata = buildMetadata({ title, description, path: "/services" });
 
@@ -29,7 +29,7 @@ export default function ServicesPage() {
         crumbs={[{ name: "Services", path: "/services" }]}
         title={
           <>
-            Twelve services. One partner.
+            Thirteen services. One partner.
           </>
         }
         lead={

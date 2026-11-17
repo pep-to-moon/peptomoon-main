@@ -11,6 +11,7 @@ import {
   Search,
   Share2,
   ShieldCheck,
+  Truck,
   type LucideIcon,
 } from "lucide-react";
 
@@ -18,6 +19,7 @@ export const serviceIcons: Record<string, LucideIcon> = {
   "ruo-peptide-website-development": Globe,
   "payment-processing": CreditCard,
   "fulfillment-logistics": PackageCheck,
+  "wholesale-dropshipping-3pl": Truck,
   "business-dashboards": LayoutDashboard,
   "customer-support": Headset,
   "meta-advertising": Megaphone,

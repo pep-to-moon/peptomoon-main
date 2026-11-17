@@ -8,7 +8,7 @@ export function ServicesIndex() {
   return (
     <Section labelledBy="services-index-title">
       <div className="container-x">
-        <SectionIntro label="What we do" titleId="services-index-title" title={<>Twelve services, one team.</>}>
+        <SectionIntro label="What we do" titleId="services-index-title" title={<>Thirteen services, one team.</>}>
           <p>Four groups: build, run, grow and verify. Take one service, or the whole set.</p>
         </SectionIntro>
 

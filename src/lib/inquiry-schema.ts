@@ -55,6 +55,7 @@ export const serviceSlugToOption: Record<string, ServiceValue> = {
   "meta-advertising": "meta-advertising",
   "supplier-verification": "supplier-verification",
   "fulfillment-logistics": "us-fulfillment",
+  "wholesale-dropshipping-3pl": "dropshipping",
   "compliance-support": "compliance-support",
   "affiliate-management": "affiliate-systems",
   "email-marketing": "email-marketing",

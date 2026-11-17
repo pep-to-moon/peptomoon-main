@@ -6,7 +6,7 @@ const brand = siteConfig.name;
 /** Questions for the hub and company pages. Service pages and guides carry their own. */
 export const servicesFaqs: Faq[] = [
   {
-    q: "Do I have to buy all twelve services?",
+    q: "Do I have to buy all thirteen services?",
     a: "No. Most engagements start with one system, such as payments, a rebuilt store or reporting. Tell us what you need through the questionnaire and the first conversation decides the scope. Because the systems depend on each other, we will say plainly where a fix in one area relies on another.",
   },
   {
@@ -23,7 +23,7 @@ export const servicesFaqs: Faq[] = [
   },
   {
     q: `Does ${brand} also provide peptides?`,
-    a: `Yes. Alongside services for businesses, ${brand} also provides research-use-only products. They are labelled for laboratory research use only and are not for human or veterinary use. Tell us what you are looking for through the questionnaire and we will reply directly.`,
+    a: `${brand} does not sell to consumers. Its wholesale supply, fulfillment, dropshipping and 3PL services are for business customers. Research-use-only products are labelled for laboratory research use only and are not for human or veterinary use. Tell us what you are looking for through the questionnaire and we will reply directly.`,
   },
   {
     q: "What does it cost?",
@@ -92,7 +92,7 @@ export const aboutFaqs: Faq[] = [
   },
   {
     q: `Does ${brand} also provide peptides?`,
-    a: `Yes. Alongside services for businesses, ${brand} also provides research-use-only products. They are labelled for laboratory research use only and are not for human or veterinary use. Tell us what you are looking for through the questionnaire and we will reply directly.`,
+    a: `${brand} does not sell to consumers. Its wholesale supply, fulfillment, dropshipping and 3PL services are for business customers. Research-use-only products are labelled for laboratory research use only and are not for human or veterinary use. Tell us what you are looking for through the questionnaire and we will reply directly.`,
   },
   {
     q: "What happens to what I send you?",
