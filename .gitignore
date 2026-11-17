@@ -1,0 +1,16 @@
+node_modules
+.next
+out
+.env
+.env.local
+.env.*.local
+*.tsbuildinfo
+next-env.d.ts
+test-results
+playwright-report
+.vercel
+.DS_Store
+scratch
+
+# Raw Search Console exports contain real queries and page names. Only the cleaned src/content/gsc-data.ts is tracked.
+data/gsc/*/

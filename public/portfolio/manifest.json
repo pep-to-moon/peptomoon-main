@@ -1,0 +1,104 @@
+{
+  "99-purity-peptides": {
+    "capturedAt": "2026-11-16",
+    "home": "https://99puritypeptides.com/",
+    "shop": "https://99puritypeptides.com/shop",
+    "desktop": [
+      1440,
+      900
+    ],
+    "mobile": [
+      780,
+      1688
+    ],
+    "shopSize": [
+      1440,
+      900
+    ]
+  },
+  "veracue-labs": {
+    "capturedAt": "2026-11-16",
+    "home": "https://veracuelabs.com/",
+    "shop": "https://veracuelabs.com/shop",
+    "desktop": [
+      1440,
+      900
+    ],
+    "mobile": [
+      780,
+      1688
+    ],
+    "shopSize": [
+      1440,
+      900
+    ]
+  },
+  "helix-bio-chem": {
+    "capturedAt": "2026-11-16",
+    "home": "https://helixbiochem.com/",
+    "shop": "https://helixbiochem.com/shop",
+    "desktop": [
+      1440,
+      900
+    ],
+    "mobile": [
+      780,
+      1688
+    ],
+    "shopSize": [
+      1440,
+      900
+    ]
+  },
+  "primetime-bio-labs": {
+    "capturedAt": "2026-11-16",
+    "home": "https://www.primetimebiolabs.com/",
+    "shop": "https://www.primetimebiolabs.com/shop",
+    "desktop": [
+      1440,
+      900
+    ],
+    "mobile": [
+      780,
+      1688
+    ],
+    "shopSize": [
+      1440,
+      900
+    ]
+  },
+  "certified-aminos": {
+    "capturedAt": "2026-11-16",
+    "home": "https://certified-aminos.com/",
+    "shop": "https://certified-aminos.com/shop",
+    "desktop": [
+      1440,
+      900
+    ],
+    "mobile": [
+      780,
+      1688
+    ],
+    "shopSize": [
+      1440,
+      900
+    ]
+  },
+  "amino-based": {
+    "capturedAt": "2026-11-16",
+    "home": "https://www.aminobased.com/",
+    "shop": "https://www.aminobased.com/shop",
+    "desktop": [
+      1440,
+      900
+    ],
+    "mobile": [
+      780,
+      1688
+    ],
+    "shopSize": [
+      1440,
+      900
+    ]
+  }
+}

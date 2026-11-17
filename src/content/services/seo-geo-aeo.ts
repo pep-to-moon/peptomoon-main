@@ -1,0 +1,93 @@
+import { siteConfig } from "@/config/site";
+import type { Service } from "../types";
+
+const brand = siteConfig.name;
+
+export const seoGeoAeo: Service = {
+  slug: "seo-geo-aeo",
+  name: "SEO, GEO and AEO",
+  pillar: "grow",
+  summary: "Search, answer-engine and AI-assistant visibility built on clean structure, sourced content and honest measurement.",
+  status: "established",
+  primaryKeyword: "peptide SEO GEO AEO",
+  seo: {
+    title: `SEO, GEO and AEO for RUO Peptide Stores | ${brand}`,
+    description:
+      "Search, answer-engine and AI-assistant visibility for RUO peptide stores: technical SEO, answer-ready content, structured data and honest measurement.",
+  },
+  h1: "SEO, GEO and AEO for RUO peptide businesses",
+  lead: "Be found where buyers look: in search results, in direct answers and in the replies of AI assistants. We build the structure, the sourced content and the measurement behind all three, and we never promise a ranking or a citation.",
+  what: [
+    "SEO, GEO and AEO are three names for one job: making your pages easy to find, understand and quote. SEO (search engine optimisation) is about ranking in conventional search results. AEO (answer engine optimisation) is about being the page that answers a question directly, in featured answers, voice results and the summary panels that search engines show. GEO (generative engine optimisation) is about being understood and cited accurately by AI assistants and AI-generated search summaries that write answers from many sources.",
+    "They share a foundation: a fast, crawlable site with clean addresses, accurate structured data and content that answers real questions plainly and cites its sources. We build that foundation, then shape the content for each of the three. In this industry the content layer needs extra care, because search engines and AI systems treat health-adjacent topics cautiously, and a page that drifts into claims about personal use can lose trust as well as visibility.",
+  ],
+  why: [
+    "Buyers increasingly start with a question rather than a brand name, and the answer they see may be a summary written by an AI system. If your business is described wrongly there, or not at all, you lose the visit before it begins.",
+    "Systems that summarise content favour pages that are clear, consistent and well sourced. Batch documents, plain explanations and dated references suit that, so a business that already documents its work carefully has an advantage it may not be using.",
+    "Paid channels in this category are restricted, so organic visibility carries more of the weight. It is also slower to build and easier to damage, which makes getting the structure right early worth more than any later tactic.",
+  ],
+  problems: [
+    { title: "Pages search engines cannot see", text: "Filters without addresses, duplicate variants and blocked paths hide products. We map what is indexable and fix it." },
+    { title: "Content written for nobody", text: "Thin product copy and generic blog posts answer no real question. We plan content from the questions buyers actually ask, with sources." },
+    { title: "Inconsistent facts across the web", text: "Business names, descriptions and product details that differ between your site, listings and profiles confuse search engines and AI systems alike." },
+    { title: "Claims that put visibility at risk", text: "Copy that points toward personal use can reduce trust, invite scrutiny and leave a poor impression in an AI summary. We keep content within the research-use position." },
+    { title: "No way to tell whether it works", text: "Rankings are only part of the picture. We measure search impressions, clicks, indexed pages and how AI assistants describe the business." },
+  ],
+  approach: [
+    { title: "Audit what is found", text: "Crawl the site, check what is indexed, blocked or duplicated, and test how search engines and AI assistants currently describe the business." },
+    { title: "Fix the foundation", text: "Addresses, canonical tags, sitemaps, robots rules, structured data, speed and accessibility, generated from the catalogue so they stay correct." },
+    { title: "Build answer-ready pages", text: "A short answer at the top, question-based headings, tables and plain definitions, so a page can be quoted accurately." },
+    { title: "Source and date the content", text: "Primary sources, review dates and clear authorship, because systems that summarise content favour pages they can trust." },
+    { title: "Make the business clear", text: "One consistent description of the business, its products and its documents, repeated the same way across the site and its public profiles." },
+    { title: "Measure and adjust", text: "Search data, indexed pages, assistant answers and enquiries, reviewed on a schedule." },
+  ],
+  included: [
+    "Technical SEO audit and fixes",
+    "Sitemaps, canonical tags and robots rules",
+    "Structured data for the organisation, products and articles",
+    "Answer-ready page structure with quick answers, tables and definitions",
+    "Question-led content planning",
+    "Source and review-date framework for content",
+    "Internal linking plan",
+    "Business and profile consistency review",
+    "AI assistant and AI search visibility checks",
+    "Crawler access policy, including llms.txt guidance",
+    "Search Console and analytics setup",
+    "Monthly visibility reporting",
+  ],
+  process: [
+    { title: "Audit", text: "What is indexed, what is blocked and how the business is described today." },
+    { title: "Foundation", text: "Structure, data and speed fixed at the source." },
+    { title: "Content", text: "Answer-ready pages planned from real buyer questions, with sources." },
+    { title: "Consistency", text: "The same description of the business everywhere it appears." },
+    { title: "Measure", text: "Regular review of search and assistant visibility against real enquiries." },
+  ],
+  technical: [
+    "XML sitemaps and canonical tags generated from the same data that renders pages.",
+    "Structured data for Organization, WebSite, Product, Article and BreadcrumbList, matching what is visible on the page.",
+    "Robots rules that keep carts, accounts and checkout out of search while leaving content open.",
+    "A written decision on which AI crawlers to allow, revisited on a schedule.",
+    "Server-rendered pages so content is available without scripts.",
+    "Performance and accessibility checks against Core Web Vitals.",
+  ],
+  limits: [
+    "We cannot promise rankings, traffic or that an AI assistant will cite or describe your business in any particular way. Search engines and AI systems make their own decisions and change them often.",
+    "We do not buy links, publish fake reviews, hide text, show crawlers different content from people or mass-produce pages. Those tactics risk penalties and damage trust.",
+    "We do not write dosing, usage or outcome content. Content stays within the research-use position and is reviewed with your counsel where needed.",
+    "AI-generated summaries can be wrong. We can check how your business is described and fix what is in your control, but we cannot edit what an assistant says.",
+  ],
+  visual: "search",
+  faqs: [
+    { q: "What is the difference between SEO, GEO and AEO?", a: "SEO aims at ranking in conventional search results. AEO aims at being the direct answer to a question, such as in featured answers, voice results and summary panels. GEO aims at being understood and cited accurately by AI assistants and AI-generated search summaries. They overlap heavily and rest on the same foundation of crawlable structure, accurate data and clear, sourced content." },
+    { q: "Can you guarantee that AI assistants will mention or recommend us?", a: "No. These systems choose their own sources and change how they do it often. What we can do is make your content clear, accurate, consistent and easy to quote, check how your business is currently described and fix what is in your control." },
+    { q: "Our traffic has stalled. Where do you start?", a: "With what is found. We check which pages are indexed, which are blocked or duplicated, how pages perform on a phone and whether product and category pages have their own addresses and descriptions. Most stalls trace to structure or to thin pages rather than a lack of new content." },
+    { q: "An AI assistant describes our business wrongly. What can we do?", a: "Find where the wrong information comes from: an outdated page, an inconsistent listing or a third-party article. Correct what you control, make one clear description of the business and its products available on the site, cite primary sources and keep the information consistent everywhere. You cannot edit an assistant's answer directly, but you can improve what it has to work with, and many assistants offer a way to report errors." },
+    { q: "Does this work within the research-use position?", a: "It has to. We write explanatory content, such as what a document contains or how a store is structured, and we do not write dosing, usage or outcome content. Pages that stray toward personal use can reduce trust and invite scrutiny, so we review content against the same signals described in our guide on why a research-use label is not a compliance strategy." },
+    { q: "Should we allow AI crawlers on the site?", a: "That is a business decision. Allowing them lets assistants read and cite your public pages, and blocking them keeps your content out of their answers. We lay out the choices, set the rules in your robots file to match your decision and record it so it can be revisited." },
+    { q: "How do you measure success when AI answers do not show rankings?", a: "We combine search data such as impressions, clicks and indexed pages, your own enquiry and order data, and regular checks of how assistants answer the questions your buyers ask, recorded over time. None of these is perfect, so we look at the trend across all of them." },
+  ],
+  related: ["ruo-peptide-website-development", "site-audits", "email-marketing", "business-dashboards"],
+  caseStudies: ["veracue-labs", "99-purity-peptides", "primetime-bio-labs"],
+  articles: ["peptide-store-architecture", "infrastructure-behind-an-ruo-peptide-business"],
+  cta: { label: "Plan your search visibility" },
+};

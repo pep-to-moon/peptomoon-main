@@ -1,0 +1,1631 @@
+# MASTER PROJECT PROMPT: BENCHLINE
+## End-to-End RUO Peptide Business Infrastructure, Technology, Development & Growth Agency
+
+Act as a senior creative director, product designer, full-stack Next.js architect, technical SEO specialist, CRO strategist, digital marketing consultant, and industry researcher.
+
+Your responsibility is to research, strategize, architect, design, and develop a complete, production-quality website for a company that provides end-to-end technology, infrastructure, operational support, and growth services to businesses operating in the Research Use Only (RUO) peptide industry.
+
+This is not a conventional web development agency.
+
+We want to position the company as an all-in-one industry partner that helps RUO peptide businesses establish, develop, operate, maintain, and grow their businesses through a coordinated ecosystem of services.
+
+The website must communicate:
+
+- Deep understanding of the RUO peptide industry.
+- Actual experience building and maintaining industry websites.
+- Technical and e-commerce expertise.
+- Knowledge of industry-specific operational challenges.
+- Payment and fulfillment infrastructure expertise.
+- Supplier verification and sourcing support.
+- Compliance-oriented business support.
+- Marketing and customer acquisition infrastructure.
+- Long-term operational and technical partnership.
+
+The final website should look and feel like a premium, established technology and infrastructure company, not a generic digital marketing agency.
+
+SEO, organic search visibility, conversion optimization, visual quality, and technical performance are equally important priorities.
+
+---
+
+# 1. BRAND IDENTITY AND POSITIONING
+
+## Temporary Brand Name: Benchline
+
+Use Benchline as the working brand name throughout the project.
+
+The actual brand name has not been finalized, so make the branding modular. The company name, logo, favicon, colors, and brand assets should be easily replaceable later.
+
+## Brand Positioning
+
+Benchline is an end-to-end infrastructure and growth partner for businesses in the RUO peptide industry.
+
+We help businesses with almost every major operational component required to establish and maintain their online presence and supporting business infrastructure.
+
+We are:
+
+- Website creators.
+- Website redesign specialists.
+- E-commerce developers.
+- Technical infrastructure providers.
+- Payment infrastructure consultants.
+- Supplier sourcing and verification partners.
+- Fulfillment and logistics coordinators.
+- Marketing infrastructure specialists.
+- Affiliate system providers.
+- Email marketing specialists.
+- Business dashboard developers.
+- Customer support infrastructure providers.
+- Compliance-oriented operational support partners.
+
+The central positioning should communicate:
+
+**One partner. Every moving part of your RUO business.**
+
+Other messaging directions to explore:
+
+- Beyond the Storefront.
+- Built for the Business Behind RUO.
+- Every System. One Partner.
+- Your Business, Fully Connected.
+- The Infrastructure Behind Your Next Move.
+- Everything Your RUO Business Needs to Operate.
+
+Do not blindly use these taglines. Develop a coherent messaging hierarchy and select the strongest direction based on the overall brand strategy.
+
+We should not appear to be simply selling websites. We provide a broader ecosystem of business infrastructure and operational support.
+
+---
+
+# 2. UNDERSTAND OUR BUSINESS AND SERVICES
+
+Thoroughly understand the following services before planning the website.
+
+Organize them into meaningful categories and develop dedicated service pages wherever there is sufficient unique value and distinct search intent.
+
+## A. Website Development & E-commerce
+
+We create and redesign websites for businesses operating in the RUO peptide industry.
+
+Services include:
+
+- Custom website development.
+- Complete website creation from scratch.
+- Website redesign.
+- Next.js-based e-commerce development.
+- Product catalogue architecture.
+- Product page development.
+- Product category and collection structures.
+- Shopping cart and checkout experiences.
+- Custom website functionality.
+- Third-party integrations.
+- Mobile and tablet optimization.
+- Technical SEO implementation.
+- Website migration.
+- Website speed optimization.
+- Conversion rate optimization.
+- Website maintenance.
+- Ongoing technical support.
+
+The messaging should communicate that generic e-commerce templates and conventional developers often fail to understand the specific operational and technical requirements of this industry.
+
+We understand the requirements and build accordingly.
+
+## B. Payment Processing & Merchant Infrastructure
+
+Payment processing is one of the major operational challenges for businesses in this industry.
+
+Cover:
+
+- Merchant account consultation.
+- Payment processor integration.
+- Payment gateway configuration.
+- Merchant application preparation.
+- Payment infrastructure consultation.
+- Checkout optimization.
+- Payment failure troubleshooting.
+- Transaction monitoring workflows.
+- Chargeback management systems.
+- Payment reporting and reconciliation.
+- Payment provider requirements and restrictions.
+
+Address issues businesses may face with conventional providers such as Stripe, Square, and PayPal, including:
+
+- Unexpected account restrictions.
+- Held funds.
+- Delayed settlements.
+- Insufficient advance notice.
+- Cash-flow disruptions.
+- Incompatibility with business models.
+
+Explain the importance of identifying payment providers whose underwriting requirements, contractual terms, and business policies support the actual business model.
+
+Never suggest misrepresenting products, hiding business activities, bypassing underwriting, or violating provider terms.
+
+Never promise guaranteed merchant approval or uninterrupted payment processing.
+
+## C. Meta Advertising Infrastructure
+
+Cover:
+
+- Meta Business Manager setup.
+- Agency advertising account access.
+- Advertising account infrastructure.
+- Business asset organization.
+- Meta Pixel implementation.
+- Conversions API.
+- Event tracking.
+- Campaign analytics.
+- Advertising dashboards.
+- Account troubleshooting.
+- Conversion tracking configuration.
+
+Clearly distinguish advertising infrastructure, advertising management, and advertising eligibility.
+
+Do not suggest circumventing Meta restrictions or misrepresenting business activities.
+
+## D. Supplier Sourcing & Verification
+
+Supplier reliability is a major concern in this industry.
+
+Address:
+
+- Fake suppliers.
+- Unverified manufacturers.
+- Inconsistent product specifications.
+- Poor documentation.
+- Misrepresented purity claims.
+- Inadequate quality-control records.
+- Unreliable shipments.
+- Supplier accountability.
+- Documentation review.
+- Sourcing transparency.
+
+Explain how structured supplier verification and documentation review can reduce operational risk.
+
+Never fabricate supplier relationships, laboratory results, certifications, or purity claims.
+
+## E. Fulfillment & Logistics
+
+Cover:
+
+- US-based fulfillment.
+- Domestic shipping infrastructure.
+- Third-party logistics coordination.
+- Dropshipping arrangements where lawful and contractually permitted.
+- Inventory management.
+- Order processing.
+- Shipping integrations.
+- Tracking systems.
+- Returns and exception workflows.
+- Fulfillment reporting.
+
+Explain how fulfillment infrastructure affects delivery consistency, operational efficiency, and customer experience.
+
+## F. Compliance & Regulatory Support
+
+This is an important differentiator.
+
+RUO peptide businesses face regulatory, labeling, website content, marketing, and advertising challenges.
+
+Cover:
+
+- RUO website content reviews.
+- Product description reviews.
+- Disclaimer reviews.
+- Product labeling considerations.
+- Marketing claims review.
+- Website content risk assessments.
+- Regulatory documentation organization.
+- Business operations guidance.
+- Regulatory update awareness.
+- Coordination with qualified regulatory professionals.
+
+Clearly communicate that adding an RUO disclaimer does not automatically make a product, business, or marketing activity compliant.
+
+Benchline must not present itself as a law firm, regulatory authority, or substitute for qualified legal counsel.
+
+Do not provide instructions for disguising human-use marketing, concealing product intent, evading FDA detection, or bypassing applicable laws.
+
+For 503A and 503B-related services, clearly distinguish licensed compounding pharmacy operations and lawful business relationships from ordinary RUO peptide commerce.
+
+Never imply that an ordinary RUO retailer automatically qualifies for 503A or 503B exemptions.
+
+## G. Affiliate Infrastructure
+
+Cover:
+
+- Affiliate program creation.
+- Affiliate dashboard development.
+- Referral tracking.
+- Commission structures.
+- Affiliate registration.
+- Affiliate management.
+- Performance reporting.
+- Affiliate integrations.
+- Payout tracking.
+- Program optimization.
+
+## H. Email Marketing & Customer Retention
+
+Cover:
+
+- Email infrastructure.
+- Domain authentication.
+- Transactional email setup.
+- Marketing automation.
+- Customer segmentation.
+- Abandoned cart workflows.
+- Welcome sequences.
+- Customer retention campaigns.
+- Broadcast campaigns.
+- Deliverability optimization.
+- Email performance analytics.
+
+## I. Business Dashboards & Operations
+
+Cover:
+
+- Custom dashboards.
+- Sales reporting.
+- Order management.
+- Inventory visibility.
+- Affiliate reporting.
+- Fulfillment reporting.
+- Payment analytics.
+- Customer support workflows.
+- Business performance monitoring.
+- Custom integrations.
+
+## J. Customer Support Infrastructure
+
+Cover:
+
+- Helpdesk setup.
+- Ticket management.
+- Customer communication workflows.
+- Automated support workflows.
+- Knowledge bases.
+- Order-related support.
+- Customer experience optimization.
+
+Present these services as a connected ecosystem rather than ten unrelated offerings.
+
+---
+
+# 3. INDUSTRY PROBLEMS AND OUR SOLUTIONS
+
+Build a major website section around:
+
+**The RUO Industry Is Complicated. Your Infrastructure Doesn't Have to Be.**
+
+We want visitors to immediately understand that we know the problems they face.
+
+Create compelling problem-and-solution narratives.
+
+### Problem 1: Payment Processing Uncertainty
+
+Businesses may face unexpected account restrictions, held balances, settlement delays, and cash-flow disruption.
+
+Our solution:
+
+Help businesses evaluate payment infrastructure requirements, identify appropriately qualified providers, integrate supported payment systems, and establish better monitoring and reporting workflows.
+
+### Problem 2: Unreliable Suppliers
+
+The market contains questionable suppliers, inconsistent specifications, insufficient documentation, and unreliable fulfillment.
+
+Our solution:
+
+Supplier verification support, documentation review, sourcing transparency, and structured quality-control processes.
+
+### Problem 3: Regulatory Uncertainty
+
+Businesses often misunderstand the difference between RUO labeling and actual regulatory compliance.
+
+Our solution:
+
+Compliance-oriented website reviews, content assessments, documentation organization, and coordination with qualified regulatory professionals.
+
+### Problem 4: Poor Website Infrastructure
+
+Many websites look outdated, have poor product organization, load slowly, and provide weak user experiences.
+
+Our solution:
+
+Custom-designed e-commerce experiences with strong technical architecture, SEO, performance, and conversion-focused design.
+
+### Problem 5: Fragmented Operations
+
+Businesses rely on disconnected systems for payments, orders, affiliates, email, fulfillment, and customer support.
+
+Our solution:
+
+Integrated operational infrastructure and centralized dashboards.
+
+### Problem 6: Marketing and Growth Limitations
+
+Businesses struggle with advertising infrastructure, customer acquisition, tracking, email campaigns, and affiliate management.
+
+Our solution:
+
+A coordinated marketing infrastructure with appropriate tracking, reporting, email systems, and affiliate tools.
+
+Make this section substantial, visually interesting, and specific to the industry.
+
+Avoid generic agency messaging.
+
+---
+
+# 4. INDUSTRY AND COMPETITOR RESEARCH
+
+Before finalizing the sitemap, content, or design, conduct proper research.
+
+## Business Model Reference Websites
+
+Use these websites to understand the industry, services, business model, and positioning.
+
+- https://hardproof.io/
+- https://www.vantafoundry.com/
+
+Analyze:
+
+- Services.
+- Positioning.
+- Messaging.
+- Target customers.
+- Industry terminology.
+- Service categorization.
+- Value propositions.
+- Customer pain points.
+- Business model.
+
+These are research references only.
+
+Do not copy their layouts, website designs, page structures, or content.
+
+Research additional relevant agencies and service providers to identify opportunities to differentiate Benchline.
+
+## Official Documentation
+
+Use current and authoritative sources, prioritizing:
+
+- Google Search Central.
+- Google PageSpeed Insights.
+- Schema.org.
+- Next.js official documentation.
+- Vercel documentation.
+- Meta Business documentation.
+- Payment provider documentation.
+- FDA official guidance.
+- Relevant regulatory authorities.
+
+Do not rely on outdated SEO tutorials or unsupported claims.
+
+Clearly distinguish verified information from assumptions and recommendations.
+
+---
+
+# 5. OUR EXISTING CLIENT PORTFOLIO
+
+This is one of the most important parts of the website.
+
+The following six websites are existing projects that we have created and are actively maintaining.
+
+They are our actual client portfolio, not competitors and not design references.
+
+## Existing Websites
+
+1. https://99puritypeptides.com/
+2. https://veracuelabs.com/
+3. https://helixbiochem.com/
+4. https://www.primetimebiolabs.com/
+5. https://certified-aminos.com/
+6. https://www.aminobased.com/
+
+## Inspect Every Website
+
+Visit all six websites and inspect them individually.
+
+Analyze:
+
+- Brand identity.
+- Website architecture.
+- Homepage design.
+- Navigation.
+- Product catalogue.
+- Product pages.
+- Category pages.
+- E-commerce functionality.
+- Mobile responsiveness.
+- User experience.
+- SEO structure.
+- Content organization.
+- Technical implementation where observable.
+- Features and integrations where observable.
+
+Understand the differences between the projects.
+
+Do not assume all six websites have identical functionality, technology, design, or requirements.
+
+Use actual information obtained from these websites and project knowledge.
+
+Do not invent development details.
+
+## Homepage Portfolio Section
+
+Create a prominent homepage section with a headline direction such as:
+
+**Built in the Industry. Not Just for It.**
+
+Supporting message:
+
+We have already designed, developed, and continue to maintain websites for brands operating in the RUO peptide and research-product space.
+
+Showcase all six projects.
+
+Each portfolio item should contain:
+
+- Website or brand name.
+- Clickable live website URL.
+- Actual website screenshot or visual preview.
+- Short project description.
+- Relevant project category.
+- Verified services delivered.
+- Link to explore the live website.
+- Link to a detailed case study, when available.
+
+Use actual screenshots rather than generic stock photography.
+
+The portfolio should feel like a premium digital agency showcase.
+
+Explore:
+
+- Large website preview cards.
+- Asymmetric layouts.
+- Horizontal scrolling showcases.
+- Interactive project previews.
+- Hover-based visual transitions.
+- Desktop and mobile mockups.
+
+Do not make it a basic grid of logos.
+
+## Individual Case Studies
+
+Prepare a reusable case study architecture.
+
+Suggested URL structure:
+
+- /case-studies/99-purity-peptides
+- /case-studies/veracue-labs
+- /case-studies/helix-bio-chem
+- /case-studies/primetime-bio-labs
+- /case-studies/certified-aminos
+- /case-studies/amino-based
+
+Each case study should eventually cover:
+
+1. Project introduction.
+2. Business overview.
+3. Project requirements.
+4. Challenges and objectives.
+5. Website design approach.
+6. Website architecture.
+7. E-commerce functionality.
+8. Technical implementation.
+9. SEO considerations.
+10. Ongoing maintenance.
+11. Screenshots.
+12. Measurable outcomes, where verified.
+
+Do not fabricate project requirements, technologies, integrations, SEO metrics, traffic improvements, testimonials, or business results.
+
+If project-specific information is unavailable, mark it as requiring confirmation.
+
+Do not publish thin case studies merely to target additional keywords.
+
+## Portfolio SEO Strategy
+
+Use the portfolio to establish topical credibility around:
+
+- RUO peptide website development.
+- Peptide e-commerce website design.
+- Peptide store redesign.
+- Research-product website development.
+- Peptide business infrastructure.
+- Industry-specific e-commerce development.
+
+Build contextual internal links between individual case studies and relevant service pages.
+
+The central credibility message should be:
+
+**We don't just understand this industry. We've already built and continue to maintain websites within it.**
+
+---
+
+# 6. COMPLETE WEBSITE ARCHITECTURE
+
+Before coding, create the complete sitemap and page hierarchy.
+
+The architecture must be based on search intent, topical authority, service discoverability, and conversion opportunities.
+
+## Main Pages
+
+### 1. Homepage (/)
+
+Suggested sections:
+
+1. Premium hero with clear positioning and CTA.
+2. Industry-focused introduction.
+3. Core service ecosystem.
+4. Problems RUO businesses face.
+5. Our solutions.
+6. Website development showcase.
+7. Payment infrastructure.
+8. Supplier and fulfillment infrastructure.
+9. Compliance-oriented support.
+10. Marketing and growth systems.
+11. Business operations and dashboards.
+12. Existing client portfolio.
+13. Case study previews.
+14. Real performance metrics and SEO evidence.
+15. Our process.
+16. Why businesses choose Benchline.
+17. FAQs.
+18. Final conversion CTA.
+
+Avoid repetitive sections. Every section must contribute a distinct message.
+
+### 2. Services (/services)
+
+Central service overview page.
+
+Organize services into categories and link to individual service pages.
+
+### 3. Website Development
+
+/services/ruo-peptide-website-development
+
+Cover:
+
+- RUO peptide website development.
+- Custom e-commerce architecture.
+- Website redesign.
+- Product catalogue organization.
+- Performance optimization.
+- Conversion optimization.
+- Technical SEO.
+- Mobile-first development.
+- Website migration.
+- Development process.
+- FAQs.
+- Relevant portfolio projects.
+
+### 4. Payment Infrastructure
+
+/services/payment-processing
+
+Cover merchant infrastructure, payment integrations, provider selection, payment monitoring, and operational considerations.
+
+### 5. Meta Advertising
+
+/services/meta-advertising
+
+Cover Meta Business Manager, advertising infrastructure, account access, tracking, pixels, and analytics.
+
+### 6. Supplier Verification
+
+/services/supplier-verification
+
+Cover supplier verification, documentation, sourcing processes, and quality-control transparency.
+
+### 7. Fulfillment & Logistics
+
+/services/fulfillment-logistics
+
+Cover US fulfillment, dropshipping arrangements, inventory management, shipping infrastructure, and integrations.
+
+### 8. Compliance Support
+
+/services/compliance-support
+
+Cover regulatory awareness, RUO website reviews, labeling considerations, disclaimers, content assessments, and coordination with qualified professionals.
+
+### 9. Affiliate Infrastructure
+
+/services/affiliate-management
+
+Cover affiliate dashboards, referral tracking, commissions, integrations, and reporting.
+
+### 10. Email Marketing
+
+/services/email-marketing
+
+Cover email infrastructure, campaigns, automation, deliverability, and retention.
+
+### 11. Business Dashboards
+
+/services/business-dashboards
+
+Cover custom reporting, operational visibility, integrations, and management dashboards.
+
+### 12. Customer Support
+
+/services/customer-support
+
+Cover support systems, helpdesk infrastructure, ticketing, and workflows.
+
+## Additional Pages
+
+### 13. Case Studies
+
+/case-studies
+
+Showcase existing client projects and verified results.
+
+Individual projects should have dedicated pages.
+
+### 14. About
+
+/about
+
+Explain our expertise, approach, philosophy, industry knowledge, and why an industry-focused partner provides more value than coordinating disconnected providers.
+
+### 15. Resources
+
+/resources
+
+Create an SEO-focused resource hub.
+
+Suggested categories:
+
+- RUO Peptide Business Guides.
+- Website Development.
+- Payment Processing.
+- Supplier Verification.
+- Fulfillment and Logistics.
+- SEO and Marketing.
+- Affiliate Infrastructure.
+- Email Marketing.
+- Industry Compliance.
+- Business Operations.
+
+### 16. Contact
+
+/contact
+
+Create an interactive lead qualification experience.
+
+### 17. Individual Blog Articles
+
+Every article must have unique metadata, proper heading hierarchy, internal links, author information where available, relevant CTAs, and related content.
+
+### 18. Legal Pages
+
+- Privacy Policy.
+- Terms of Service.
+- Disclaimer.
+- Cookie Policy.
+
+These must be adapted to the actual business and reviewed appropriately.
+
+---
+
+# 7. CONTACT PAGE: INTERACTIVE PROJECT QUALIFICATION QUIZ
+
+Do not create a generic contact form.
+
+Build an interactive multi-step project questionnaire.
+
+## Step 1: Business Status
+
+Ask:
+
+What best describes your current situation?
+
+- I already have an RUO peptide website.
+- I am planning to launch a new business.
+- I am looking to expand my existing operations.
+- I need help with a specific business problem.
+
+## Step 2: Services Required
+
+Allow multiple selections:
+
+- Website creation.
+- Website redesign.
+- Payment processing.
+- Meta advertising infrastructure.
+- Supplier verification.
+- US fulfillment.
+- Dropshipping.
+- Affiliate systems.
+- Email marketing.
+- Compliance support.
+- Business dashboards.
+- Customer support.
+- Complete business infrastructure.
+
+## Step 3: Website Information
+
+If they already have a website, request its URL.
+
+## Step 4: Additional Details
+
+Ask for project requirements, current challenges, and relevant information.
+
+## Step 5: Contact Information
+
+Collect:
+
+- Full name.
+- Business name.
+- Email.
+- WhatsApp number.
+- Website URL, if applicable.
+
+## Form Experience
+
+Requirements:
+
+- Multi-step progression.
+- Clear progress indicator.
+- Smooth transitions.
+- Conditional questions.
+- Form validation.
+- Accessible error messages.
+- Mobile-friendly layout.
+- Spam protection.
+- Consent where required.
+
+Initially, send submissions to our configured email endpoint.
+
+Structure the integration so WhatsApp notifications can be added later without rebuilding the form.
+
+Do not invent a successful submission response when the backend has not actually accepted the submission.
+
+---
+
+# 8. SEO STRATEGY: A PRIMARY PROJECT REQUIREMENT
+
+SEO must influence the entire project from the beginning.
+
+Do not treat SEO as a final implementation checklist.
+
+We want to establish topical authority in the RUO peptide business infrastructure niche.
+
+## 8.1 Keyword Research
+
+Research actual search opportunities around our services.
+
+Initial keyword directions:
+
+- RUO peptide website development.
+- Peptide website design.
+- Peptide e-commerce development.
+- RUO peptide store development.
+- Peptide website redesign.
+- Peptide payment processing.
+- High-risk merchant accounts for peptide businesses.
+- Peptide fulfillment services.
+- US peptide fulfillment.
+- Peptide supplier verification.
+- Peptide business infrastructure.
+- Peptide affiliate management.
+- Peptide email marketing.
+- RUO business operations.
+- Peptide store SEO.
+
+These are seed keywords, not confirmed search-volume opportunities.
+
+Research:
+
+- Search volume where reliable data exists.
+- Keyword difficulty.
+- Search intent.
+- SERP composition.
+- Competitor pages.
+- Related queries.
+- Long-tail opportunities.
+- Commercial intent.
+- Informational opportunities.
+
+Never fabricate keyword metrics.
+
+If reliable keyword tools are unavailable, explain the limitation and perform qualitative SERP and competitor research instead.
+
+## 8.2 Search Intent Mapping
+
+Map each primary keyword cluster to its most relevant page.
+
+Separate:
+
+- Transactional intent.
+- Commercial investigation.
+- Informational intent.
+- Navigational intent.
+
+Avoid keyword cannibalization.
+
+Do not create multiple pages targeting essentially identical search intent without a clear differentiation.
+
+## 8.3 On-Page SEO
+
+Every indexable page must have:
+
+- Unique SEO title.
+- Unique meta description.
+- One clear H1.
+- Logical H2/H3 structure.
+- Search-intent-focused content.
+- Natural semantic keyword coverage.
+- Descriptive image alt text.
+- Relevant internal links.
+- Breadcrumbs where appropriate.
+- Canonical URL.
+- Open Graph metadata.
+- Appropriate structured data.
+
+Avoid keyword stuffing.
+
+## 8.4 Content Depth
+
+Service pages must not be thin landing pages.
+
+Where appropriate, cover:
+
+1. What the service is.
+2. Why businesses need it.
+3. Common industry problems.
+4. How our solution works.
+5. What is included.
+6. Our process.
+7. Technical considerations.
+8. Common questions.
+9. Relevant case studies.
+10. Clear conversion opportunities.
+
+Prioritize depth, originality, and usefulness over arbitrary word counts.
+
+## 8.5 Technical SEO
+
+Implement:
+
+- Next.js metadata API.
+- Dynamic metadata.
+- XML sitemap.
+- robots.txt.
+- Canonical URLs.
+- Clean URL structures.
+- Correct redirects.
+- Correct HTTP status codes.
+- Breadcrumb navigation.
+- Structured data.
+- Optimized images.
+- Contextual internal linking.
+- Pagination where necessary.
+- Crawlable navigation.
+- Indexability controls.
+- Duplicate content prevention.
+- Query parameter handling.
+- Custom 404 pages.
+- Appropriate error handling.
+
+Use valid Schema.org types where applicable:
+
+- Organization.
+- WebSite.
+- Service.
+- BreadcrumbList.
+- Article.
+- Other genuinely relevant types.
+
+Only implement structured data that accurately reflects visible page content and current Google guidelines.
+
+Do not add misleading or unsupported schema.
+
+Do not use FAQPage schema simply because a page contains FAQs. Follow current Google eligibility guidelines.
+
+## 8.6 Core Web Vitals
+
+Prioritize:
+
+- LCP.
+- INP.
+- CLS.
+- Fast server responses.
+- Optimized font loading.
+- Responsive image delivery.
+- Minimal JavaScript.
+- Code splitting.
+- Efficient component rendering.
+- Lazy loading below-the-fold media.
+- Stable image dimensions.
+- Lightweight animations.
+
+Target strong mobile and desktop PageSpeed Insights results.
+
+## 8.7 Internal Linking
+
+Build a proper internal linking architecture.
+
+Examples:
+
+Homepage → Services → Individual service pages.
+
+Service pages → Relevant case studies.
+
+Service pages → Related services.
+
+Blog posts → Relevant service pages.
+
+Case studies → Services used in the project.
+
+Resources → Related articles.
+
+Use natural, descriptive anchor text.
+
+Build topic clusters rather than isolated blog posts.
+
+## 8.8 Analytics and Search Monitoring
+
+Prepare the website for:
+
+- Google Search Console.
+- Google Analytics 4.
+- Conversion tracking.
+- XML sitemap submission.
+- Indexing monitoring.
+- Search performance reporting.
+
+Create a foundation for monitoring:
+
+- Impressions.
+- Clicks.
+- CTR.
+- Average positions.
+- Organic traffic.
+- Landing page performance.
+- Conversions.
+- Core Web Vitals.
+
+We will use real GSC data in portfolio case studies wherever available.
+
+No developer or agency can guarantee search rankings. The goal is to create the strongest possible foundation for sustainable organic growth.
+
+---
+
+# 9. DESIGN DIRECTION AND VISUAL REFERENCES
+
+This is a critical requirement.
+
+The website must not look like an AI-generated template, generic SaaS landing page, or conventional digital agency website.
+
+Think like a senior creative director and professional digital product designer.
+
+The design should be modern, premium, spacious, confident, interactive, and distinctive.
+
+## Business Reference Websites
+
+These are for understanding the business model only:
+
+- https://hardproof.io/
+- https://www.vantafoundry.com/
+
+Do not take visual inspiration from these websites.
+
+## Design Reference Websites
+
+Use the following websites for visual inspiration:
+
+1. https://motorium.framer.website/
+2. https://sohub.digital/
+3. https://mistral.ai/
+4. https://awsmd.com/
+5. https://fixaplan.com/
+6. https://www.medusmo.com/
+
+Study their:
+
+- Scroll-based animations.
+- Section transitions.
+- Typography.
+- Visual storytelling.
+- Layout compositions.
+- Interactive elements.
+- Hover states.
+- Navigation.
+- Image treatment.
+- Section proportions.
+- Motion design.
+
+Do not copy exact layouts or components.
+
+Create an original visual identity inspired by the quality and interaction patterns of these references.
+
+## Color Palette
+
+Follow this exact palette:
+
+- Primary yellow: #FDC921
+- Secondary yellow: #FDD85D
+- Warm white: #FFFDF7
+- Light blue: #99D6EA
+- Muted blue: #6798C0
+
+Suggested usage:
+
+- Warm white for the main canvas.
+- Yellow for highlights, strong CTAs, and visual accents.
+- Light blue for secondary visual sections.
+- Muted blue for supporting elements.
+- Dark neutral tones for typography and contrast.
+
+Do not force every color into every section.
+
+Keep the palette balanced and sophisticated.
+
+## Typography
+
+I particularly like the typography used on:
+
+https://unitedcarriers.com/
+
+Inspect the font and identify the actual typeface if possible.
+
+Check its licensing and identify an appropriate open-source alternative if required.
+
+The typography direction should include:
+
+- Large, bold, confident headings.
+- Strong typographic hierarchy.
+- Clean sans-serif body text.
+- Comfortable reading widths.
+- Proper line heights.
+- Intentional letter spacing.
+- Clear section headings.
+- No unnecessary italics.
+
+Avoid tiny text and excessively condensed fonts.
+
+## Layout and Composition
+
+Use:
+
+- Full-width compositions.
+- Generous whitespace.
+- Strong grid systems.
+- Balanced content and imagery.
+- Large typography where appropriate.
+- Asymmetric layouts.
+- Carefully designed cards.
+- Strong visual separation between sections.
+- Consistent section spacing.
+- Clear CTA placement.
+
+Avoid:
+
+- Narrow content sections.
+- Repetitive card grids.
+- Excessive rounded containers.
+- Unnecessary gradients.
+- Repeated generic split layouts.
+- Excessive decorative elements.
+- Overused glassmorphism.
+- Generic AI-looking illustrations.
+
+The website should feel art-directed, not assembled from random UI components.
+
+---
+
+# 10. ANIMATIONS AND INTERACTIVITY
+
+Scroll-based animations and interactivity are important.
+
+Use modern interactions where they improve the experience.
+
+Explore:
+
+- Smooth scroll-triggered reveals.
+- Staggered text animations.
+- Image mask reveals.
+- Parallax imagery.
+- Sticky storytelling sections.
+- Scroll-based transitions.
+- Interactive service showcases.
+- Animated statistics.
+- Hover-responsive cards.
+- Navigation transitions.
+- Button micro-interactions.
+- Animated process diagrams.
+- Progress indicators.
+
+Potential libraries:
+
+- Motion / Framer Motion.
+- GSAP with ScrollTrigger.
+- Lenis for smooth scrolling.
+- React Three Fiber only when a genuine 3D element adds value.
+
+Choose libraries based on actual requirements.
+
+Do not install unnecessary dependencies.
+
+Animations must be:
+
+- Smooth.
+- Intentional.
+- Performance-conscious.
+- Mobile-friendly.
+- Compatible with reduced-motion preferences.
+
+Avoid excessive parallax, constant floating elements, and effects that delay access to content.
+
+---
+
+# 11. IMAGE AND VISUAL ASSET STRATEGY
+
+Use high-quality, commercially usable images.
+
+Preferred sources:
+
+- Unsplash.
+- Pexels.
+- Other reputable sources with clear commercial licensing.
+
+Visual directions:
+
+- Modern laboratory environments.
+- Clean industrial environments.
+- Technology and infrastructure.
+- Modern workspaces.
+- Abstract networks and systems.
+- Logistics and fulfillment.
+- Premium product photography where appropriate.
+- Minimal architectural photography.
+- Technical and operational imagery.
+
+Avoid generic handshake photography, random office meetings, and cliché corporate imagery.
+
+Do not use copyrighted imagery without permission.
+
+## Image Optimization
+
+- Prefer WebP.
+- Use AVIF where beneficial.
+- Compress without noticeable quality loss.
+- Use responsive image sizing.
+- Set explicit image dimensions or aspect ratios.
+- Prevent layout shifts.
+- Lazy-load below-the-fold media.
+- Prioritize hero imagery.
+- Write descriptive, accurate alt text.
+- Never keyword-stuff alt text.
+
+Use Next.js Image and organize assets cleanly in the public directory where appropriate.
+
+For portfolio previews, use actual screenshots of the six existing websites.
+
+Do not substitute generic stock images.
+
+---
+
+# 12. TECHNOLOGY STACK
+
+Preferred framework: Next.js.
+
+Use the latest stable versions available at implementation time and verify compatibility through official documentation.
+
+Suggested stack:
+
+| Category | Technology |
+|---|---|
+| Framework | Next.js App Router |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| UI Components | shadcn/ui, customized |
+| Animation | Motion / Framer Motion |
+| Advanced Scroll | GSAP |
+| Smooth Scrolling | Lenis, if required |
+| Icons | Lucide React |
+| Forms | React Hook Form + Zod |
+| Email | Resend or another suitable provider |
+| Analytics | Google Analytics 4 |
+| Search Monitoring | Google Search Console |
+| Deployment | Vercel |
+| Image Optimization | Next.js Image |
+
+Use Server Components by default.
+
+Use Client Components only where interactive functionality requires them.
+
+Do not unnecessarily convert the application into a client-rendered application.
+
+## Suggested Architecture
+
+Organize the project professionally.
+
+Separate:
+
+- App routes.
+- Shared layouts.
+- Reusable components.
+- Homepage sections.
+- Service components.
+- Portfolio components.
+- Case study templates.
+- Animation components.
+- Form components.
+- Data files.
+- SEO utilities.
+- Schema generators.
+- Hooks.
+- Types.
+- Configuration.
+- Assets.
+
+Use reusable templates where appropriate, but every service page must contain genuinely unique, page-specific content.
+
+Avoid duplicating pages by simply replacing service names.
+
+## CMS Consideration
+
+A CMS is not mandatory at the beginning.
+
+However, consider Payload CMS if we expect to publish substantial SEO content and frequently update case studies.
+
+Make the architecture CMS-ready without introducing unnecessary infrastructure before it is needed.
+
+---
+
+# 13. CONVERSION RATE OPTIMIZATION
+
+The main business objective is to convert qualified visitors into leads.
+
+Build the website around clear customer journeys.
+
+Include:
+
+- Strong hero CTA.
+- Contextual service CTAs.
+- Portfolio CTAs.
+- Case study CTAs.
+- Easily accessible navigation CTA.
+- Interactive qualification quiz.
+- Clear service explanations.
+- Genuine trust indicators.
+- Verified performance metrics.
+- Clear process explanations.
+- Relevant FAQs.
+- Strong closing CTA.
+
+Potential CTA language:
+
+- Build Your Infrastructure.
+- Discuss Your Project.
+- Get a Website Assessment.
+- Explore Our Services.
+- Tell Us What You Need.
+- Start Your Project.
+
+Do not use the same generic CTA everywhere.
+
+Match the CTA to the visitor's intent and stage of consideration.
+
+---
+
+# 14. CONTENT WRITING GUIDELINES
+
+Website content must sound like an experienced human team that genuinely understands the industry.
+
+Tone:
+
+- Professional.
+- Confident.
+- Direct.
+- Knowledgeable.
+- Human.
+- Industry-aware.
+- Practical.
+- Clear.
+
+Strict content rules:
+
+1. Do not use em dashes anywhere in website copy.
+2. Avoid exaggerated marketing claims.
+3. Avoid unnecessary buzzwords.
+4. No keyword stuffing.
+5. No repetitive paragraphs.
+6. Avoid vague claims without explaining their value.
+7. Use meaningful headings.
+8. Explain technical subjects clearly.
+9. Write around genuine business problems.
+10. Use natural keyword variations.
+11. Prioritize useful information over arbitrary word counts.
+12. Never fabricate case studies.
+13. Never invent client testimonials.
+14. Never invent certifications or partnerships.
+15. Never fabricate performance metrics.
+16. Avoid robotic AI-style writing.
+
+Do not publish content that sounds like a generic agency template.
+
+---
+
+# 15. RESPONSIVE DESIGN
+
+The website must be carefully designed for:
+
+- Desktop.
+- Laptop.
+- Tablet.
+- Mobile.
+
+Do not simply shrink the desktop layout.
+
+Consider:
+
+- Mobile-specific section compositions.
+- Appropriate heading sizes.
+- Mobile navigation.
+- Touch-friendly interactions.
+- Responsive imagery.
+- Correct spacing.
+- Readable typography.
+- Accessible buttons.
+- Optimized animations.
+- Horizontal overflow prevention.
+
+Test multiple viewport sizes.
+
+Mobile should feel intentionally designed, not compressed.
+
+---
+
+# 16. PERFORMANCE, ACCESSIBILITY AND QUALITY
+
+Implement:
+
+- Semantic HTML.
+- Correct heading hierarchy.
+- Keyboard navigation.
+- Accessible forms.
+- Appropriate ARIA attributes.
+- Visible focus states.
+- Sufficient color contrast.
+- Reduced-motion support.
+- Optimized font loading.
+- Efficient rendering.
+- Error boundaries where appropriate.
+- Secure environment variable handling.
+- Spam protection.
+- Appropriate image loading priorities.
+
+Run production builds.
+
+Resolve:
+
+- TypeScript errors.
+- Lint errors.
+- Hydration errors.
+- Console warnings.
+- Broken links.
+- Responsive layout issues.
+- Form errors.
+- Accessibility issues.
+
+Do not sacrifice performance for visual effects.
+
+---
+
+# 17. DEVELOPMENT WORKFLOW
+
+Do not jump directly into coding the homepage.
+
+Follow the phases below.
+
+## PHASE 1: RESEARCH AND DISCOVERY
+
+1. Inspect the two business reference websites.
+2. Research the RUO peptide business infrastructure market.
+3. Research relevant competitors.
+4. Identify customer pain points.
+5. Inspect all six existing client websites.
+6. Research keyword opportunities.
+7. Analyze search intent.
+8. Review official technical documentation.
+9. Review applicable regulatory documentation.
+10. Identify differentiation opportunities.
+
+Deliverables:
+
+- Research summary.
+- Business positioning analysis.
+- Competitor analysis.
+- Existing portfolio analysis.
+- Customer pain point map.
+- Initial keyword research.
+- SEO opportunity analysis.
+
+## PHASE 2: WEBSITE STRATEGY
+
+Prepare:
+
+- Brand positioning.
+- Messaging hierarchy.
+- Complete sitemap.
+- Page hierarchy.
+- Service categorization.
+- Homepage section structure.
+- Keyword-to-page mapping.
+- Internal linking architecture.
+- Content strategy.
+- Conversion strategy.
+- Portfolio and case study architecture.
+
+Do not proceed without a coherent strategy.
+
+## PHASE 3: DESIGN SYSTEM
+
+Establish:
+
+- Color tokens.
+- Typography.
+- Spacing scale.
+- Grid system.
+- Button styles.
+- Navigation.
+- Card styles.
+- Section patterns.
+- Animation rules.
+- Responsive breakpoints.
+
+Develop a cohesive and original visual system.
+
+## PHASE 4: DEVELOPMENT
+
+Develop:
+
+1. Shared layouts and navigation.
+2. Homepage.
+3. Service overview.
+4. Individual service pages.
+5. Portfolio.
+6. Individual case studies.
+7. Resources and blog.
+8. About page.
+9. Contact qualification quiz.
+10. Legal pages.
+11. SEO infrastructure.
+
+Use maintainable, reusable components.
+
+## PHASE 5: SEO IMPLEMENTATION
+
+Implement:
+
+- Metadata.
+- Structured data.
+- Sitemap.
+- Robots.txt.
+- Canonical URLs.
+- Internal linking.
+- Breadcrumbs.
+- Image optimization.
+- Indexability controls.
+- Analytics preparation.
+- Search Console readiness.
+
+## PHASE 6: TESTING AND REFINEMENT
+
+Test:
+
+- Desktop responsiveness.
+- Tablet responsiveness.
+- Mobile responsiveness.
+- Navigation.
+- Forms.
+- Animations.
+- Accessibility.
+- Page speed.
+- Core Web Vitals.
+- Metadata.
+- Structured data.
+- Internal links.
+- Broken links.
+- Crawlability.
+- Production build.
+
+Do not consider the project finished until these checks have been performed.
+
+---
+
+# 18. IMPORTANT DEVELOPMENT RULES
+
+- Work directly inside the existing local project folder.
+- Inspect existing files before modifying anything.
+- Preserve useful existing configurations.
+- Avoid unnecessary overwriting.
+- Use reusable components.
+- Maintain clean and scalable code.
+- Avoid unnecessary dependencies.
+- Do not create unfinished placeholder sections.
+- Do not invent statistics.
+- Do not invent client logos.
+- Do not invent testimonials.
+- Do not invent case study outcomes.
+- Do not use lorem ipsum.
+- Do not create thin SEO pages.
+- Do not duplicate service content.
+- Do not sacrifice accessibility for animations.
+- Do not sacrifice page speed for design.
+- Do not sacrifice readability for visual effects.
+- Do not use generic AI-generated landing page patterns.
+
+If business information, client details, pricing, case study data, operational capabilities, or integrations are unavailable, create clearly identified placeholders requiring confirmation.
+
+Never present assumptions as established facts.
+
+If a service is not yet confirmed as actively delivered, distinguish it from established capabilities.
+
+---
+
+# 19. FINAL QUALITY EXPECTATION
+
+The final website should feel like a premium, established, industry-focused technology and infrastructure company.
+
+The visitor should immediately understand:
+
+1. Who we serve.
+2. What problems we solve.
+3. What services we provide.
+4. Why our industry-specific experience matters.
+5. What evidence supports our expertise.
+6. What makes our approach different.
+7. How they can start working with us.
+
+The website must combine:
+
+- Strong brand positioning.
+- Distinctive visual design.
+- Comprehensive service architecture.
+- Genuine industry expertise.
+- A real client portfolio.
+- Search-intent-focused content.
+- Technical SEO.
+- Conversion optimization.
+- Excellent performance.
+- Responsive design.
+- Thoughtful interactions.
+
+Do not settle for a basic agency website with a hero, a few service cards, and a contact form.
+
+Build a complete digital presence with a strong information architecture, genuine industry knowledge, distinctive design, and a technically sound foundation for long-term organic search growth.
+
+## FIRST ACTION: DO NOT START CODING IMMEDIATELY.
+
+Start with Phase 1 and Phase 2.
+
+First, inspect the existing project folder, research the industry and reference websites, inspect all six portfolio websites, and prepare the complete strategic plan.
+
+Present the following before full development:
+
+1. Business and competitor research findings.
+2. Analysis of all six existing client websites.
+3. Recommended brand positioning and messaging.
+4. Complete website sitemap.
+5. Homepage section-by-section architecture.
+6. Service page architecture.
+7. Keyword research and keyword-to-page mapping.
+8. Search intent analysis.
+9. Internal linking strategy.
+10. Case study and portfolio presentation strategy.
+11. Proposed design system.
+12. Recommended technology architecture.
+
+Explain important decisions and identify missing business information that requires confirmation.
+
+Once the strategy is established, proceed with development in structured phases.
+
+Do not skip planning, research, or SEO architecture.
+
+The ultimate objective is to build a website that does not merely look premium but also communicates real industry experience, attracts qualified organic traffic, establishes topical authority, and converts the right businesses into clients.

@@ -1,0 +1,30 @@
+import {
+  CreditCard,
+  ClipboardCheck,
+  FileCheck2,
+  Globe,
+  Headset,
+  LayoutDashboard,
+  Mail,
+  Megaphone,
+  PackageCheck,
+  Search,
+  Share2,
+  ShieldCheck,
+  type LucideIcon,
+} from "lucide-react";
+
+export const serviceIcons: Record<string, LucideIcon> = {
+  "ruo-peptide-website-development": Globe,
+  "payment-processing": CreditCard,
+  "fulfillment-logistics": PackageCheck,
+  "business-dashboards": LayoutDashboard,
+  "customer-support": Headset,
+  "meta-advertising": Megaphone,
+  "affiliate-management": Share2,
+  "email-marketing": Mail,
+  "seo-geo-aeo": Search,
+  "site-audits": ClipboardCheck,
+  "supplier-verification": ShieldCheck,
+  "compliance-support": FileCheck2,
+};

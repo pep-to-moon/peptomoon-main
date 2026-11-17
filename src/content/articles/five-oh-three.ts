@@ -1,0 +1,147 @@
+import { siteConfig } from "@/config/site";
+import type { Article } from "../types";
+import { callout, h2, h3, ol, p, table, ul } from "./helpers";
+
+const brand = siteConfig.name;
+
+export const fiveOhThree: Article = {
+  slug: "503a-503b-and-ruo-retail",
+  title: "503A and 503B explained, and why they do not describe ordinary RUO retail",
+  seo: {
+    title: `503A and 503B Explained for RUO Peptide Sellers | ${brand}`,
+    description:
+      "What sections 503A and 503B of the FD&C Act cover, why they concern licensed pharmacies and outsourcing facilities, and why RUO retail is a different thing.",
+  },
+  primaryKeyword: "503A 503B explained RUO",
+  excerpt:
+    "Sections 503A and 503B describe licensed compounding. They do not describe ordinary research-product retail. Here is the difference, and why recent headlines need care.",
+  topic: "Industry Compliance",
+  published: "2026-11-17",
+  updated: "2026-11-17",
+  service: "compliance-support",
+  related: ["ruo-label-is-not-a-compliance-strategy", "infrastructure-behind-an-ruo-peptide-business"],
+  needsCounselReview: true,
+  quickAnswer:
+    "Section 503A of the Federal Food, Drug, and Cosmetic Act covers compounding by licensed pharmacists and physicians, generally for an identified patient on the basis of a prescription. Section 503B covers outsourcing facilities that register with FDA and meet current good manufacturing practice requirements. Both come with conditions, including conditions about ingredients. A business that sells research chemicals is neither, and labelling a product for research use does not bring it under either section.",
+  takeaways: [
+    "503A and 503B are legal frameworks for licensed pharmacy and facility activity. They are not routes open to any business that sells peptides.",
+    "503A is about patient-specific compounding by licensed professionals. 503B is about registered outsourcing facilities held to manufacturing standards.",
+    "Neither section offers an exemption to retailers, and a research-use label does not create one.",
+    "Headlines about lists and committee votes describe steps in a process. A recommendation is not final agency action, and removal from a list is not permission for any seller.",
+    "Read the primary documents, and never imply in your marketing that your business falls under either section.",
+  ],
+  blocks: [
+    p("Sections 503A and 503B come up constantly in conversations about peptides. They are often described as if they were a route open to any business that sells peptides, or as a sign that regulators have relaxed. They are not. They are legal frameworks for licensed pharmacy and facility activity, with conditions attached, and they say nothing that applies to an ordinary seller of research chemicals. This guide explains what each section covers, why the difference matters, and how to read news about them without being misled."),
+    callout("General information, not legal advice", "This article summarises public law at a high level. It does not advise on your situation. Confirm details with the statutes, FDA's current pages and qualified counsel."),
+    h2("Why these sections matter to this industry"),
+    p("The terms appear in marketing, social posts and forum threads because they sound authoritative. A seller may say that a product is 'compounded', or that an ingredient is 'on the 503A list', or that a development means peptides are now 'legal'. Customers, affiliates and even some operators repeat these phrases without knowing what the sections cover. That creates risk for anyone who repeats them, because a statement that implies your business operates under a framework it does not belong to is a misstatement about the business."),
+    h2("What 503A and 503B are"),
+    p("[Section 503A](https://www.law.cornell.edu/uscode/text/21/353a) of the Federal Food, Drug, and Cosmetic Act covers compounding by licensed pharmacists and physicians, in general for an identified individual patient on the basis of a prescription. [Section 503B](https://www.law.cornell.edu/uscode/text/21/353b) covers outsourcing facilities that register with FDA and meet current good manufacturing practice requirements. Both come with conditions, including conditions about the ingredients that may be used."),
+    p("The word that matters in both is compounding. Compounding means a licensed professional or facility combining or altering ingredients to prepare a medicine, under rules that govern who may do it, for whom, from what and to what standard. It is a regulated activity within the practice of pharmacy and medicine, and it has no connection to selling a laboratory chemical."),
+    h2("The two frameworks compared"),
+    table(
+      "Section 503A and Section 503B at a glance",
+      ["Feature", "Section 503A", "Section 503B"],
+      ["Who it applies to", "Licensed pharmacists and physicians, in licensed pharmacies or similar settings.", "Outsourcing facilities that register with FDA."],
+      ["Typical purpose", "Preparing a medicine for an identified individual patient.", "Preparing medicines in larger quantities, including for healthcare providers to hold."],
+      ["Prescription", "Generally required for an identified patient.", "Not generally patient-specific."],
+      ["Manufacturing standard", "State pharmacy practice rules and professional standards.", "Current good manufacturing practice requirements."],
+      ["Oversight", "Primarily state boards of pharmacy, with FDA authority.", "Registration with FDA and inspection by FDA."],
+      ["Ingredient conditions", "Bulk ingredients must meet conditions set out in the statute.", "Bulk ingredients must meet conditions set out in the statute, which differ from 503A."],
+    ),
+    p("The table is a simplification, and the conditions in each section have detail that this summary leaves out. Its purpose is to show how different these frameworks are from one another, and from retail."),
+    h3("What the ingredient conditions mean"),
+    p("Both sections restrict the bulk drug substances that may be used. In general terms, an ingredient has to meet specified criteria: for example, that it be covered by a recognised monograph, that it be a component of a drug approved by FDA, or that it appear on a list that FDA maintains for that purpose. Whether a particular substance meets any of these conditions is a question of current law and current FDA lists, which change, and it is a question for the licensed professional and the facility, and for their counsel."),
+    h2("Why this does not describe RUO retail"),
+    p("A business that sells research chemicals is not a licensed pharmacy compounding for patients, and it is not a registered outsourcing facility. Labelling a product for research use does not bring it under either framework, and neither framework offers an exemption to retailers. For that reason we never imply that an ordinary RUO retailer qualifies for 503A or 503B."),
+    ul(
+      "A research chemical retailer sells to buyers who say they will use the products in laboratories. A 503A pharmacy prepares a medicine for a patient.",
+      "A retailer is not licensed as a pharmacy by a state board. A 503A compounder is.",
+      "A retailer is not registered with FDA as an outsourcing facility. A 503B facility is.",
+      "A retailer's label states a research use. A compounded medicine is prepared for a human patient.",
+    ),
+    p("It follows that language borrowed from these frameworks should not appear in an RUO business's marketing. Describing a product as 'compounded', as 'made under 503A', or as 'pharmacy grade' states or implies a relationship with a framework that the business is not part of. If you see these phrases in your own materials, or in the materials of your affiliates, they are worth reviewing with counsel."),
+    h2("Why recent headlines need care"),
+    p("Reports in 2026 describe FDA removing several peptides from its Category 2 list of substances of concern for compounding, with BPC-157 reportedly removed in April 2026, and an advisory committee voting 8 to 6 on 23 July 2026 to recommend adding BPC-157 to the 503A bulks list for a specific condition, against the agency's own reviewers. One report said no final FDA action had been published as of 20 October 2026."),
+    table(
+      "What the headlines say and what they do not mean",
+      ["What was reported", "What it does not mean"],
+      ["A substance was removed from a list of substances of concern for compounding.", "It does not mean any seller may sell it, or that it has been authorised for any use."],
+      ["An advisory committee voted to recommend an addition to a list.", "A recommendation is not final agency action. The agency may decide differently."],
+      ["The vote was close, and the agency's reviewers disagreed with it.", "It does not predict the outcome."],
+      ["No final action had been published at a given date.", "The position can change, so check current notices."],
+    ),
+    ul(
+      "A committee recommendation is not final agency action.",
+      "Removal from a list of substances of concern is not the same as permission for any seller.",
+      "Headlines saying FDA has 'cleared' peptides overstate what happened.",
+      "Details change, so read FDA's current Federal Register notices and compounding pages.",
+    ),
+    p("We have not independently verified each of these reports, which come from secondary sources. Treat them as a prompt to check the primary documents."),
+    h2("How to read an FDA notice yourself"),
+    p("You do not have to rely on summaries. The primary documents are public, and learning to read them protects you from headlines. A short method is enough."),
+    ol(
+      "Find the primary document: the Federal Register notice, the FDA web page or the committee's published materials, not a post about them.",
+      "Identify what kind of document it is: a proposal, a final rule, a guidance, a meeting notice or a list update.",
+      "Look at the date and at the effective date, because the two differ and a proposal has no effect until it is finalised.",
+      "Find what exactly changed: which substance, which list, for what purpose and under what conditions.",
+      "Check who the change applies to: licensed pharmacies, outsourcing facilities or someone else.",
+      "Note what the document does not say. If it does not mention retail or research sellers, it does not address them.",
+    ),
+    h2("Terms you will meet in the news"),
+    p("Much of the confusion around this topic comes from vocabulary. These are the terms that appear most often, in plain language. The definitions are simplified, and the statutes and FDA's pages are the authority."),
+    table(
+      "A short glossary",
+      ["Term", "What it means in this context"],
+      ["Compounding", "A licensed professional or facility combining or altering ingredients to prepare a medicine under the rules that apply to it."],
+      ["Bulk drug substance", "An active ingredient used in preparing a drug, as distinct from the finished medicine."],
+      ["Monograph", "A published standard that describes the identity, strength, quality and purity of a substance."],
+      ["Outsourcing facility", "A facility that registers with FDA under Section 503B and is held to current good manufacturing practice."],
+      ["Current good manufacturing practice", "Minimum requirements for the methods, facilities and controls used to make a drug."],
+      ["Bulks list", "A list FDA maintains of substances that may be used in compounding under the conditions of a section."],
+      ["Category 2", "A grouping in FDA's interim approach for nominated substances that the agency has flagged for safety concerns, pending evaluation."],
+    ),
+    p("Keeping these terms straight makes it easier to spot a claim that has been stretched. A post that says a substance is now allowed usually means something much narrower, such as a change to a list that concerns licensed compounders."),
+    h2("If you want to work with licensed pharmacies"),
+    p("If your business is an ordinary RUO retailer, the compounding frameworks are the wrong lens. If you want to work with licensed pharmacies, that is a different legal relationship with different requirements, and it needs qualified counsel. It involves licences, prescriptions, patients and state and federal oversight, none of which an RUO retail business has. It is a different business, not an upgrade to the current one, and it should not be entered into on the strength of a headline."),
+    h2("What to do on your own site"),
+    ul(
+      "Search your site, emails, social posts and affiliate materials for the terms 503A, 503B, compounded and pharmacy, and read each use in context.",
+      "Remove any wording that implies your business operates under either framework, with your counsel's input.",
+      "Brief your team and affiliates, in writing, on what they may and may not say.",
+      "Do not repeat headlines about lists or votes as if they were permissions.",
+      "Keep a dated record of what you reviewed and changed.",
+    ),
+    p("For the practical side of reviewing your own site, see [why a research-use label is not a compliance strategy](/resources/ruo-label-is-not-a-compliance-strategy) and our [compliance support service](/services/compliance-support). We are not a law firm, and a review is not an approval."),
+  ],
+  faqs: [
+    {
+      q: "Can an RUO retailer qualify for 503A or 503B?",
+      a: "Not by labelling its products for research use. Section 503A concerns licensed pharmacists and physicians compounding for patients, and Section 503B concerns registered outsourcing facilities. A business that sells research chemicals is neither, and neither section offers an exemption to retailers. If you want to explore working with licensed pharmacies, that is a different relationship that needs qualified counsel.",
+    },
+    {
+      q: "Does a substance being on a 503A list mean I can sell it?",
+      a: "No. A list in this context concerns what licensed compounders may use under conditions, not what any seller may sell. Being on or off a list does not authorise a retailer to sell a substance or to describe it in any particular way. Read the primary document and ask counsel what it means for your own position.",
+    },
+    {
+      q: "What happens after an advisory committee votes?",
+      a: "The committee gives a recommendation, and the agency decides what to do with it. It may adopt the recommendation, change it or decide something different, and the process usually involves a notice and, where relevant, a rulemaking with time for comment. A vote is a step, and the outcome is what the agency publishes afterwards.",
+    },
+    {
+      q: "Can I say my products are compounded or pharmacy grade?",
+      a: "Statements like these describe a relationship with licensed compounding that an ordinary RUO retailer does not have, so they can misstate the nature of the business. Review any use of these terms with your counsel, and remove wording that implies your business operates under a framework it does not belong to.",
+    },
+    {
+      q: "Where do I find the official text?",
+      a: "The statutes are published in the United States Code, where Sections 503A and 503B appear as 21 U.S.C. 353a and 353b, and links to both are in the sources below. FDA publishes its compounding pages, lists and notices on its own website and in the Federal Register. Use those sources, and check the date of anything you read, because the position can change.",
+    },
+    {
+      q: "Should I stop selling if I am unsure where I stand?",
+      a: "That is a decision for you and your counsel, and we cannot make it for you. What we can say is that uncertainty is a reason to get advice, to review what you publish and to keep records of what you checked. Acting on a headline, in either direction, without reading the primary documents is the thing to avoid.",
+    },
+  ],
+  sources: [
+    { label: "21 U.S.C. 353a (Section 503A)", url: "https://www.law.cornell.edu/uscode/text/21/353a", checked: "2026-11-17" },
+    { label: "21 U.S.C. 353b (Section 503B)", url: "https://www.law.cornell.edu/uscode/text/21/353b", checked: "2026-11-17" },
+  ],
+};
