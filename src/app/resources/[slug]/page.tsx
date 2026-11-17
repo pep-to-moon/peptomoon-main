@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
 import { ArticleToc, type TocItem } from "@/components/resources/article-toc";
+import { HowWeResearch } from "@/components/resources/how-we-research";
 import { Inline, RichText } from "@/components/resources/rich-text";
 import { JsonLd } from "@/components/seo/json-ld";
 import { ButtonLink } from "@/components/ui/button";
@@ -76,7 +77,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           lead={<p>{article.excerpt}</p>}
         >
           <p className="label mt-8 text-ink-soft">
-            By the {siteConfig.name} team. Updated <time dateTime={article.updated}>{formatDate(article.updated)}</time>.{" "}
+            By the {siteConfig.name} team (<Link href="/editorial-policy" className="underline underline-offset-4">editorial policy</Link>). Updated <time dateTime={article.updated}>{formatDate(article.updated)}</time>.{" "}
             {readingMinutes(article)} minute read.
           </p>
         </PageHero>
@@ -121,6 +122,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 </div>
               </section>
             )}
+
+            <HowWeResearch article={article} />
 
             {article.sources.length > 0 && (
               <section aria-labelledby="sources" className="mt-14 border-t border-ink/20 pt-8">

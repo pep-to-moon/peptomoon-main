@@ -19,6 +19,7 @@ export const legalNav = [
   { label: "Terms of Service", href: "/terms-of-service" },
   { label: "Disclaimer", href: "/disclaimer" },
   { label: "Cookie Policy", href: "/cookie-policy" },
+  { label: "Editorial Policy", href: "/editorial-policy" },
 ];
 
 export const primaryCta = { label: "Start a project", href: "/contact" };

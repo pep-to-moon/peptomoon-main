@@ -19,6 +19,7 @@ const routes = [
   "/terms-of-service",
   "/disclaimer",
   "/cookie-policy",
+  "/editorial-policy",
 ];
 
 /** Fetches a quick-check question from the API and answers it, as the form does. */

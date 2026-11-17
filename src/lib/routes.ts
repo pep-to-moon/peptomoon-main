@@ -24,6 +24,7 @@ export function getStaticRoutes(): RouteEntry[] {
     { path: "/terms-of-service", lastModified: SITE_UPDATED, priority: 0.2, changeFrequency: "yearly" },
     { path: "/disclaimer", lastModified: SITE_UPDATED, priority: 0.2, changeFrequency: "yearly" },
     { path: "/cookie-policy", lastModified: SITE_UPDATED, priority: 0.2, changeFrequency: "yearly" },
+    { path: "/editorial-policy", lastModified: SITE_UPDATED, priority: 0.4, changeFrequency: "yearly" },
   ];
 }
 

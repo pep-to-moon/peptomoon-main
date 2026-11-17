@@ -5,6 +5,13 @@ import { webPageSchema } from "@/lib/seo/schema";
 import { formatDate } from "@/lib/utils";
 import { ConsentReset } from "./consent-reset";
 
+/** Anchor for a section heading, so other pages can link straight to it, for example /editorial-policy#corrections. */
+const sectionId = (heading: string) =>
+  heading
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+
 export function LegalPage({ doc }: { doc: LegalDoc }) {
   const path = `/${doc.slug}`;
   return (
@@ -28,7 +35,7 @@ export function LegalPage({ doc }: { doc: LegalDoc }) {
               <div className="prose-article">
                 <p className="text-[1.1875rem]">{doc.intro}</p>
                 {doc.sections.map((s) => (
-                  <section key={s.heading} className="mt-10 border-t border-line pt-8">
+                  <section key={s.heading} id={sectionId(s.heading)} className="mt-10 scroll-mt-28 border-t border-line pt-8">
                     <h2 className="heading-sm">{s.heading}</h2>
                     {s.paragraphs?.map((p) => (
                       <p key={p} className="mt-4">

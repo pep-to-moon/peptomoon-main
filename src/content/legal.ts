@@ -3,7 +3,7 @@ import { siteConfig } from "@/config/site";
 export type LegalTable = { caption: string; head: string[]; rows: string[][] };
 export type LegalSection = { heading: string; paragraphs?: string[]; list?: string[]; table?: LegalTable };
 export type LegalDoc = {
-  slug: "privacy-policy" | "terms-of-service" | "disclaimer" | "cookie-policy";
+  slug: "privacy-policy" | "terms-of-service" | "disclaimer" | "cookie-policy" | "editorial-policy";
   title: string;
   description: string;
   updated: string;
@@ -325,6 +325,80 @@ export const legalDocs: LegalDoc[] = [
         heading: "Changes to this policy",
         paragraphs: [
           "We update this policy when the cookies or storage on the site change. The date at the top shows when it was last revised.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "editorial-policy",
+    title: "Editorial Policy",
+    description: `How ${brand} researches, verifies, dates and corrects its guides, case studies and page content, and what it will not publish.`,
+    updated: "2026-11-17",
+    intro: `This page explains how ${brand} researches, writes, checks and corrects what it publishes: the guides, case studies, service pages and portfolio facts on this site. It exists so you can see the standard we hold ourselves to and tell us when we miss it.`,
+    sections: [
+      {
+        heading: "Who writes what we publish",
+        paragraphs: [
+          `Guides and pages are written by the ${brand} team and published under the team's name rather than individual bylines. We do not attach a person's name or credentials to a piece unless that person wrote or reviewed it and agreed to be named.`,
+          "The team builds and runs research-use-only e-commerce sites, so we write from operating experience. Experience is not a substitute for sources. Any claim about a rule, a platform policy or a regulation cites a source and the date we checked it.",
+        ],
+      },
+      {
+        heading: "How we verify claims",
+        paragraphs: ["Different kinds of claim get different checks. If a claim fails its check, it is left out or labelled as unconfirmed."],
+        table: {
+          caption: "What we check for each kind of claim and what happens if it cannot be verified",
+          head: ["Kind of claim", "What we check", "If we cannot verify it"],
+          rows: [
+            ["Rules and regulation", "A primary source, such as the regulator, the statute or the text of the policy, with the date we checked it.", "We say it is unconfirmed, or leave it out."],
+            ["Platform and processor policies", "The provider's current published policy, read on the date shown in the sources list.", "We describe the general pattern and tell you to read the current policy."],
+            ["Case study facts", "Each fact is confirmed against the live site or a record and carries a confirmation date.", "The fact is not shown."],
+            ["Figures and statistics", "The original source of the number.", "We do not use the number."],
+            ["Product and scientific statements", "Kept to what a supplier document shows. We do not make claims about use, dosing or outcomes.", "Left out."],
+            ["Claims about our own work", "Something you can look at: a live site, a dated document or a stated limit.", "We remove the claim."],
+          ],
+        },
+      },
+      {
+        heading: "Sources and how we use them",
+        list: [
+          "Primary sources come first: regulators, statutes, official policy pages and the documents themselves.",
+          "Vendor pages, affiliate content and forum posts are treated as marketing or opinion. We do not rely on one for a factual claim.",
+          "Each guide ends with a sources list showing the date we last checked each link.",
+          "We link to sources instead of copying them.",
+        ],
+      },
+      {
+        heading: "Dates and updates",
+        paragraphs: [
+          "Every guide shows when it was last updated. We revisit a guide when the rules or platforms it describes change, and we change its date only when its content changes.",
+        ],
+      },
+      {
+        heading: "Legal and regulatory review",
+        paragraphs: [
+          `Guides that discuss regulation are flagged for review by qualified counsel and are held back from the live site until that review is recorded. A review of our content is not legal advice to you, and ${brand} is not a law firm.`,
+        ],
+      },
+      {
+        heading: "Corrections",
+        paragraphs: [
+          `If something we publish is wrong or out of date, tell us by ${reachShort}. We check the report against the source and correct the page. When a change affects what a reader would do, we add a dated note to the page. We aim to reply within five business days. We do not quietly change figures that readers may have relied on.`,
+        ],
+      },
+      {
+        heading: "Commercial relationships",
+        paragraphs: [
+          `${brand} sells services to research-use-only peptide businesses. A guide may point to a service we offer, and when it does, it links to that service page so the connection is visible. We do not accept payment for placement in our guides and we do not publish sponsored content. Websites shown in our portfolio belong to our clients, and we say so.`,
+        ],
+      },
+      {
+        heading: "What we will not publish",
+        list: [
+          "Dosing, usage or outcome content, or anything that implies human or veterinary use.",
+          "Guidance on how to get around the rules of a payment processor, advertising platform or regulator. We do not give it.",
+          "Invented reviews, testimonials, statistics, credentials or people.",
+          "Promises of payment approval, search rankings, advertising acceptance or sales.",
         ],
       },
     ],
