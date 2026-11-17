@@ -132,6 +132,7 @@ export const processorShutdown: Article = {
       "Monitor declines, refund rate and chargeback ratio from the first day.",
     ),
     p("This is the work our [payment processing service](/services/payment-processing) covers: we help you work out why the account was closed, prepare the business and the site for a fresh review and implement the new processor on your site. We cannot promise that any provider will approve you, because that decision is theirs."),
+    p("For merchants who qualify, we also arrange [high-risk payment processing with no rolling reserve](/all-in-one#payments) through acquiring partners. The acquiring bank decides approval, rates and reserve terms after underwriting."),
     h2("Make sure it does not happen again"),
     ul(
       "Keep a cash buffer sized to your reserve and settlement terms.",

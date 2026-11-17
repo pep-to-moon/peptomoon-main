@@ -121,7 +121,7 @@ export const paymentsUnderwriting: Article = {
     h2("What never to do"),
     p("Do not misrepresent products or the business, hide business activities, use another business's account or try to bypass underwriting. These are breaches of provider terms, and they make every later problem worse. One especially serious example is processing payments for a different business through your own account, which providers treat as a grave violation. If a provider declines you, the right response is to find out why, fix what is fixable and look for a provider whose policy fits your business."),
     callout("No promises", "No one can guarantee approval, rates or uninterrupted processing. The decision belongs to the provider, and policies change. We describe how to prepare, and we never promise an outcome."),
-    p("Our [payment processing service](/services/payment-processing) covers preparation, provider fit, integration, monitoring and reconciliation. For the bigger picture, see the [infrastructure map](/resources/infrastructure-behind-an-ruo-peptide-business)."),
+    p("Our [payment processing service](/services/payment-processing) covers preparation, provider fit, integration, monitoring and reconciliation. Through acquiring partners we also arrange [merchant accounts from 3% for qualifying merchants](/all-in-one#payments), with the final terms set by the acquiring bank. For the bigger picture, see the [infrastructure map](/resources/infrastructure-behind-an-ruo-peptide-business)."),
   ],
   faqs: [
     {

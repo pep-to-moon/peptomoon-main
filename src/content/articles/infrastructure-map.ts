@@ -118,6 +118,7 @@ export const infrastructureMap: Article = {
     ),
     h2("Who should own what"),
     p("Infrastructure fails when everyone assumes someone else owns the join. Even in a small team, name an owner for each area, and name one person who owns the whole picture."),
+    p("If you would rather hand the joins to a single partner, our [all-in-one service](/all-in-one) gives you one team for every layer: website, payments, fulfillment, documentation and growth."),
     table(
       "Suggested ownership",
       ["Area", "Owner", "Reviews"],

@@ -14,6 +14,7 @@ import {
   SERVICE_VALUES,
   serviceLabels,
   serviceSlugToOption,
+  topicToOption,
   STATUS_VALUES,
   statusLabels,
   type InquiryValues,
@@ -85,8 +86,9 @@ export function Quiz({ fallbackEmail }: { fallbackEmail: string }) {
   const initial = useMemo(() => {
     const s = params.get("status");
     const svc = params.get("service");
+    const topic = params.get("topic");
     const status = (STATUS_VALUES as readonly string[]).includes(s ?? "") ? (s as StatusValue) : undefined;
-    const option = svc ? serviceSlugToOption[svc] : undefined;
+    const option = (svc ? serviceSlugToOption[svc] : undefined) ?? (topic ? topicToOption[topic] : undefined);
     return { status, services: option ? [option] : [] };
   }, [params]);
 
