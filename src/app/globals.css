@@ -363,3 +363,66 @@ details > summary::-webkit-details-marker {
     }
   }
 }
+
+/* /all-in-one redesign: line-draw motion, timeline line and smooth FAQ height. All of it is progressive; final states are the defaults. */
+@keyframes aio-draw {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.aio-draw {
+  stroke-dasharray: 100;
+  animation: aio-draw 1.4s var(--ease-out-expo) both;
+  animation-delay: calc(var(--d, 0) * 90ms + 200ms);
+}
+.aio-tl-line {
+  transform-origin: left;
+  transition: transform 0.9s var(--ease-out-expo);
+}
+.js [data-reveal]:not(.is-in) .aio-tl-line {
+  transform: scaleX(0);
+}
+:root {
+  interpolate-size: allow-keywords;
+}
+.aio-faq::details-content {
+  block-size: 0;
+  overflow: hidden;
+  transition:
+    block-size 0.35s var(--ease-out-expo),
+    content-visibility 0.35s allow-discrete;
+}
+.aio-faq[open]::details-content {
+  block-size: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  .aio-draw {
+    animation: none;
+    stroke-dasharray: none;
+  }
+  .aio-tl-line,
+  .aio-faq::details-content {
+    transition: none;
+  }
+  .js [data-reveal]:not(.is-in) .aio-tl-line {
+    transform: none;
+  }
+}
+@keyframes aio-fade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  [class*="aio-fade"] {
+    animation: none !important;
+  }
+}
