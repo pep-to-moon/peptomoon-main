@@ -16,7 +16,7 @@ export const supplierVerification: Service = {
       "A structured documentation review for RUO peptide suppliers: batch-matched reports, scorecards and records. We review documents and never invent results.",
   },
   h1: "Supplier verification and documentation review for RUO peptide businesses",
-  lead: "A structured review of supplier documentation, from batch records to laboratory reports, so decisions about who to buy from rest on evidence you can check.",
+  lead: "Supplier verification is a structured review of the documents behind a product: batch records, laboratory reports, method details and identity data. We write a standard, review each supplier against it, score the results and keep records by supplier and batch. We do not invent certifications, results or purity claims, and a review is not an approval.",
   what: [
     "Supplier risk is one of the largest operational risks in this industry: unverified manufacturers, specifications that change between batches, purity claims without support and shipments that do not arrive. We help you set a documentation standard, review what suppliers send against it and keep records you can stand behind.",
     "This is a documentation and process service. We review documents and build the framework. Unless a project explicitly includes independent laboratory testing arranged with a laboratory, we do not test samples ourselves.",
@@ -68,9 +68,9 @@ export const supplierVerification: Service = {
   ],
   visual: "supplier",
   faqs: [
-    { q: "Do you recommend suppliers?", a: "We do not publish supplier lists. We help you evaluate the suppliers you are considering against a clear standard." },
+    { q: "Do you recommend suppliers?", a: "We do not publish supplier lists or recommend a name. We help you evaluate the suppliers you are considering against a clear written standard: who they are, the documents for each batch, the laboratory and the method. You then decide, with scores and notes that show how each supplier compared." },
     { q: "What makes a good certificate of analysis?", a: "A good one is tied to a specific batch, names the laboratory, shows method details and the underlying data such as a chromatogram and an identity result, and is consistent with the product label. Even then it is one piece of evidence." },
-    { q: "Can selected documents be shown to customers?", a: "Yes. We help you decide what to show and make sure nothing is claimed beyond what the documents support." },
+    { q: "Can selected documents be shown to customers?", a: "Yes. We help you decide which documents to show and make sure nothing is claimed beyond what they support. A purity figure on its own is only a claim, so we work with the batch record, the named laboratory and the method behind it. Nothing shown should be stronger than the evidence." },
     { q: "A supplier sent a purity report but will not name the laboratory. What now?", a: "Treat it as no documentation. A figure with no named laboratory, no method and no data is a claim that cannot be checked. Ask for the full report from a laboratory you can contact, and do not buy until you have it. If the supplier refuses, that refusal is itself information." },
     { q: "How do I check that a certificate of analysis is real?", a: "Contact the laboratory using details you found yourself, quote the report number and ask it to confirm that it issued the report. Then check that the data is consistent: the trace matches the figure, the dates are possible and the batch number matches the vial. Write down what you checked and when." },
     { q: "A new batch arrived and the report looks different from the last one. Should I worry?", a: "Look at what changed: the laboratory, the method, the layout or the figures. A change is not automatically a problem, but treat it as a trigger for a full review. Ask the supplier to explain, compare batch numbers and dates, and hold the stock until you are satisfied." },

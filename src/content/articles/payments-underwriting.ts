@@ -21,8 +21,7 @@ export const paymentsUnderwriting: Article = {
   service: "payment-processing",
   related: ["payment-processor-shut-down-account", "infrastructure-behind-an-ruo-peptide-business", "review-a-peptide-suppliers-documentation"],
   needsCounselReview: false,
-  quickAnswer:
-    "Underwriting is a payment provider's review of whether to take your business and on what terms. It reads your application, your website, your policies and your history, and it continues after approval through monitoring. To prepare, make the site, the application and your documents tell the same accurate story, read the contract for reserves, holds and termination terms, watch your decline and chargeback rates, and plan for the day a provider relationship changes. No one can guarantee approval, because the decision belongs to the provider.",
+  quickAnswer: "Underwriting is a payment provider's review of whether to take your business and on what terms, and it continues after approval. To prepare, make your site, application and documents tell the same accurate story, read the contract for reserves, holds and termination terms, and watch decline and chargeback rates. No one can guarantee approval.",
   takeaways: [
     "Providers underwrite against their own policies, and many restrict or decline this category. Read the current policy of any provider you depend on.",
     "Reviewers compare your application with your website, so the business identity, product descriptions and policies must agree everywhere.",

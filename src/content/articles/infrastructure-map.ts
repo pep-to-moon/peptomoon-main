@@ -21,8 +21,7 @@ export const infrastructureMap: Article = {
   service: "ruo-peptide-website-development",
   related: ["peptide-store-architecture", "ruo-label-is-not-a-compliance-strategy", "payment-processing-for-ruo-stores"],
   needsCounselReview: false,
-  quickAnswer:
-    "An RUO peptide business runs on four groups of systems: the ones you build (website and catalogue), the ones that run the business (payments, fulfillment, support and reporting), the ones that bring customers (advertising, affiliates and email) and the ones that verify (supplier documentation and content review). Each group usually works alone. Problems start where one hands over to another, so plan the handovers before you plan the tools.",
+  quickAnswer: "An RUO peptide business runs on four groups of systems: build (website and catalogue), run (payments, fulfillment, support and reporting), grow (advertising, affiliates and email) and verify (supplier documents and content review). Each group usually works alone, and problems start where one hands over to another. Plan the handovers before you plan the tools.",
   takeaways: [
     "Think in four groups: build, run, grow and verify. Most businesses over-invest in the first and under-invest in the last two.",
     "Payments are the most fragile system and the one with the least room for error, so design the site around what a payment reviewer reads.",
@@ -147,7 +146,7 @@ export const infrastructureMap: Article = {
     },
     {
       q: "My payments keep getting limited. Is that an infrastructure problem?",
-      a: "Often it is partly one. Providers compare what you said in the application with what the site shows, what the policies say and how the business actually behaves. A mismatch in any of those is a common reason for a review. Check that your identity, product descriptions and policies agree everywhere, that your refund and shipping pages describe real practice, and that your chargeback rate is being watched. Then read your contract for reserve and hold terms. We cannot promise any provider will approve or keep you, because that decision is theirs.",
+      a: "Often it is partly one. Providers compare what you said in the application with what the site shows, what the policies say and how the business behaves, and a mismatch is a common reason for review. Check that identity, product descriptions and policies agree everywhere, that refund and shipping pages describe real practice, and that chargebacks are watched. Then read your contract for reserve and hold terms. No one can promise a provider will approve or keep you.",
     },
     {
       q: "Do I need a custom website, or is a store template enough?",

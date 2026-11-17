@@ -16,7 +16,7 @@ export const emailMarketing: Service = {
       "Domain authentication, transactional email, automation, segmentation and deliverability for RUO peptide stores. Consent respected, no inbox promises.",
   },
   h1: "Email infrastructure and marketing for RUO peptide stores",
-  lead: "Authenticated sending, transactional email, automation and segmentation that reach the inbox and respect consent, with reporting you can act on.",
+  lead: "Email infrastructure covers authenticated sending, transactional messages, automation and customer segmentation. We set up domain authentication so your mail is trusted, build order and account emails that work reliably, and report on results. Consent and unsubscribe rules are respected throughout. We cannot promise inbox placement or open rates.",
   what: [
     "Email is the one channel you own. We set up the foundation first, covering domain authentication, sending reputation and transactional templates, and then the flows that matter: welcome, abandoned cart, post-purchase and retention, plus broadcast campaigns with proper segmentation.",
     "Category rules apply to email too. Sending providers and mailbox services judge content, and the same discipline about claims that applies to your site applies to your messages.",
@@ -73,9 +73,9 @@ export const emailMarketing: Service = {
   ],
   visual: "email",
   faqs: [
-    { q: "Do I need DMARC?", a: "Major mailbox providers expect authenticated mail from bulk senders, and DMARC is part of that. We set it up in stages so legitimate mail is not blocked." },
-    { q: "Can you send my campaigns?", a: "We can build and operate campaigns within your approved messaging, or set everything up for your team to run." },
-    { q: "Which email platform do you use?", a: "We choose based on your volume, category rules and integrations." },
+    { q: "Do I need DMARC?", a: "Major mailbox providers expect authenticated mail from bulk senders, and DMARC is part of that. We set it up in stages, starting with monitoring, so legitimate mail is not blocked while you find every service that sends on your behalf. Once the reports are clean, we tighten the policy." },
+    { q: "Can you send my campaigns?", a: "We can build and operate campaigns within your approved messaging, or set everything up for your team to run. Either way, consent and unsubscribe rules are built in, and we do not write claims about product use or outcomes. We cannot promise inbox placement or open rates, because mailbox providers decide those." },
+    { q: "Which email platform do you use?", a: "We choose based on your volume, your category rules and your integrations, because email providers set their own rules about what they will send and some restrict certain products. We check a provider's current policy before building on it, and we tell you what it costs so there are no surprises later." },
     { q: "Our emails land in spam. How do we fix that?", a: "Check authentication first: SPF, DKIM and DMARC on the sending domain. Then look at list quality, since old and unengaged addresses hurt reputation, and at content, since some wording and very large images raise flags. Send gradually from a warmed sender, remove addresses that bounce and honour unsubscribes at once." },
     { q: "What can we email without making claims we should not make?", a: "Order and shipping messages, documentation updates, restock notices and plain product announcements stay close to facts. Avoid anything that describes effects on people or suggests personal use, and have the templates reviewed by your counsel. Every campaign should run from approved templates rather than fresh copy each time." },
     { q: "How do we collect consent properly?", a: "Ask clearly at signup, say what the person will receive, store when and how they agreed and make unsubscribing a single step. Do not add customers who have not agreed, and keep the record so you can show it. The rules that apply depend on where your subscribers are, so confirm them with counsel." },

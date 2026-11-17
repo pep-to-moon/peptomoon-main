@@ -16,7 +16,7 @@ export const customerSupport: Service = {
       "Helpdesk setup, ticket workflows, order-aware support and a knowledge base for RUO peptide stores, built to stay inside research-use positioning.",
   },
   h1: "Customer support infrastructure for RUO peptide businesses",
-  lead: "Helpdesk setup, ticket workflows, order-aware support and a knowledge base that answers questions without straying into usage advice.",
+  lead: "Customer support infrastructure covers the helpdesk, ticket routing, order-aware replies and a knowledge base your team can rely on. We set it up so customers get consistent answers about orders, shipping and documents, and it is built to stay clear of dosing, usage or outcome advice. We cannot promise customer satisfaction scores.",
   what: [
     "Support is where operational problems arrive: late shipments, payment questions, missing documents. We set up the helpdesk, the ticket categories, the automation and the knowledge base, and connect them to order data so agents see context.",
     "In this industry support also has a boundary to hold. Customers ask about dosing and personal use. Your team needs clear, consistent responses that stay inside research-use positioning, so we build those into macros and training notes.",
@@ -70,9 +70,9 @@ export const customerSupport: Service = {
   ],
   visual: "support",
   faqs: [
-    { q: "How should support answer usage questions?", a: "With a short, consistent response that explains the products are for research use only and that you cannot advise on use. We draft it with you and your counsel." },
-    { q: "Which helpdesk do you set up?", a: "We choose based on your volume, integrations and the platform's rules for your category." },
-    { q: "Can support see order data?", a: "Yes. We connect order, payment and shipment status to the ticket view." },
+    { q: "How should support answer usage questions?", a: "With a short, consistent response that explains the products are for research use only and that your team cannot advise on use. We draft it with you and your counsel, then place it in the helpdesk as a saved reply so every agent gives the same answer and nobody improvises beyond what the business can say." },
+    { q: "Which helpdesk do you set up?", a: "We choose based on your volume, your integrations and the platform's rules for your category, because some helpdesk providers restrict certain products. We confirm what a provider accepts before you commit, then set up routing, saved replies and order-aware views so your team can answer quickly and consistently." },
+    { q: "Can support see order data?", a: "Yes. We connect order, payment and shipment status to the ticket view, so an agent sees what was bought, whether it was paid and where the parcel is without switching tools. Access follows the same role rules as the rest of your systems, so people see only what their job needs." },
     { q: "Customers keep asking how to use products. How do we answer without crossing a line?", a: "Use one approved reply that says the products are sold for laboratory research use only and that you cannot advise on any other use, and use it every time. Keep it as a saved reply, review the wording with your counsel and retrain anyone who improvises. If a customer pushes, the answer stays the same." },
     { q: "Where-is-my-order messages flood our inbox. How do we reduce them?", a: "Give customers the answer before they ask: tracking in the confirmation and shipping emails, honest delivery estimates at checkout and a status view that support can see too. Then tag every where-is-my-order ticket and review the tags weekly, because clusters point to a carrier, a product or a delay in your own process." },
     { q: "How do we handle a customer who threatens a chargeback?", a: "Respond quickly and politely, and look for the fix first: a refund, a replacement or a corrected record. Keep the full thread, the order, the tracking and the delivery proof together so they can be sent if a dispute is filed anyway. Do not argue or promise what you cannot deliver, and log every case so the cause can be fixed upstream." },

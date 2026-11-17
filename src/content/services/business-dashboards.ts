@@ -16,7 +16,7 @@ export const businessDashboards: Service = {
       "Custom dashboards for RUO peptide businesses: orders, payments, inventory, affiliates, fulfillment and support in one reliable reporting layer.",
   },
   h1: "Business dashboards and operations reporting for RUO peptide businesses",
-  lead: "One place to see orders, payments, inventory, affiliates, fulfillment and support, built from your own systems instead of spreadsheets that drift.",
+  lead: "A business dashboard puts orders, payments, inventory, affiliates, fulfillment and support in one view, built from your own systems instead of spreadsheets that drift apart. We scope it to the questions you need answered and connect the data behind it. A dashboard shows what your systems record, so it can reveal bad data but not fix it.",
   what: [
     "Most stores run on several systems that do not agree: the shop, the payment provider, the fulfillment partner, the affiliate tool and the inbox. A dashboard layer brings the data together, so the same order means the same thing everywhere.",
     "We build custom dashboards and the integrations behind them, scoped to the questions you actually need answered.",
@@ -72,9 +72,9 @@ export const businessDashboards: Service = {
   ],
   visual: "dashboard",
   faqs: [
-    { q: "Can you connect the tools I already use?", a: "Often yes, through their interfaces or exports. We check what each tool allows before committing to scope." },
-    { q: "Who can see the dashboard?", a: "Access is role-based, so staff, affiliates and partners see only what they should." },
-    { q: "Do I have to replace my current systems?", a: "No. The aim is to connect what you have." },
+    { q: "Can you connect the tools I already use?", a: "Often yes, through their interfaces or exports. We check what each tool allows before committing to scope, because some tools offer a full interface and others only a scheduled export. Where a tool allows neither, we say so up front and suggest what to change, so the dashboard is built on data you can rely on." },
+    { q: "Who can see the dashboard?", a: "Access is role-based, so staff, affiliates and partners each see only what they should. You decide the roles, and we set up the views to match: for example, a partner sees their own results and no one else's, and support sees order status without payment details. Access can be changed as your team changes." },
+    { q: "Do I have to replace my current systems?", a: "No. The aim is to connect what you already have, not to replace it. The dashboard reads from your store, payment provider, fulfillment partner and other tools through their interfaces or exports, and brings the results together in one place. If a system is genuinely holding you back, we will say so and explain the options." },
     { q: "We have numbers in five tools and no two agree. How do we get to one version?", a: "Pick one definition per measure, such as what counts as a paid order, then trace each tool's number back to that definition. Differences usually come from timing, refunds, currency or test orders. Once the definitions are written down, the dashboard reads from the source of truth for each measure and shows when a source disagrees." },
     { q: "Which five numbers should I look at every morning?", a: "Orders paid, orders shipped, refunds, the amount your payment provider is holding and support tickets waiting. Together they show whether money is arriving, product is moving and customers are being answered. Add advertising spend and affiliate payouts when you run those channels. Anything you would not act on within a week does not need a place on the first screen." },
     { q: "Can a dashboard warn me before a payment provider acts?", a: "It can show the measures providers watch, such as decline rate, refund rate and chargeback ratio, and flag when they move. It cannot predict a provider's decision. What it gives you is time: days in which to find the cause, answer disputes and prepare documents before a review arrives." },

@@ -21,8 +21,7 @@ export const supplierDocs: Article = {
   service: "supplier-verification",
   related: ["infrastructure-behind-an-ruo-peptide-business", "payment-processing-for-ruo-stores"],
   needsCounselReview: false,
-  quickAnswer:
-    "Review a supplier's documents against a written standard, one batch at a time. A usable record names the laboratory, ties every document to a specific batch and shows the method and the underlying data, such as a chromatogram and an identity result, rather than a single purity figure. If the documents cannot be matched to the vial, cannot be checked with the laboratory, or look reused, stop and ask before you buy.",
+  quickAnswer: "Review a supplier's documents against a written standard, one batch at a time. A usable record names the laboratory, ties each document to a batch and shows the method and underlying data, not only a purity figure. If documents cannot be matched to the vial, checked with the laboratory or look reused, stop and ask before you buy.",
   takeaways: [
     "A purity percentage on its own is a claim. A named laboratory, a batch number, the method and the raw data turn it into evidence.",
     "Check the match first: compound, batch number, quantity and date must agree between the report, the label and your order.",

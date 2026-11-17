@@ -16,7 +16,7 @@ export const complianceSupport: Service = {
       "Compliance-oriented reviews of RUO peptide sites, copy, disclaimers and documentation. We work alongside your counsel and are not a law firm.",
   },
   h1: "Compliance-oriented review and support for RUO peptide businesses",
-  lead: "A research-use-only label does not make a product, a business or its marketing compliant. We review websites, product copy, disclaimers and documentation for risk, organise what you have and work alongside your own qualified professionals.",
+  lead: "A research-use-only label does not make a business or its marketing compliant. We review your website, product copy, disclaimers and documentation for avoidable risk, organise what you have and work alongside your own qualified counsel. We are not a law firm, and our review is neither legal advice nor an approval.",
   what: [
     "This service is about reducing avoidable exposure. We read your site the way a reviewer would, point out content and structure that creates risk, and help you organise policies, notices and documentation so they are consistent. We are not a law firm, a regulator or a substitute for legal advice.",
     "We work alongside your own counsel or regulatory professionals. If you do not have one yet, we can explain what to ask and what to bring to a first conversation, so the time you pay for is spent well.",
@@ -85,9 +85,9 @@ export const complianceSupport: Service = {
     },
   ],
   faqs: [
-    { q: "Does an RUO disclaimer make my business compliant?", a: "No. A disclaimer is one element. How products are described and marketed, and what the whole site implies, matters as much." },
-    { q: "Do you work with lawyers?", a: "We work alongside your own counsel or regulatory professionals and prepare the material that makes those conversations efficient." },
-    { q: "What are 503A and 503B?", a: "They are parts of US law covering pharmacy compounding and outsourcing facilities. They concern licensed pharmacy and facility activity, not ordinary RUO retail. Our guide explains the difference." },
+    { q: "Does an RUO disclaimer make my business compliant?", a: "No. A disclaimer is one element, and it does not make a business or its marketing compliant. How products are described and marketed, and what the whole site implies, matters as much. We review the site for content that points beyond research use and take the findings to your counsel." },
+    { q: "Do you work with lawyers?", a: "We work alongside your own counsel or regulatory professionals and prepare the material that makes those conversations efficient. That means organised copy, records and a list of risks we found, so a lawyer can spend their time on judgement. We are not a law firm, and our review is not legal advice or an approval." },
+    { q: "What are 503A and 503B?", a: "They are parts of US law covering pharmacy compounding by licensed pharmacists and physicians (503A) and outsourcing facilities registered with FDA (503B). They concern licensed pharmacy and facility activity, not ordinary RUO retail, and a research-use label does not bring a product under either. Our guide explains the difference." },
     { q: "We have years of old blog posts and emails. How do we review them all?", a: "Start with an inventory of every page, template and post, then review in order of reach, with the pages customers see most first. Score each against a written list of signals, record findings with page references and decide with your counsel what to change. A spreadsheet is enough. We organise the inventory and the findings, and the decisions belong to you and your counsel." },
     { q: "We removed content after a warning. How do we show that we fixed it?", a: "Keep dated records of what was found, what changed and who approved it, with before-and-after copies. Check every channel, including emails, social posts and affiliate material, and brief your team in writing. Your counsel can advise on what to share and how." },
     { q: "How often should we repeat a review?", a: "At least twice a year, and whenever something changes: a new product line, a new channel, a new affiliate programme or a change in the rules you operate under. Keep each review's record so you can show a pattern of checking rather than a single effort." },

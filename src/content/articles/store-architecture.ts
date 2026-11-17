@@ -21,8 +21,7 @@ export const storeArchitecture: Article = {
   service: "ruo-peptide-website-development",
   related: ["infrastructure-behind-an-ruo-peptide-business", "review-a-peptide-suppliers-documentation"],
   needsCounselReview: false,
-  quickAnswer:
-    "Build the store from a small set of linked records: compound, product, variant, batch and document. Generate every page, filter, notice and document link from those records instead of writing them by hand. Make categories real pages with their own addresses, keep one canonical address per product, place research-use notices in the layout so they appear everywhere, and let search foundations such as sitemaps and structured data come from the same data that renders the page.",
+  quickAnswer: "Build the store from linked records: compound, product, variant, batch and document. Generate every page, filter, notice and document link from those records instead of writing them by hand. Give categories real addresses, keep one canonical address per product, and put research-use notices in the layout so they appear everywhere.",
   takeaways: [
     "Model the catalogue as data. Compounds, products, variants, batches and documents are separate records with clear links between them.",
     "Categories are pages, not filters. Give each one an address, a heading, a description and a place in the sitemap.",

@@ -16,7 +16,7 @@ export const affiliateManagement: Service = {
       "Referral tracking, commission rules, affiliate dashboards and payout tracking for RUO peptide brands, built into your store and tied to real orders.",
   },
   h1: "Affiliate program infrastructure for RUO peptide brands",
-  lead: "Referral tracking, commission rules, affiliate dashboards and payout records, built into your store so programmes can be run, audited and improved.",
+  lead: "Affiliate infrastructure lets you run a referral programme from inside your store. We build registration, referral tracking, commission rules, affiliate dashboards and payout records, so every sale is attributed and every payment can be audited. Commission terms and disclosures follow your rules. We do not promise affiliate recruitment or sales.",
   what: [
     "An affiliate programme is a tracking and accounting system with a marketing layer on top. We build the registration flow, referral attribution, commission calculation, affiliate dashboard, payout tracking and reporting, and connect them to your orders so the numbers agree.",
     "We also help you set rules that protect the brand, because what affiliates say reflects on you.",
@@ -72,9 +72,9 @@ export const affiliateManagement: Service = {
   ],
   visual: "affiliate",
   faqs: [
-    { q: "Which affiliate platform do you use?", a: "Programmes can run on a custom system built into your store or on a third-party platform. We recommend based on your volume, your category and what the platform allows." },
-    { q: "How are commissions calculated?", a: "On net sales, using a definition we agree with you. Refunds and chargebacks reverse commissions according to your rules." },
-    { q: "Can affiliates see their own results?", a: "Yes. A dashboard shows clicks, orders, commissions and payout status." },
+    { q: "Which affiliate platform do you use?", a: "Programmes can run on a custom system built into your store or on a third-party platform. We recommend based on your volume, your category and what the platform allows, since some platforms restrict certain products. A built-in system gives you one record of orders and payouts, while a platform can be faster to start." },
+    { q: "How are commissions calculated?", a: "On net sales, using a definition we agree with you, such as order value after discounts and excluding shipping and tax. Refunds and chargebacks reverse commissions according to your rules, and a hold period can protect you from paying on orders that are later reversed. The rules are written down and shown in the affiliate dashboard." },
+    { q: "Can affiliates see their own results?", a: "Yes. A dashboard shows each affiliate their clicks, orders, commissions and payout status, so they do not need to ask you for figures. They see only their own results. You see all affiliates in one view, with the records needed to check attribution and to pay accurately and on time." },
     { q: "An affiliate is making claims we would not make. What do we do?", a: "Contact them promptly, point to the written guidelines, ask for the content to be removed and record what happened. If it continues, pause payouts and end the relationship as your terms allow. This is why guidelines must exist before the first affiliate joins, and why affiliate content should be reviewed on a schedule." },
     { q: "How do we limit commission fraud and self-referrals?", a: "Define what counts as a valid referral, hold payouts for a review period that covers refunds, look for unusual patterns such as many orders from one address and write the rules into the affiliate terms. No system removes the risk, but clear rules and a hold period make it manageable." },
     { q: "How do we reconcile affiliate sales with what the store actually shipped?", a: "Pay commission on orders that were paid and not refunded, not on clicks or carts, and reconcile the affiliate report against the order system each month before payout. Mismatches usually come from refunds, partial shipments and orders placed without a tracking cookie." },

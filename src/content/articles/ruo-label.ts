@@ -21,8 +21,7 @@ export const ruoLabel: Article = {
   service: "compliance-support",
   related: ["503a-503b-and-ruo-retail", "infrastructure-behind-an-ruo-peptide-business"],
   needsCounselReview: true,
-  quickAnswer:
-    "A research-use-only label states an intended use, and it is one piece of evidence about that use. FDA's regulation on intended use says that intent is judged from the objective facts around the product, including labelling, advertising, statements by the people responsible and the circumstances of distribution. So the whole presentation matters, not the label alone. The practical step is to review everything you publish for content that points toward personal use, record what you found and take the findings to qualified counsel.",
+  quickAnswer: "A research-use-only label states an intended use, but it is only one piece of evidence. Under FDA's intended-use regulation, intent is judged from the objective facts, including labelling, advertising, statements and how a product is distributed. Review everything you publish for content pointing toward personal use, record the findings and take them to qualified counsel.",
   takeaways: [
     "A label is evidence of intended use, and not the only evidence. Websites, emails, social posts, affiliate content and customer conversations count too.",
     "Warning letters to peptide sellers have pointed to the surrounding presentation, such as dosing or preparation guidance, as evidence of intended use.",

@@ -21,8 +21,7 @@ export const wholesaleDropshipping3plGuide: Article = {
   service: "wholesale-dropshipping-3pl",
   related: ["infrastructure-behind-an-ruo-peptide-business", "review-a-peptide-suppliers-documentation"],
   needsCounselReview: false,
-  quickAnswer:
-    "Wholesale means you buy stock and hold it yourself. Dropshipping means a partner ships each order for you, so you never hold stock. A 3PL means you own the stock and a logistics provider stores, packs and ships it. Choose by who must control quality, packaging and speed, how much capital you can tie up, and which partner you can hold to a written agreement.",
+  quickAnswer: "Wholesale means you buy and hold the stock. Dropshipping means a partner ships each order, so you hold no stock. A 3PL means you own the stock while a provider stores and ships it. Choose by who must control quality and packaging, how much capital you can tie up and which partner you can hold to a written agreement.",
   takeaways: [
     "The three models differ on two questions: who owns the stock and who physically ships the order.",
     "Wholesale gives the most control and needs the most capital and the most operating work.",
@@ -119,20 +118,31 @@ export const wholesaleDropshipping3plGuide: Article = {
     },
     {
       q: "Is dropshipping RUO peptides allowed?",
-      a: "That depends on your products, your partners and the contracts involved, so we cannot say yes or no for you. Confirm it with qualified counsel and in writing with the partner before you build anything.",
+      a: "That depends on your products, your partners and the contracts involved, so we cannot say yes or no for you. Confirm it with qualified counsel and in writing with the partner before you build anything. FDA warning letters to peptide sellers have turned on website claims, so how a product is described matters as much as how it ships.",
     },
     {
       q: "Who is responsible for the label on a dropshipped product?",
-      a: "Whoever the agreement says. Decide it in writing before launch, including whose name and which research-use-only wording appear on the product and the packing slip. A label that differs from your website is a common review problem.",
+      a: "Whoever the agreement says. Decide it in writing before launch, including whose name and which research-use-only wording appear on the product and the packing slip. Keep it consistent with your website, because a label that differs from what your site says is a common review problem. Settle it with the partner before the first order ships.",
     },
     {
       q: "How do I stop my store and my 3PL showing different stock counts?",
-      a: "Use one inventory record that both systems read, update it when an order is placed and when stock arrives, and count the shelf against it on a schedule. Drift comes from two systems each keeping their own number.",
+      a: "Use one inventory record that both systems read, update it when an order is placed and when stock arrives, and count the shelf against it on a schedule. Drift comes from two systems each keeping their own number. With one number, you can reserve stock at checkout, release it if payment fails, and stop overselling.",
     },
     {
       q: "Can I change model later?",
-      a: "Yes, and most brands do. Plan for it by keeping one inventory record, filing documents by supplier and batch, and running the old and new routes side by side with real orders before you retire the old one.",
+      a: "Yes, and most brands do. Plan for it by keeping one inventory record, filing documents by supplier and batch, and keeping customer messages generic about who ships. When you move, run the old and new routes side by side with real orders, and check tracking, counts and returns before you retire the old one.",
     },
   ],
-  sources: [],
+  sources: [
+    {
+      label: "FDA warning letter to Summit Research Peptides, 10 December 2024",
+      url: "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/summit-research-peptides-695607-12102024",
+      checked: "2026-11-17",
+    },
+    {
+      label: "FDA warning letter to Wholesale Peptide, 17 June 2026",
+      url: "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/wholesale-peptide-729447-06172026",
+      checked: "2026-11-17",
+    },
+  ],
 };

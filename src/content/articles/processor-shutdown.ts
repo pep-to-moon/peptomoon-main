@@ -21,8 +21,7 @@ export const processorShutdown: Article = {
   service: "payment-processing",
   related: ["payment-processing-for-ruo-stores", "infrastructure-behind-an-ruo-peptide-business", "review-a-peptide-suppliers-documentation"],
   needsCounselReview: false,
-  quickAnswer:
-    "If your payment processor has shut you down, read the notice and your contract, answer within the time given with one organised package, and ask in writing when held funds will be released. Then find out why it happened by comparing your application with your live site, your policies and your numbers, fix what is genuinely wrong, and apply to providers whose policies cover your category, telling them the truth about the closure. Never route sales through another business's account. A replacement processor then has to be implemented properly on your site, and we can help with that.",
+  quickAnswer: "If your processor shuts you down, read the notice and contract, reply within the time given with one package, and ask in writing when held funds will be released. Then compare your application with your live site to find the cause, fix what is wrong and apply to providers that cover your category. Never route sales through another business's account.",
   takeaways: [
     "Act within the deadline in the notice. A calm, organised reply in the first days is worth more than a long argument later.",
     "Your contract decides what happens to held funds, pending refunds and chargebacks, so find the clause and get the release date in writing.",

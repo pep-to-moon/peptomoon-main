@@ -16,7 +16,7 @@ export const websiteDevelopment: Service = {
       "Custom Next.js e-commerce for RUO peptide businesses: catalogue architecture, batch documentation pages, research-use gates, technical SEO and maintenance.",
   },
   h1: "RUO peptide website development built around how this industry actually works",
-  lead: "We design, build, redesign and maintain e-commerce websites for research-use-only peptide businesses. That covers catalogue architecture, batch documentation pages, research-use gates, technical SEO and the long-term care that keeps a store fast and consistent.",
+  lead: "RUO peptide stores need more than a generic theme. We build custom e-commerce sites where products, variants, batch documents and research-use notices come from structured records, so every page stays consistent. We also redesign, migrate and maintain stores, with technical SEO built in from the start. We do not promise rankings or sales.",
   what: [
     "A website for an RUO peptide business is closer to a documented catalogue than a lifestyle shop. Each product has sizes, formats, batch information and notices that must stay accurate, and the same structure repeats across dozens of pages. We build the whole system: the product and category model, cart and checkout, the content system for articles and documents, the research-use and age gates, and the technical foundation that search engines and payment reviewers read.",
     "We build custom sites with Next.js and a headless content system rather than adapting a generic theme. New builds, redesigns of existing stores and migrations from other platforms follow the same discipline: structure first, design second, performance and search foundations from the first commit.",
@@ -97,11 +97,11 @@ export const websiteDevelopment: Service = {
     },
     {
       q: "What happens after launch?",
-      a: "Sites need ongoing care. We offer maintenance covering updates, monitoring, content changes and technical support, scoped to your needs.",
+      a: "Sites need ongoing care after launch. We offer maintenance that covers software updates, monitoring, content changes and technical support, scoped to what your store needs. That keeps pages fast, notices consistent and integrations working as platforms and policies change, instead of leaving you to fix problems one at a time after something breaks.",
     },
     {
       q: "Do you write the legal notices and policies?",
-      a: "We build the structure and place notices consistently. The wording of legal notices and policies should be reviewed by your own qualified counsel.",
+      a: "We build the structure and place notices consistently across every page, so a notice cannot be missed by accident. The wording of legal notices and policies should be reviewed by your own qualified counsel, because we are not a law firm. We can supply the structure and a list of what each page should carry for that review.",
     },
     { q: "My store has hundreds of products and search traffic has stalled. Where do I start?", a: "Start with structure, not copy. Check that each product has a single address, that categories are real pages with their own headings, that the sitemap lists only pages that should be indexed and that near-identical variants are not competing with each other. Then check speed on a phone. These checks usually explain more than rewriting descriptions does, and we audit them in that order." },
     { q: "Customers say the price or stock on the page does not match the cart. What causes that?", a: "Usually the catalogue lives in more than one place: the page, the cart and sometimes a spreadsheet or a plugin. When a price changes in one and not the others, they disagree. The fix is a single source of truth for price, variant and availability, so every page, filter and cart reads the same record, with a check that runs after every update." },

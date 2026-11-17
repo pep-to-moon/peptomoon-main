@@ -21,8 +21,7 @@ export const fiveOhThree: Article = {
   service: "compliance-support",
   related: ["ruo-label-is-not-a-compliance-strategy", "infrastructure-behind-an-ruo-peptide-business"],
   needsCounselReview: true,
-  quickAnswer:
-    "Section 503A of the Federal Food, Drug, and Cosmetic Act covers compounding by licensed pharmacists and physicians, generally for an identified patient on the basis of a prescription. Section 503B covers outsourcing facilities that register with FDA and meet current good manufacturing practice requirements. Both come with conditions, including conditions about ingredients. A business that sells research chemicals is neither, and labelling a product for research use does not bring it under either section.",
+  quickAnswer: "Section 503A covers compounding by licensed pharmacists and physicians, generally for an identified patient on a prescription. Section 503B covers FDA-registered outsourcing facilities that meet current good manufacturing practice. Both carry conditions. A business selling research chemicals is neither, and a research-use label does not bring a product under either section.",
   takeaways: [
     "503A and 503B are legal frameworks for licensed pharmacy and facility activity. They are not routes open to any business that sells peptides.",
     "503A is about patient-specific compounding by licensed professionals. 503B is about registered outsourcing facilities held to manufacturing standards.",
