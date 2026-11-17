@@ -11,7 +11,7 @@ export const primetimeBioLabs: CaseStudy = {
   seo: {
     title: `PrimeTime BioLabs Website Case Study | ${brand}`,
     description:
-      "How we designed, built and maintain primetimebiolabs.com: a dark, high-contrast RUO peptide store with 21 products, 33 articles and a documented SEO audit trail.",
+      "How we built and maintain primetimebiolabs.com: a dark, high-contrast RUO peptide store with 21 products, 33 articles and a documented SEO audit trail.",
   },
   primaryKeyword: "PrimeTime BioLabs website case study",
   headline: "A dark, high-contrast RUO store with a documented SEO audit trail",

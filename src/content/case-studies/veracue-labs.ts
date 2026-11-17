@@ -11,7 +11,7 @@ export const veracueLabs: CaseStudy = {
   seo: {
     title: `Veracue Labs Website Case Study | ${brand}`,
     description:
-      "How we designed, built and maintain veracuelabs.com: a CMS-managed RUO peptide store with 95 product pages, hosted card checkout integration and a blog pipeline.",
+      "How we designed, built and maintain veracuelabs.com: a CMS-managed RUO peptide store with 95 product pages, hosted checkout and a blog pipeline.",
   },
   primaryKeyword: "Veracue Labs website case study",
   headline: "A 95-product RUO catalogue on a CMS-managed storefront",

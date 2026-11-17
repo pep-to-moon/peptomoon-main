@@ -10,7 +10,7 @@ export const processorShutdown: Article = {
   seo: {
     title: `Payment Processor Shut You Down? What To Do | ${brand}`,
     description:
-      "Your payment processor shut down your RUO store or froze your funds? The first 72 hours, what to ask for, how to prepare a new application and what never to do.",
+      "Payment processor shut down your RUO store or froze funds? The first 72 hours, what to ask for, how to prepare a new application and what never to do.",
   },
   primaryKeyword: "payment processor shut down my account",
   excerpt:

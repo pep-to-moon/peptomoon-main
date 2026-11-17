@@ -16,7 +16,7 @@ import { webPageSchema } from "@/lib/seo/schema";
 
 const title = `RUO Peptide Website Case Studies | ${siteConfig.name}`;
 const description =
-  "A selection of the 50+ RUO peptide e-commerce sites we designed, built and maintain, with screenshots, verified facts and case studies where the material is confirmed.";
+  "RUO peptide e-commerce sites we designed, built and maintain, with screenshots, verified facts and full case studies where the material is confirmed.";
 
 export const metadata: Metadata = buildMetadata({ title, description, path: "/case-studies" });
 

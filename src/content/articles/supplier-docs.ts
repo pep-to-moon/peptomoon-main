@@ -10,7 +10,7 @@ export const supplierDocs: Article = {
   seo: {
     title: `Peptide Supplier Documentation Review Checklist | ${brand}`,
     description:
-      "A practical checklist for reviewing a supplier's batch records and laboratory reports: batch match, named laboratory, method details, identity data and red flags.",
+      "A checklist for reviewing a supplier's batch records and lab reports: batch match, named laboratory, method details, identity data and red flags.",
   },
   primaryKeyword: "peptide supplier documentation review",
   excerpt:

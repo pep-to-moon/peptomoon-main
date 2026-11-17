@@ -10,7 +10,7 @@ export const infrastructureMap: Article = {
   seo: {
     title: `RUO Peptide Business Infrastructure Guide | ${brand}`,
     description:
-      "A plain map of the systems behind a research-use-only peptide business: website, payments, fulfillment, reporting, marketing and verification, and where they fail.",
+      "A plain map of the systems behind an RUO peptide business: website, payments, fulfillment, reporting, marketing and verification, and where they fail.",
   },
   primaryKeyword: "RUO peptide business infrastructure",
   excerpt:

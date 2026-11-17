@@ -13,7 +13,7 @@ export const wholesaleDropshipping3pl: Service = {
   seo: {
     title: `Peptide Wholesale, Dropshipping and 3PL | ${brand}`,
     description:
-      "Wholesale supply, dropshipping and 3PL for RUO peptide brands: supplier documentation, stock, order routing and US fulfillment, for business customers only.",
+      "Wholesale supply, dropshipping and 3PL for RUO peptide brands: supplier documentation, stock, order routing and US fulfillment. Business customers only.",
   },
   h1: "Wholesale, dropshipping and 3PL for RUO peptide brands",
   lead: "We supply and move research-use-only product for business customers: wholesale supply, dropshipping arrangements and third-party logistics, set up with documentation, inventory control and order routing you can check.",

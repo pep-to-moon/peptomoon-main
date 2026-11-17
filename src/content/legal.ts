@@ -22,7 +22,7 @@ export const legalDocs: LegalDoc[] = [
   {
     slug: "privacy-policy",
     title: "Privacy Policy",
-    description: `How ${brand} collects, uses, shares and protects information you give us through this website, including the project questionnaire, and the choices you have.`,
+    description: `How ${brand} collects, uses, shares and protects information from this website, including the project questionnaire, and the choices you have.`,
     updated: "2026-11-17",
     intro: `This policy explains what personal information ${entity} ("${brand}", "we", "us") collects through this website, why we collect it, who it is shared with, how long we keep it and what you can do about it. We have tried to keep it short and specific to what this site actually does.`,
     sections: [
@@ -221,7 +221,7 @@ export const legalDocs: LegalDoc[] = [
   {
     slug: "disclaimer",
     title: "Disclaimer",
-    description: `Important limits on what the ${brand} website and its content are and are not, including research-use-only products, legal information and portfolio examples.`,
+    description: `Limits on what the ${brand} website and its content are, including research-use-only products, legal information and portfolio examples.`,
     updated: "2026-11-17",
     intro: `Please read this disclaimer together with the Terms of Service. It explains the limits of the information on this site and who is responsible for what.`,
     sections: [

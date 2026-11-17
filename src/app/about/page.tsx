@@ -13,7 +13,7 @@ import { webPageSchema } from "@/lib/seo/schema";
 
 const brand = siteConfig.name;
 const title = `About ${brand} | RUO Peptide Infrastructure Partner`;
-const description = `${brand} builds and maintains the systems behind RUO peptide businesses. How we work, what we will not do and why one accountable partner beats five vendors.`;
+const description = `${brand} builds and maintains the systems behind RUO peptide businesses. How we work, what we will not do, and why one partner beats five vendors.`;
 
 export const metadata: Metadata = buildMetadata({ title, description, path: "/about" });
 

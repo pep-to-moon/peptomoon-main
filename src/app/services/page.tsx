@@ -16,7 +16,7 @@ import { webPageSchema } from "@/lib/seo/schema";
 
 const title = `RUO Peptide Business Services | ${siteConfig.name}`;
 const description =
-  "Thirteen connected services for RUO peptide businesses: websites, payments, fulfillment, wholesale and 3PL, reporting, marketing, search, audits, supplier checks and compliance review.";
+  "Thirteen services for RUO peptide businesses: websites, payments, fulfillment, wholesale and 3PL, reporting, marketing, search, audits and compliance.";
 
 export const metadata: Metadata = buildMetadata({ title, description, path: "/services" });
 

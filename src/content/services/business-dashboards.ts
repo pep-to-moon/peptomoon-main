@@ -13,7 +13,7 @@ export const businessDashboards: Service = {
   seo: {
     title: `Business Dashboards for RUO Peptide Stores | ${brand}`,
     description:
-      "Custom dashboards and integrations for RUO peptide businesses: orders, payments, inventory, affiliates, fulfillment and support in one reliable reporting layer.",
+      "Custom dashboards for RUO peptide businesses: orders, payments, inventory, affiliates, fulfillment and support in one reliable reporting layer.",
   },
   h1: "Business dashboards and operations reporting for RUO peptide businesses",
   lead: "One place to see orders, payments, inventory, affiliates, fulfillment and support, built from your own systems instead of spreadsheets that drift.",

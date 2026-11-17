@@ -8,7 +8,7 @@ export const storeArchitecture: Article = {
   slug: "peptide-store-architecture",
   title: "Peptide store architecture: categories, variants, documents and gates",
   seo: {
-    title: `Peptide Store Architecture and Catalogue Structure | ${brand}`,
+    title: `Peptide Store Architecture and Catalogue Guide | ${brand}`,
     description:
       "How to structure an RUO peptide store: the product model, real category pages, batch documents as data, consistent notices and search foundations.",
   },

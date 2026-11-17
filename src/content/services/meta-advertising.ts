@@ -13,7 +13,7 @@ export const metaAdvertising: Service = {
   seo: {
     title: `Meta Advertising Infrastructure for RUO Stores | ${brand}`,
     description:
-      "Meta Business Manager structure, Pixel and Conversions API tracking, reporting and campaigns run from our agency ad account for RUO stores. No eligibility promises.",
+      "Meta Business Manager structure, Pixel and Conversions API tracking, reporting and campaigns for RUO stores. No eligibility promises.",
   },
   h1: "Meta advertising infrastructure for RUO peptide stores",
   lead: "We set up the structure behind advertising and measurement: Business Manager organisation, account access, pixel and Conversions API tracking, event design and reporting. We also run campaigns from our own agency ad account. Whether a business can advertise at all is Meta's decision, and we keep infrastructure, management and eligibility clearly apart.",

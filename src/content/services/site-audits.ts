@@ -13,7 +13,7 @@ export const siteAudits: Service = {
   seo: {
     title: `Website Audit for RUO Peptide Stores | ${brand}`,
     description:
-      "A prioritised website audit for RUO peptide stores: compliance content, SEO and GEO, payments and checkout, speed on phones, tracking and security, with a fix plan.",
+      "A prioritised audit for RUO peptide stores: compliance content, SEO and GEO, payments, mobile speed, tracking and security, with a fix plan.",
   },
   h1: "Website audits for RUO peptide businesses",
   lead: "A written audit of your store across the areas that decide whether it can sell, rank and keep its payments: compliance content, SEO and GEO, payments and checkout, speed and phones, tracking and the details around them. Every finding comes with evidence and a priority, so you know what to fix first.",

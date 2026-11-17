@@ -11,7 +11,7 @@ export const purity99: CaseStudy = {
   seo: {
     title: `99 Purity Peptides Website Case Study | ${brand}`,
     description:
-      "How we designed, built and maintain 99puritypeptides.com: a bilingual RUO peptide store with a members-only tier, pack-size pricing and batch certificate links.",
+      "How we designed, built and maintain 99puritypeptides.com: a bilingual RUO store with a members-only tier, pack-size pricing and batch certificate links.",
   },
   primaryKeyword: "99 Purity Peptides website case study",
   headline: "A bilingual RUO storefront with a members-only catalogue tier",

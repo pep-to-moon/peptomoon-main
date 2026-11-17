@@ -13,7 +13,7 @@ export const paymentProcessing: Service = {
   seo: {
     title: `Peptide Payment Processing and Shutdown Recovery | ${brand}`,
     description:
-      "Payment processor shut down your RUO store? We prepare the business and implement a replacement processor on your site. Honest about underwriting, no promises.",
+      "Payment processor shut down your RUO store? We prepare the business and implement a replacement processor. Honest about underwriting, no promises.",
   },
   h1: "Payment processing infrastructure for RUO peptide businesses",
   lead: "We help RUO peptide businesses understand how payment underwriting works, prepare for it, integrate the right payment infrastructure and monitor it afterwards. If your payment processor has shut you down, we help you work out why, prepare for a fresh review and implement a new processor on your site. We never promise approval, and we never help misrepresent a business.",

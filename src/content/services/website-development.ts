@@ -13,7 +13,7 @@ export const websiteDevelopment: Service = {
   seo: {
     title: `RUO Peptide Website Development | ${brand}`,
     description:
-      "Custom Next.js e-commerce for RUO peptide businesses: catalogue architecture, batch documentation pages, research-use gates, technical SEO and ongoing maintenance.",
+      "Custom Next.js e-commerce for RUO peptide businesses: catalogue architecture, batch documentation pages, research-use gates, technical SEO and maintenance.",
   },
   h1: "RUO peptide website development built around how this industry actually works",
   lead: "We design, build, redesign and maintain e-commerce websites for research-use-only peptide businesses. That covers catalogue architecture, batch documentation pages, research-use gates, technical SEO and the long-term care that keeps a store fast and consistent.",

@@ -11,9 +11,9 @@ export const emailMarketing: Service = {
   status: "established",
   primaryKeyword: "peptide email marketing",
   seo: {
-    title: `Email Infrastructure and Marketing for RUO Stores | ${brand}`,
+    title: `Email Infrastructure for RUO Peptide Stores | ${brand}`,
     description:
-      "Domain authentication, transactional email, automation, segmentation and deliverability for RUO peptide stores, with consent respected and no inbox promises.",
+      "Domain authentication, transactional email, automation, segmentation and deliverability for RUO peptide stores. Consent respected, no inbox promises.",
   },
   h1: "Email infrastructure and marketing for RUO peptide stores",
   lead: "Authenticated sending, transactional email, automation and segmentation that reach the inbox and respect consent, with reporting you can act on.",

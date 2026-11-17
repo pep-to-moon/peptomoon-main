@@ -10,7 +10,7 @@ export const paymentsUnderwriting: Article = {
   seo: {
     title: `RUO Payment Processing: Underwriting Guide | ${brand}`,
     description:
-      "How payment underwriting works for RUO peptide stores, what reviewers read on your website, how to read a processing contract and how to plan for interruption.",
+      "How underwriting works for RUO peptide stores, what reviewers read on your website, how to read a processing contract and how to plan for interruption.",
   },
   primaryKeyword: "RUO payment processing underwriting",
   excerpt:
