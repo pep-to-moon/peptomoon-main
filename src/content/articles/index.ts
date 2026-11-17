@@ -6,6 +6,7 @@ import { processorShutdown } from "./processor-shutdown";
 import { ruoLabel } from "./ruo-label";
 import { storeArchitecture } from "./store-architecture";
 import { supplierDocs } from "./supplier-docs";
+import { wholesaleDropshipping3plGuide } from "./wholesale-dropshipping-3pl";
 
 export const allArticles: Article[] = [
   infrastructureMap,
@@ -15,6 +16,7 @@ export const allArticles: Article[] = [
   processorShutdown,
   storeArchitecture,
   fiveOhThree,
+  wholesaleDropshipping3plGuide,
 ];
 
 const isProduction = (process.env.VERCEL_ENV ?? process.env.NODE_ENV) === "production";
