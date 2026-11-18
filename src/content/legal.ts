@@ -23,7 +23,7 @@ export const legalDocs: LegalDoc[] = [
     slug: "privacy-policy",
     title: "Privacy Policy",
     description: `How ${brand} collects, uses, shares and protects information from this website, including the project questionnaire, and the choices you have.`,
-    updated: "2026-11-17",
+    updated: "2026-11-18",
     intro: `This policy explains what personal information ${entity} ("${brand}", "we", "us") collects through this website, why we collect it, who it is shared with, how long we keep it and what you can do about it. We have tried to keep it short and specific to what this site actually does.`,
     sections: [
       {
@@ -39,7 +39,7 @@ export const legalDocs: LegalDoc[] = [
           "Details you submit in the project questionnaire: the service or situation you choose, your name, your email address and your consent. If you add them, we also receive your business name, phone number, website address and the written details you give about your needs.",
           "Technical information that reaches our servers whenever a page or form is requested, such as your IP address, browser type and the time of the request. We use it to deliver the site, to rate-limit abuse and to keep the site secure.",
           "Your answer to a simple arithmetic question on the questionnaire. We use it only to tell people from automated spam, and we do not keep it.",
-          "Analytics information about how pages are used, but only if analytics is switched on for this site and you accept analytics cookies.",
+          "Analytics information about how pages are used, collected by Google Analytics and Microsoft Clarity when they are switched on for this site: the pages you view, your approximate location, your device and browser type, how you reached the site and, from Clarity, a recording of clicks, taps, scrolling and mouse movement. What you type into the contact questionnaire is hidden from those recordings. Both tools use cookies, which the Cookie Policy lists.",
         ],
       },
       {
@@ -56,7 +56,7 @@ export const legalDocs: LegalDoc[] = [
           rows: [
             ["Replying to your enquiry", "Sending you an automatic confirmation that we have it, reading your questionnaire, and answering by email, or by phone if you gave a number.", "Taking steps you asked for before any agreement, and our legitimate interest in running our business."],
             ["Security and abuse prevention", "Spam checks, rate limits and server logs.", "Our legitimate interest in keeping the site and its forms working."],
-            ["Improving the site", "Seeing which pages are used, only after you accept analytics.", "Your consent, which you can withdraw at any time."],
+            ["Improving the site", "Seeing which pages are used, how visitors reach them and where they get stuck, including through session recordings and heatmaps.", "Our legitimate interest in understanding which pages are useful."],
             ["Meeting legal duties", "Responding to lawful requests and keeping records the law requires.", "Legal obligation."],
           ],
         },
@@ -72,7 +72,8 @@ export const legalDocs: LegalDoc[] = [
         list: [
           "A hosting and delivery provider that serves the website and holds standard server logs.",
           "An email delivery provider that carries your questionnaire from the site to our inbox. Your enquiry is delivered by email. The site does not keep enquiries in its own database.",
-          "Google, which provides Google Analytics, only if analytics is configured and you accept it.",
+          "Google, which provides Google Analytics, when analytics is switched on for this site.",
+          "Microsoft, which provides Microsoft Clarity for session recordings and heatmaps, when it is switched on for this site.",
         ],
       },
       {
@@ -90,8 +91,7 @@ export const legalDocs: LegalDoc[] = [
           rows: [
             ["Questionnaire submissions and our replies", "Up to 24 months after the last contact, unless we begin working together. Then the retention terms of our written agreement apply."],
             ["Server and security logs", "Kept by our hosting provider for a short rolling period, then deleted."],
-            ["Analytics data", "Kept by Google Analytics for the retention period configured on our account, then deleted."],
-            ["Your cookie choice", "Stored in your browser until you change it or clear your browser data. We never receive it."],
+            ["Analytics data and session recordings", "Kept by Google Analytics and Microsoft Clarity for the retention period set on our accounts, then deleted."],
           ],
         },
       },
@@ -99,7 +99,7 @@ export const legalDocs: LegalDoc[] = [
         heading: "Your choices and rights",
         paragraphs: [
           `Depending on where you live, you may have the right to ask what personal information we hold about you, to have it corrected or deleted, to receive a copy, to object to or restrict certain uses, and to withdraw consent you gave earlier. To use any of these rights, contact us by ${reach}. We may need to confirm it is you before acting, and we will answer within the period the law gives us, normally 30 days.`,
-          "You can change your analytics choice at any time from the Cookie Policy page. If you are in the European Economic Area, the United Kingdom or Switzerland, you can also complain to your local data protection authority. If you live in a US state with a consumer privacy law, you can ask us to confirm that we do not sell your information or share it for cross-context behavioural advertising, and we do not.",
+          "You can block or delete analytics cookies in your browser settings, or use Google's Analytics opt-out browser add-on, and the site works the same either way. If you are in the European Economic Area, the United Kingdom or Switzerland, you can also complain to your local data protection authority. If you live in a US state with a consumer privacy law, you can ask us to confirm that we do not sell your information, and we do not. We do not use analytics data to target advertising.",
         ],
       },
       {
@@ -278,8 +278,8 @@ export const legalDocs: LegalDoc[] = [
   {
     slug: "cookie-policy",
     title: "Cookie Policy",
-    description: `How ${brand} uses cookies and similar browser storage, what each one is for, how long it lasts and how to change your choice at any time.`,
-    updated: "2026-11-17",
+    description: `How ${brand} uses cookies and similar browser storage, what each one is for, how long it lasts and how to control it.`,
+    updated: "2026-11-18",
     intro: `This policy explains the cookies and similar storage used on this website, what each is for, and how you control them. Cookies are small files, and similar technologies such as local storage work in the same way, that a website places in your browser.`,
     sections: [
       {
@@ -288,25 +288,25 @@ export const legalDocs: LegalDoc[] = [
           caption: "Cookies and browser storage on this site",
           head: ["Name or source", "Purpose", "Type", "How long"],
           rows: [
-            ["pm-consent (local storage)", "Remembers whether you accepted or declined analytics, so we do not ask on every visit. It never leaves your browser.", "Essential", "Until you change it or clear your browser data"],
-            ["_ga and _ga_ followed by an identifier (Google Analytics)", "Distinguish visitors and count page views so we can see which pages are useful. Loaded only if you accept analytics.", "Analytics, optional", "Up to two years"],
+            ["_ga and _ga_ followed by an identifier (Google Analytics)", "Distinguish visitors and count page views so we can see which pages are useful. Set when analytics is switched on for this site.", "Analytics", "Up to two years"],
+            ["_clck and _clsk (Microsoft Clarity)", "Remember a visitor and connect their page views into one session, so we can see how people move through the site. Set when Clarity is switched on for this site.", "Analytics", "_clck: up to about a year. _clsk: about a day."],
+            ["CLID, MUID, SM, MR and ANONCHK (Microsoft Clarity, set by Microsoft)", "Set on Microsoft's own domain. Microsoft describes them as identifying browsers across sites that use Clarity and across Microsoft sites, and as used for analytics, advertising and other operational purposes. We do not use them for advertising.", "Analytics, third party", "Set by Microsoft, from the end of your visit up to about 13 months"],
           ],
         },
         paragraphs: [
-          "We do not use advertising cookies, and we do not use cookies to follow you across other websites.",
+          "We do not run advertising on this site and we do not use cookies to show you ads. The Microsoft Clarity cookies above are set by Microsoft, and Microsoft's own cookie list describes how it uses them.",
         ],
       },
       {
         heading: "Your choice",
         paragraphs: [
-          "Analytics is off by default. If analytics is configured for this site, a banner asks for your choice, and nothing from Google Analytics is loaded until you accept. If analytics is not configured, no banner appears because there is nothing to choose. Declining analytics does not change what you can do on the site.",
-          "You can change your mind at any time using the control below. Choosing again removes your saved choice and shows the banner on your next page.",
+          "When analytics is switched on for this site, Google Analytics and Microsoft Clarity set the cookies listed above as soon as a page loads. You can block or delete them in your browser settings, and you can install Google's Analytics opt-out browser add-on to stop Google Analytics. Doing any of these does not change what you can do on the site.",
         ],
       },
       {
-        heading: "Essential storage",
+        heading: "Other storage",
         paragraphs: [
-          "Essential storage is needed for the site to remember your choice and keep the questionnaire working. It does not track you across sites, so it does not need your consent. If you block it in your browser, the banner may appear again on each visit.",
+          "Apart from Google Analytics and Microsoft Clarity, this site does not set cookies of its own and does not use local storage to remember or track you. The contact questionnaire works without any cookies.",
         ],
       },
       {

@@ -19,7 +19,7 @@ export function Breadcrumbs({ items, schema = true }: { items: { name: string; p
                     {item.name}
                   </span>
                 ) : (
-                  <Link href={item.path} className="transition-colors hover:text-blue">
+                  <Link href={item.path} className="-my-2 inline-flex min-h-8 items-center transition-colors hover:text-blue">
                     {item.name}
                   </Link>
                 )}

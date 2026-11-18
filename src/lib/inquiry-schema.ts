@@ -5,6 +5,8 @@ export const STATUS_VALUES = ["existing-website", "new-business", "expand", "spe
 export const SERVICE_VALUES = [
   "website-creation",
   "website-redesign",
+  "telehealth-platform",
+  "vial-label-design",
   "payment-processing",
   "meta-advertising",
   "supplier-verification",
@@ -33,6 +35,8 @@ export const statusLabels: Record<StatusValue, string> = {
 export const serviceLabels: Record<ServiceValue, string> = {
   "website-creation": "Website creation",
   "website-redesign": "Website redesign",
+  "telehealth-platform": "Telehealth platform",
+  "vial-label-design": "Vial label design",
   "payment-processing": "Payment processing",
   "meta-advertising": "Meta advertising infrastructure",
   "supplier-verification": "Supplier verification",
@@ -51,6 +55,8 @@ export const serviceLabels: Record<ServiceValue, string> = {
 /** Maps service page slugs to quiz options so a service page can preselect its option. */
 export const serviceSlugToOption: Record<string, ServiceValue> = {
   "ruo-peptide-website-development": "website-creation",
+  "telehealth-platform-development": "telehealth-platform",
+  "vial-label-design": "vial-label-design",
   "payment-processing": "payment-processing",
   "meta-advertising": "meta-advertising",
   "supplier-verification": "supplier-verification",
@@ -69,6 +75,8 @@ export const serviceSlugToOption: Record<string, ServiceValue> = {
 export const topicToOption: Record<string, ServiceValue> = {
   "all-in-one": "complete-infrastructure",
   payments: "payment-processing",
+  telehealth: "telehealth-platform",
+  labels: "vial-label-design",
 };
 
 /** Accepts "example.com" as well as "https://example.com", so nobody is stopped over a missing protocol. */

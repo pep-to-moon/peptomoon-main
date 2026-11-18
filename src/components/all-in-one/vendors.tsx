@@ -1,65 +1,44 @@
-import { AlertTriangle, ArrowDown, ArrowRight, Check, Store } from "lucide-react";
+import { Reveal } from "@/components/ui/section";
 import { cn } from "@/lib/utils";
-import { softShadow } from "./ui";
 
-const vendors = ["Web developer", "Payment broker", "3PL", "Lab", "Marketing agency", "SEO freelancer"];
+const vendors: [string, string][] = [
+  ["Web developer", "sees the site"],
+  ["Payment broker", "sees the application"],
+  ["3PL", "sees the parcels"],
+  ["Lab", "sees the batch"],
+  ["Marketing agency", "sees the ads"],
+  ["SEO freelancer", "sees the rankings"],
+];
 
-/** Before and after: six scattered vendors with tangled lines, against the same six functions on one clean panel. */
-export function VendorBeforeAfter() {
+/** Six separate vendors, each seeing one slice, set against one team that sees all of it. */
+export function SixVendors() {
   return (
-    <figure
-      aria-label="Without Peptomoon, six vendors work separately and mismatch. With Peptomoon, the same six functions sit on one panel connected to your business."
-      className="mt-10 grid items-stretch gap-4 lg:grid-cols-[1fr_auto_1fr]"
-    >
-      <div className="relative rounded-[1.5rem] bg-white p-5 ring-1 ring-line sm:p-6">
-        <p className="label text-ink-soft">Without Peptomoon</p>
-        <div className="relative mt-5">
-          <svg aria-hidden viewBox="0 0 100 60" preserveAspectRatio="none" className="absolute inset-0 size-full text-ink-soft/40" fill="none" stroke="currentColor" strokeWidth={0.5} strokeDasharray="2 2" vectorEffect="non-scaling-stroke">
-            <path d="M17 12 L50 30 L83 12 M17 30 L83 48 M17 48 L50 12 L83 30 M50 48 L17 12 M83 48 L50 30" vectorEffect="non-scaling-stroke" />
-          </svg>
-          <ul className="relative grid grid-cols-2 gap-x-3 gap-y-5 sm:grid-cols-3">
-            {vendors.map((v, i) => (
-              <li
-                key={v}
-                className={cn(
-                  "relative rounded-xl bg-canvas px-3 py-3 text-[0.82rem] font-semibold text-ink-soft ring-1 ring-ink/15",
-                  i % 2 ? "sm:translate-y-3" : "sm:-translate-y-1",
-                )}
-              >
-                {v}
-                {(i === 1 || i === 4) && (
-                  <span className="absolute -right-1.5 -top-2.5 inline-flex items-center gap-1 rounded-full bg-white px-2 py-0.5 text-[0.6rem] font-bold uppercase tracking-[0.04em] text-ink-soft ring-1 ring-ink/20">
-                    <AlertTriangle aria-hidden className="size-3" strokeWidth={1.75} />
-                    {i === 1 ? "mismatch" : "no owner"}
-                  </span>
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      <div aria-hidden className="grid place-items-center text-blue">
-        <ArrowRight className="hidden size-7 lg:block" strokeWidth={1.5} />
-        <ArrowDown className="size-7 lg:hidden" strokeWidth={1.5} />
-      </div>
-
-      <div className={cn("relative rounded-[1.5rem] bg-navy p-5 text-white sm:p-6", softShadow)}>
-        <p className="label text-sky">With Peptomoon</p>
-        <ul className="mt-5 grid grid-cols-2 gap-2 sm:grid-cols-3">
-          {vendors.map((v) => (
-            <li key={v} className="flex items-center gap-1.5 rounded-xl bg-white/10 px-3 py-3 text-[0.82rem] font-semibold ring-1 ring-white/20">
-              <Check aria-hidden className="size-3.5 shrink-0 text-sky" strokeWidth={2} />
-              {v}
-            </li>
-          ))}
-        </ul>
-        <div aria-hidden className="mx-auto mt-4 h-6 w-px bg-sky/60" />
-        <div className="flex items-center justify-center gap-2 rounded-xl bg-white px-3 py-3 font-display text-[0.8rem] font-bold uppercase tracking-[0.05em] text-ink">
-          <Store aria-hidden className="size-4 text-blue" strokeWidth={1.5} />
-          Your business
-        </div>
-      </div>
-    </figure>
+    <div className="mt-14 grid gap-12 lg:grid-cols-12 lg:items-center lg:gap-16">
+      <Reveal className="lg:col-span-5">
+        <p
+          role="img"
+          aria-label="Six vendors become one team"
+          className="font-display text-[clamp(7rem,3rem+15vw,15.5rem)] font-bold leading-[0.78] tracking-[-0.06em] text-blue"
+        >
+          <span aria-hidden>6</span>
+          <span aria-hidden className="mx-[0.06em] text-[0.5em] font-medium tracking-normal text-ink-soft">
+            to
+          </span>
+          <span aria-hidden>1</span>
+        </p>
+      </Reveal>
+      <ol className="lg:col-span-7">
+        {vendors.map(([name, sees], i) => (
+          <Reveal as="li" delay={i} key={name} className="flex items-baseline justify-between gap-6 border-t border-ink/20 py-4">
+            <span className="font-display text-[1.25rem] font-bold">{name}</span>
+            <span className="text-right text-ink-soft">{sees}</span>
+          </Reveal>
+        ))}
+        <Reveal as="li" delay={6} className={cn("flex items-baseline justify-between gap-6 rounded-2xl bg-navy px-5 py-5 text-white")}>
+          <span className="font-display text-[1.35rem] font-bold">Peptomoon</span>
+          <span className="text-right text-sky">sees the whole picture</span>
+        </Reveal>
+      </ol>
+    </div>
   );
 }

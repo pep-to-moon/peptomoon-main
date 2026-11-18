@@ -85,6 +85,9 @@ function Table({ head, rows }: { head: string[]; rows: string[][] }) {
   );
 }
 
+/** A fixed, decorative pattern that stands in for a QR code in the label diagram. It encodes nothing. */
+const LABEL_CODE = [1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1];
+
 function Block({ title, text, accent }: { title: string; text: string; accent?: boolean }) {
   return (
     <div className={cn("rounded-2xl p-4 ring-1", accent ? "bg-blue text-white ring-blue" : "bg-white ring-ink/10")}>
@@ -266,6 +269,66 @@ export function ServiceVisual({ kind }: { kind: ServiceVisualKey }) {
               </span>
             ))}
           </div>
+        </Panel>
+      );
+    case "label":
+      return (
+        <Panel title="Anatomy of a vial label" note="Layout only">
+          <div className="mx-auto max-w-[19rem] rounded-xl bg-white p-4 ring-1 ring-ink/15">
+            <div className="flex items-center justify-between border-b border-ink/15 pb-3">
+              <span className="font-display text-[0.8rem] font-bold uppercase tracking-[0.08em]">Brand</span>
+              <span className="label text-ink-soft">Range colour</span>
+            </div>
+            <div className="mt-3 grid grid-cols-[1fr_4.5rem] gap-3">
+              <div>
+                <p className="font-display text-[1.15rem] font-bold leading-tight">Product name</p>
+                <p className="mt-1 text-[0.85rem] text-ink-soft">Quantity in the vial</p>
+                <p className="mt-3 font-display text-[0.8rem] font-semibold tabular-nums">LOT 000000</p>
+              </div>
+              <div aria-hidden className="grid aspect-square grid-cols-5 gap-px bg-ink p-1">
+                {LABEL_CODE.map((on, i) => (
+                  <span key={i} className={on ? "bg-white" : "bg-ink"} />
+                ))}
+              </div>
+            </div>
+            <p className="mt-3 border-t border-ink/15 pt-2 text-[0.68rem] uppercase tracking-[0.08em] text-ink-soft">Research-use notice, worded by your counsel</p>
+          </div>
+          <ul className="mt-6 border-b border-ink/15">
+            {[
+              ["Product name and brand", "One system for the whole range"],
+              ["Lot or batch reference", "Matches your records and the COA"],
+              ["QR code", "Opens the batch's COA page"],
+              ["Research-use notice", "Placed where your counsel specifies"],
+            ].map(([k, d]) => (
+              <li key={k} className="grid grid-cols-[1fr_1.2fr] items-baseline gap-3 border-t border-ink/15 py-3">
+                <span className="font-display font-bold">{k}</span>
+                <span className="text-ink-soft">{d}</span>
+              </li>
+            ))}
+          </ul>
+        </Panel>
+      );
+    case "telehealth":
+      return (
+        <Panel title="One visit, end to end" note="One shared record">
+          <Steps
+            steps={[
+              { t: "Intake and consent", d: "Questions, eligibility rules and signed policies" },
+              { t: "Clinician review", d: "Your licensed provider decides, never the software" },
+              { t: "Visit and messages", d: "Video or audio, then secure follow-up" },
+              { t: "Prescription route", d: "Handed to your pharmacy partner by your prescriber" },
+              { t: "Plan and billing", d: "Subscription status follows the care plan" },
+            ]}
+          />
+          <p className="label mt-2">Three areas, three permission sets</p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {["Patient", "Provider", "Admin"].map((c, i) => (
+              <Chip key={c} dark={i === 1}>
+                {c}
+              </Chip>
+            ))}
+          </div>
+          <p className="mt-5 text-[0.9rem] text-ink-soft">Patient data lives in hosting accounts you own, under agreements you sign.</p>
         </Panel>
       );
     case "search":

@@ -44,10 +44,33 @@ docs/strategy/      research, strategy, design and technology decisions
 Edit `src/config/site.ts` (name, legal name, contact, analytics) and replace
 `src/components/ui/logo.tsx` and `src/app/icon.svg`. Colours are tokens at the top of `src/app/globals.css`.
 
+## Photographs and motion
+
+Every photograph is a slot in `src/content/media.ts` with a descriptive file name in `public/images`. The current photos are CC0 or public-domain stock found through the Openverse API and picked by eye. Their sources are recorded in `src/content/media-credits.json`. They are about 1000px wide, so they can look slightly soft on large retina screens. Three rules apply to every photo:
+
+- **No recognisable faces.** Use hands, objects, environments, or people cropped at the neck.
+- **Alt text is "what the photo shows, what it illustrates".** The first half is a true description in `media-credits.json`. The second half is the slot's `topic` in `media.ts`, or a page-specific one passed to `<Photo topic=...>` (service pages use the service's own keyword). Keep it natural and honest: no keyword lists, no "image of".
+- **Descriptive file names.** Search engines read them, so a new photo gets a name like `card-tap-payment-terminal`, not `img-04`.
+
+The sitemap lists each page's photographs, and service pages carry them in their structured data (`src/lib/page-images.ts`).
+
+To swap any slot for a full-resolution Unsplash photo, create a free app at https://unsplash.com/developers and run `UNSPLASH_ACCESS_KEY=your-key pnpm fetch:images <slot>`. It uses Unsplash's official API and records the photographer and the photo's alt text. A script cannot check for faces, so look at the result before keeping it. `pnpm make:media` only draws placeholder art for slots that have no real photo.
+
+Motion lives in `src/components/motion`: the scroll reveals and smooth scrolling (`motion-provider.tsx`), line-by-line headings (`split-heading.tsx`, desktop with a mouse only), the cursor ring (`cursor.tsx`) and the Threads WebGL background (`threads.tsx`, from React Bits under its MIT + Commons Clause licence, tablet and desktop only). All of it is off for visitors who prefer reduced motion, and content stays visible if scripts fail. The dotted map is Magic UI's Dotted Map (MIT) drawn with the `piri` package, and it only ever shows countries from the Search Console exports.
+
+### The entrance
+
+The home page opens on navy with the Peptomoon wordmark. The hero's own strip of the six sites we have built runs fast through the middle of the screen, slows to its normal pace, and then dissolves into the hero: a soft feathered edge sweeps the navy up and off, the headline lines rise through it, the strip glides down to its place, the header fades in, and the wordmark flies up into the header and becomes its logo (`src/components/layout/site-intro.tsx`, styles in `globals.css`, switch in the head script in `src/app/layout.tsx`). It is built from the real hero strip, so nothing is swapped at the end. Pure CSS plus a little script, no library. Without the intro (later visits, reduced motion) the hero performs a quieter version of the same entrance by itself: lines rise out of masks, the strip's cards are dealt in.
+
+- **Home page only, once per browser session.** Coming back to the home page in the same tab does not replay it.
+- **Never forced on anyone.** It is skipped for visitors who prefer reduced motion, who have data saver on, who have JavaScript off, and for automated browsers (so audits and tests see the real page). A click, Escape, Enter or Space skips it, and a failsafe in the head clears it after about five seconds whatever happens. Its wordmark is `aria-hidden`; the page underneath is in the HTML the whole time, so search engines and screen readers are unaffected.
+- **To see it again:** open the site in a new tab or window (each tab is its own session), or clear the `pm-intro` key from the tab's session storage. There is no URL switch. Reduced motion always skips it.
+- **Timing** is the constants at the top of `site-intro.tsx` (full speed, slow-down, when the dissolve starts) and the matching 1.2s durations in the intro block of `globals.css`. It never starts the dissolve before the fonts and page have really loaded.
+
 ## Settings and the launch check
 
 Nothing on the site is a made-up value. The contact email defaults to `inquiry@peptomoon.com` and can be overridden with
-`NEXT_PUBLIC_CONTACT_EMAIL`. Optional settings: `NEXT_PUBLIC_GA_ID`, `NEXT_PUBLIC_GSC_VERIFICATION`, `FORM_SECRET`.
+`NEXT_PUBLIC_CONTACT_EMAIL`. Optional settings: `NEXT_PUBLIC_GA_ID`, `NEXT_PUBLIC_CLARITY_ID`, `NEXT_PUBLIC_GSC_VERIFICATION`, `FORM_SECRET`.
 
 Online enquiries need `RESEND_API_KEY` and `RESEND_FROM_EMAIL` (an address on a domain verified in Resend, for example
 `noreply@peptomoon.com`). They arrive at `INQUIRY_TO_EMAIL` (one address or a comma-separated list) or, when that is not

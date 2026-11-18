@@ -107,7 +107,7 @@ export const websiteDevelopment: Service = {
     { q: "Customers say the price or stock on the page does not match the cart. What causes that?", a: "Usually the catalogue lives in more than one place: the page, the cart and sometimes a spreadsheet or a plugin. When a price changes in one and not the others, they disagree. The fix is a single source of truth for price, variant and availability, so every page, filter and cart reads the same record, with a check that runs after every update." },
     { q: "How do I keep research-use notices consistent across hundreds of pages?", a: "Do not type them into pages. Define each notice once and let the product template, the cart and the checkout render it. Then a change is one edit, and a missing notice cannot happen by accident. We build this into the template and add a check that fails if a product page ever renders without its notice." },
   ],
-  related: ["payment-processing", "seo-geo-aeo", "compliance-support", "business-dashboards"],
+  related: ["payment-processing", "vial-label-design", "seo-geo-aeo", "compliance-support", "business-dashboards"],
   caseStudies: ["veracue-labs", "99-purity-peptides", "primetime-bio-labs"],
   articles: ["peptide-store-architecture", "infrastructure-behind-an-ruo-peptide-business"],
   cta: { label: "Get a website assessment" },

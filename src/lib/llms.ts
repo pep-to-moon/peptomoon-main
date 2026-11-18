@@ -1,5 +1,5 @@
 import { absoluteUrl, siteConfig } from "@/config/site";
-import { getArticles, readingMinutes } from "@/content/articles";
+import { getArticle, getArticles, readingMinutes } from "@/content/articles";
 import { caseStudies, caseStudyFieldLabels, caseStudyFieldOrder, shouldRender } from "@/content/case-studies";
 import { legalDocs } from "@/content/legal";
 import { pillars } from "@/content/pillars";
@@ -13,7 +13,16 @@ import type { Block } from "@/content/types";
  * Hidden guides (regulatory guides awaiting review in production) are left out, exactly as on the site.
  */
 
-const abs = (text: string) => text.replace(/\]\((\/[^)\s]*)\)/g, (_, p: string) => `](${absoluteUrl(p)})`);
+/**
+ * Makes site-relative markdown links absolute. A link to a guide that is not published (a regulatory guide still awaiting
+ * review in production) would be a 404, so it is reduced to its label, exactly as the page renderer does.
+ */
+const abs = (text: string) =>
+  text.replace(/\[([^\]]+)\]\((\/[^)\s]*)\)/g, (_, label: string, p: string) => {
+    const guide = p.startsWith("/resources/") ? p.slice("/resources/".length).split(/[#?]/)[0] : "";
+    if (guide && !getArticle(guide)) return label;
+    return `[${label}](${absoluteUrl(p)})`;
+  });
 const cell = (s: string) => abs(s).replace(/\|/g, "\\|");
 
 function lastUpdated() {

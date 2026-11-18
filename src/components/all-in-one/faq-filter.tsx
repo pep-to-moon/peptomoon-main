@@ -23,7 +23,7 @@ export function FaqFilter({ items }: { items: Faq[] }) {
   const [active, setActive] = useState(0);
   return (
     <div>
-      <div role="group" aria-label="Filter questions by topic" className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-3 sm:mx-0 sm:flex-wrap sm:px-0">
+      <div role="group" aria-label="Filter questions by topic" className="-mx-5 flex gap-x-6 overflow-x-auto px-5 pb-1 sm:mx-0 sm:flex-wrap sm:px-0">
         {groups.map((g, i) => (
           <button
             key={g.label}
@@ -31,8 +31,8 @@ export function FaqFilter({ items }: { items: Faq[] }) {
             aria-pressed={active === i}
             onClick={() => setActive(i)}
             className={cn(
-              "min-h-11 shrink-0 rounded-full px-4 font-display text-[0.74rem] font-bold uppercase tracking-[0.06em] ring-1 transition-colors focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-blue",
-              active === i ? "bg-blue text-white ring-blue" : "bg-white text-ink ring-ink/15 hover:ring-ink/40",
+              "min-h-11 shrink-0 border-b-2 px-0.5 font-display text-[0.78rem] font-bold uppercase tracking-[0.06em] transition-colors focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-blue",
+              active === i ? "border-blue text-ink" : "border-transparent text-ink-soft hover:text-ink",
             )}
           >
             {g.label}

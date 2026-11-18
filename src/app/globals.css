@@ -62,20 +62,21 @@
 }
 
 @layer components {
-  /* Display type: squared, heavy grotesque in the spirit of the typography reference. */
+  /* Display type: Saira in sentence case. Long headlines in all capitals read as shouting and as a template; short labels,
+     buttons and the marquee words keep the squared uppercase. */
   .display {
     font-family: var(--font-display);
-    font-weight: 700;
-    font-variation-settings: "wdth" 110;
-    letter-spacing: -0.015em;
-    line-height: 0.98;
-    text-transform: uppercase;
+    font-weight: 600;
+    font-variation-settings: "wdth" 104;
+    letter-spacing: -0.028em;
+    line-height: 1.04;
+    text-transform: none;
   }
   .display-hero {
-    font-size: clamp(2.3rem, 0.7rem + 4.6vw, 5.6rem);
+    font-size: clamp(2.4rem, 0.7rem + 4.9vw, 6rem);
   }
   .display-xl {
-    font-size: clamp(2.3rem, 0.6rem + 5.6vw, 6.25rem);
+    font-size: clamp(2.4rem, 0.6rem + 5.8vw, 6.75rem);
   }
   .display-lg {
     font-size: clamp(1.9rem, 0.7rem + 3.7vw, 4.25rem);
@@ -148,8 +149,11 @@
     -webkit-text-stroke: 1.5px var(--color-ink);
   }
 
-  /* Pinned horizontal portfolio: when GSAP takes over, the root fills the screen and the track slides. */
-  .pin-root.is-pinned {
+  /* Horizontal portfolio: the wrapper is made tall by the script and this stage sticks to the top of the screen while the
+     cards slide. Native sticky never changes layout during scroll. */
+  .pin-root.is-pinned > .pin-stage {
+    position: sticky;
+    top: 0;
     display: flex;
     height: 100svh;
     flex-direction: column;
@@ -424,5 +428,495 @@ details > summary::-webkit-details-marker {
 @media (prefers-reduced-motion: reduce) {
   [class*="aio-fade"] {
     animation: none !important;
+  }
+}
+
+/* ---------- Photography, cursor and scroll feedback ---------- */
+
+/* Long headlines read better in sentence case; short labels and heroes keep the squared uppercase. */
+.display-sentence {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-variation-settings: "wdth" 104;
+  letter-spacing: -0.028em;
+  line-height: 1.03;
+  text-transform: none;
+}
+
+/* A photo wipes open from the top as it enters, while the picture settles from a slight zoom. */
+@layer components {
+  .photo {
+    position: relative;
+    isolation: isolate;
+    border-radius: var(--r, 1.25rem);
+  }
+}
+.photo-clip {
+  overflow: clip;
+  border-radius: var(--r, 1.25rem);
+  background: var(--color-navy);
+}
+.photo[data-reveal="mask"] .photo-clip {
+  transition: clip-path 1.15s var(--ease-out-expo);
+  clip-path: inset(0 0 0 0 round var(--r, 1.25rem));
+}
+.js .photo[data-reveal="mask"]:not(.is-in) {
+  opacity: 1;
+  transform: none;
+}
+.js .photo[data-reveal="mask"]:not(.is-in) .photo-clip {
+  clip-path: inset(0 0 100% 0 round var(--r, 1.25rem));
+}
+.photo-scale {
+  transition: transform 1.7s var(--ease-out-expo);
+}
+.js .photo[data-reveal="mask"]:not(.is-in) .photo-scale {
+  transform: scale(1.14);
+}
+/*
+ * Photos in the first screen (data-eager) open with CSS alone. The scripted version above hides the picture until
+ * JavaScript has loaded, which on a slow phone delays the page's largest paint by several seconds. The extra
+ * "html" in the selector makes these rules win over the scripted hidden state regardless of source order.
+ */
+@keyframes photo-open {
+  from {
+    clip-path: inset(0 0 100% 0 round var(--r, 1.25rem));
+  }
+  to {
+    clip-path: inset(0 0 0 0 round var(--r, 1.25rem));
+  }
+}
+@keyframes photo-settle {
+  from {
+    transform: scale(1.14);
+  }
+  to {
+    transform: none;
+  }
+}
+html.js .photo[data-reveal="mask"][data-eager] .photo-clip {
+  clip-path: inset(0 0 0 0 round var(--r, 1.25rem));
+  transition: none;
+  animation: photo-open 1.15s var(--ease-out-expo) both;
+}
+html.js .photo[data-reveal="mask"][data-eager] .photo-scale {
+  transform: none;
+  transition: none;
+  animation: photo-settle 1.7s var(--ease-out-expo) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  html.js .photo[data-reveal="mask"][data-eager] .photo-clip,
+  html.js .photo[data-reveal="mask"][data-eager] .photo-scale {
+    animation: none;
+  }
+  .js .photo[data-reveal="mask"]:not(.is-in) .photo-clip {
+    clip-path: inset(0 0 0 0 round var(--r, 1.25rem));
+  }
+  .js .photo[data-reveal="mask"]:not(.is-in) .photo-scale {
+    transform: none;
+  }
+  .photo[data-reveal="mask"] .photo-clip,
+  .photo-scale {
+    transition: none;
+  }
+}
+
+/* Cursor ring. Created hidden; the script only shows it for a real mouse. */
+.cursor-ring {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1.5px solid #fff;
+  border-radius: 9999px;
+  opacity: 0;
+  pointer-events: none;
+  /* White ring with a dark hairline, so it reads on cream and on navy without mix-blend-mode, which re-blended everything
+     underneath on every mouse move and made animated sections stutter. */
+  box-shadow: 0 0 0 1px rgb(11 22 35 / 0.45);
+  will-change: transform;
+  transition:
+    width 0.4s var(--ease-out-expo),
+    height 0.4s var(--ease-out-expo),
+    opacity 0.25s ease,
+    background-color 0.25s ease;
+}
+.cursor-ring[data-state="idle"] {
+  opacity: 1;
+}
+.cursor-ring[data-state="link"] {
+  opacity: 1;
+  width: 56px;
+  height: 56px;
+}
+.cursor-ring[data-state="label"] {
+  opacity: 1;
+  width: 88px;
+  height: 88px;
+  background-color: var(--color-blue);
+}
+.cursor-ring span {
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+}
+@media (hover: none), (prefers-reduced-motion: reduce) {
+  .cursor-ring {
+    display: none;
+  }
+}
+
+/* A hairline at the very top that fills as the page scrolls. Pure CSS; browsers without scroll timelines never see it. */
+.scroll-progress {
+  display: none;
+}
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .scroll-progress {
+      display: block;
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 70;
+      height: 2px;
+      background: var(--color-blue);
+      transform-origin: 0 50%;
+      transform: scaleX(0);
+      animation: scroll-progress linear both;
+      animation-timeline: scroll(root);
+    }
+  }
+}
+@keyframes scroll-progress {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* A text link whose underline draws in on hover. */
+.link-draw {
+  background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat;
+  transition: background-size 0.45s var(--ease-out-expo);
+}
+.link-draw:hover,
+.link-draw:focus-visible {
+  background-size: 100% 1px;
+}
+
+/* Photograph that follows the cursor over a service list. Created hidden; the script shows it for a real mouse only. */
+.hover-preview {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 60;
+  width: 18rem;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: var(--color-navy);
+  pointer-events: none;
+  opacity: 0;
+  scale: 0.94;
+  transition:
+    opacity 0.25s ease,
+    scale 0.4s var(--ease-out-expo);
+  will-change: transform, opacity;
+}
+.hover-preview[data-on="true"] {
+  opacity: 1;
+  scale: 1;
+}
+.hover-preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (hover: none), (prefers-reduced-motion: reduce) {
+  .hover-preview {
+    display: none;
+  }
+}
+
+/* Magnifying lens over a photograph. */
+.photo-lens {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  border-radius: 9999px;
+  background-repeat: no-repeat;
+  box-shadow:
+    0 0 0 3px #fff,
+    0 0 0 4px rgb(11 22 35 / 0.35);
+  pointer-events: none;
+  opacity: 0;
+  scale: 0.8;
+  transition:
+    opacity 0.2s ease,
+    scale 0.3s var(--ease-out-expo);
+}
+.photo-lens[data-on="true"] {
+  opacity: 1;
+  scale: 1;
+}
+@media (hover: none), (prefers-reduced-motion: reduce) {
+  .photo-lens {
+    display: none;
+  }
+}
+
+/* Search-reach map: a slow ripple leaves each marker. Runs only while the map is on screen (data-live), never for reduced motion. */
+.reach-ripple {
+  fill: none;
+  stroke: var(--color-blue);
+  stroke-width: 0.3;
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+[data-live="true"] .reach-ripple {
+  animation: reach-ripple 3.4s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+@keyframes reach-ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(2.7);
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reach-ripple {
+    display: none;
+  }
+}
+
+/* ---------- Entrance: the home hero performs it from the first paint. No loader, nothing waits or blocks. ---------- */
+
+/* Each headline line sits in a mask (the outer span) and rises into it (the inner span). The mask reaches a little past
+   the line box so tall letters and descenders are never trimmed once the line is in place. */
+.hero-line {
+  display: block;
+  clip-path: inset(-0.2em -0.2em -0.28em -0.2em);
+}
+.hero-line-in {
+  display: block;
+  animation: hero-line-in 1.1s var(--ease-out-expo) backwards;
+  animation-delay: calc(0.12s + var(--d, 0) * 0.1s);
+}
+@keyframes hero-line-in {
+  from {
+    transform: translateY(125%);
+  }
+}
+
+/* Everything else in the hero fades up around the headline. */
+.hero-fade {
+  animation: hero-fade 0.9s var(--ease-out-expo) backwards;
+  animation-delay: calc(0.12s + var(--d, 0) * 0.1s);
+}
+@keyframes hero-fade {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+}
+
+/* The strip of real work is dealt in, one card after another, the tall phone captures rising further than the wide ones. */
+.hero-card {
+  animation: hero-card-in 1.2s var(--ease-out-expo) backwards;
+  animation-delay: calc(0.45s + var(--i, 0) * 0.08s);
+}
+/* Transform only, never opacity: these are the page's largest images, and an image that starts invisible is not counted
+   as painted (so the page's Largest Contentful Paint would wait for the animation). */
+@keyframes hero-card-in {
+  from {
+    transform: translateY(var(--rise, 4rem)) scale(0.96);
+  }
+}
+
+/* The header settles in last of the first things, and only on a first load (it stays put between pages). */
+body > header {
+  animation: hero-header-in 0.9s ease 0.05s backwards;
+}
+@keyframes hero-header-in {
+  from {
+    opacity: 0;
+  }
+}
+
+/* ---------- Intro: the hero's own strip of sites runs fast across the middle, slows, and dissolves into the hero ---------- */
+/* See src/components/layout/site-intro.tsx. */
+
+/* Shown only while the head script has set html.intro-active, or while it is handing over to the page. */
+.intro {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: none;
+}
+html.intro-active .intro,
+.intro[data-phase="exit"],
+.intro[data-phase="fast"] {
+  display: block;
+}
+.intro[data-phase="done"] {
+  display: none !important;
+}
+.intro[data-phase="exit"],
+.intro[data-phase="fast"] {
+  pointer-events: none;
+}
+/* Locking the scroll would drop the scrollbar and put it back as the page is revealed, nudging it sideways. Keeping its
+   gutter (painted navy, like the screen) leaves the layout width unchanged. */
+html.intro-active,
+html.intro-active body {
+  overflow: hidden;
+}
+html.intro-active {
+  scrollbar-gutter: stable;
+  background: var(--color-navy);
+}
+
+/* The screen is plain navy. At hand-over it simply dissolves, so the hero comes up through it as it thins. */
+.intro-panel {
+  position: absolute;
+  inset: 0;
+  background: var(--color-navy);
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+}
+.intro[data-phase="exit"] .intro-panel {
+  opacity: 0;
+}
+.intro[data-phase="fast"] .intro-panel {
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+/* The wordmark sits above the strip, which runs through the middle of the screen. */
+.intro-logo {
+  --w: clamp(9rem, 15vw, 13.5rem);
+  position: absolute;
+  left: calc(50% - var(--w) / 2);
+  top: max(1rem, calc(50vh - 12.4rem - 6rem));
+  width: var(--w);
+  aspect-ratio: 900 / 256;
+  transform-origin: 0 0;
+  will-change: transform;
+  animation: intro-fade 0.8s ease 0.15s backwards;
+}
+@media (min-width: 640px) {
+  .intro-logo {
+    top: max(1.25rem, calc(50vh - 14.6rem - 7rem));
+  }
+}
+.intro-logo img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.intro-logo-dark {
+  opacity: 0;
+}
+@keyframes intro-fade {
+  from {
+    opacity: 0;
+  }
+}
+/* As the wordmark flies up it turns from white to its dark version, timed to when the navy has thinned beneath it. */
+.intro[data-phase="exit"] .intro-logo-light {
+  opacity: 0;
+  transition: opacity 0.3s ease 0.55s;
+}
+.intro[data-phase="exit"] .intro-logo-dark {
+  opacity: 1;
+  transition: opacity 0.3s ease 0.55s;
+}
+.intro[data-phase="fast"] .intro-logo {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* The hero's strip of sites is the intro's centrepiece. It is lifted above the navy screen, moved to the middle of
+   the screen (by --strip-dy, measured in script), shown larger, and kept running whatever the cursor does. When the
+   intro hands over, it glides back down to its place in the hero while it shrinks to its real size. */
+.hero-strip {
+  transition: transform 1.2s cubic-bezier(0.65, 0, 0.35, 1);
+}
+html.intro-active .hero-strip {
+  z-index: 310;
+  opacity: 0;
+  transform: translateY(var(--strip-dy, 0px)) scale(var(--strip-scale, 1.45));
+  transition: none;
+}
+html.intro-active.intro-strip-on .hero-strip {
+  opacity: 1;
+  transition:
+    opacity 0.4s ease,
+    transform 0.3s ease;
+}
+html.intro-exit .hero-strip {
+  z-index: 310;
+}
+html.intro-skip .hero-strip {
+  transition-duration: 0.35s;
+}
+html.intro-active .hero-strip .animate-marquee {
+  animation-play-state: running !important;
+}
+/* When the intro ran, the strip is already on screen, so its cards are not dealt in again, and the rest of the hero
+   waits a beat for the strip to clear the middle of the screen. */
+html.intro-active .hero-card,
+html.intro-ran .hero-card {
+  animation: none;
+}
+html.intro-ran .hero-fade {
+  animation-delay: calc(0.55s + var(--d, 0) * 0.1s);
+}
+html.intro-ran .hero-line-in {
+  animation-delay: calc(0.35s + var(--d, 0) * 0.1s);
+}
+
+/* Hand-off: the hero's first moments wait for the intro, then start together as the navy begins to leave. */
+html.intro-active .hero-line-in,
+html.intro-active .hero-fade,
+html.intro-active body > header {
+  animation-play-state: paused;
+}
+/* While the wordmark is in flight the header's own wordmark waits; the flying one becomes it on landing. */
+html.intro-landing [data-header-logo] img {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce), print {
+  .intro {
+    display: none !important;
+  }
+  html.intro-active,
+  html.intro-active body {
+    overflow: visible;
+  }
+  html.intro-landing [data-header-logo] img {
+    opacity: 1;
+  }
+  .hero-line {
+    clip-path: none;
+  }
+  .hero-line-in,
+  .hero-fade,
+  .hero-card,
+  body > header {
+    animation: none;
   }
 }

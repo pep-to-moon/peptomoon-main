@@ -3,7 +3,6 @@ import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { type LegalDoc } from "@/content/legal";
 import { webPageSchema } from "@/lib/seo/schema";
 import { formatDate } from "@/lib/utils";
-import { ConsentReset } from "./consent-reset";
 
 /** Anchor for a section heading, so other pages can link straight to it, for example /editorial-policy#corrections. */
 const sectionId = (heading: string) =>
@@ -78,11 +77,6 @@ export function LegalPage({ doc }: { doc: LegalDoc }) {
                     )}
                   </section>
                 ))}
-                {doc.slug === "cookie-policy" && (
-                  <div className="mt-10">
-                    <ConsentReset />
-                  </div>
-                )}
               </div>
             </div>
           </div>

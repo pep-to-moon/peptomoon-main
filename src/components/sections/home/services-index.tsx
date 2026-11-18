@@ -2,13 +2,14 @@ import { ServiceRows } from "@/components/services/service-rows";
 import { Section, SectionIntro } from "@/components/ui/section";
 import { services } from "@/content/services";
 import { pillars } from "@/content/pillars";
+import { numberWord } from "@/lib/number-word";
 
 /** Every service as one ordered index, grouped by the four pillars. */
 export function ServicesIndex() {
   return (
     <Section labelledBy="services-index-title">
       <div className="container-x">
-        <SectionIntro label="What we do" titleId="services-index-title" title={<>Thirteen services, one team.</>}>
+        <SectionIntro label="What we do" titleId="services-index-title" title={<>{numberWord(services.length, true)} services, one team.</>}>
           <p>Four groups: build, run, grow and verify. Take one service, or the whole set.</p>
         </SectionIntro>
 

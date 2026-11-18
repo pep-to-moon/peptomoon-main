@@ -10,7 +10,7 @@ export type RouteEntry = {
 };
 
 /** Date the static pages' content last changed. Update when editing them. */
-const SITE_UPDATED = "2026-11-17";
+const SITE_UPDATED = "2026-11-18";
 
 export function getStaticRoutes(): RouteEntry[] {
   return [

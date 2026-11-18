@@ -149,7 +149,7 @@ export function Button({
 export function TextLink({ href, children, className }: { href: string; children: ReactNode; className?: string }) {
   const external = isExternal(href);
   const cls = cn(
-    "group inline-flex items-center gap-2 font-display text-[0.85rem] font-bold uppercase tracking-[0.06em] underline decoration-1 underline-offset-[6px] decoration-current/30 hover:decoration-current",
+    "group inline-flex min-h-8 items-center gap-2 font-display text-[0.85rem] font-bold uppercase tracking-[0.06em] underline decoration-1 underline-offset-[6px] decoration-current/30 hover:decoration-current",
     className,
   );
   const Icon = external ? ArrowUpRight : ArrowRight;

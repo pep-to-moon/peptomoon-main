@@ -16,7 +16,9 @@ export type ServiceVisualKey =
   | "dashboard"
   | "support"
   | "search"
-  | "audit";
+  | "audit"
+  | "telehealth"
+  | "label";
 
 export type Service = {
   slug: string;
@@ -29,6 +31,8 @@ export type Service = {
   h1: string;
   lead: string;
   what: string[];
+  /** Heading for the "why" section, when the default about RUO businesses does not fit. */
+  whyTitle?: string;
   why: string[];
   problems: { title: string; text: string }[];
   approach: { title: string; text: string }[];

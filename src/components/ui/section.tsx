@@ -1,4 +1,6 @@
 import type { CSSProperties, ElementType, ReactNode } from "react";
+import { ScrambleText } from "@/components/motion/scramble-text";
+import { SplitHeading } from "@/components/motion/split-heading";
 import { cn } from "@/lib/utils";
 
 const tones = {
@@ -51,19 +53,27 @@ export function Section({
   return panel ? <div className="px-2.5 py-1.5 sm:px-3">{section}</div> : section;
 }
 
+/**
+ * Scroll reveal. Content is hidden until the motion layer (JavaScript) confirms it will animate it, which on a slow
+ * phone can be several seconds after first paint. Anything that can sit in the first screen (the hero's lead text and
+ * actions, the first cards) must pass `eager`: it then rises into place with a CSS-only animation and is never hidden,
+ * so the page's largest paint does not wait for scripts.
+ */
 export function Reveal({
   as: Tag = "div",
   delay = 0,
+  eager = false,
   className,
   children,
 }: {
   as?: ElementType;
   delay?: number;
+  eager?: boolean;
   className?: string;
   children: ReactNode;
 }) {
   return (
-    <Tag data-reveal="" style={{ "--d": delay } as CSSProperties} className={className}>
+    <Tag data-reveal={eager ? undefined : ""} style={{ "--d": delay } as CSSProperties} className={eager ? cn("hero-rise", className) : className}>
       {children}
     </Tag>
   );
@@ -96,14 +106,16 @@ export function SectionIntro({
   return (
     <div className={cn("mb-[clamp(2.5rem,6vw,5rem)]", className)}>
       <Reveal className="border-t border-current/20 pt-4">
-        <p className="eyebrow">{label}</p>
+        <p className="eyebrow">
+          <ScrambleText text={label} />
+        </p>
       </Reveal>
       <div className="mt-8 grid gap-8 lg:grid-cols-12 lg:items-end">
-        <Reveal className="lg:col-span-8">
-          <h2 id={titleId} className="display display-lg">
+        <div className="lg:col-span-8">
+          <SplitHeading id={titleId} className="display display-lg">
             {title}
-          </h2>
-        </Reveal>
+          </SplitHeading>
+        </div>
         {children && (
           <Reveal delay={1} className="prose-article text-[1.0625rem] opacity-80 lg:col-span-4">
             {children}

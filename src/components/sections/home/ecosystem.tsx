@@ -1,21 +1,37 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { ParticlesBg } from "@/components/motion/particles-bg";
 import { ButtonLink } from "@/components/ui/button";
 import { Reveal, Section, SectionIntro } from "@/components/ui/section";
 import { pillars } from "@/content/pillars";
-import { servicesByPillar } from "@/content/services";
+import { services, servicesByPillar } from "@/content/services";
+import { numberWord } from "@/lib/number-word";
 import { EcosystemDiagram } from "./ecosystem-diagram";
 
 export function Ecosystem() {
   return (
     <Section tone="navy" panel labelledBy="ecosystem-title">
-      <div className="container-x">
+      <ParticlesBg
+        particleCount={70}
+        particleColors={["#99d6ea", "#6798c0", "#fdc921"]}
+        connections
+        connectionDistance={150}
+        hoverEffect="repel"
+        hoverRadius={170}
+        speed={0.06}
+        opacity={0.8}
+        glow={0.35}
+        pixelRatio={1}
+        clickBurst={false}
+        disableRotation
+      />
+      <div className="container-x relative">
         <SectionIntro
           label="The connected ecosystem"
           titleId="ecosystem-title"
           title={
             <>
-              Beyond the storefront. Thirteen systems, one partner.
+              Beyond the storefront. {numberWord(services.length, true)} systems, one partner.
             </>
           }
         >

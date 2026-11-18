@@ -1,8 +1,10 @@
 "use client";
 
-import { useMemo, useState, type KeyboardEvent, type PointerEvent } from "react";
+import { useEffect, useMemo, useRef, useState, type KeyboardEvent, type PointerEvent } from "react";
+import { DottedMap } from "@/components/ui/dotted-map";
 import { Reveal, Section, SectionIntro } from "@/components/ui/section";
 import type { GscPoint, GscShare, GscSite } from "@/content/gsc";
+import { countryPoints } from "@/lib/geo";
 import { cn } from "@/lib/utils";
 
 type Metric = "clicks" | "impressions" | "ctr" | "position";
@@ -72,6 +74,56 @@ function mergeShares(lists: GscShare[][]): GscShare[] {
     }
   }
   return [...map.values()].sort((a, b) => b.clicks - a.clicks);
+}
+
+/** Real Search Console countries on a dotted map. Marker size follows each country's share of clicks. */
+function ReachMap({ items, total }: { items: GscShare[]; total: number }) {
+  const placed = items.flatMap((i) => {
+    const p = countryPoints[i.name];
+    if (!p || !total) return [];
+    return [{ ...p, size: 0.9 + Math.sqrt(i.clicks / total) * 3.4, label: i.name }];
+  });
+  // The rings ripple only while the map is on screen.
+  const box = useRef<HTMLDivElement>(null);
+  const [live, setLive] = useState(false);
+  useEffect(() => {
+    const el = box.current;
+    if (!el) return;
+    const io = new IntersectionObserver(([e]) => setLive(e.isIntersecting), { rootMargin: "60px" });
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+  if (placed.length === 0) return null;
+  return (
+    <div
+      ref={box}
+      data-live={live}
+      role="img"
+      aria-label={`Map of where the clicks come from: ${items.map((i) => i.name).join(", ")}.`}
+      className="overflow-hidden rounded-[1.25rem] bg-sky-soft p-4 sm:p-8"
+    >
+      <DottedMap
+        width={150}
+        height={75}
+        mapSamples={5200}
+        dotRadius={0.3}
+        markerColor="#2f5f8a"
+        className="text-navy/25"
+        markers={placed}
+        renderMarkerOverlay={({ marker, index, x, y, r }) => (
+          <>
+            <circle cx={x} cy={y} r={r + 0.9} fill="none" stroke="#2f5f8a" strokeWidth={0.3} opacity={0.5} />
+            {/* Two slow ripples leave each marker, half a cycle apart, and every marker starts at a different moment. */}
+            <circle className="reach-ripple" cx={x} cy={y} r={r + 0.9} style={{ animationDelay: `${(index * 0.55) % 3.4}s` }} />
+            <circle className="reach-ripple" cx={x} cy={y} r={r + 0.9} style={{ animationDelay: `${((index * 0.55) % 3.4) + 1.7}s` }} />
+            <text x={x + r + 1.6} y={y + 1} fontSize={3} fontWeight={600} fill="#0b1623" style={{ fontFamily: "var(--font-inter)" }}>
+              {marker.label as string}
+            </text>
+          </>
+        )}
+      />
+    </div>
+  );
 }
 
 function ShareList({ title, items, total }: { title: string; items: GscShare[]; total: number }) {
@@ -318,14 +370,22 @@ export function GscReach({ sites }: { sites: GscSite[] }) {
             </div>
           </details>
 
-          <div className="mt-12 grid gap-x-14 gap-y-12 lg:grid-cols-2">
-            <ShareList
-              title="Where the clicks come from"
-              items={(site ? site.countries : mergeShares(data.map((d) => d.countries))).slice(0, 6)}
-              total={totals.clicks}
-            />
-            <ShareList title="Devices" items={site ? site.devices : mergeShares(data.map((d) => d.devices))} total={totals.clicks} />
-          </div>
+          {(() => {
+            const countries = (site ? site.countries : mergeShares(data.map((d) => d.countries))).slice(0, 6);
+            return (
+              <div className="mt-12 grid gap-x-14 gap-y-12 lg:grid-cols-12 lg:items-start">
+                <div className="lg:col-span-7">
+                  <ReachMap items={countries} total={totals.clicks} />
+                </div>
+                <div className="lg:col-span-5">
+                  <ShareList title="Where the clicks come from" items={countries} total={totals.clicks} />
+                  <div className="mt-10">
+                    <ShareList title="Devices" items={site ? site.devices : mergeShares(data.map((d) => d.devices))} total={totals.clicks} />
+                  </div>
+                </div>
+              </div>
+            );
+          })()}
 
           {!site && (
             <div className="mt-12">

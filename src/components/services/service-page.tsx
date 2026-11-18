@@ -6,7 +6,10 @@ import { CtaBand } from "@/components/ui/cta-band";
 import { FaqList } from "@/components/ui/faq-list";
 import { PageHero } from "@/components/ui/page-hero";
 import { PaymentsOffer } from "@/components/ui/payments-offer";
+import { Photo } from "@/components/ui/photo";
 import { Reveal, Section } from "@/components/ui/section";
+import { siteConfig } from "@/config/site";
+import { serviceMedia } from "@/content/service-media";
 import { getArticle } from "@/content/articles";
 import { getCaseStudy } from "@/content/case-studies";
 import { getPortfolioItem } from "@/content/portfolio";
@@ -45,6 +48,7 @@ export function ServicePage({ service }: { service: Service }) {
   const articles = service.articles.map((s) => getArticle(s)).filter((a) => a !== undefined);
   const studies = service.caseStudies.map((s) => getCaseStudy(s)).filter((c) => c !== undefined);
   const related = service.related.map((s) => getService(s)).filter((s) => s !== undefined);
+  const photos = serviceMedia[service.slug];
 
   return (
     <>
@@ -78,6 +82,19 @@ export function ServicePage({ service }: { service: Service }) {
         {service.slug === "payment-processing" && <PaymentsOffer className="mt-10" />}
       </PageHero>
 
+      {photos && (
+        <div className="container-x pb-[clamp(2.5rem,6vw,5rem)]">
+          <Photo
+            name={photos.hero}
+            ratio="21 / 9"
+            sizes="(min-width: 1024px) 92vw, 100vw"
+            priority
+            radius="1.5rem"
+            topic={`illustrating ${service.primaryKeyword} from ${siteConfig.name}`}
+          />
+        </div>
+      )}
+
       <Section labelledBy="what-title" className="pt-0">
         <div className="container-x grid gap-12 lg:grid-cols-12">
           <Reveal className="min-w-0 lg:col-span-6">
@@ -104,7 +121,7 @@ export function ServicePage({ service }: { service: Service }) {
             <div className="lg:sticky lg:top-32">
               <Rule>
                 <h2 id="why-title" className="display display-md">
-                  Why RUO businesses need it
+                  {service.whyTitle ?? "Why RUO businesses need it"}
                 </h2>
               </Rule>
             </div>
@@ -208,6 +225,19 @@ export function ServicePage({ service }: { service: Service }) {
           </Reveal>
         </div>
       </Section>
+
+      {photos && (
+        <div className="container-x py-[clamp(1rem,3vw,2rem)]">
+          <Photo
+            name={photos.band}
+            ratio="21 / 8"
+            sizes="(min-width: 1024px) 92vw, 100vw"
+            parallax={7}
+            radius="1.5rem"
+            topic={`illustrating ${service.name.toLowerCase()} for peptide and clinical businesses`}
+          />
+        </div>
+      )}
 
       <Section labelledBy="tech-title">
         <div className="container-x grid gap-12 lg:grid-cols-12">

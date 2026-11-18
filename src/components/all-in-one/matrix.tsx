@@ -24,7 +24,7 @@ function Cell({ v, us = false }: { v: string; us?: boolean }) {
 
 /**
  * Comparison matrix. The Peptomoon column is tinted and capped. Icons sit beside the words, never in place of them.
- * Narrow screens scroll sideways inside the table with the first column pinned; wider screens keep a sticky header.
+ * Narrow screens scroll sideways inside the table with the first column pinned. The header row is not sticky: in an eight-row table it froze mid-screen and covered the rows beneath it.
  */
 export function ComparisonMatrix() {
   return (
@@ -34,19 +34,19 @@ export function ComparisonMatrix() {
           <caption className="sr-only">Peptomoon all-in-one compared with separate vendors and a DIY hosted platform</caption>
           <thead>
             <tr>
-              <th scope="col" className="sticky left-0 top-0 z-20 rounded-tl-[1.25rem] bg-white py-3 pl-4 pr-3 lg:top-20">
+              <th scope="col" className="sticky left-0 z-20 rounded-tl-[1.25rem] bg-white py-3 pl-4 pr-3">
                 <span className="sr-only">Feature</span>
               </th>
-              <th scope="col" className="sticky top-0 z-10 bg-sky-soft px-3 pb-3 pt-0 align-bottom lg:top-20">
+              <th scope="col" className="bg-sky-soft px-3 pb-3 pt-0 align-bottom">
                 <span className="mb-2 block w-fit -translate-y-px rounded-b-lg bg-blue px-3 py-1 font-display text-[0.65rem] font-bold uppercase tracking-[0.08em] text-white">
                   Recommended
                 </span>
                 <span className="label text-blue">Peptomoon all-in-one</span>
               </th>
-              <th scope="col" className="label sticky top-0 z-10 bg-white px-3 py-3 lg:top-20">
+              <th scope="col" className="label bg-white px-3 py-3">
                 Separate vendors
               </th>
-              <th scope="col" className="label sticky top-0 z-10 rounded-tr-[1.25rem] bg-white px-3 py-3 lg:top-20">
+              <th scope="col" className="label rounded-tr-[1.25rem] bg-white px-3 py-3">
                 DIY hosted platform
               </th>
             </tr>

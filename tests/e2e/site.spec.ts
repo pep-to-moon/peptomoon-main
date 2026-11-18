@@ -13,6 +13,9 @@ const routes = [
   "/resources",
   // Production builds hide regulatory articles until counsel review is recorded, so the tests expect the same.
   ...allArticles.filter((a) => !a.needsCounselReview || a.counselReviewedOn).map((a) => `/resources/${a.slug}`),
+  "/all-in-one",
+  "/why-peptomoon",
+  "/glossary",
   "/about",
   "/contact",
   "/privacy-policy",
@@ -71,8 +74,23 @@ for (const vp of viewports) {
 
         const blocks = await page.locator('script[type="application/ld+json"]').allTextContents();
         expect(blocks.length).toBeGreaterThan(0);
-        for (const b of blocks) JSON.parse(b);
-        expect(blocks.join(" ")).not.toContain("FAQPage");
+        const nodes = blocks.flatMap((b) => {
+          const j = JSON.parse(b) as Record<string, unknown> | Record<string, unknown>[];
+          return (Array.isArray(j) ? j : [j]).flatMap((n) => (Array.isArray(n["@graph"]) ? (n["@graph"] as Record<string, unknown>[]) : [n]));
+        });
+
+        // FAQPage markup is allowed, but only one per page, and only for questions and answers a visitor can read.
+        const faqs = nodes.filter((n) => n["@type"] === "FAQPage");
+        expect(faqs.length, "at most one FAQPage per page").toBeLessThanOrEqual(1);
+        if (faqs[0]) {
+          const pageText = ((await page.evaluate(() => document.body.textContent)) ?? "").replace(/\s+/g, " ");
+          const entities = faqs[0].mainEntity as { name: string; acceptedAnswer: { text: string } }[];
+          expect(entities.length).toBeGreaterThan(0);
+          for (const e of entities) {
+            expect(pageText, `question not visible: ${e.name}`).toContain(e.name.replace(/\s+/g, " "));
+            expect(pageText, `answer not visible for: ${e.name}`).toContain(e.acceptedAnswer.text.replace(/\s+/g, " ").slice(0, 80));
+          }
+        }
 
         expect(errors, "console errors").toEqual([]);
       });

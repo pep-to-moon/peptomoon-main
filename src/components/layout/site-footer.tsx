@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ParticlesBg } from "@/components/motion/particles-bg";
 import { ArrowUpRight } from "lucide-react";
 import { Logo } from "@/components/ui/logo";
 import { ButtonLink } from "@/components/ui/button";
@@ -12,6 +13,18 @@ export function SiteFooter() {
   return (
     <footer className="px-2.5 pb-2.5 pt-1.5 sm:px-3 sm:pb-3">
       <div className="panel on-dark relative overflow-hidden bg-navy text-white">
+        <ParticlesBg
+          particleCount={55}
+          particleColors={["#99d6ea", "#6798c0"]}
+          hoverEffect="attract"
+          hoverRadius={160}
+          speed={0.05}
+          opacity={0.55}
+          glow={0.3}
+          pixelRatio={1}
+          clickBurst={false}
+          disableRotation
+        />
         <div className="container-x relative pt-[clamp(4rem,9vw,8rem)]">
           <div className="grid gap-10 lg:grid-cols-12 lg:items-end">
             <div className="lg:col-span-8">
@@ -27,7 +40,7 @@ export function SiteFooter() {
                   Start a project
                 </ButtonLink>
                 {email && (
-                  <a href={`mailto:${email}`} className="inline-flex items-center gap-1.5 font-display text-[0.85rem] font-bold uppercase tracking-[0.06em] underline underline-offset-[6px]">
+                  <a href={`mailto:${email}`} className="inline-flex min-h-8 items-center gap-1.5 font-display text-[0.85rem] font-bold uppercase tracking-[0.06em] underline underline-offset-[6px]">
                     {email}
                     <ArrowUpRight aria-hidden className="size-4" />
                   </a>

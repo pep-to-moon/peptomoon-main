@@ -63,11 +63,11 @@ export function HeaderClient({ columns, nav }: { columns: Column[]; nav: NavItem
       <div className="container-x">
         <div className="relative">
         <div className="flex h-14 items-center justify-between gap-4 rounded-full bg-white/95 pl-5 pr-1.5 shadow-[0_18px_50px_-24px_rgba(13,34,54,0.55)] ring-1 ring-ink/10 sm:h-[3.75rem]">
-          <Link href="/" aria-label={`${siteConfig.name} home`} className="shrink-0">
+          <Link href="/" aria-label={`${siteConfig.name} home`} className="shrink-0" data-header-logo>
             <Logo priority />
           </Link>
 
-          <nav aria-label="Primary" className="hidden items-center gap-1 lg:flex">
+          <nav aria-label="Primary" className="hidden items-center gap-0 xl:gap-1 lg:flex">
             {nav.map((item) =>
               item.href === "/services" ? (
                 <button
@@ -77,7 +77,7 @@ export function HeaderClient({ columns, nav }: { columns: Column[]; nav: NavItem
                   aria-controls="mega-menu"
                   onClick={() => setMegaAt(mega ? null : pathname)}
                   className={cn(
-                    "flex h-10 items-center gap-1.5 whitespace-nowrap rounded-full px-3 xl:px-4 font-display text-[0.8rem] font-bold uppercase tracking-[0.06em] transition-colors hover:bg-sky-soft",
+                    "flex h-10 items-center gap-1.5 whitespace-nowrap rounded-full px-2 text-[0.72rem] xl:px-4 xl:text-[0.8rem] font-display font-bold uppercase tracking-[0.06em] transition-colors hover:bg-sky-soft",
                     (mega || active(item.href)) && "bg-sky-soft",
                   )}
                 >
@@ -90,7 +90,7 @@ export function HeaderClient({ columns, nav }: { columns: Column[]; nav: NavItem
                   href={item.href}
                   aria-current={active(item.href) ? "page" : undefined}
                   className={cn(
-                    "flex h-10 items-center whitespace-nowrap rounded-full px-3 xl:px-4 font-display text-[0.8rem] font-bold uppercase tracking-[0.06em] transition-colors hover:bg-sky-soft",
+                    "flex h-10 items-center whitespace-nowrap rounded-full px-2 text-[0.72rem] xl:px-4 xl:text-[0.8rem] font-display font-bold uppercase tracking-[0.06em] transition-colors hover:bg-sky-soft",
                     active(item.href) && "bg-sky-soft",
                   )}
                 >

@@ -12,11 +12,12 @@ import { siteConfig } from "@/config/site";
 import { pillars } from "@/content/pillars";
 import { servicesByPillar, services } from "@/content/services";
 import { buildMetadata } from "@/lib/seo/metadata";
+import { numberWord } from "@/lib/number-word";
 import { webPageSchema } from "@/lib/seo/schema";
 
 const title = `RUO Peptide Business Services | ${siteConfig.name}`;
 const description =
-  "Thirteen services for RUO peptide businesses: websites, payments, fulfillment, wholesale and 3PL, reporting, marketing, search, audits and compliance.";
+  `${numberWord(services.length, true)} services for RUO peptide businesses: websites, payments, fulfillment, wholesale and 3PL, reporting, marketing, search, audits and compliance.`;
 
 export const metadata: Metadata = buildMetadata({ title, description, path: "/services" });
 
@@ -29,7 +30,7 @@ export default function ServicesPage() {
         crumbs={[{ name: "Services", path: "/services" }]}
         title={
           <>
-            Thirteen services. One partner.
+            {numberWord(services.length, true)} services. One partner.
           </>
         }
         lead={
@@ -45,7 +46,7 @@ export default function ServicesPage() {
         }
       />
 
-      <ShotStrip className="pb-[clamp(3rem,7vw,6rem)]" />
+      <ShotStrip eager className="pb-[clamp(3rem,7vw,6rem)]" />
 
       {pillars.map((p, pi) => {
         const list = servicesByPillar(p.key);

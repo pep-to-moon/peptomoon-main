@@ -177,7 +177,7 @@ Five steps in the order the brief gives, with a visible progress list (`ol`, `ar
 | Step | Content | Logic |
 |---|---|---|
 | 1 | Business status (four options) | Required single choice |
-| 2 | Services required (thirteen options, multi-select) | "Complete business infrastructure" is exclusive: choosing it clears other choices and shows a note |
+| 2 | Services required (one option per service plus a complete-infrastructure option, multi-select) | "Complete business infrastructure" is exclusive: choosing it clears other choices and shows a note |
 | 3 | Website information | Shown if status is "already have a website" or services include website redesign. Otherwise skipped. URL validated, with an "I do not have one yet" option |
 | 4 | Additional details | Requirements and current challenges, plain textareas with limits |
 | 5 | Contact | Full name, business name, email, WhatsApp number, website URL if not given earlier, consent checkbox (unchecked by default, linked to the Privacy Policy) |

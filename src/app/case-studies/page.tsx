@@ -47,7 +47,7 @@ export default function CaseStudiesPage() {
         </h2>
         <div className="container-x grid gap-5 lg:grid-cols-2 lg:gap-6">
           {portfolio.map((item, i) => (
-            <Reveal key={item.slug} delay={i % 2} className={i % 2 === 1 ? "lg:mt-16" : ""}>
+            <Reveal key={item.slug} delay={i % 2} eager={i < 2} className={i % 2 === 1 ? "lg:mt-16" : ""}>
               <ProjectCard item={item} priority={i < 2} detailed />
             </Reveal>
           ))}

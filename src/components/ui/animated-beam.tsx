@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useId, useState, type RefObject } from "react"
-import { motion } from "motion/react"
+import { motion, useReducedMotion } from "motion/react"
 
 import { cn } from "@/lib/utils"
 
@@ -21,6 +21,8 @@ export interface AnimatedBeamProps {
   duration?: number
   repeat?: number
   repeatDelay?: number
+  /** False pauses the moving highlight (the faint base line stays). Pass false while the beam is off screen. */
+  active?: boolean
   startXOffset?: number
   startYOffset?: number
   endXOffset?: number
@@ -43,12 +45,15 @@ export const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
   gradientStopColor = "#9c40ff",
   repeat = Infinity,
   repeatDelay = 0,
+  active = true,
   startXOffset = 0,
   startYOffset = 0,
   endXOffset = 0,
   endYOffset = 0,
 }) => {
   const id = useId()
+  const reduced = useReducedMotion()
+  const run = active && !reduced
   const [pathD, setPathD] = useState("")
   const [svgDimensions, setSvgDimensions] = useState({ width: 0, height: 0 })
 
@@ -151,6 +156,8 @@ export const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
       />
       <defs>
         <motion.linearGradient
+          // Remounting on pause stops the endless animation outright, so an off-screen diagram costs nothing.
+          key={run ? "running" : "paused"}
           className="transform-gpu"
           id={id}
           gradientUnits={"userSpaceOnUse"}
@@ -160,12 +167,16 @@ export const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
             y1: "0%",
             y2: "0%",
           }}
-          animate={{
-            x1: gradientCoordinates.x1,
-            x2: gradientCoordinates.x2,
-            y1: gradientCoordinates.y1,
-            y2: gradientCoordinates.y2,
-          }}
+          animate={
+            run
+              ? {
+                  x1: gradientCoordinates.x1,
+                  x2: gradientCoordinates.x2,
+                  y1: gradientCoordinates.y1,
+                  y2: gradientCoordinates.y2,
+                }
+              : undefined
+          }
           transition={{
             delay,
             duration,

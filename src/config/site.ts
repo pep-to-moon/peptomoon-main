@@ -24,7 +24,10 @@ export const siteConfig = {
   },
   social: [] as { label: string; url: string }[],
   analytics: {
-    gaId: process.env.NEXT_PUBLIC_GA_ID ?? "",
+    // GA4 measurement ID, like G-XXXXXXXXXX. Trimmed because a pasted value often carries a stray space or newline.
+    gaId: (process.env.NEXT_PUBLIC_GA_ID ?? "").trim(),
+    // Microsoft Clarity project ID (Clarity > Settings > Setup), a short code like zf8lqke71d.
+    clarityId: (process.env.NEXT_PUBLIC_CLARITY_ID ?? "").trim(),
     gscVerification: process.env.NEXT_PUBLIC_GSC_VERIFICATION ?? "",
   },
 } as const;

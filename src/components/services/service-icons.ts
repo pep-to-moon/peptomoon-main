@@ -11,12 +11,16 @@ import {
   Search,
   Share2,
   ShieldCheck,
+  Stethoscope,
+  Tag,
   Truck,
   type LucideIcon,
 } from "lucide-react";
 
 export const serviceIcons: Record<string, LucideIcon> = {
   "ruo-peptide-website-development": Globe,
+  "telehealth-platform-development": Stethoscope,
+  "vial-label-design": Tag,
   "payment-processing": CreditCard,
   "fulfillment-logistics": PackageCheck,
   "wholesale-dropshipping-3pl": Truck,

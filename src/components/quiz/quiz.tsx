@@ -9,6 +9,7 @@ import { AnimatePresence, MotionConfig, motion } from "motion/react";
 import { ArrowLeft, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { trackEvent } from "@/lib/analytics";
 import {
   inquirySchema,
   SERVICE_VALUES,
@@ -211,6 +212,8 @@ export function Quiz({ fallbackEmail }: { fallbackEmail: string }) {
       const data = (await res.json().catch(() => null)) as { ok?: boolean; error?: string; fieldErrors?: Record<string, string[]> } | null;
 
       if (res.status === 202 && data?.ok === true) {
+        // GA4 key event. Only service names go out, never the visitor's details.
+        trackEvent("generate_lead", { form_name: "inquiry", services: values.services.join(",").slice(0, 100) });
         setSubmit({ kind: "sent", email: values.email });
         return;
       }
@@ -240,7 +243,7 @@ export function Quiz({ fallbackEmail }: { fallbackEmail: string }) {
 
   if (submit.kind === "sent") {
     return (
-      <div role="status" className="rounded-[1.25rem] bg-sky-soft p-8 ring-1 ring-blue/20 sm:p-12">
+      <div role="status" data-clarity-mask="True" className="rounded-[1.25rem] bg-sky-soft p-8 ring-1 ring-blue/20 sm:p-12">
         <Check aria-hidden className="size-9 text-blue" />
         <h2 className="display display-md mt-6">Thank you. We have your enquiry.</h2>
         <p className="mt-5 max-w-[52ch] text-ink-soft">
@@ -266,6 +269,7 @@ export function Quiz({ fallbackEmail }: { fallbackEmail: string }) {
       <form
         onSubmit={(e) => void handleSubmit(onSubmit)(e)}
         noValidate
+        data-clarity-mask="True"
         aria-labelledby={`${base}-form-title`}
         className="rounded-[1.25rem] bg-white p-5 ring-1 ring-ink/15 sm:p-9"
       >

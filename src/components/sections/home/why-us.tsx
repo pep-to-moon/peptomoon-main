@@ -1,3 +1,4 @@
+import { Photo } from "@/components/ui/photo";
 import { Reveal, Section, SectionIntro } from "@/components/ui/section";
 import { siteConfig } from "@/config/site";
 
@@ -15,6 +16,10 @@ export function WhyUs() {
     <Section labelledBy="why-title">
       <div className="container-x">
         <SectionIntro label={`Why ${siteConfig.name}`} titleId="why-title" title={<>One accountable team instead of five vendors.</>} />
+
+        <div className="mb-14">
+          <Photo name="team" ratio="21 / 8" sizes="(min-width: 1024px) 92vw, 100vw" parallax={7} radius="1.5rem" />
+        </div>
 
         <Reveal>
           <div role="table" aria-label={`${siteConfig.name} compared with coordinating several vendors`} className="text-[1.0625rem]">

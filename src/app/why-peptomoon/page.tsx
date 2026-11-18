@@ -5,6 +5,7 @@ import { ButtonLink } from "@/components/ui/button";
 import { CtaBand } from "@/components/ui/cta-band";
 import { FaqSection } from "@/components/ui/faq-section";
 import { PageHero } from "@/components/ui/page-hero";
+import { Photo } from "@/components/ui/photo";
 import { Reveal, Section } from "@/components/ui/section";
 import { siteConfig } from "@/config/site";
 import type { Faq } from "@/content/types";
@@ -116,6 +117,10 @@ export default function WhyPage() {
         }
       />
 
+      <div className="container-x pb-[clamp(2.5rem,6vw,5rem)]">
+        <Photo name="process" ratio="21 / 9" priority eager sizes="(min-width: 1024px) 92vw, 100vw" radius="1.5rem" />
+      </div>
+
       <Section labelledBy="why-pillars">
         <div className="container-x">
           <Reveal className="border-t border-ink/20 pt-4">
@@ -130,7 +135,7 @@ export default function WhyPage() {
                 <h3 className="heading-sm mt-3">{p.t}</h3>
                 <p className="mt-3 max-w-[52ch] text-ink-soft">{p.d}</p>
                 <p className="mt-4">
-                  <Link href={p.link.href} className="text-blue underline underline-offset-4">
+                  <Link href={p.link.href} className="inline-flex min-h-8 items-center text-blue underline underline-offset-4">
                     {p.link.label}
                   </Link>
                 </p>

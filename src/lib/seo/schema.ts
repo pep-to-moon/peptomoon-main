@@ -1,9 +1,12 @@
 import { absoluteUrl, siteConfig } from "@/config/site";
 import type { Article, Service } from "@/content/types";
+import { pageImages } from "../page-images";
 import { ogImageFor } from "./og";
 
 const orgId = () => `${siteConfig.url}/#organization`;
 const isDummy = (v: string) => v.trim() === "";
+/** A legal name is only worth publishing in the markup when it is a registered name that differs from the brand name. */
+const hasDistinctLegalName = () => !isDummy(siteConfig.legalName) && siteConfig.legalName.trim() !== siteConfig.name;
 
 /**
  * The organisation as a self-contained object. Search engines do not reliably join a bare "@id" reference to a different
@@ -37,7 +40,7 @@ export function organizationSchema() {
       "Website audits",
       "Content and compliance review",
     ],
-    ...(isDummy(siteConfig.legalName) ? {} : { legalName: siteConfig.legalName }),
+    ...(hasDistinctLegalName() ? { legalName: siteConfig.legalName } : {}),
     ...(isDummy(siteConfig.contact.email)
       ? {}
       : { contactPoint: { "@type": "ContactPoint", contactType: "sales", email: siteConfig.contact.email } }),
@@ -96,9 +99,28 @@ export function serviceSchema(service: Service) {
     serviceType: service.primaryKeyword,
     description: service.lead,
     url: absoluteUrl(path),
-    image: ogImageFor(path),
+    image: [ogImageFor(path), ...pageImages(path)],
     provider: orgRef(),
-    audience: { "@type": "BusinessAudience", audienceType: "Research-use-only (RUO) peptide businesses" },
+    audience: {
+      "@type": "BusinessAudience",
+      audienceType:
+        service.slug === "telehealth-platform-development"
+          ? "Licensed telehealth and clinical businesses"
+          : "Research-use-only (RUO) peptide businesses",
+    },
+  };
+}
+
+/** FAQPage markup for questions that are visible on the page, word for word. */
+export function faqPageSchema(items: { q: string; a: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
   };
 }
 

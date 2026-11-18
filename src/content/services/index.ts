@@ -10,12 +10,16 @@ import { paymentProcessing } from "./payment-processing";
 import { seoGeoAeo } from "./seo-geo-aeo";
 import { siteAudits } from "./site-audits";
 import { supplierVerification } from "./supplier-verification";
+import { telehealthPlatformDevelopment } from "./telehealth-platform-development";
+import { vialLabelDesign } from "./vial-label-design";
 import { websiteDevelopment } from "./website-development";
 import { wholesaleDropshipping3pl } from "./wholesale-dropshipping-3pl";
 
 /** Order matters: it is the order used in navigation, the hub page and the footer. */
 export const services: Service[] = [
   websiteDevelopment,
+  telehealthPlatformDevelopment,
+  vialLabelDesign,
   paymentProcessing,
   fulfillmentLogistics,
   wholesaleDropshipping3pl,

@@ -59,7 +59,8 @@ export const layers: { index: string; name: string; cards: LayerCard[] }[] = [
     name: "Build",
     cards: [
       { n: "Website", t: "RUO peptide e-commerce", d: "Custom Next.js stores with batch-level COA links, calculators, affiliates and fast, crawlable pages.", href: "/services/ruo-peptide-website-development", link: "Website development" },
-      { n: "Platform", t: "Telehealth platforms", d: "Patient, provider and admin dashboards, intake, scheduling and subscription billing for your care model.", href: "#offerings", link: "Telehealth build" },
+      { n: "Platform", t: "Telehealth platforms", d: "Patient, provider and admin dashboards, intake, scheduling and subscription billing for your care model.", href: "/services/telehealth-platform-development", link: "Telehealth platform development" },
+      { n: "Labels", t: "Vial label design", d: "Print-ready vial labels and packaging with batch, QR and research-use fields laid out to match your COAs and site.", href: "/services/vial-label-design", link: "Vial label design" },
       { n: "Data", t: "Business dashboards", d: "One reporting layer across orders, payments, inventory, affiliates and fulfillment.", href: "/services/business-dashboards", link: "Dashboards" },
     ],
   },

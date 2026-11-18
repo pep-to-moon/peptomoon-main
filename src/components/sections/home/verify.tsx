@@ -1,4 +1,5 @@
 import { ButtonLink, TextLink } from "@/components/ui/button";
+import { Photo } from "@/components/ui/photo";
 import { Reveal, Section } from "@/components/ui/section";
 import { getArticle } from "@/content/articles";
 
@@ -34,6 +35,10 @@ export function Verify() {
             qualified professionals.
           </p>
         </Reveal>
+
+        <div className="mt-14">
+          <Photo name="compliance" ratio="21 / 8" sizes="(min-width: 1024px) 92vw, 100vw" parallax={7} radius="1.5rem" />
+        </div>
 
         <div className="mt-14 grid gap-x-12 gap-y-12 lg:grid-cols-2">
           <Reveal className="border-t border-ink/20 pt-6">

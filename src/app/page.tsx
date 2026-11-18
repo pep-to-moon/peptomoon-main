@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { SiteIntro } from "@/components/layout/site-intro";
 import { Hero } from "@/components/sections/home/hero";
 import { Statement } from "@/components/sections/home/statement";
 import { Problems } from "@/components/sections/home/problems";
+import { PhotoBand } from "@/components/sections/home/photo-band";
 import { Ecosystem } from "@/components/sections/home/ecosystem";
 import { ServicesIndex } from "@/components/sections/home/services-index";
 import { WordsMarquee } from "@/components/sections/home/words-marquee";
@@ -30,12 +32,14 @@ export const metadata: Metadata = buildMetadata({
 export default function HomePage() {
   return (
     <>
+      <SiteIntro />
       <Hero />
       <section aria-label="Payment processing" className="container-x pt-6">
         <PaymentsOffer />
       </section>
       <Statement />
       <Problems />
+      <PhotoBand />
       <Ecosystem />
       <ServicesIndex />
       <WordsMarquee />

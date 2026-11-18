@@ -128,7 +128,8 @@ Package versions checked on the npm registry on 2026-11-17 [V]. Re-check at inst
 | Forms | `react-hook-form`, `zod`, `@hookform/resolvers` | One schema on client and server |
 | Email | `resend` | Success only on accepted message id |
 | Spam | Cloudflare Turnstile plus honeypot plus rate limit | Rate limit store: Upstash if configured, in-memory fallback |
-| Analytics | `@next/third-parties/google` (GA4) | Consent-aware |
+| Analytics | `@next/third-parties/google` (GA4) | Loads on every page when `NEXT_PUBLIC_GA_ID` is set; no cookie banner |
+| Session recordings | Microsoft Clarity (`next/script`) | Loads on every page when `NEXT_PUBLIC_CLARITY_ID` is set; the contact form is masked from recordings |
 | Images | `next/image`, `sharp` | AVIF and WebP |
 | Hosting | Vercel | Domain and email sending domain pending |
 | Dev tools | ESLint, Prettier, Vitest, Playwright with axe-core, bundle analyzer | pnpm, matching your repos |

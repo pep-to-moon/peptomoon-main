@@ -31,6 +31,7 @@ export function ProjectCard({
           fill
           sizes={sizes}
           priority={priority}
+          fetchPriority={priority ? "high" : undefined}
           className="object-cover object-top transition-transform duration-[900ms] ease-[var(--ease-out-expo)] group-hover:scale-[1.03]"
         />
         <div className="absolute left-4 right-4 top-4 flex items-center justify-between gap-3">

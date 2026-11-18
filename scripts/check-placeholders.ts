@@ -19,6 +19,19 @@ if (live && url && (!url.startsWith("https://") || url.includes("localhost"))) {
   blocking.push("NEXT_PUBLIC_SITE_URL must be the live https address, or be left unset (it defaults to https://peptomoon.com)");
 }
 
+// A GA4 measurement ID looks like G-XXXXXXXXXX. A "UA-" ID (old Universal Analytics), a bare stream number or a typo
+// would load nothing useful, so stop the build instead of shipping silent, empty analytics.
+const gaId = (process.env.NEXT_PUBLIC_GA_ID ?? "").trim();
+if (gaId && !/^G-[A-Z0-9]{6,}$/.test(gaId)) {
+  blocking.push(`NEXT_PUBLIC_GA_ID must be a GA4 measurement ID like G-XXXXXXXXXX, but it is "${gaId}"`);
+}
+
+// A Microsoft Clarity project ID is a short code of letters and digits, like zf8lqke71d.
+const clarityId = (process.env.NEXT_PUBLIC_CLARITY_ID ?? "").trim();
+if (clarityId && !/^[a-z0-9]{6,20}$/i.test(clarityId)) {
+  blocking.push(`NEXT_PUBLIC_CLARITY_ID must be a Clarity project ID like zf8lqke71d, but it is "${clarityId}"`);
+}
+
 for (const key of ["RESEND_API_KEY", "RESEND_FROM_EMAIL"]) {
   if (!process.env[key]) warnings.push(`${key} is not set, so the online contact form cannot send yet`);
 }

@@ -1,102 +1,71 @@
-import type { ComponentType } from "react";
-import { BadgeCheck, Bot, FlaskConical, Megaphone, Mic, Search, Truck } from "lucide-react";
-import { addOns, programs } from "@/content/all-in-one";
-import { cn } from "@/lib/utils";
-import { softShadow } from "./ui";
+import { Reveal } from "@/components/ui/section";
+import { addOns, programs, searchTicks } from "@/content/all-in-one";
 
-/** Three surfaces where a brand is found: a search result, an AI answer and a spoken answer. */
-export function SurfacesVisual() {
-  return (
-    <figure aria-label="Three places your brand can be found: a top search result, a cited AI answer and a spoken answer" className="space-y-3">
-      <div className="rounded-[1.25rem] bg-white p-4 ring-1 ring-line">
-        <p className="label text-blue">SEO</p>
-        <div className="mt-3 flex items-start gap-3">
-          <span className="rounded-md bg-blue px-2 py-1 text-[0.7rem] font-bold text-white">#1</span>
-          <div className="min-w-0 flex-1 space-y-1.5">
-            <div className="h-2 w-1/3 rounded bg-blue/40" />
-            <div className="h-1.5 w-full rounded bg-ink/15" />
-            <div className="h-1.5 w-4/5 rounded bg-ink/15" />
-          </div>
-          <Search aria-hidden className="size-4 text-ink-soft" strokeWidth={1.5} />
-        </div>
-      </div>
-      <div className={cn("ml-4 rounded-[1.25rem] bg-navy p-4 text-white", softShadow)}>
-        <p className="label text-sky">GEO</p>
-        <div className="mt-3 space-y-1.5">
-          <div className="h-1.5 w-full rounded bg-white/30" />
-          <div className="h-1.5 w-11/12 rounded bg-white/30" />
-          <div className="h-1.5 w-2/3 rounded bg-white/30" />
-        </div>
-        <span className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1 text-[0.7rem] font-semibold ring-1 ring-white/25">
-          <BadgeCheck aria-hidden className="size-3.5 text-sky" strokeWidth={1.75} />
-          Sources: yourstore.com
-        </span>
-      </div>
-      <div className="mr-8 rounded-[1.25rem] bg-sky-soft p-4 ring-1 ring-line">
-        <p className="label text-blue">AEO</p>
-        <div className="mt-3 flex items-center gap-3">
-          <span className="grid size-9 place-items-center rounded-full bg-blue text-white">
-            <Mic aria-hidden className="size-4" strokeWidth={1.75} />
-          </span>
-          <div className="space-y-1.5 rounded-xl rounded-bl-none bg-white px-3 py-2.5 ring-1 ring-line">
-            <div className="h-1.5 w-36 rounded bg-ink/15" />
-            <div className="h-1.5 w-24 rounded bg-ink/15" />
-          </div>
-        </div>
-      </div>
-    </figure>
-  );
-}
+const surfaces: [string, string, string][] = [
+  ["SEO", "Rank", "Rankings in Google and Bing"],
+  ["GEO", "Be cited", "Citations in ChatGPT, Perplexity and AI Overviews"],
+  ["AEO", "Be the answer", "Direct answers for search and voice assistants"],
+];
 
-/** The three programs as cards of rising visual weight; the last is navy. */
-export function TierCards() {
+/** Three ways a brand is found, as a typographic stack, beside the technical foundation that carries all three. */
+export function SearchFoundation() {
   return (
-    <div className="mt-8 grid gap-4 lg:grid-cols-3">
-      {programs.map(([name, what], i) => (
-        <article
-          key={name}
-          className={cn(
-            "flex flex-col rounded-[1.25rem] p-6",
-            i === 0 && "bg-white ring-1 ring-line",
-            i === 1 && "bg-white ring-2 ring-blue",
-            i === 2 && cn("bg-navy text-white", softShadow),
-          )}
-        >
-          <div aria-hidden className="flex gap-1">
-            {[0, 1, 2].map((d) => (
-              <span key={d} className={cn("h-1.5 w-8 rounded-full", d <= i ? (i === 2 ? "bg-sky" : "bg-blue") : i === 2 ? "bg-white/20" : "bg-ink/10")} />
-            ))}
-          </div>
-          <h3 className={cn("mt-4 font-display text-[1.15rem] font-bold uppercase tracking-[0.02em]", i === 2 && "text-white")}>{name}</h3>
-          <p className={cn("mt-2 text-[0.95rem]", i === 2 ? "text-white/80" : "text-ink-soft")}>{what}</p>
-        </article>
-      ))}
+    <div className="mt-14 grid gap-14 lg:grid-cols-12 lg:gap-16">
+      <ul className="lg:col-span-7">
+        {surfaces.map(([k, verb, d], i) => (
+          <Reveal as="li" delay={i} key={k} className="grid grid-cols-[minmax(5.5rem,auto)_1fr] items-baseline gap-x-6 border-t border-ink/20 py-6 last:border-b">
+            <span className="font-display text-[clamp(2.4rem,1.2rem+3.4vw,4.4rem)] font-bold leading-none tracking-[-0.03em] text-blue">{k}</span>
+            <span>
+              <span className="label block text-ink-soft">{verb}</span>
+              <span className="mt-1 block font-display text-[1.2rem] font-bold leading-snug">{d}</span>
+            </span>
+          </Reveal>
+        ))}
+      </ul>
+      <Reveal delay={1} className="lg:col-span-5">
+        <h3 className="label text-ink-soft">The foundation under all three</h3>
+        <ul className="mt-4">
+          {searchTicks.map((t) => (
+            <li key={t} className="border-t border-ink/20 py-3.5 last:border-b">
+              {t}
+            </li>
+          ))}
+        </ul>
+      </Reveal>
     </div>
   );
 }
 
-const addOnIcons: ComponentType<{ className?: string; strokeWidth?: number }>[] = [FlaskConical, Megaphone, Bot, Truck];
-
-/** Four compact icon cards in one row. */
-export function AddOnCards() {
+/** Monthly programs as three ruled columns that gain weight left to right. */
+export function Programs() {
   return (
-    <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-      {addOns.map((a, i) => {
-        const Icon = addOnIcons[i];
-        return (
-          <li
-            key={a.t}
-            className="rounded-[1.25rem] bg-white p-6 ring-1 ring-line transition duration-300 hover:-translate-y-1 hover:shadow-[0_44px_100px_-44px_rgba(13,34,54,0.55)]"
-          >
-            <span className="grid size-11 place-items-center rounded-xl bg-sky-soft text-blue">
-              <Icon aria-hidden className="size-5" strokeWidth={1.5} />
-            </span>
-            <span className="label mt-4 block text-blue">{a.n}</span>
-            <h3 className="heading-sm mt-1">{a.t}</h3>
-            <p className="mt-2 text-[0.95rem] text-ink-soft">{a.d}</p>
-          </li>
-        );
-      })}
+    <div className="mt-16">
+      <h3 className="label text-ink-soft">Monthly growth programs</h3>
+      <ol className="mt-4 grid gap-x-12 border-t border-ink/30 lg:grid-cols-3">
+        {programs.map(([name, what], i) => (
+          <Reveal as="li" delay={i} key={name} className="border-b border-ink/20 py-7 lg:border-b-0">
+            <span className="font-display text-[0.85rem] font-semibold tabular-nums text-blue">{String(i + 1).padStart(2, "0")}</span>
+            <h4 className="display-sentence mt-2 text-[1.7rem]">{name}</h4>
+            <p className="mt-3 max-w-[40ch] text-ink-soft">{what}</p>
+          </Reveal>
+        ))}
+      </ol>
+      <p className="mt-2 text-[0.9rem] text-ink-soft">We do not guarantee rankings or AI citations. We report what changed and why.</p>
+    </div>
+  );
+}
+
+/** Four optional extras in a two-by-two ruled grid. */
+export function AddOns() {
+  return (
+    <ul className="mt-14 grid gap-x-16 md:grid-cols-2">
+      {addOns.map((a, i) => (
+        <Reveal as="li" delay={i % 2} key={a.t} className="border-t border-ink/25 py-8">
+          <span className="label text-blue">{a.n}</span>
+          <h3 className="display-sentence mt-2 text-[clamp(1.6rem,1.1rem+1.4vw,2.3rem)]">{a.t}</h3>
+          <p className="mt-3 max-w-[46ch] text-ink-soft">{a.d}</p>
+        </Reveal>
+      ))}
     </ul>
   );
 }

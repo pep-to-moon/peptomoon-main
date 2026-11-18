@@ -1,4 +1,6 @@
 import { siteConfig } from "@/config/site";
+import { numberWord } from "@/lib/number-word";
+import { services } from "./services";
 import type { Faq } from "./types";
 
 const brand = siteConfig.name;
@@ -6,7 +8,7 @@ const brand = siteConfig.name;
 /** Questions for the hub and company pages. Service pages and guides carry their own. */
 export const servicesFaqs: Faq[] = [
   {
-    q: "Do I have to buy all thirteen services?",
+    q: `Do I have to buy all ${numberWord(services.length)} services?`,
     a: "No. Most engagements start with one system, such as payments, a rebuilt store or reporting. Tell us what you need through the questionnaire and the first conversation decides the scope. Because the systems depend on each other, we will say plainly where a fix in one area relies on another.",
   },
   {
