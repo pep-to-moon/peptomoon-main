@@ -8,6 +8,7 @@ import path from "node:path";
 import { allArticles, articleWordCount } from "../src/content/articles";
 import { caseStudies } from "../src/content/case-studies";
 import { portfolio } from "../src/content/portfolio";
+import { servicePaths } from "../src/content/service-paths";
 import { services } from "../src/content/services";
 import { getStaticRoutes } from "../src/lib/routes";
 
@@ -72,6 +73,7 @@ for (const [who, title, desc] of metas) {
 
 // 4. Relations.
 const serviceSlugs = new Set(services.map((s) => s.slug));
+for (const p of servicePaths) p.slugs.forEach((r) => !serviceSlugs.has(r) && fail(`service path ${p.id}: unknown service ${r}`));
 const articleSlugs = new Set(allArticles.map((a) => a.slug));
 const studySlugs = new Set(caseStudies.map((c) => c.slug));
 const portfolioSlugs = new Set(portfolio.map((p) => p.slug));
