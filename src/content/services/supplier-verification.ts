@@ -77,6 +77,6 @@ export const supplierVerification: Service = {
   ],
   related: ["compliance-support", "wholesale-peptides", "ruo-peptide-website-development"],
   caseStudies: ["99-purity-peptides"],
-  articles: ["review-a-peptide-suppliers-documentation", "infrastructure-behind-an-ruo-peptide-business"],
+  articles: ["review-a-peptide-suppliers-documentation", "infrastructure-behind-an-ruo-peptide-business", "how-to-find-a-peptide-supplier"],
   cta: { label: "Discuss supplier review" },
 };

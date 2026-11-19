@@ -79,6 +79,6 @@ export const whiteLabelPeptides: Service = {
   ],
   related: ["vial-label-design", "supplier-verification", "ruo-peptide-website-development"],
   caseStudies: [],
-  articles: ["wholesale-vs-dropshipping-vs-3pl-for-ruo-brands", "review-a-peptide-suppliers-documentation"],
+  articles: ["wholesale-vs-dropshipping-vs-3pl-for-ruo-brands", "review-a-peptide-suppliers-documentation", "white-label-vs-private-label-peptides", "cost-to-start-a-peptide-business"],
   cta: { label: "Plan your brand launch" },
 };

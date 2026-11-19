@@ -109,6 +109,6 @@ export const websiteDevelopment: Service = {
   ],
   related: ["payment-processing", "vial-label-design", "seo-geo-aeo", "compliance-support", "business-dashboards"],
   caseStudies: ["veracue-labs", "99-purity-peptides", "primetime-bio-labs"],
-  articles: ["peptide-store-architecture", "infrastructure-behind-an-ruo-peptide-business"],
+  articles: ["peptide-store-architecture", "infrastructure-behind-an-ruo-peptide-business", "shopify-vs-custom-peptide-store"],
   cta: { label: "Get a website assessment" },
 };

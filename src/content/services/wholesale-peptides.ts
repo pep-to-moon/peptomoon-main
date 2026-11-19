@@ -79,6 +79,6 @@ export const wholesalePeptides: Service = {
   ],
   related: ["peptide-3pl", "peptide-dropshipping", "supplier-verification", "white-label-peptides"],
   caseStudies: [],
-  articles: ["wholesale-vs-dropshipping-vs-3pl-for-ruo-brands", "review-a-peptide-suppliers-documentation"],
+  articles: ["wholesale-vs-dropshipping-vs-3pl-for-ruo-brands", "review-a-peptide-suppliers-documentation", "how-to-find-a-peptide-supplier", "cost-to-start-a-peptide-business"],
   cta: { label: "Ask about wholesale supply" },
 };
