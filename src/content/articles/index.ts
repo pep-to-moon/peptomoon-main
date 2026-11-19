@@ -4,6 +4,7 @@ import { infrastructureMap } from "./infrastructure-map";
 import { paymentsUnderwriting } from "./payments-underwriting";
 import { processorShutdown } from "./processor-shutdown";
 import { ruoLabel } from "./ruo-label";
+import { searchAiVisibility } from "./search-ai-visibility";
 import { storeArchitecture } from "./store-architecture";
 import { supplierDocs } from "./supplier-docs";
 import { wholesaleDropshipping3plGuide } from "./wholesale-dropshipping-3pl";
@@ -17,6 +18,7 @@ export const allArticles: Article[] = [
   storeArchitecture,
   fiveOhThree,
   wholesaleDropshipping3plGuide,
+  searchAiVisibility,
 ];
 
 const isProduction = (process.env.VERCEL_ENV ?? process.env.NODE_ENV) === "production";
