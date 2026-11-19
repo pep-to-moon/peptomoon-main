@@ -21,13 +21,14 @@ export const glossary: GlossaryTerm[] = [
     term: "Chargeback",
     definition:
       "A payment a customer disputes through their card issuer instead of asking the seller for a refund. The amount is reversed and the seller usually pays a fee. A high rate of chargebacks is one of the main reasons processors restrict an account.",
+    see: { label: "Chargebacks for a peptide store", href: "/resources/chargebacks-peptide-store" },
   },
   {
     slug: "chargeback-ratio",
     term: "Chargeback ratio",
     definition:
       "The number of chargebacks in a period compared with the number of transactions in that period, shown as a percentage. Processors and card networks watch it closely, and each sets its own thresholds, so read the current terms of your provider.",
-    see: { label: "RUO payment processing: underwriting guide", href: "/resources/payment-processing-for-ruo-stores" },
+    see: { label: "Chargebacks for a peptide store", href: "/resources/chargebacks-peptide-store" },
   },
   {
     slug: "certificate-of-analysis",
@@ -136,6 +137,34 @@ export const glossary: GlossaryTerm[] = [
     see: { label: "About our limits and approach", href: "/about" },
   },
   {
+    slug: "early-fraud-warning",
+    term: "Early fraud warning",
+    definition:
+      "An alert that some card networks send, through the processor, when a payment looks fraudulent. It can arrive before a customer opens a dispute. Some processors count these warnings alongside disputes when they measure risk, so respond to each promptly.",
+    see: { label: "Chargebacks for a peptide store", href: "/resources/chargebacks-peptide-store" },
+  },
+  {
+    slug: "intended-use",
+    term: "Intended use",
+    definition:
+      "A regulatory idea about what a product is meant for. FDA's regulation says it is judged from objective evidence, such as labeling, advertising and the circumstances of distribution, so a research-use label is one piece of evidence and not the whole picture.",
+    see: { label: "Why a research-use label is not a compliance strategy", href: "/resources/ruo-label-is-not-a-compliance-strategy" },
+  },
+  {
+    slug: "private-label",
+    term: "Private label",
+    definition:
+      "A common label for products made by a supplier but sold under your own brand and packaging. Suppliers use the term in different ways, so ask exactly what you may customize, who owns the artwork and who holds the batch documents.",
+    see: { label: "White label vs private label", href: "/resources/white-label-vs-private-label-peptides" },
+  },
+  {
+    slug: "statement-descriptor",
+    term: "Statement descriptor",
+    definition:
+      "The business name that appears on a customer's card statement for a payment. A name the customer recognizes helps prevent disputes from buyers who do not remember the purchase, so make it match your brand and your website.",
+    see: { label: "Chargebacks for a peptide store", href: "/resources/chargebacks-peptide-store" },
+  },
+  {
     slug: "threepl",
     term: "3PL (third-party logistics)",
     definition:
@@ -148,6 +177,13 @@ export const glossary: GlossaryTerm[] = [
     definition:
       "The review a payment processor or bank performs on a business before it approves an account, and often again later. It looks at the business model, the website, the products, the owners and the dispute history.",
     see: { label: "RUO payment processing: underwriting guide", href: "/resources/payment-processing-for-ruo-stores" },
+  },
+  {
+    slug: "white-label",
+    term: "White label",
+    definition:
+      "A common label for ready-made products that a supplier lets several brands sell under their own name, usually with limited changes. The term has no fixed meaning, so confirm with each supplier what you can change and who is responsible for the paperwork.",
+    see: { label: "White label vs private label", href: "/resources/white-label-vs-private-label-peptides" },
   },
   {
     slug: "wholesale",
