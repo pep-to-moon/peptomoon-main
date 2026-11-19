@@ -122,7 +122,7 @@ export function EcosystemDiagram() {
             ))}
           </div>
 
-          {/* One flat disc in the same colour as the nodes, with a single thin ring that brightens when a node is active.
+          {/* One flat disc in the same color as the nodes, with a single thin ring that brightens when a node is active.
               It is opaque, so the beams meet its edge instead of running underneath it. */}
           <div ref={hub} className="relative z-10 grid size-40 place-items-center">
             <span

@@ -6,7 +6,7 @@ import { getArticle } from "@/content/articles";
 const reviews = [
   "Website and product copy, page by page",
   "Disclaimers and notices, and whether they match the rest of the page",
-  "Product labelling considerations, raised for your counsel",
+  "Product labeling considerations, raised for your counsel",
   "Marketing claims across site, email, affiliates and social",
   "Documentation: policies, supplier records and review notes",
   "Dated follow-up reviews as rules change",
@@ -31,7 +31,7 @@ export function Verify() {
           </h2>
           <p className="mt-8 max-w-[60ch] text-[1.15rem] text-ink-soft">
             Adding a disclaimer does not make a product, a business or its marketing compliant. How things are described and
-            presented matters as much. We review what you have, organise the documentation and work alongside your own
+            presented matters as much. We review what you have, organize the documentation and work alongside your own
             qualified professionals.
           </p>
         </Reveal>

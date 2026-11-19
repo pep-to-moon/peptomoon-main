@@ -211,8 +211,11 @@ export function GscReach({ sites }: { sites: GscSite[] }) {
   return (
     <Section labelledBy="reach-title" id="reach">
       <div className="container-x">
-        <SectionIntro label="Search reach" titleId="reach-title" title={<>What one of our stores reaches in Google.</>}>
-          <p>Real figures from Google Search Console for an RUO store in our portfolio. The dates are shown beneath.</p>
+        <SectionIntro label="Search reach" titleId="reach-title" title={<>What a partner-built RUO store reaches in Google.</>}>
+          <p>
+            Real figures from Google Search Console for one partner-built RUO store, exported by its owner and shown without its name. These are that
+            store&apos;s results, not Peptomoon&apos;s own. The dates are shown beneath.
+          </p>
         </SectionIntro>
 
         <Reveal>

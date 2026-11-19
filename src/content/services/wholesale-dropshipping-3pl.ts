@@ -18,11 +18,11 @@ export const wholesaleDropshipping3pl: Service = {
   h1: "Wholesale, dropshipping and 3PL for RUO peptide brands",
   lead: "Wholesale, dropshipping and 3PL are three ways to supply and ship research-use-only product to business customers. We help you choose a model, check supplier and batch documents, connect orders and stock between your store and the shipper, and agree responsibilities in writing. We do not sell to consumers or assume what is lawful for your products.",
   what: [
-    `${brand} works with RUO peptide brands that need a supply and delivery model they can rely on. That can mean buying wholesale and holding your own stock, having orders shipped on your behalf through a dropshipping arrangement, or handing storage, picking, packing and shipping to a third-party logistics (3PL) provider.`,
-    "All of this is for business customers. We do not sell to consumers, and research-use-only products are labelled for laboratory research use only and are not for human or veterinary use.",
+    `${brand} works with RUO peptide brands that need a supply and delivery model they can rely on. That can mean buying wholesale and holding your own stock, having orders shipped on your behalf through a dropshipping arrangement, or handing storage, picking, packing and shipping to a third-party logistics (3PL) provider. For the operating side of shipping and inventory, see [fulfillment coordination](/services/fulfillment-logistics).`,
+    "All of this is for business customers. We do not sell to consumers, and research-use-only products are labeled for laboratory research use only and are not for human or veterinary use.",
   ],
   why: [
-    "The supply side decides whether a store can keep its promises. Stock that is late, undocumented or mislabelled shows up as support tickets, disputes and payment-account problems.",
+    "The supply side decides whether a store can keep its promises. Stock that is late, undocumented or mislabeled shows up as support tickets, disputes and payment-account problems.",
     "Dropshipping and 3PL remove the warehouse from your fixed costs, but they move responsibility into contracts and integrations. Who holds stock, who ships and who answers for an error should be written down before the first order.",
     "Wholesale terms are only as good as the paperwork behind them. Batch records and supplier documentation let you answer a customer or a reviewer with evidence.",
   ],
@@ -72,7 +72,7 @@ export const wholesaleDropshipping3pl: Service = {
   ],
   visual: "fulfillment",
   faqs: [
-    { q: "Do you sell to individuals?", a: `No. ${brand} supplies business customers only and does not sell to consumers. Research-use-only products are labelled for laboratory research use only and are not for human or veterinary use. If you are an individual looking to buy product, this is not the right place, because our wholesale, dropshipping and 3PL services are built for businesses.` },
+    { q: "Do you sell to individuals?", a: `No. ${brand} supplies business customers only and does not sell to consumers. Research-use-only products are labeled for laboratory research use only and are not for human or veterinary use. If you are an individual looking to buy product, this is not the right place, because our wholesale, dropshipping and 3PL services are built for businesses.` },
     { q: "What is the difference between wholesale, dropshipping and 3PL?", a: "With wholesale you buy stock and hold it yourself. With dropshipping a partner holds the stock and ships each order to your customer, so you never touch the product. With a 3PL you own the stock and a logistics provider stores, packs and ships it. The right model depends on how much control you need and how much capital you can tie up." },
     { q: "Can you set up dropshipping for my store?", a: "Yes, where it is lawful and permitted by the contracts involved. We check that before building the integration, because it depends on your products, your partner and what each agreement allows. If it is workable, we connect orders, stock and tracking between your store and the partner so each order is passed on and updated automatically." },
     { q: "What documents come with wholesale supply?", a: "Supplier documentation and batch records for each lot, which we review with you before an order is agreed. That usually means a laboratory report tied to the batch, with the method and underlying data. What is available depends on the product and the supplier, and we do not invent or fill gaps in a record." },

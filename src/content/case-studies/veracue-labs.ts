@@ -14,7 +14,7 @@ export const veracueLabs: CaseStudy = {
       "How our partner built veracuelabs.com: a CMS-managed RUO peptide store with 95 product pages, hosted checkout and a blog pipeline.",
   },
   primaryKeyword: "Veracue Labs website case study",
-  headline: "A 95-product RUO catalogue on a CMS-managed storefront",
+  headline: "A 95-product RUO catalog on a CMS-managed storefront",
   intro: verified(
     "Veracue Labs is an online store for research-use-only peptides at veracuelabs.com, supplying customers in the United States. Our partner designed and built the storefront and its content system.",
     `${SITE}; owner statement`,
@@ -22,7 +22,7 @@ export const veracueLabs: CaseStudy = {
   overview: verified(
     [
       "Veracue Labs sells research-use-only peptides, with shipping limited to the United States.",
-      "The catalogue spans eight research categories plus nasal spray formats, with 95 product pages listed in the sitemap on 17 November 2026.",
+      "The catalog spans eight research categories plus nasal spray formats, with 95 product pages listed in the sitemap on 17 November 2026.",
       "The site includes a research blog, a certificate hub and affiliate pages.",
     ],
     `${SITE}; ${REPO}`,
@@ -32,7 +32,7 @@ export const veracueLabs: CaseStudy = {
       "A storefront with categories, product pages with sizes and variants, a cart and checkout.",
       "Customer accounts, order history and an administration area where staff manage products, orders, coupons and affiliates.",
       "Several payment methods that staff can switch on or off without a code change.",
-      "An affiliate programme with referral tracking.",
+      "An affiliate program with referral tracking.",
       "A blog the team can publish to, with a way to import drafted articles.",
     ],
     REPO,
@@ -51,7 +51,7 @@ export const veracueLabs: CaseStudy = {
       "Next.js App Router with separate route groups for the storefront, authentication and the administration area.",
       "Payload CMS collections for products, orders, users, coupons and affiliates, on a PostgreSQL database.",
       "Route handlers for search, social image generation, webhooks and scheduled jobs.",
-      "Static content such as the FAQ held in typed data files, with site copy kept in one message catalogue.",
+      "Static content such as the FAQ held in typed data files, with site copy kept in one message catalog.",
     ],
     REPO,
   ),

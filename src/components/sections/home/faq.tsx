@@ -8,11 +8,11 @@ const brand = siteConfig.name;
 const items: Faq[] = [
   {
     q: `Does ${brand} also provide peptides?`,
-    a: `${brand} is a business-to-business company and does not sell to consumers. Among its services for businesses are wholesale supply of research-use-only peptides, fulfillment, dropshipping and 3PL, alongside websites, payments, supplier documentation, reporting, marketing infrastructure and review. Research-use-only products are labelled for laboratory research use only and are not for human or veterinary use. Tell us what you are looking for through the questionnaire and we will reply directly.`,
+    a: `${brand} is a business-to-business company and does not sell to consumers. Among its services for businesses are wholesale supply of research-use-only peptides, fulfillment, dropshipping and 3PL, alongside websites, payments, supplier documentation, reporting, marketing infrastructure and review. Research-use-only products are labeled for laboratory research use only and are not for human or veterinary use. Tell us what you are looking for through the questionnaire and we will reply directly.`,
   },
   {
     q: "Why do payment providers keep declining or limiting RUO stores, and what can we do about it?",
-    a: "Many providers restrict this category in their policies, and a provider compares your application with your website, your policies and your behaviour. Mismatches are the common trigger. Make the business identity, product descriptions and policies agree everywhere, read the contract for reserves and holds, watch your decline and chargeback rates and keep a plan for interruption. Nobody can promise approval, because the decision is the provider's.",
+    a: "Many providers restrict this category in their policies, and a provider compares your application with your website, your policies and your behavior. Mismatches are the common trigger. Make the business identity, product descriptions and policies agree everywhere, read the contract for reserves and holds, watch your decline and chargeback rates and keep a plan for interruption. Nobody can promise approval, because the decision is the provider's.",
   },
   {
     q: "How do I know a supplier's lab report is real?",
@@ -20,11 +20,11 @@ const items: Faq[] = [
   },
   {
     q: "What usually breaks first when an RUO store grows?",
-    a: "Structure. Prices and stock disagree between the page and the cart, batch documents point to retired batches, notices differ from page to page and categories are not real pages search engines can find. Modelling the catalogue as data, with batches and documents as part of it, prevents most of this, and it is far cheaper to build in than to repair later.",
+    a: "Structure. Prices and stock disagree between the page and the cart, batch documents point to retired batches, notices differ from page to page and categories are not real pages search engines can find. Modeling the catalog as data, with batches and documents as part of it, prevents most of this, and it is far cheaper to build in than to repair later.",
   },
   {
     q: "Are you a law firm, and does your review make us compliant?",
-    a: "We are not a law firm and we do not give legal advice. A review helps you find and organise avoidable risk. It is not an approval, and it does not make a business compliant. We work alongside your own qualified counsel.",
+    a: "We are not a law firm and we do not give legal advice. A review helps you find and organize avoidable risk. It is not an approval, and it does not make a business compliant. We work alongside your own qualified counsel.",
   },
   {
     q: "Can you guarantee payment approval or search rankings?",

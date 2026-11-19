@@ -49,7 +49,7 @@ export const emailMarketing: Service = {
     "Welcome sequences",
     "Customer retention campaigns",
     "Broadcast campaigns",
-    "Deliverability optimisation",
+    "Deliverability optimization",
     "Email performance analytics",
   ],
   process: [

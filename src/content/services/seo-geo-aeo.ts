@@ -9,21 +9,21 @@ export const seoGeoAeo: Service = {
   pillar: "grow",
   summary: "Search, answer-engine and AI-assistant visibility built on clean structure, sourced content and honest measurement.",
   status: "established",
-  primaryKeyword: "peptide SEO GEO AEO",
+  primaryKeyword: "SEO for peptide businesses",
   seo: {
-    title: `SEO, GEO and AEO for RUO Peptide Stores | ${brand}`,
+    title: `SEO for Peptide Businesses, Plus GEO and AEO | ${brand}`,
     description:
       "Search, answer-engine and AI-assistant visibility for RUO peptide stores: technical SEO, answer-ready content, structured data and honest measurement.",
   },
   h1: "SEO, GEO and AEO for RUO peptide businesses",
   lead: "Be found where buyers look: in search results, in direct answers and in the replies of AI assistants. We build the structure, the sourced content and the measurement behind all three, and we never promise a ranking or a citation.",
   what: [
-    "SEO, GEO and AEO are three names for one job: making your pages easy to find, understand and quote. SEO (search engine optimisation) is about ranking in conventional search results. AEO (answer engine optimisation) is about being the page that answers a question directly, in featured answers, voice results and the summary panels that search engines show. GEO (generative engine optimisation) is about being understood and cited accurately by AI assistants and AI-generated search summaries that write answers from many sources.",
+    "SEO, [GEO](/glossary#geo) and [AEO](/glossary#aeo) are three names for one job: making your pages easy to find, understand and quote. SEO (search engine optimization) is about ranking in conventional search results. AEO (answer engine optimization) is about being the page that answers a question directly, in featured answers, voice results and the summary panels that search engines show. GEO (generative engine optimization) is about being understood and cited accurately by AI assistants and AI-generated search summaries that write answers from many sources.",
     "They share a foundation: a fast, crawlable site with clean addresses, accurate structured data and content that answers real questions plainly and cites its sources. We build that foundation, then shape the content for each of the three. In this industry the content layer needs extra care, because search engines and AI systems treat health-adjacent topics cautiously, and a page that drifts into claims about personal use can lose trust as well as visibility.",
   ],
   why: [
     "Buyers increasingly start with a question rather than a brand name, and the answer they see may be a summary written by an AI system. If your business is described wrongly there, or not at all, you lose the visit before it begins.",
-    "Systems that summarise content favour pages that are clear, consistent and well sourced. Batch documents, plain explanations and dated references suit that, so a business that already documents its work carefully has an advantage it may not be using.",
+    "Systems that summarize content favor pages that are clear, consistent and well sourced. Batch documents, plain explanations and dated references suit that, so a business that already documents its work carefully has an advantage it may not be using.",
     "Paid channels in this category are restricted, so organic visibility carries more of the weight. It is also slower to build and easier to damage, which makes getting the structure right early worth more than any later tactic.",
   ],
   problems: [
@@ -35,16 +35,16 @@ export const seoGeoAeo: Service = {
   ],
   approach: [
     { title: "Audit what is found", text: "Crawl the site, check what is indexed, blocked or duplicated, and test how search engines and AI assistants currently describe the business." },
-    { title: "Fix the foundation", text: "Addresses, canonical tags, sitemaps, robots rules, structured data, speed and accessibility, generated from the catalogue so they stay correct." },
+    { title: "Fix the foundation", text: "Addresses, canonical tags, sitemaps, robots rules, structured data, speed and accessibility, generated from the catalog so they stay correct." },
     { title: "Build answer-ready pages", text: "A short answer at the top, question-based headings, tables and plain definitions, so a page can be quoted accurately." },
-    { title: "Source and date the content", text: "Primary sources, review dates and clear authorship, because systems that summarise content favour pages they can trust." },
+    { title: "Source and date the content", text: "Primary sources, review dates and clear authorship, because systems that summarize content favor pages they can trust." },
     { title: "Make the business clear", text: "One consistent description of the business, its products and its documents, repeated the same way across the site and its public profiles." },
     { title: "Measure and adjust", text: "Search data, indexed pages, assistant answers and enquiries, reviewed on a schedule." },
   ],
   included: [
     "Technical SEO audit and fixes",
     "Sitemaps, canonical tags and robots rules",
-    "Structured data for the organisation, products and articles",
+    "Structured data for the organization, products and articles",
     "Answer-ready page structure with quick answers, tables and definitions",
     "Question-led content planning",
     "Source and review-date framework for content",
@@ -88,6 +88,6 @@ export const seoGeoAeo: Service = {
   ],
   related: ["ruo-peptide-website-development", "site-audits", "email-marketing", "business-dashboards"],
   caseStudies: ["veracue-labs", "99-purity-peptides", "primetime-bio-labs"],
-  articles: ["peptide-store-architecture", "infrastructure-behind-an-ruo-peptide-business"],
+  articles: ["search-and-ai-visibility-for-ruo-peptide-stores", "peptide-store-architecture", "infrastructure-behind-an-ruo-peptide-business"],
   cta: { label: "Plan your search visibility" },
 };

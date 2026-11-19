@@ -1,3 +1,4 @@
+import { TextLink } from "@/components/ui/button";
 import { Photo } from "@/components/ui/photo";
 import { Reveal, Section, SectionIntro } from "@/components/ui/section";
 import { siteConfig } from "@/config/site";
@@ -51,6 +52,9 @@ export function WhyUs() {
             ))}
             <div className="border-t border-ink/20" />
           </div>
+          <p className="mt-10">
+            <TextLink href="/why-peptomoon">See why RUO brands choose {siteConfig.name}</TextLink>
+          </p>
         </Reveal>
       </div>
     </Section>

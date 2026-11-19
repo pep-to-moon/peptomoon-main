@@ -23,7 +23,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 const path = "/all-in-one";
 const title = "All-in-One Peptide & Telehealth Business Partner | Peptomoon";
 const description =
-  "Custom websites, high-risk payment processing from 3% with no rolling reserve, COAs and SEO/GEO/AEO for RUO peptide and telehealth businesses.";
+  "Websites, high-risk payment processing from 3% (no rolling reserve for qualifying merchants), COAs and SEO, GEO and AEO for RUO peptide and telehealth businesses.";
 const ogTitle = "All-in-one infrastructure for RUO peptide and telehealth businesses";
 const ogDescription =
   "One team for your website, high-risk payment processing, fulfillment, documentation and growth. Card processing from 3% with no rolling reserve for merchants who qualify.";

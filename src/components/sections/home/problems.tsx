@@ -34,7 +34,7 @@ const problems: Problem[] = [
     n: "03",
     title: "Regulatory uncertainty",
     see: "A research-use label mistaken for compliance, with content elsewhere on the site that tells a different story.",
-    do: "Compliance-oriented website and content reviews, documentation organisation and coordination with qualified professionals.",
+    do: "Compliance-oriented website and content reviews, documentation organization and coordination with qualified professionals.",
     wont: "We are not a law firm, and a review is not an approval.",
     href: "/services/compliance-support",
     linkLabel: "Compliance support",
@@ -42,7 +42,7 @@ const problems: Problem[] = [
   {
     n: "04",
     title: "Poor website infrastructure",
-    see: "Outdated, slow sites with weak product organisation and category pages that search engines cannot see.",
+    see: "Outdated, slow sites with weak product organization and category pages that search engines cannot see.",
     do: "Custom e-commerce with strong architecture, technical SEO, performance and conversion-focused design.",
     wont: "We cannot promise rankings or sales.",
     href: "/services/ruo-peptide-website-development",
@@ -60,7 +60,7 @@ const problems: Problem[] = [
   {
     n: "06",
     title: "Marketing and growth limits",
-    see: "Messy advertising accounts, tracking that misses events, and affiliate and email programmes run by hand.",
+    see: "Messy advertising accounts, tracking that misses events, and affiliate and email programs run by hand.",
     do: "Coordinated tracking, reporting, email systems and affiliate tools that share one view of the customer.",
     wont: "Whether an advertising platform accepts your category is not ours to promise.",
     href: "/services/meta-advertising",

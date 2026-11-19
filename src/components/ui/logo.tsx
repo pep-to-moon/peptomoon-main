@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 /**
  * The Peptomoon logo. The dark version is for light backgrounds and the white version is for the navy footer and menu.
  * Both are cut from the supplied master in public/brand, with the yellow arrow kept in each. The files are padded so the
- * lettering, not the taller box that includes the arrow, sits at the vertical centre of the image.
+ * lettering, not the taller box that includes the arrow, sits at the vertical center of the image.
  */
 export function Logo({ className, tone = "dark", priority = false }: { className?: string; tone?: "dark" | "light"; priority?: boolean }) {
   return (

@@ -14,7 +14,7 @@ export const purity99: CaseStudy = {
       "How our partner built 99puritypeptides.com: a bilingual RUO store with a members-only tier, pack-size pricing and batch certificate links.",
   },
   primaryKeyword: "99 Purity Peptides website case study",
-  headline: "A bilingual RUO storefront with a members-only catalogue tier",
+  headline: "A bilingual RUO storefront with a members-only catalog tier",
   intro: verified(
     "99 Purity Peptides is a research-use-only peptide store at 99puritypeptides.com with an English and Spanish storefront. Our partner designed and built the site.",
     `${SITE}; owner statement`,
@@ -22,7 +22,7 @@ export const purity99: CaseStudy = {
   overview: verified(
     [
       "The store sells research-use-only peptides as single compounds, kits and nasal spray formats.",
-      "A members-only tier opens more of the catalogue and applies member pricing, while a public catalogue stays browsable.",
+      "A members-only tier opens more of the catalog and applies member pricing, while a public catalog stays browsable.",
       "The site publishes an article library, a certificate hub, affiliate pages and an external review widget.",
     ],
     SITE,
@@ -32,7 +32,7 @@ export const purity99: CaseStudy = {
       "A bilingual storefront with correct language alternates for search engines.",
       "Pack-size pricing on product pages, with per-vial savings shown.",
       "Batch-level certificate documents linked from product pages.",
-      "A members-only catalogue tier with member pricing.",
+      "A members-only catalog tier with member pricing.",
       "Affiliate pages and a referral route.",
     ],
     SITE,
@@ -57,7 +57,7 @@ export const purity99: CaseStudy = {
     [
       "Strength selectors and pack-size pricing for a single vial, five-pack and ten-pack on product pages.",
       "A certificate of analysis link on product pages with a batch reference.",
-      "Out-of-stock labelling, free-shipping threshold messaging and a military and first-responder discount flow.",
+      "Out-of-stock labeling, free-shipping threshold messaging and a military and first-responder discount flow.",
       "Account, cart and checkout paths excluded from search through robots rules.",
     ],
     SITE,

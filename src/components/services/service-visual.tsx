@@ -192,7 +192,7 @@ export function ServiceVisual({ kind }: { kind: ServiceVisualKey }) {
       );
     case "affiliate":
       return (
-        <Panel title="Programme rules">
+        <Panel title="Program rules">
           <Table
             head={["Rule", "Defined as"]}
             rows={[
@@ -277,7 +277,7 @@ export function ServiceVisual({ kind }: { kind: ServiceVisualKey }) {
           <div className="mx-auto max-w-[19rem] rounded-xl bg-white p-4 ring-1 ring-ink/15">
             <div className="flex items-center justify-between border-b border-ink/15 pb-3">
               <span className="font-display text-[0.8rem] font-bold uppercase tracking-[0.08em]">Brand</span>
-              <span className="label text-ink-soft">Range colour</span>
+              <span className="label text-ink-soft">Range color</span>
             </div>
             <div className="mt-3 grid grid-cols-[1fr_4.5rem] gap-3">
               <div>

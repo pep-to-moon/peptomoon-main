@@ -1,5 +1,5 @@
 /**
- * Approximate centre points for countries, used to place real Search Console countries on the dotted map.
+ * Approximate center points for countries, used to place real Search Console countries on the dotted map.
  * A country that is not listed here is simply not drawn; nothing is ever guessed.
  */
 export const countryPoints: Record<string, { lat: number; lng: number }> = {

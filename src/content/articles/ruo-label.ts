@@ -21,7 +21,7 @@ export const ruoLabel: Article = {
   service: "compliance-support",
   related: ["503a-503b-and-ruo-retail", "infrastructure-behind-an-ruo-peptide-business"],
   needsCounselReview: true,
-  quickAnswer: "A research-use-only label states an intended use, but it is only one piece of evidence. Under FDA's intended-use regulation, intent is judged from the objective facts, including labelling, advertising, statements and how a product is distributed. Review everything you publish for content pointing toward personal use, record the findings and take them to qualified counsel.",
+  quickAnswer: "A research-use-only label states an intended use, but it is only one piece of evidence. Under FDA's intended-use regulation, intent is judged from the objective facts, including labeling, advertising, statements and how a product is distributed. Review everything you publish for content pointing toward personal use, record the findings and take them to qualified counsel.",
   takeaways: [
     "A label is evidence of intended use, and not the only evidence. Websites, emails, social posts, affiliate content and customer conversations count too.",
     "Warning letters to peptide sellers have pointed to the surrounding presentation, such as dosing or preparation guidance, as evidence of intended use.",
@@ -33,7 +33,7 @@ export const ruoLabel: Article = {
     p("Many businesses treat the words 'for research use only' as a shield. If the label is there, the thinking goes, the product is a research chemical, and what happens afterwards is the buyer's business. Regulators do not read it that way. This guide explains why a label is one piece of evidence rather than a conclusion, what to look for on your own website, and why the right next step is a conversation with qualified counsel."),
     callout("General information, not legal advice", "This article does not advise on your situation. Rules and enforcement change, so check the sources and the review date, and speak to qualified counsel."),
     h2("What a label can and cannot do"),
-    p("A label states an intended use. FDA's regulation on intended use, [21 CFR 201.128](https://www.ecfr.gov/current/title-21/section-201.128), says that intended use is judged by the objective intent of the people responsible for the labelling, and that this intent can be shown by labelling claims, advertising, statements by those people or their representatives, and the circumstances surrounding distribution. In plain terms, the label is evidence, and it is not the only evidence."),
+    p("A label states an intended use. FDA's regulation on intended use, [21 CFR 201.128](https://www.ecfr.gov/current/title-21/section-201.128), says that intended use is judged by the objective intent of the people responsible for the labeling, and that this intent can be shown by labeling claims, advertising, statements by those people or their representatives, and the circumstances surrounding distribution. In plain terms, the label is evidence, and it is not the only evidence."),
     p("The consequence is simple to state and hard to act on. A label that says 'for research use only' sits next to everything else the business says and does. If the rest points in the same direction, the label is consistent with it. If the rest points somewhere else, the label is the odd one out, and a reader will weigh it accordingly. A label cannot change what the surrounding material shows."),
     h2("Everything is part of the presentation"),
     p("Intent is read from the whole picture. It helps to list the places where a business creates evidence, because most owners think of the product page and forget the rest."),
@@ -92,7 +92,7 @@ export const ruoLabel: Article = {
       "Do not leave affiliates and resellers to write their own claims.",
       "Do not treat a review, including ours, as an approval. It finds things to fix. It does not certify anything.",
     ),
-    callout("What a review is and is not", "A content review looks for avoidable risk and helps you organise what you have. It is not legal advice, an approval, a certification or a guarantee that a regulator, provider or platform will agree with your position."),
+    callout("What a review is and is not", "A content review looks for avoidable risk and helps you organize what you have. It is not legal advice, an approval, a certification or a guarantee that a regulator, provider or platform will agree with your position."),
     h2("Working well with counsel"),
     p("Questions about your own legal position belong with a qualified lawyer who understands this area. You will get more from that conversation if you arrive prepared. Bring the inventory, the findings with page references, the changes you propose and the questions you cannot answer yourself."),
     ul(
@@ -102,12 +102,12 @@ export const ruoLabel: Article = {
       "How should we handle reviews and user-generated content?",
       "How often should we repeat the review, and what should trigger an earlier one?",
     ),
-    p("This is the work our [compliance support service](/services/compliance-support) organises. We are not a law firm, and a review is not an approval. For a related topic that is often misunderstood, read [503A and 503B explained](/resources/503a-503b-and-ruo-retail)."),
+    p("This is the work our [compliance support service](/services/compliance-support) organizes. We are not a law firm, and a review is not an approval. For a related topic that is often misunderstood, read [503A and 503B explained](/resources/503a-503b-and-ruo-retail)."),
   ],
   faqs: [
     {
       q: "Does a research-use-only label protect my business?",
-      a: "It is one piece of evidence about what a product is intended for, and it is not a protection by itself. FDA's regulation on intended use looks at labelling, advertising, statements by the people responsible and the circumstances of distribution. The label is more helpful when the rest of the presentation is consistent with it and less helpful when the rest points elsewhere. Ask counsel how this applies to you.",
+      a: "It is one piece of evidence about what a product is intended for, and it is not a protection by itself. FDA's regulation on intended use looks at labeling, advertising, statements by the people responsible and the circumstances of distribution. The label is more helpful when the rest of the presentation is consistent with it and less helpful when the rest points elsewhere. Ask counsel how this applies to you.",
     },
     {
       q: "Is a disclaimer in the footer enough?",
@@ -115,7 +115,7 @@ export const ruoLabel: Article = {
     },
     {
       q: "Can I keep blog posts that discuss published research?",
-      a: "That is a question for your counsel, because it depends on what the posts say and how they are presented. A post that summarises a study and cites its source is different from one that tells readers how to use a product. Review every post against the signals in this guide and ask counsel which, if any, should change.",
+      a: "That is a question for your counsel, because it depends on what the posts say and how they are presented. A post that summarizes a study and cites its source is different from one that tells readers how to use a product. Review every post against the signals in this guide and ask counsel which, if any, should change.",
     },
     {
       q: "What about customer reviews and testimonials?",
@@ -127,7 +127,7 @@ export const ruoLabel: Article = {
     },
     {
       q: "How often should I review my content?",
-      a: "Do a full review once, then repeat it on a schedule, for example twice a year, and whenever something changes: a new product line, a new channel, a new affiliate programme or a change in the rules you operate under. Keep the record of each review so you can show what was checked and when.",
+      a: "Do a full review once, then repeat it on a schedule, for example twice a year, and whenever something changes: a new product line, a new channel, a new affiliate program or a change in the rules you operate under. Keep the record of each review so you can show what was checked and when.",
     },
   ],
   sources: [

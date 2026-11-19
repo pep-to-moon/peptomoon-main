@@ -17,10 +17,10 @@ export const portfolio: PortfolioItem[] = [
     host: "99puritypeptides.com",
     category: "Bilingual RUO e-commerce",
     blurb:
-      "An English and Spanish storefront with kit pricing, a members-only catalogue tier and batch-level certificate links on product pages.",
+      "An English and Spanish storefront with kit pricing, a members-only catalog tier and batch-level certificate links on product pages.",
     facts: [
       "English and Spanish storefront with language alternates",
-      "Members-only catalogue tier with member pricing",
+      "Members-only catalog tier with member pricing",
       "Pack-size pricing on product pages",
       "Batch certificate link on product pages",
     ],
@@ -42,7 +42,7 @@ export const portfolio: PortfolioItem[] = [
     host: "veracuelabs.com",
     category: "CMS-managed RUO e-commerce",
     blurb:
-      "A 95-product RUO catalogue on a CMS-managed storefront, with a hosted card checkout integration, affiliate pages and a blog publishing pipeline.",
+      "A 95-product RUO catalog on a CMS-managed storefront, with a hosted card checkout integration, affiliate pages and a blog publishing pipeline.",
     facts: [
       "95 product pages across eight research categories and nasal spray formats",
       "Mega-menu navigation grouped by research field",
@@ -67,7 +67,7 @@ export const portfolio: PortfolioItem[] = [
     host: "helixbiochem.com",
     category: "Content-led RUO e-commerce",
     blurb:
-      "A 98-product catalogue with a certificate hub and one of the largest article libraries in the set, behind a cinematic loading introduction.",
+      "A 98-product catalog with a certificate hub and one of the largest article libraries in the set, behind a cinematic loading introduction.",
     facts: [
       "98 product pages",
       "More than 100 article pages",
@@ -117,7 +117,7 @@ export const portfolio: PortfolioItem[] = [
     host: "certified-aminos.com",
     category: "Bold-identity RUO e-commerce",
     blurb:
-      "A 51-product catalogue with sale-price display, a certificate hub and 52 articles, set in a deep navy and acid lime identity.",
+      "A 51-product catalog with sale-price display, a certificate hub and 52 articles, set in a deep navy and acid lime identity.",
     facts: ["51 product pages and 52 articles", "Sale pricing on cards and product pages", "Certificate hub", "Affiliate pages"],
     services: ["Website design and development", "E-commerce build", "Content architecture", "Technical SEO"],
     accent: "sky",
@@ -137,7 +137,7 @@ export const portfolio: PortfolioItem[] = [
     host: "aminobased.com",
     category: "Technical-dossier RUO e-commerce",
     blurb:
-      "A 50-product catalogue with per-product technical dossier sections and institutional purchasing information, in a light, editorial layout.",
+      "A 50-product catalog with per-product technical dossier sections and institutional purchasing information, in a light, editorial layout.",
     facts: [
       "50 product pages",
       "Technical dossier sections on product pages",

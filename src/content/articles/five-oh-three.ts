@@ -31,7 +31,7 @@ export const fiveOhThree: Article = {
   ],
   blocks: [
     p("Sections 503A and 503B come up constantly in conversations about peptides. They are often described as if they were a route open to any business that sells peptides, or as a sign that regulators have relaxed. They are not. They are legal frameworks for licensed pharmacy and facility activity, with conditions attached, and they say nothing that applies to an ordinary seller of research chemicals. This guide explains what each section covers, why the difference matters, and how to read news about them without being misled."),
-    callout("General information, not legal advice", "This article summarises public law at a high level. It does not advise on your situation. Confirm details with the statutes, FDA's current pages and qualified counsel."),
+    callout("General information, not legal advice", "This article summarizes public law at a high level. It does not advise on your situation. Confirm details with the statutes, FDA's current pages and qualified counsel."),
     h2("Why these sections matter to this industry"),
     p("The terms appear in marketing, social posts and forum threads because they sound authoritative. A seller may say that a product is 'compounded', or that an ingredient is 'on the 503A list', or that a development means peptides are now 'legal'. Customers, affiliates and even some operators repeat these phrases without knowing what the sections cover. That creates risk for anyone who repeats them, because a statement that implies your business operates under a framework it does not belong to is a misstatement about the business."),
     h2("What 503A and 503B are"),
@@ -50,9 +50,9 @@ export const fiveOhThree: Article = {
     ),
     p("The table is a simplification, and the conditions in each section have detail that this summary leaves out. Its purpose is to show how different these frameworks are from one another, and from retail."),
     h3("What the ingredient conditions mean"),
-    p("Both sections restrict the bulk drug substances that may be used. In general terms, an ingredient has to meet specified criteria: for example, that it be covered by a recognised monograph, that it be a component of a drug approved by FDA, or that it appear on a list that FDA maintains for that purpose. Whether a particular substance meets any of these conditions is a question of current law and current FDA lists, which change, and it is a question for the licensed professional and the facility, and for their counsel."),
+    p("Both sections restrict the bulk drug substances that may be used. In general terms, an ingredient has to meet specified criteria: for example, that it be covered by a recognized monograph, that it be a component of a drug approved by FDA, or that it appear on a list that FDA maintains for that purpose. Whether a particular substance meets any of these conditions is a question of current law and current FDA lists, which change, and it is a question for the licensed professional and the facility, and for their counsel."),
     h2("Why this does not describe RUO retail"),
-    p("A business that sells research chemicals is not a licensed pharmacy compounding for patients, and it is not a registered outsourcing facility. Labelling a product for research use does not bring it under either framework, and neither framework offers an exemption to retailers. For that reason we never imply that an ordinary RUO retailer qualifies for 503A or 503B."),
+    p("A business that sells research chemicals is not a licensed pharmacy compounding for patients, and it is not a registered outsourcing facility. Labeling a product for research use does not bring it under either framework, and neither framework offers an exemption to retailers. For that reason we never imply that an ordinary RUO retailer qualifies for 503A or 503B."),
     ul(
       "A research chemical retailer sells to buyers who say they will use the products in laboratories. A 503A pharmacy prepares a medicine for a patient.",
       "A retailer is not licensed as a pharmacy by a state board. A 503A compounder is.",
@@ -102,7 +102,7 @@ export const fiveOhThree: Article = {
     ),
     p("Keeping these terms straight makes it easier to spot a claim that has been stretched. A post that says a substance is now allowed usually means something much narrower, such as a change to a list that concerns licensed compounders."),
     h2("If you want to work with licensed pharmacies"),
-    p("If your business is an ordinary RUO retailer, the compounding frameworks are the wrong lens. If you want to work with licensed pharmacies, that is a different legal relationship with different requirements, and it needs qualified counsel. It involves licences, prescriptions, patients and state and federal oversight, none of which an RUO retail business has. It is a different business, not an upgrade to the current one, and it should not be entered into on the strength of a headline."),
+    p("If your business is an ordinary RUO retailer, the compounding frameworks are the wrong lens. If you want to work with licensed pharmacies, that is a different legal relationship with different requirements, and it needs qualified counsel. It involves licenses, prescriptions, patients and state and federal oversight, none of which an RUO retail business has. It is a different business, not an upgrade to the current one, and it should not be entered into on the strength of a headline."),
     h2("What to do on your own site"),
     ul(
       "Search your site, emails, social posts and affiliate materials for the terms 503A, 503B, compounded and pharmacy, and read each use in context.",
@@ -116,7 +116,7 @@ export const fiveOhThree: Article = {
   faqs: [
     {
       q: "Can an RUO retailer qualify for 503A or 503B?",
-      a: "Not by labelling its products for research use. Section 503A concerns licensed pharmacists and physicians compounding for patients, and Section 503B concerns registered outsourcing facilities. A business that sells research chemicals is neither, and neither section offers an exemption to retailers. If you want to explore working with licensed pharmacies, that is a different relationship that needs qualified counsel.",
+      a: "Not by labeling its products for research use. Section 503A concerns licensed pharmacists and physicians compounding for patients, and Section 503B concerns registered outsourcing facilities. A business that sells research chemicals is neither, and neither section offers an exemption to retailers. If you want to explore working with licensed pharmacies, that is a different relationship that needs qualified counsel.",
     },
     {
       q: "Does a substance being on a 503A list mean I can sell it?",

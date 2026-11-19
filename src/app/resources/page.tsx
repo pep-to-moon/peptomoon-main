@@ -36,7 +36,11 @@ export default function ResourcesPage() {
         lead={
           <p>
             Plain, sourced guidance on the systems behind an RUO peptide business. Regulatory statements carry dates and primary
-            sources, and we say when something has not been verified.
+            sources, and we say when something has not been verified. New to the terms? Start with the{" "}
+            <Link href="/glossary" className="text-blue underline underline-offset-4">
+              glossary of RUO terms
+            </Link>
+            .
           </p>
         }
       >

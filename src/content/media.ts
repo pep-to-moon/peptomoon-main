@@ -3,10 +3,10 @@
  *
  * Each slot is a file at /public/images/<file>.webp. `file` is a descriptive file name (search engines read it), `topic`
  * is the phrase that ties the photo to what the page is about, and `query` says what a replacement photo should show.
- * `hue` colours the placeholder art used for any slot that has no real photo yet (see scripts/make-media.ts and
+ * `hue` colors the placeholder art used for any slot that has no real photo yet (see scripts/make-media.ts and
  * scripts/fetch-images.ts).
  *
- * House rule: no photograph may show a recognisable face. Choose hands, objects, environments or people cropped at the
+ * House rule: no photograph may show a recognizable face. Choose hands, objects, environments or people cropped at the
  * neck. Check every new photo by eye, because nothing in the fetch scripts can do it for you.
  *
  * Alt text is written as "<what the photo shows>, <topic>". The first part comes from src/content/media-credits.json
@@ -32,7 +32,7 @@ export const media = {
   "layer-verify": landscape(204, "laboratory-microscope-objective-lenses", "laboratory analysis chromatography instrument", "representing supplier verification and compliance-oriented review"),
   // Services
   payments: landscape(218, "card-tap-payment-terminal", "payment terminal credit card checkout", "representing high-risk payment processing for peptide and telehealth merchants"),
-  fulfillment: landscape(192, "warehouse-aisle-shelving-pallets", "fulfillment centre shelves parcels conveyor", "representing US fulfillment, inventory and 3PL logistics"),
+  fulfillment: landscape(192, "warehouse-aisle-shelving-pallets", "fulfillment center shelves parcels conveyor", "representing US fulfillment, inventory and 3PL logistics"),
   support: landscape(210, "customer-support-desk-headset", "customer support team headset desk", "representing helpdesk and customer support workflows for online stores"),
   dashboards: landscape(226, "business-dashboard-growth-chart-desktop", "business dashboard monitors office", "representing business dashboards and operations reporting"),
   search: landscape(216, "magnifying-glass-newsprint-search", "search analytics laptop desk notebook", "representing search engine optimization and visibility in AI answers"),
@@ -42,7 +42,7 @@ export const media = {
   affiliate: landscape(194, "handshake-partnership-white-table", "partnership handshake business meeting", "representing affiliate and referral partnerships"),
   meta: landscape(224, "hand-holding-smartphone", "smartphone social media marketing", "representing Meta advertising infrastructure and campaign tracking"),
   audit: landscape(202, "printed-audit-checklist", "website audit checklist screen laptop", "representing a written website and compliance audit"),
-  website: landscape(212, "website-wireframe-sketch-notebook", "ecommerce website design workspace", "representing e-commerce website design and catalogue architecture"),
+  website: landscape(212, "website-wireframe-sketch-notebook", "ecommerce website design workspace", "representing e-commerce website design and catalog architecture"),
   packaging: landscape(190, "boxing-order-clipboard-packaging", "minimal product packaging boxes studio", "representing product packaging and order preparation"),
   // Telehealth
   "telehealth-consult": landscape(196, "stethoscope-laptop-telehealth", "telemedicine video consultation laptop", "representing telehealth platform development for licensed clinical businesses"),

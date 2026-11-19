@@ -51,14 +51,14 @@ export const glossary: GlossaryTerm[] = [
   },
   {
     slug: "geo",
-    term: "GEO (generative engine optimisation)",
+    term: "GEO (generative engine optimization)",
     definition:
       "Making a website easy for AI answer tools to find, understand and cite. It relies on clear, sourced, well-structured content and a consistent description of who you are. It does not guarantee that any tool will mention you.",
     see: { label: "SEO, GEO and AEO", href: "/services/seo-geo-aeo" },
   },
   {
     slug: "aeo",
-    term: "AEO (answer engine optimisation)",
+    term: "AEO (answer engine optimization)",
     definition:
       "Writing pages so that search features and assistants can lift a direct answer from them, for example a short definition, a numbered list or a table. The aim is to answer the question plainly near the top of the page.",
     see: { label: "SEO, GEO and AEO", href: "/services/seo-geo-aeo" },

@@ -16,10 +16,10 @@ export const metaAdvertising: Service = {
       "Meta Business Manager structure, Pixel and Conversions API tracking, reporting and campaigns for RUO stores. No eligibility promises.",
   },
   h1: "Meta advertising infrastructure for RUO peptide stores",
-  lead: "We set up the structure behind advertising and measurement: Business Manager organisation, account access, pixel and Conversions API tracking, event design and reporting. We also run campaigns from our own agency ad account. Whether a business can advertise at all is Meta's decision, and we keep infrastructure, management and eligibility clearly apart.",
+  lead: "We set up the structure behind advertising and measurement: Business Manager organization, account access, pixel and Conversions API tracking, event design and reporting. We also run campaigns from our own agency ad account. Whether a business can advertise at all is Meta's decision, and we keep infrastructure, management and eligibility clearly apart.",
   what: [
     "Three things get confused in this topic. Infrastructure is the account structure, tracking and reporting that make advertising measurable. Management is running campaigns. Eligibility is whether Meta will accept your category and creative in the first place. We build and maintain infrastructure, and we run campaigns from our own agency ad account where that is agreed in scope. Eligibility belongs to Meta, and running ads from an agency account does not change what Meta allows.",
-    "Good infrastructure matters even when advertising is limited. Clean event data improves every later decision, and a well-organised business account is easier to maintain and to hand over.",
+    "Good infrastructure matters even when advertising is limited. Clean event data improves every later decision, and a well-organized business account is easier to maintain and to hand over.",
   ],
   why: [
     "Advertising platforms apply restrictions to categories they consider sensitive and enforce them at their own discretion. Plan for that uncertainty instead of building a business that depends on one channel.",
@@ -33,7 +33,7 @@ export const metaAdvertising: Service = {
     { title: "Policy surprises", text: "Platforms change rules and enforce them unevenly. We help you read the current policies and keep your setup clean, and we are honest that outcomes are not ours to promise." },
   ],
   approach: [
-    { title: "Business structure", text: "Business portfolio organisation, roles and permissions, domain verification and a setup where you own the assets." },
+    { title: "Business structure", text: "Business portfolio organization, roles and permissions, domain verification and a setup where you own the assets." },
     { title: "Event design", text: "A short, deliberate event list covering view, add to cart, begin checkout and purchase, with consistent parameters." },
     { title: "Pixel and Conversions API", text: "Browser and server events sent together and deduplicated with event IDs, respecting consent." },
     { title: "Reporting", text: "Campaign tagging conventions and dashboards that connect ad data to orders and affiliates." },
@@ -44,7 +44,7 @@ export const metaAdvertising: Service = {
     "Campaign management from our agency ad account, where agreed",
     "Agency access and permission structure",
     "Advertising account infrastructure",
-    "Business asset organisation",
+    "Business asset organization",
     "Meta Pixel implementation",
     "Conversions API implementation",
     "Event tracking design",

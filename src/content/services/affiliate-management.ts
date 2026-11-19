@@ -16,15 +16,15 @@ export const affiliateManagement: Service = {
       "Referral tracking, commission rules, affiliate dashboards and payout tracking for RUO peptide brands, built into your store and tied to real orders.",
   },
   h1: "Affiliate program infrastructure for RUO peptide brands",
-  lead: "Affiliate infrastructure lets you run a referral programme from inside your store. We build registration, referral tracking, commission rules, affiliate dashboards and payout records, so every sale is attributed and every payment can be audited. Commission terms and disclosures follow your rules. We do not promise affiliate recruitment or sales.",
+  lead: "Affiliate infrastructure lets you run a referral program from inside your store. We build registration, referral tracking, commission rules, affiliate dashboards and payout records, so every sale is attributed and every payment can be audited. Commission terms and disclosures follow your rules. We do not promise affiliate recruitment or sales.",
   what: [
-    "An affiliate programme is a tracking and accounting system with a marketing layer on top. We build the registration flow, referral attribution, commission calculation, affiliate dashboard, payout tracking and reporting, and connect them to your orders so the numbers agree.",
+    "An affiliate program is a tracking and accounting system with a marketing layer on top. We build the registration flow, referral attribution, commission calculation, affiliate dashboard, payout tracking and reporting, and connect them to your orders so the numbers agree.",
     "We also help you set rules that protect the brand, because what affiliates say reflects on you.",
   ],
   why: [
     "Disputes about who earned a sale are expensive. Attribution stored on the order, with clear rules, settles them quickly.",
     "Commissions paid on orders that are later refunded or charged back drain margin. Net-sales definitions and automatic reversals prevent that.",
-    "Affiliate content is your content in the eyes of reviewers and customers. In a category where claims matter, guidelines and monitoring are part of the programme, not an extra.",
+    "Affiliate content is your content in the eyes of reviewers and customers. In a category where claims matter, guidelines and monitoring are part of the program, not an extra.",
   ],
   problems: [
     { title: "Attribution that nobody can audit", text: "Browser cookies alone are fragile. We store referral data against the order and keep a record of how it was assigned." },
@@ -40,7 +40,7 @@ export const affiliateManagement: Service = {
     { title: "Set content guidelines", text: "Plain rules about what affiliates may and may not say, and how material is reviewed." },
   ],
   included: [
-    "Affiliate programme creation",
+    "Affiliate program creation",
     "Affiliate registration",
     "Referral tracking",
     "Commission structures",
@@ -49,7 +49,7 @@ export const affiliateManagement: Service = {
     "Performance reporting",
     "Affiliate integrations",
     "Payout tracking",
-    "Programme optimisation",
+    "Program optimization",
   ],
   process: [
     { title: "Design", text: "Commission model, rules and content guidelines agreed in writing." },
@@ -72,7 +72,7 @@ export const affiliateManagement: Service = {
   ],
   visual: "affiliate",
   faqs: [
-    { q: "Which affiliate platform do you use?", a: "Programmes can run on a custom system built into your store or on a third-party platform. We recommend based on your volume, your category and what the platform allows, since some platforms restrict certain products. A built-in system gives you one record of orders and payouts, while a platform can be faster to start." },
+    { q: "Which affiliate platform do you use?", a: "Programs can run on a custom system built into your store or on a third-party platform. We recommend based on your volume, your category and what the platform allows, since some platforms restrict certain products. A built-in system gives you one record of orders and payouts, while a platform can be faster to start." },
     { q: "How are commissions calculated?", a: "On net sales, using a definition we agree with you, such as order value after discounts and excluding shipping and tax. Refunds and chargebacks reverse commissions according to your rules, and a hold period can protect you from paying on orders that are later reversed. The rules are written down and shown in the affiliate dashboard." },
     { q: "Can affiliates see their own results?", a: "Yes. A dashboard shows each affiliate their clicks, orders, commissions and payout status, so they do not need to ask you for figures. They see only their own results. You see all affiliates in one view, with the records needed to check attribution and to pay accurately and on time." },
     { q: "An affiliate is making claims we would not make. What do we do?", a: "Contact them promptly, point to the written guidelines, ask for the content to be removed and record what happened. If it continues, pause payouts and end the relationship as your terms allow. This is why guidelines must exist before the first affiliate joins, and why affiliate content should be reviewed on a schedule." },
@@ -82,5 +82,5 @@ export const affiliateManagement: Service = {
   related: ["meta-advertising", "email-marketing", "business-dashboards"],
   caseStudies: ["veracue-labs", "99-purity-peptides"],
   articles: ["infrastructure-behind-an-ruo-peptide-business"],
-  cta: { label: "Plan an affiliate programme" },
+  cta: { label: "Plan an affiliate program" },
 };

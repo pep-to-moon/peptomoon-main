@@ -67,7 +67,7 @@ export const businessDashboards: Service = {
   ],
   limits: [
     "A dashboard shows what your systems record. It cannot fix bad source data, though it can reveal it.",
-    "Sample data shown in demonstrations is illustrative and is labelled as such.",
+    "Sample data shown in demonstrations is illustrative and is labeled as such.",
     "We do not promise business results from reporting.",
   ],
   visual: "dashboard",

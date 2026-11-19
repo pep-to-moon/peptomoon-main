@@ -4,13 +4,13 @@ import { getPortfolioItem } from "@/content/portfolio";
 
 const steps = [
   {
-    title: "Catalogue architecture",
+    title: "Catalog architecture",
     text: "Product models for compounds, blends, sizes and formats, with categories and filters that stay fast and clear past a hundred products.",
     site: "helix-bio-chem",
   },
   {
     title: "Batch documentation pages",
-    text: "Certificate hubs and per-batch document links, modelled as data so the product page always shows the current record.",
+    text: "Certificate hubs and per-batch document links, modeled as data so the product page always shows the current record.",
     site: "99-purity-peptides",
   },
   {
@@ -20,7 +20,7 @@ const steps = [
   },
   {
     title: "Performance and search foundations",
-    text: "Canonical tags, sitemaps, structured data and optimised images generated from the same content that renders the page.",
+    text: "Canonical tags, sitemaps, structured data and optimized images generated from the same content that renders the page.",
     site: "primetime-bio-labs",
   },
 ];
@@ -29,7 +29,7 @@ export function WhatWeBuild() {
   return (
     <Section labelledBy="build-title">
       <div className="container-x">
-        <SectionIntro label="What we build" titleId="build-title" title={<>A store that behaves like a documented catalogue.</>}>
+        <SectionIntro label="What we build" titleId="build-title" title={<>A store that behaves like a documented catalog.</>}>
           <p>Four things we get right in every build, each one seen on a site we made.</p>
         </SectionIntro>
 

@@ -13,7 +13,7 @@ export const servicesFaqs: Faq[] = [
   },
   {
     q: "I am launching a new business. Where should I start?",
-    a: "With the parts that everything else repeats: the business identity, the supplier documentation standard and the structure of the catalogue. Then the site, then the payment application prepared from the finished site, then fulfillment, reporting and growth. The guide called the infrastructure behind an RUO peptide business sets out the order in full.",
+    a: "With the parts that everything else repeats: the business identity, the supplier documentation standard and the structure of the catalog. Then the site, then the payment application prepared from the finished site, then fulfillment, reporting and growth. The guide called the infrastructure behind an RUO peptide business sets out the order in full.",
   },
   {
     q: "Which service fixes payments that keep getting limited?",
@@ -21,11 +21,11 @@ export const servicesFaqs: Faq[] = [
   },
   {
     q: "How do the services fit together?",
-    a: "They fall into four groups: build, run, grow and verify. The website holds the catalogue, payments take the money, fulfillment and support deliver and answer, dashboards show whether it is working, and the growth and verification services bring customers in and keep risks visible. The same facts, such as product names, batches and notices, must agree across all of them, which is why one team covering them reduces handover problems.",
+    a: "They fall into four groups: build, run, grow and verify. The website holds the catalog, payments take the money, fulfillment and support deliver and answer, dashboards show whether it is working, and the growth and verification services bring customers in and keep risks visible. The same facts, such as product names, batches and notices, must agree across all of them, which is why one team covering them reduces handover problems.",
   },
   {
     q: `Does ${brand} also provide peptides?`,
-    a: `${brand} does not sell to consumers. Its wholesale supply, fulfillment, dropshipping and 3PL services are for business customers. Research-use-only products are labelled for laboratory research use only and are not for human or veterinary use. Tell us what you are looking for through the questionnaire and we will reply directly.`,
+    a: `${brand} does not sell to consumers. Its wholesale supply, fulfillment, dropshipping and 3PL services are for business customers. Research-use-only products are labeled for laboratory research use only and are not for human or veterinary use. Tell us what you are looking for through the questionnaire and we will reply directly.`,
   },
   {
     q: "What does it cost?",
@@ -48,7 +48,7 @@ export const caseStudiesFaqs: Faq[] = [
   },
   {
     q: "Can you build something like these for my business?",
-    a: "Yes, but we start from your catalogue, your suppliers and your payment position rather than from a template. These projects show the kinds of structure we use. They are not designs to copy, and every project begins with the questionnaire.",
+    a: "Yes, but we start from your catalog, your suppliers and your payment position rather than from a template. These projects show the kinds of structure we use. They are not designs to copy, and every project begins with the questionnaire.",
   },
   {
     q: "What should I look at when judging how well a store is built?",
@@ -82,7 +82,7 @@ export const resourcesFaqs: Faq[] = [
 export const aboutFaqs: Faq[] = [
   {
     q: "Are you a law firm, and does your review make us compliant?",
-    a: "We are not a law firm and we do not give legal advice. A review helps you find and organise avoidable risk. It is not an approval, and it does not make a business compliant. We work alongside your own qualified counsel.",
+    a: "We are not a law firm and we do not give legal advice. A review helps you find and organize avoidable risk. It is not an approval, and it does not make a business compliant. We work alongside your own qualified counsel.",
   },
   {
     q: "What do you decline to do?",
@@ -94,7 +94,7 @@ export const aboutFaqs: Faq[] = [
   },
   {
     q: `Does ${brand} also provide peptides?`,
-    a: `${brand} does not sell to consumers. Its wholesale supply, fulfillment, dropshipping and 3PL services are for business customers. Research-use-only products are labelled for laboratory research use only and are not for human or veterinary use. Tell us what you are looking for through the questionnaire and we will reply directly.`,
+    a: `${brand} does not sell to consumers. Its wholesale supply, fulfillment, dropshipping and 3PL services are for business customers. Research-use-only products are labeled for laboratory research use only and are not for human or veterinary use. Tell us what you are looking for through the questionnaire and we will reply directly.`,
   },
   {
     q: "What happens to what I send you?",

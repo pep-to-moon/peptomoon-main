@@ -3,7 +3,7 @@ import { ProcessTimeline } from "./process-timeline";
 
 const steps = [
   { n: "01", title: "Discover", text: "We map your business, current systems and goals.", need: "A short call and access to what exists." },
-  { n: "02", title: "Architect", text: "Catalogue, payments, documents and integrations planned on one page.", need: "Decisions on scope and priority." },
+  { n: "02", title: "Architect", text: "Catalog, payments, documents and integrations planned on one page.", need: "Decisions on scope and priority." },
   { n: "03", title: "Build", text: "Typed, tested components with checks for accessibility and speed.", need: "Content, documents and review time." },
   { n: "04", title: "Launch", text: "Redirects, indexing checks, monitoring and a launch checklist.", need: "Final sign-off." },
   { n: "05", title: "Maintain", text: "Updates, audits and a clear route for change.", need: "A named contact for requests." },

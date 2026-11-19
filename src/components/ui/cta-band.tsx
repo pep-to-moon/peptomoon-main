@@ -4,7 +4,7 @@ import { Section } from "@/components/ui/section";
 
 /**
  * Closing call to action for inner pages. It sits on the same canvas as the rest of the page (a white rounded card with
- * a soft blue glow), so the page does not change background colour before the footer.
+ * a soft blue glow), so the page does not change background color before the footer.
  */
 export function CtaBand({
   id,

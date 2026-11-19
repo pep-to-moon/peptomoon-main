@@ -23,7 +23,7 @@ export const processorShutdown: Article = {
   needsCounselReview: false,
   quickAnswer: "If your processor shuts you down, read the notice and contract, reply within the time given with one package, and ask in writing when held funds will be released. Then compare your application with your live site to find the cause, fix what is wrong and apply to providers that cover your category. Never route sales through another business's account.",
   takeaways: [
-    "Act within the deadline in the notice. A calm, organised reply in the first days is worth more than a long argument later.",
+    "Act within the deadline in the notice. A calm, organized reply in the first days is worth more than a long argument later.",
     "Your contract decides what happens to held funds, pending refunds and chargebacks, so find the clause and get the release date in writing.",
     "Most shutdowns trace back to a mismatch between the application, the website and the way the business actually operates, or to disputes and refunds running high.",
     "A new provider will usually ask about earlier closures. Tell the truth, explain what you changed and keep your records ready.",
@@ -63,7 +63,7 @@ export const processorShutdown: Article = {
     table(
       "What the notice may mean",
       ["Notice", "What it usually means", "A sensible response"],
-      ["Request for information", "The provider is reviewing and has not decided.", "Reply fully and promptly with organised documents."],
+      ["Request for information", "The provider is reviewing and has not decided.", "Reply fully and promptly with organized documents."],
       ["Limit or suspension", "Processing is restricted while a review continues.", "Ask what is needed to lift it and by when."],
       ["Reserve or rolling hold", "Part of your funds is withheld as security.", "Ask for the percentage, the period and the release dates in writing."],
       ["Payout pause", "Payouts stop while the provider investigates.", "Ask for a timetable and what it depends on."],
@@ -148,7 +148,7 @@ export const processorShutdown: Article = {
   faqs: [
     {
       q: "How quickly do I need to respond after my account is closed?",
-      a: "As quickly as the notice requires, and ideally within a day or two even if only to acknowledge it. Deadlines in a notice are real, and a prompt, organised reply shows the provider you are taking it seriously. Use the first reply to ask for the reason, the release date for held funds and the appeal process, and send the full documents as soon as they are ready.",
+      a: "As quickly as the notice requires, and ideally within a day or two even if only to acknowledge it. Deadlines in a notice are real, and a prompt, organized reply shows the provider you are taking it seriously. Use the first reply to ask for the reason, the release date for held funds and the appeal process, and send the full documents as soon as they are ready.",
     },
     {
       q: "Can I get my money back, and how long will it take?",

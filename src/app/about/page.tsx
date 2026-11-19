@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { JsonLd } from "@/components/seo/json-ld";
 import { ShotStrip } from "@/components/portfolio/shot-strip";
 import { ButtonLink, TextLink } from "@/components/ui/button";
@@ -32,7 +33,7 @@ const principles = [
   },
   {
     t: "Maintained, not delivered and forgotten",
-    d: "Rules, platforms and catalogues change. We stay on the work after launch.",
+    d: "Rules, platforms and catalogs change. We stay on the work after launch.",
   },
 ];
 
@@ -41,7 +42,7 @@ const limits = [
   "We do not promise merchant approval, search rankings, advertising acceptance or business results.",
   "We never suggest misrepresenting products, hiding business activities or bypassing underwriting.",
   "We do not write dosing, usage or outcome content, and we do not advise on disguising intent or evading enforcement.",
-  "Research products offered by us or by our clients are labelled for laboratory research use only, not for human or veterinary use.",
+  "Research products offered by us or by our clients are labeled for laboratory research use only, not for human or veterinary use.",
 ];
 
 export default function AboutPage() {
@@ -90,6 +91,21 @@ export default function AboutPage() {
               In this industry those joins also carry regulatory and platform risk. A partner who understands the whole picture
               can plan the pieces together, spot the contradictions and keep one record of what was decided. That is the value
               of working with one team that plans the whole system together.
+            </p>
+            <p>
+              Read{" "}
+              <Link href="/why-peptomoon" className="text-blue underline underline-offset-4">
+                why RUO brands choose {brand}
+              </Link>
+              , look up unfamiliar terms in the{" "}
+              <Link href="/glossary" className="text-blue underline underline-offset-4">
+                glossary of RUO terms
+              </Link>
+              , or see how we research and correct our guides in the{" "}
+              <Link href="/editorial-policy" className="text-blue underline underline-offset-4">
+                editorial policy
+              </Link>
+              .
             </p>
           </Reveal>
         </div>

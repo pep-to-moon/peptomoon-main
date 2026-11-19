@@ -14,7 +14,7 @@ import { webPageSchema } from "@/lib/seo/schema";
 
 const brand = siteConfig.name;
 const title = `Why Choose ${brand} | RUO Peptide Store Partner`;
-const description = `Round-the-clock technical and customer support, a store built for your brand, and the essentials built in instead of rented. Why RUO brands choose ${brand}.`;
+const description = `Round-the-clock support, a store built for your brand, and the essentials built in instead of rented. Why RUO brands choose ${brand}.`;
 
 export const metadata: Metadata = buildMetadata({ title, description, path: "/why-peptomoon" });
 
@@ -26,7 +26,7 @@ const pillars = [
   },
   {
     t: "Built for your brand, not adapted from a template",
-    d: "Your store is designed and built around your products, your catalogue and your documentation. It is not a generic theme with a logo added. Product pages, batch records and research-use notices are built into the structure, so they stay consistent as the catalogue grows.",
+    d: "Your store is designed and built around your products, your catalog and your documentation. It is not a generic theme with a logo added. Product pages, batch records and research-use notices are built into the structure, so they stay consistent as the catalog grows.",
     link: { href: "/services/ruo-peptide-website-development", label: "Website development" },
   },
   {
@@ -61,7 +61,7 @@ const compare = [
 ];
 
 const builtIn = [
-  ["A store built for your catalogue", "Product pages, variants and batch documentation as structured data.", "/services/ruo-peptide-website-development"],
+  ["A store built for your catalog", "Product pages, variants and batch documentation as structured data.", "/services/ruo-peptide-website-development"],
   ["Reporting in one place", "Orders, payments, stock, fulfillment and support in one view.", "/services/business-dashboards"],
   ["Order and stock handling", "Orders routed, stock counted once and tracking sent to the customer.", "/services/fulfillment-logistics"],
   ["Affiliate tracking", "Partner links, attribution and payout records.", "/services/affiliate-management"],
@@ -84,7 +84,7 @@ const faqs: Faq[] = [
   },
   {
     q: "Will my store look like a template?",
-    a: "No. The design and structure are built for your brand and your catalogue. Many stores in this industry run on the same few themes, and customers and reviewers can tell.",
+    a: "No. The design and structure are built for your brand and your catalog. Many stores in this industry run on the same few themes, and customers and reviewers can tell.",
   },
   {
     q: "Can you promise payment approval or rankings?",
@@ -92,7 +92,7 @@ const faqs: Faq[] = [
   },
   {
     q: "Do you sell to consumers?",
-    a: `No. ${brand} works with businesses in the research-use-only peptide industry. Research-use-only products are labelled for laboratory research use only and are not for human or veterinary use.`,
+    a: `No. ${brand} works with businesses in the research-use-only peptide industry. Research-use-only products are labeled for laboratory research use only and are not for human or veterinary use.`,
   },
 ];
 

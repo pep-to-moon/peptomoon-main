@@ -12,7 +12,7 @@ import { JsonLd } from "@/components/seo/json-ld";
 import { ogImageFor, ogSize } from "@/lib/seo/og";
 import { organizationSchema, websiteSchema } from "@/lib/seo/schema";
 
-// Display: Saira, an open-licence squared grotesque chosen as the closest match to the typography reference.
+// Display: Saira, an open-license squared grotesque chosen as the closest match to the typography reference.
 // Body: Inter, the free stand-in for the Helvetica Neue used by the reference.
 const display = Saira({ subsets: ["latin"], axes: ["wdth"], variable: "--font-saira", display: "swap" });
 const sans = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });

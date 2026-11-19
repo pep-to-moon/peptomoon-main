@@ -13,12 +13,12 @@ export const vialLabelDesign: Service = {
   seo: {
     title: `Peptide Vial Label Design for RUO Brands | ${brand}`,
     description:
-      "Professional vial label design for RUO peptide brands: print-ready layouts, batch and QR fields, research-use notices and templates that match your COAs and site.",
+      "Vial label design for RUO peptide brands: print-ready layouts, batch and QR fields, research-use notices and templates matched to your COAs.",
   },
   h1: "Vial label design for research-use-only peptide brands",
   lead: "A vial label is the one piece of your brand every customer holds, and it is also a document a reviewer can read. We design vial labels and packaging that are clean, consistent and print-ready, with fields for the batch, the quantity, a QR code to the matching certificate of analysis and the research-use notice your counsel approves. We design the layout. We do not write dosing or human-use text, and we cannot make a label compliant.",
   what: [
-    "A label has very little room and a lot to carry: a brand, a product name, a batch or lot reference, a quantity, a research-use notice and a way to find the batch's documents. We turn that into a system instead of one-off artwork. We set up the label grid for each vial size, a type scale that stays legible when printed small, a colour system for your range, and a template where the changing fields, such as product name, lot number and quantity, are the only things that move.",
+    "A label has very little room and a lot to carry: a brand, a product name, a batch or lot reference, a quantity, a research-use notice and a way to find the batch's documents. We turn that into a system instead of one-off artwork. We set up the label grid for each vial size, a type scale that stays legible when printed small, a color system for your range, and a template where the changing fields, such as product name, lot number and quantity, are the only things that move.",
     "The same system extends to boxes, sleeves and shipping inserts when you need them. Because we also build the store and keep the batch records, the label, the product page and the certificate all say the same thing. Customers see one brand, and a payment or platform reviewer sees one consistent business.",
   ],
   why: [
@@ -47,14 +47,14 @@ export const vialLabelDesign: Service = {
   approach: [
     { title: "Audit the range", text: "We list your vial sizes, closures, printers and products, and gather what each label has to carry, so the system fits the real range and not an imagined one." },
     { title: "Set the label grid", text: "We fix the zones for brand, product name, batch, quantity, notice and code, with type sizes and minimum clearances for each vial size." },
-    { title: "Design the brand layer", text: "Colour, type and a simple mark treatment make a range recognisable at a glance, without crowding the fields that matter." },
+    { title: "Design the brand layer", text: "Color, type and a simple mark treatment make a range recognizable at a glance, without crowding the fields that matter." },
     { title: "Build the template", text: "A print-ready file with named variable fields, so adding a product or a lot is a quick data change and not new artwork." },
     { title: "Proof at real size", text: "We check printed proofs on your actual stock and printer, then adjust contrast, spacing and code size before the full run." },
     { title: "Connect it to the record", text: "The code on the label opens the matching batch page on your store, and the lot reference matches your records." },
   ],
   included: [
     "Label system for each vial size and closure",
-    "Brand layer: colour, type and mark treatment for the whole range",
+    "Brand layer: color, type and mark treatment for the whole range",
     "Print-ready artwork with bleed, safe zones and cut guides",
     "Variable template for product name, lot number and quantity",
     "Space for your research-use notice, set where your counsel specifies",
@@ -68,7 +68,7 @@ export const vialLabelDesign: Service = {
   ],
   process: [
     { title: "Brief", text: "Range, vial sizes, printer, stock and the documents each label must point to." },
-    { title: "System", text: "Grid, type scale, colour and the variable fields, shown on one vial first." },
+    { title: "System", text: "Grid, type scale, color and the variable fields, shown on one vial first." },
     { title: "Range", text: "The system applied across products, with boxes and inserts where needed." },
     { title: "Review", text: "Your counsel and supplier review wording and fit. Their changes come back as artwork updates." },
     { title: "Proof", text: "Printed proofs checked at real size, then final adjustments." },
@@ -77,7 +77,7 @@ export const vialLabelDesign: Service = {
   technical: [
     "Vector artwork in print-ready formats, with outlined type and named layers for each zone.",
     "Variable fields set up so product name, lot number and quantity can be filled from a spreadsheet or your product data.",
-    "Colour set for the printer's process, with a note on how coated and uncoated stock change contrast.",
+    "Color set for the printer's process, with a note on how coated and uncoated stock change contrast.",
     "QR codes generated at a size and error-correction level that scan reliably on a curved vial, tested before the run.",
     "The label's lot reference matches the batch page and the certificate, so a scan, a record and a document all agree.",
   ],
@@ -116,7 +116,7 @@ export const vialLabelDesign: Service = {
     },
     {
       q: "Do you print the labels?",
-      a: "No. We deliver print-ready files and a template, and we work with your label printer or supplier on stock, colour and proofing. If you do not have a printer yet, we can tell you what to ask a printer for, but you choose and contract with them.",
+      a: "No. We deliver print-ready files and a template, and we work with your label printer or supplier on stock, color and proofing. If you do not have a printer yet, we can tell you what to ask a printer for, but you choose and contract with them.",
     },
     {
       q: "How long does a label design project take?",

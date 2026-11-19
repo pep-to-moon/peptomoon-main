@@ -9,7 +9,7 @@ const isDummy = (v: string) => v.trim() === "";
 const hasDistinctLegalName = () => !isDummy(siteConfig.legalName) && siteConfig.legalName.trim() !== siteConfig.name;
 
 /**
- * The organisation as a self-contained object. Search engines do not reliably join a bare "@id" reference to a different
+ * The organization as a self-contained object. Search engines do not reliably join a bare "@id" reference to a different
  * script block on the page, so publisher, provider and author carry the name, address and logo themselves.
  */
 const orgRef = () => ({
@@ -36,7 +36,7 @@ export function organizationSchema() {
       "Payment processing and underwriting preparation",
       "Supplier documentation review",
       "Order fulfillment and logistics",
-      "Search engine, generative engine and answer engine optimisation",
+      "Search engine, generative engine and answer engine optimization",
       "Website audits",
       "Content and compliance review",
     ],

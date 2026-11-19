@@ -97,7 +97,7 @@ test.describe("telehealth service page", () => {
     const body = ((await page.evaluate(() => document.body.textContent)) ?? "").replace(/\s+/g, " ");
     for (const phrase of [
       "We do not provide medical care",
-      "HIPAA compliance belongs to your organisation",
+      "HIPAA compliance belongs to your organization",
       "Research-use-only products are not part of a clinical offering",
     ]) {
       expect(body, phrase).toContain(phrase);
