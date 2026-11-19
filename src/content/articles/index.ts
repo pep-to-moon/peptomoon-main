@@ -18,6 +18,9 @@ import { whiteLabelVsPrivateLabelPeptides } from "./white-label-vs-private-label
 import { howToFindPeptideSupplier } from "./how-to-find-a-peptide-supplier";
 import { shopifyVsCustomPeptideStore } from "./shopify-vs-custom-peptide-store";
 import { isSellingResearchPeptidesLegal } from "./is-selling-research-peptides-legal";
+import { chargebacksPeptideStore } from "./chargebacks-peptide-store";
+import { peptideStoreNotRanking } from "./peptide-store-not-ranking";
+import { metaAdAccountDisabledPeptides } from "./meta-ad-account-disabled-peptides";
 
 export const allArticles: Article[] = [
   infrastructureMap,
@@ -39,6 +42,9 @@ export const allArticles: Article[] = [
   howToFindPeptideSupplier,
   shopifyVsCustomPeptideStore,
   isSellingResearchPeptidesLegal,
+  chargebacksPeptideStore,
+  peptideStoreNotRanking,
+  metaAdAccountDisabledPeptides,
 ];
 
 const isProduction = (process.env.VERCEL_ENV ?? process.env.NODE_ENV) === "production";

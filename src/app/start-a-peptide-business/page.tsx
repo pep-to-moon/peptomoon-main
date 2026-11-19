@@ -75,6 +75,7 @@ const steps: Step[] = [
       { href: "/resources/payment-processor-shut-down-account", label: "If your processor shuts you down" },
       { href: "/resources/stripe-closed-my-peptide-account", label: "If Stripe closes your account" },
       { href: "/resources/rolling-reserve-explained", label: "Rolling reserve explained" },
+      { href: "/resources/chargebacks-peptide-store", label: "Chargebacks and disputes" },
       { href: "/services/payment-processing", label: "Payment processing" },
       { href: "/all-in-one", label: "All-in-one setup" },
     ],
@@ -92,6 +93,8 @@ const steps: Step[] = [
     text: "Advertising platforms set their own rules for this category: Meta, for example, decides what counts as an unsafe product at its sole discretion. So plan search, email and partner programs alongside any paid channel, and make sure your tracking matches real orders from the first day.",
     links: [
       { href: "/resources/search-and-ai-visibility-for-ruo-peptide-stores", label: "Search and AI visibility" },
+      { href: "/resources/peptide-store-not-ranking", label: "If your store is not ranking" },
+      { href: "/resources/meta-ad-account-disabled-peptides", label: "If your Meta ad account is restricted" },
       { href: "/services/seo-geo-aeo", label: "SEO, GEO and AEO" },
       { href: "/services/meta-advertising", label: "Meta advertising infrastructure" },
       { href: "/services/email-marketing", label: "Email marketing" },

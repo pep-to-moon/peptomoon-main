@@ -90,6 +90,6 @@ export const seoGeoAeo: Service = {
   ],
   related: ["ruo-peptide-website-development", "site-audits", "email-marketing", "business-dashboards"],
   caseStudies: ["veracue-labs", "99-purity-peptides", "primetime-bio-labs"],
-  articles: ["search-and-ai-visibility-for-ruo-peptide-stores", "peptide-store-architecture", "infrastructure-behind-an-ruo-peptide-business"],
+  articles: ["search-and-ai-visibility-for-ruo-peptide-stores", "peptide-store-architecture", "infrastructure-behind-an-ruo-peptide-business", "peptide-store-not-ranking"],
   cta: { label: "Plan your search visibility" },
 };

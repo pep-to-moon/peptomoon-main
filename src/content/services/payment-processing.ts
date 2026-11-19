@@ -100,6 +100,7 @@ export const paymentProcessing: Service = {
     "match-list-peptide-sellers",
     "rolling-reserve-explained",
     "payment-processing-for-ruo-stores",
+    "chargebacks-peptide-store",
   ],
   cta: { label: "Discuss your payment setup" },
 };

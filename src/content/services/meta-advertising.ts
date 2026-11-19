@@ -85,6 +85,6 @@ export const metaAdvertising: Service = {
   ],
   related: ["affiliate-management", "business-dashboards", "email-marketing"],
   caseStudies: [],
-  articles: ["infrastructure-behind-an-ruo-peptide-business"],
+  articles: ["meta-ad-account-disabled-peptides", "infrastructure-behind-an-ruo-peptide-business"],
   cta: { label: "Discuss your tracking setup" },
 };
