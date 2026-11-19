@@ -19,7 +19,7 @@ export const processorShutdown: Article = {
   published: "2026-11-17",
   updated: "2026-11-17",
   service: "payment-processing",
-  related: ["payment-processing-for-ruo-stores", "infrastructure-behind-an-ruo-peptide-business", "review-a-peptide-suppliers-documentation"],
+  related: ["payment-processing-for-ruo-stores", "stripe-closed-my-peptide-account", "paypal-froze-funds-peptide-store", "infrastructure-behind-an-ruo-peptide-business", "review-a-peptide-suppliers-documentation"],
   needsCounselReview: false,
   quickAnswer: "If your processor shuts you down, read the notice and contract, reply within the time given with one package, and ask in writing when held funds will be released. Then compare your application with your live site to find the cause, fix what is wrong and apply to providers that cover your category. Never route sales through another business's account.",
   takeaways: [

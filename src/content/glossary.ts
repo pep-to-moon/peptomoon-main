@@ -112,8 +112,8 @@ export const glossary: GlossaryTerm[] = [
     slug: "match-list",
     term: "MATCH list",
     definition:
-      "A Mastercard database of merchants whose accounts have been terminated by an acquiring bank, with a stated reason. Being listed can make it very hard to open a new processing account. Mastercard publishes its own rules on how listing works.",
-    see: { label: "What to do if your processor shuts you down", href: "/resources/payment-processor-shut-down-account" },
+      "A Mastercard system where acquiring banks record merchants and principal owners they have terminated, and check new applicants. Mastercard's documentation says a record is added within five days of a termination and that searches cover the past five years. Its current system is called MATCH Pro.",
+    see: { label: "The MATCH list explained", href: "/resources/match-list-peptide-sellers" },
   },
   {
     slug: "purity",
@@ -126,6 +126,7 @@ export const glossary: GlossaryTerm[] = [
     term: "Rolling reserve",
     definition:
       "A portion of each day's sales that a processor holds back for a set period as protection against refunds and chargebacks. The terms are in your processing agreement, so read the percentage and the holding period before you sign.",
+    see: { label: "Rolling reserve explained", href: "/resources/rolling-reserve-explained" },
   },
   {
     slug: "ruo",

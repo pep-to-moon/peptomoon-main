@@ -1,0 +1,113 @@
+import { siteConfig } from "@/config/site";
+import type { Article } from "../types";
+import { callout, h2, ol, p, table, ul } from "./helpers";
+
+const brand = siteConfig.name;
+
+export const paypalFrozeFundsPeptideStore: Article = {
+  slug: "paypal-froze-funds-peptide-store",
+  title: "PayPal froze your funds selling peptides? What to do next",
+  seo: {
+    title: `PayPal Froze My Funds: Peptide Store Guide | ${brand}`,
+    description:
+      "PayPal limited your account or held your funds? What PayPal's own agreement says about holds, the 180-day figure, and what to do in the first days.",
+  },
+  primaryKeyword: "paypal froze funds peptide store",
+  excerpt:
+    "A PayPal limitation can freeze your balance without warning. Here is what PayPal's own agreement says about holds and reserves, and how to respond step by step.",
+  topic: "Payment Processing",
+  published: "2026-11-19",
+  updated: "2026-11-19",
+  service: "payment-processing",
+  related: ["payment-processor-shut-down-account", "stripe-closed-my-peptide-account", "payment-processing-for-ruo-stores"],
+  needsCounselReview: false,
+  quickAnswer:
+    "Read PayPal's notice, then respond through the Resolution Center or the instructions in the email. PayPal's agreement lets it hold a balance for up to 180 days if reasonably needed to protect against liability or after a policy violation, and it keeps sole discretion over such actions. Gather evidence, stop selling through that account and plan a replacement.",
+  takeaways: [
+    "PayPal's agreement says it keeps sole discretion over holds, limitations and reserves, and that decisions may rest on confidential criteria it does not have to disclose.",
+    "The agreement lets PayPal hold a balance for up to 180 days if reasonably needed to protect against liability or after a violation of its Acceptable Use Policy, and longer where legal processes require it.",
+    "PayPal's Acceptable Use Policy prohibits transactions involving certain controlled substances and products that present a risk to consumer safety, and it requires pre-approval for prescription items. The passages we read do not name peptides.",
+    "Respond through the Resolution Center or the instructions in the notice, once, with organized evidence.",
+    "Do not move sales to another account to dodge a limitation. Plan a proper replacement instead.",
+  ],
+  blocks: [
+    p("The first sign is usually an email, or a sudden banner in your dashboard. Your PayPal account has been limited, your balance can no longer be withdrawn and your customers' payments are sitting in limbo. If PayPal was a large share of your sales, the effect on cash flow is immediate."),
+    p("This guide covers PayPal specifically. It sets out what PayPal's own published agreement says about holds and reserves, what its Acceptable Use Policy says about products like these, and what you can do in the first days. For steps that apply to any processor, read our guide to [what to do when a processor shuts you down](/resources/payment-processor-shut-down-account). We are not a law firm, and nothing here is legal advice."),
+    h2("What PayPal's own agreement says"),
+    p("Most of what circulates online about PayPal freezes comes from sellers and from sites that sell alternatives, and the numbers vary from post to post. So begin with PayPal's own text. On 19 November 2026 we read the PayPal User Agreement and the Acceptable Use Policy, both of which show a last-updated date of 4 November 2026."),
+    p("The section titled Holds, Limitations, and Reserves says PayPal may take account-level or transaction-level actions to protect PayPal and the network of buyers and sellers. It says PayPal will normally give you notice, but that it retains the sole discretion to take these actions. It also says decisions may be based on confidential criteria that are essential to its management of risk, and that PayPal has no obligation to disclose the details of its risk management procedures."),
+    p("The agreement describes what limitations are for: to protect PayPal and its users when it notices restricted activities, an increased financial risk or activity that appears unusual or suspicious, and to collect information needed to keep an account open. It tells you to use the Resolution Center, or the instructions in your email notice, to request information about a limitation, hold or reserve."),
+    h2("The 180-day figure"),
+    p("The number that appears most often in seller forums is 180 days, and it does come from PayPal's agreement. Among the actions PayPal may take, the agreement lists holding the balance in your account for up to 180 days if reasonably needed to protect against the risk of liability, or if you have violated the Acceptable Use Policy. It adds that a hold may stay in place longer than 180 days where court orders, regulatory requirements or other legal processes require it."),
+    p("So the figure is real, but it is a ceiling in the agreement and it depends on stated reasons. It is not a fixed sentence, and the agreement does not say a hold will last the full period. Ask PayPal, in writing, for the specific reason and the expected release date."),
+    callout("Read your own agreement", "We read the United States version of the agreement. If your account is based elsewhere, open the version for your country, because terms differ by region and change over time."),
+    h2("What the Acceptable Use Policy says about products"),
+    p("The Acceptable Use Policy lists activities you may not use PayPal for. One of them is transactions involving narcotics, steroids, certain controlled substances or other products that present a risk to consumer safety. It also prohibits any activity that requires pre-approval without that approval, and its list of activities requiring approval includes prescription items and telemedicine services."),
+    p("The passages we read do not mention peptides or research chemicals by name. That leaves the decision about any given store with PayPal, and PayPal says it keeps sole discretion. It is one reason sellers in this category see different outcomes, and it is a reason not to build a business that depends on one payment method."),
+    table(
+      "What PayPal's text says and what to check on your side",
+      ["What PayPal's text says", "What to check on your side"],
+      ["Prohibited: transactions involving certain controlled substances or other products that present a risk to consumer safety.", "Does any product page, label or post describe a product as something other than a research material, or point toward personal use?"],
+      ["Pre-approval is needed for prescription items and telemedicine services.", "Do you sell or describe anything as a prescription product or a medical service?"],
+      ["PayPal keeps sole discretion over holds, limitations and reserves.", "Keep records and reply in writing. Do not expect a debate about the decision."],
+      ["A hold of up to 180 days is possible if reasonably needed to protect against liability or after a policy violation.", "Ask for the specific reason and the release date, and plan cash flow without that balance."],
+    ),
+    h2("The first 72 hours"),
+    ol(
+      "Read the notice and note exactly what it says and any deadline. Take screenshots of your account, the limitation message and your balance.",
+      "Stop sending customers to a payment method you cannot rely on. Add a clear note to your checkout and offer another way to pay if you have one.",
+      "Export your PayPal transaction history and match it to your orders. List what is shipped, what is pending and what could be disputed.",
+      "Check for open disputes and refunds. They affect your balance and how PayPal assesses risk.",
+      "Review your site and your account details for anything that does not match: the business description, product pages, policies and descriptors.",
+      "Respond through the Resolution Center or as the email says. Reply once, in time, with facts and documents.",
+      "Tell your accountant, because a held balance changes your cash flow and your books.",
+    ),
+    h2("How to respond to PayPal"),
+    p("Keep your message short, factual and organized. Say what happened, what you have checked and what you are asking for. Attach documents that answer the likely concern: your business registration, your product and labelling summary, your supplier and batch records, your policies and your order and shipping records."),
+    p("Ask two things in plain words. First, what specifically PayPal relied on. Second, when and under what conditions the balance will be released. Do not argue about fairness and do not threaten. If you changed something, say what and when. If PayPal asks for more information, provide it in one complete reply."),
+    table(
+      "What to include in your reply",
+      ["Item", "Why it matters"],
+      ["A short factual summary of the business", "Shows what you sell, to whom and how."],
+      ["Product, label and website summary", "Shows that your description and your pages agree."],
+      ["Supplier and batch documents", "Shows the product is documented. See our [guide to supplier documents](/resources/review-a-peptide-suppliers-documentation)."],
+      ["Order, shipping and refund records", "Shows how the business actually behaves."],
+      ["What you have changed", "Shows you took the concern seriously, with dates."],
+    ),
+    h2("Protect customers while funds are held"),
+    p("Customers who paid you are waiting for product or refunds, and delays can turn into disputes. Ship orders that are paid and ready, communicate openly about delays and honor refund requests promptly. A calm, honest message is cheaper than a wave of chargebacks, and disputes that pile up can make a hold last longer or push you toward a closure."),
+    h2("Keep cash flow and records straight"),
+    p("A held balance is a cash-flow problem as much as a payment problem. Work out how many weeks you can operate without it, and decide now which costs can wait: supplier orders, advertising, contractors. Tell your supplier early if an order may be delayed, because a short, honest message protects the relationship."),
+    ul(
+      "Reconcile your PayPal history to your orders every week, so you always know what is paid, shipped and disputed.",
+      "Keep a dated log of every message with PayPal, including who said what and when.",
+      "Separate what is owed to customers from what you can spend, and do not spend money that may be reversed.",
+      "Ask your accountant how to record a held balance, so your books match reality.",
+    ),
+    h2("What not to do"),
+    ul(
+      "Do not open another PayPal account, or one in someone else's name, to keep taking payments. It breaches the terms and can make the position permanent.",
+      "Do not route payments through another business's account.",
+      "Do not move money around to avoid a hold. It looks like what PayPal's risk systems are built to catch.",
+      "Do not change your business description to something untrue.",
+      "Do not wait. A reply that arrives late is weaker than a short one that arrives in time.",
+    ),
+    h2("Plan a replacement"),
+    p("Treat PayPal as one route, not the foundation. Providers that serve this category underwrite for themselves and will review your business, your website and your documents. They will probably ask about earlier limitations or closures, so answer truthfully and bring your evidence."),
+    p("Our guide to [how payment underwriting works](/resources/payment-processing-for-ruo-stores) explains what reviewers read, and our [payment processing service](/services/payment-processing) can help you prepare the file and integrate a replacement. We never promise approval and never help misrepresent a business."),
+    h2("How to avoid a repeat"),
+    p("Whichever provider you use next, spread the risk. Keep a second approved route ready so one decision cannot stop all of your sales. Keep your descriptions and policies consistent, track refunds and disputes weekly, and review new content for claims before it goes live. Fix problems early, because a small mismatch is far easier to correct than a limitation that is already in place."),
+  ],
+  faqs: [
+    { q: "Why did PayPal limit my account?", a: "Only PayPal can say for sure. Its agreement says limitations protect PayPal and its users when it notices restricted activities, an increased financial risk or unusual activity, and that decisions may rest on confidential criteria. Ask in writing what specifically it relied on, and check your site, descriptions and dispute rates for mismatches." },
+    { q: "Is it true PayPal can hold my money for 180 days?", a: "PayPal's agreement says it may hold a balance for up to 180 days if reasonably needed to protect against liability, or if you have violated its Acceptable Use Policy, and longer where legal processes require it. It is a ceiling tied to stated reasons, so ask PayPal for the reason and the expected release date." },
+    { q: "Does PayPal allow selling peptides?", a: "PayPal's Acceptable Use Policy prohibits transactions involving certain controlled substances and products that present a risk to consumer safety, and it requires pre-approval for prescription items. The passages we read do not name peptides, and PayPal keeps sole discretion over its decisions, so no outcome can be promised in advance." },
+    { q: "How do I appeal a PayPal limitation?", a: "Use the Resolution Center, or follow the instructions in the email notice, once and within any deadline. Send one organized reply with documents that answer the likely concern, and ask what PayPal relied on and when the balance will be released. Avoid sending many messages or arguing about fairness." },
+    { q: "Can I open another PayPal account to keep selling?", a: "No. Opening another account, or using someone else's, to continue after a limitation breaches PayPal's terms and can make a recoverable problem permanent. Plan a proper replacement with a provider that has reviewed your real business, and keep your records ready." },
+    { q: "What should I tell customers while my funds are held?", a: "Tell them plainly what is happening and when they can expect shipment or refunds, ship orders that are paid and ready, and honor refund requests quickly. Open disputes and chargebacks can lengthen a hold, so a short honest message now costs far less than a wave of disputes later." },
+  ],
+  sources: [
+    { label: "PayPal User Agreement (last updated 4 November 2026)", url: "https://www.paypal.com/us/legalhub/paypal/useragreement-full", checked: "2026-11-19" },
+    { label: "PayPal Acceptable Use Policy (last updated 4 November 2026)", url: "https://www.paypal.com/us/legalhub/paypal/acceptableuse-full", checked: "2026-11-19" },
+  ],
+};

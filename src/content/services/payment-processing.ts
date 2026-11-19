@@ -92,6 +92,14 @@ export const paymentProcessing: Service = {
   ],
   related: ["ruo-peptide-website-development", "site-audits", "business-dashboards", "compliance-support"],
   caseStudies: ["veracue-labs"],
-  articles: ["payment-processor-shut-down-account", "payment-processing-for-ruo-stores", "infrastructure-behind-an-ruo-peptide-business"],
+  articles: [
+    "payment-processor-shut-down-account",
+    "stripe-closed-my-peptide-account",
+    "paypal-froze-funds-peptide-store",
+    "shopify-payments-peptide-store-disabled",
+    "match-list-peptide-sellers",
+    "rolling-reserve-explained",
+    "payment-processing-for-ruo-stores",
+  ],
   cta: { label: "Discuss your payment setup" },
 };

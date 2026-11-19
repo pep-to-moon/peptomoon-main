@@ -1,0 +1,112 @@
+import { siteConfig } from "@/config/site";
+import type { Article } from "../types";
+import { callout, h2, ol, p, table, ul } from "./helpers";
+
+const brand = siteConfig.name;
+
+export const rollingReserveExplained: Article = {
+  slug: "rolling-reserve-explained",
+  title: "Rolling reserve explained for peptide merchants",
+  seo: {
+    title: `Rolling Reserve Explained for Peptide Merchants | ${brand}`,
+    description:
+      "What a rolling reserve is, how it hits cash flow, what PayPal and Stripe say about holds, and how to model one before you sign.",
+  },
+  primaryKeyword: "rolling reserve peptide merchant account",
+  excerpt:
+    "A reserve holds back part of your sales. Here is what the term means, what two major providers say in their own documents, and how to work out the cash-flow cost before you sign.",
+  topic: "Payment Processing",
+  published: "2026-11-19",
+  updated: "2026-11-19",
+  service: "payment-processing",
+  related: ["payment-processing-for-ruo-stores", "payment-processor-shut-down-account", "match-list-peptide-sellers"],
+  needsCounselReview: false,
+  quickAnswer:
+    "A rolling reserve holds back a share of your sales for a set period to cover refunds and chargebacks, then releases it as time passes. The cost is cash flow, not just fees. PayPal's agreement describes reserves on business accounts, and Stripe's risk policy describes paused payouts. Model the held amount before you sign and read the release terms.",
+  takeaways: [
+    "A reserve is money you have earned but cannot use yet. The cost shows up in cash flow, so model it before you sign.",
+    "Contracts use different structures: a rolling reserve, a fixed or upfront reserve, a capped reserve, or a delay in payouts. Read which one you have.",
+    "PayPal's agreement says it may place a reserve on a business account if it believes there is a high level of risk, and lists factors such as whether your industry has a higher likelihood of chargebacks.",
+    "Stripe's risk policy says it will typically pause payouts for 120 days after a closure, to cover potential refunds, disputes or chargebacks.",
+    "Ask for the percentage, the holding period, the cap, the release dates and what happens if you leave, all in writing.",
+  ],
+  blocks: [
+    p("Few terms in a merchant agreement matter as much to a small business as the reserve, and few are explained as poorly. A provider may talk about a low rate, and the real cost turns out to be a share of your sales that you cannot touch for months. For a business that pays suppliers up front, that can decide whether you can reorder stock."),
+    p("This guide explains what a reserve is, what two major providers say about holds and reserves in their own published documents, and how to work out the effect on your cash flow. It is general information. It is not legal or financial advice, and your own contract decides your position. For the wider picture, read our guide to [how payment underwriting works](/resources/payment-processing-for-ruo-stores)."),
+    h2("What a reserve is"),
+    p("A reserve is money that a payment provider holds back from your sales to protect itself against refunds, chargebacks and other losses. You have earned it, but you cannot withdraw it until the provider releases it. Providers use reserves most often with businesses they see as higher risk, which includes many in this category."),
+    p("The word that matters is risk. When a provider cannot be sure how a business will behave, it covers itself by keeping part of the money for a while. A longer track record, low disputes and clear documentation are what, over time, persuade a provider to hold less."),
+    h2("The common structures"),
+    p("Contracts use different words for similar ideas, so read the structure rather than the label. These are the usual forms. Your own agreement may combine them or use different names."),
+    table(
+      "Common reserve structures",
+      ["Structure", "How it usually works", "What to ask"],
+      ["Rolling reserve", "A percentage of each day's sales is held for a set number of days, then released as new sales are held.", "What percentage, for how many days, and when does each portion release?"],
+      ["Fixed or upfront reserve", "A set amount is held from the start, or taken from early sales until a target is reached.", "How large, and when is it released or reduced?"],
+      ["Capped reserve", "A percentage is held until the total reaches a ceiling.", "What is the cap, and can it be reviewed?"],
+      ["Payout delay", "Payouts are made later than normal, for example after a longer settlement period.", "How long is the delay, and does it change with volume?"],
+    ),
+    h2("What PayPal's agreement says"),
+    p("On 19 November 2026 we read PayPal's User Agreement, last updated on 4 November 2026. Under Reserves placed on business accounts, it says PayPal may place a reserve on a business account at any time if it believes there may be a high level of risk associated with you, your business account, your business model or your transactions. It describes a reserve as all or some portion of the money in the account being unavailable for withdrawal, to protect against transactions being reversed or invalidated, or any other risk related to the account or use of the service."),
+    p("It also lists factors PayPal considers. They include how long you have been in business, whether your industry has a higher likelihood of chargebacks, your payment processing history with PayPal and other providers, your credit history and your delivery time frames. It says PayPal retains the sole discretion to take these actions, and that decisions may rest on confidential criteria."),
+    h2("What Stripe says about paused payouts"),
+    p("Stripe's unacceptable risk policy, which we read in the version last updated on 29 July 2026, describes a related tool. It says Stripe will typically restrict or pause payouts to a user's bank account for 120 days, and it gives the purpose as covering potential refunds, disputes or chargebacks. After that period, it describes outcomes such as releasing all or part of the balance, continuing to hold all or part of it pending further review, or cancelling the payout."),
+    callout("Read your own terms", "The versions we read were the ones published for the United States (PayPal) and for India (Stripe). Terms differ by country, product and contract, and a negotiated merchant agreement can differ again. Treat this as an illustration of how providers write about holds and reserves, not as your contract."),
+    h2("Why the cost is cash flow, not just fees"),
+    p("A reserve does not change the money you will eventually receive. It changes when you receive it. For a business with steady sales, a rolling reserve settles into a steady held balance. That balance is working capital you cannot use, and it has to be funded from somewhere else."),
+    p("The simple way to estimate it is to multiply three things: your daily sales, the reserve percentage and the number of days each portion is held. The figure is roughly what will be sitting in reserve once the arrangement has run for a full cycle."),
+    callout("Illustrative maths, not a quote", "If you process 1,000 dollars a day, a 10 percent rolling reserve held for 180 days would settle at about 18,000 dollars held at any time (1,000 x 0.10 x 180). Those numbers are examples only. Use your own sales, percentage and holding period, and remember that the held balance grows as your sales grow."),
+    h2("How to model it before you sign"),
+    ol(
+      "Take your realistic daily sales, not your best day.",
+      "Multiply by the reserve percentage and the holding period to get the steady held balance.",
+      "Add your payment and supply costs and see how many weeks of stock the held balance equals.",
+      "Test a growth case. If sales double, the held balance doubles, and so does the cash you need to find.",
+      "Test a slow case. If sales fall, the held balance shrinks only as old portions release, so there is a lag.",
+      "Ask what happens at the end of the contract and whether the held balance is released in full.",
+    ),
+    h2("Questions to put to a provider in writing"),
+    table(
+      "What to ask and why",
+      ["Question", "Why it matters"],
+      ["What is the reserve percentage, and is it fixed?", "A rate that can change without agreement is a risk to your planning."],
+      ["How long is each portion held, and on what dates is it released?", "The holding period drives the size of the held balance."],
+      ["Is there a cap, and is the reserve reviewed?", "A reviewable cap gives you a route to a smaller reserve as you prove yourself."],
+      ["What triggers an increase?", "Dispute rates, sales spikes and changes to your business can all trigger a higher reserve."],
+      ["What happens to the reserve if I leave or you close my account?", "Termination terms decide how long your money stays held."],
+      ["Where is the held money kept?", "Stripe says it keeps a user's remaining balance separately from its own funds, except as law or its terms require or permit. Ask what applies to you."],
+    ),
+    h2("Ways to reduce the reserve you carry"),
+    p("A provider sets a reserve based on how risky it thinks you are, so the way to hold less is to look less risky and to prove it. None of this is a promise. It is what tends to make a reviewer more comfortable."),
+    ul(
+      "Keep refunds and disputes low, and track them weekly. A rising rate is the quickest way to a higher reserve.",
+      "Make what you told the provider match what your site and operations show.",
+      "Keep supplier and batch records for every product, so you can answer questions quickly.",
+      "Ship promptly and tell customers about delays, because slow delivery drives disputes. PayPal lists delivery time frames among its factors.",
+      "Ask for a review of the reserve after a set period of clean performance, and put the date in the contract.",
+    ),
+    h2("Comparing offers fairly"),
+    p("When two providers quote different terms, compare the total cost to your business, not the headline rate. A low rate with a long reserve can cost more in tied-up cash than a higher rate with little or no reserve. Put each offer into the same model: fees, the held balance, the delay before first release and the cost of the cash you must fund to cover it."),
+    p("Compare the exit terms too. Ask how long money stays held after you leave, whether the reserve can change during the contract and whether an offer that says it has no reserve can still hold funds under its terms on holds, limitations or closures. The cheapest offer on paper is rarely the cheapest one in practice."),
+    h2("What not to do"),
+    ul(
+      "Do not split sales across several accounts or identities to avoid a reserve. It breaches provider terms and looks like fraud.",
+      "Do not accept a reserve you have not modeled. A low rate with a long hold can cost more cash than a higher rate with a short one.",
+      "Do not assume a provider that advertises no reserve will never hold funds. Read the terms on holds, limitations and closures as well.",
+      "Do not plan to spend the held balance.",
+    ),
+    p("If you want help reading a contract or preparing the file for a provider, see our [payment processing service](/services/payment-processing) or our [all-in-one setup](/all-in-one). We promise no approvals and no particular terms, and we never help misrepresent a business."),
+  ],
+  faqs: [
+    { q: "What is a rolling reserve?", a: "A rolling reserve holds back a percentage of each day's sales for a set number of days, then releases each portion as that time passes while new sales are held. It protects the provider against refunds and chargebacks. For you it means earned money that you cannot use yet." },
+    { q: "How much is a typical rolling reserve?", a: "There is no standard figure, and we do not quote one. It depends on the provider, your business, your track record and your contract. Ask for the percentage, holding period and cap in writing, then model the held balance with your own sales so you know the cash you must fund." },
+    { q: "How do I calculate the cash a reserve will tie up?", a: "Multiply your daily sales by the reserve percentage and by the number of days each portion is held. The result is roughly the balance held once the arrangement has run a full cycle. For example, 1,000 dollars a day, 10 percent, 180 days gives about 18,000 dollars. These figures are illustrative only." },
+    { q: "Can I get the reserve reduced?", a: "Sometimes. Providers set reserves by perceived risk, so low refunds and disputes, consistent records and a clear track record help. Ask for a review date in the contract, and ask what performance would justify a lower percentage. We cannot promise any change, because each provider decides for itself." },
+    { q: "Is a payout delay the same as a reserve?", a: "Not exactly. A reserve holds part of your sales as unavailable, while a payout delay makes all payouts arrive later. Both tie up cash for a time. Stripe's risk policy, for example, describes pausing payouts for 120 days after a closure. Read which structure your contract uses." },
+    { q: "What happens to my reserve if my account is closed?", a: "That depends on your contract and the provider's terms. Stripe's risk policy describes holding a balance for 120 days and then releasing, continuing to hold or cancelling it, and PayPal's agreement allows holds of up to 180 days. Ask in writing what happens to held money if the account closes." },
+  ],
+  sources: [
+    { label: "PayPal User Agreement (last updated 4 November 2026): Reserves placed on business accounts", url: "https://www.paypal.com/us/legalhub/paypal/useragreement-full", checked: "2026-11-19" },
+    { label: "Stripe: Unacceptable risk policy (last updated 29 July 2026)", url: "https://stripe.com/in/legal/unacceptable-risk-policy", checked: "2026-11-19" },
+  ],
+};
