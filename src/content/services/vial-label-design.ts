@@ -123,7 +123,7 @@ export const vialLabelDesign: Service = {
       a: "It depends on the number of vial sizes and products, and on how quickly your counsel and supplier review the wording. We scope after a short brief. A first label system on one vial is usually quick to show, and the range, proofs and handoff follow from it.",
     },
   ],
-  related: ["ruo-peptide-website-development", "supplier-verification", "compliance-support", "wholesale-dropshipping-3pl"],
+  related: ["ruo-peptide-website-development", "supplier-verification", "compliance-support", "wholesale-peptides"],
   caseStudies: [],
   articles: ["ruo-label-is-not-a-compliance-strategy"],
   cta: { label: "Start a label project" },

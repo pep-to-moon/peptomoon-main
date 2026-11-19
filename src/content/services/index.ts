@@ -5,9 +5,10 @@ import { complianceSupport } from "./compliance-support";
 import { customerSupport } from "./customer-support";
 import { emailMarketing } from "./email-marketing";
 import { googleAds } from "./google-ads";
-import { fulfillmentLogistics } from "./fulfillment-logistics";
 import { metaAdvertising } from "./meta-advertising";
 import { paymentProcessing } from "./payment-processing";
+import { peptide3pl } from "./peptide-3pl";
+import { peptideDropshipping } from "./peptide-dropshipping";
 import { seoGeoAeo } from "./seo-geo-aeo";
 import { siteAudits } from "./site-audits";
 import { supplierVerification } from "./supplier-verification";
@@ -16,7 +17,7 @@ import { telehealthPlatformDevelopment } from "./telehealth-platform-development
 import { vialLabelDesign } from "./vial-label-design";
 import { websiteDevelopment } from "./website-development";
 import { whiteLabelPeptides } from "./white-label-peptides";
-import { wholesaleDropshipping3pl } from "./wholesale-dropshipping-3pl";
+import { wholesalePeptides } from "./wholesale-peptides";
 
 /** Order matters: it is the order used in navigation, the hub page and the footer. */
 export const services: Service[] = [
@@ -26,8 +27,9 @@ export const services: Service[] = [
   whiteLabelPeptides,
   paymentProcessing,
   telehealthPaymentProcessing,
-  fulfillmentLogistics,
-  wholesaleDropshipping3pl,
+  wholesalePeptides,
+  peptideDropshipping,
+  peptide3pl,
   businessDashboards,
   customerSupport,
   metaAdvertising,

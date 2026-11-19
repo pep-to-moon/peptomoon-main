@@ -74,7 +74,7 @@ const chapters = [
     n: "03",
     title: "Fulfillment customers can feel",
     text: "Order processing, inventory, shipping integrations and tracking, with a defined route for the exceptions that decide whether customers return.",
-    link: { href: "/services/fulfillment-logistics", label: "Fulfillment and logistics" },
+    link: { href: "/services/peptide-3pl", label: "3PL and fulfillment" },
     visual: (
       <Ledger
         caption="From order to doorstep"

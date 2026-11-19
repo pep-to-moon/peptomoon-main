@@ -29,7 +29,7 @@ type Node = { label: string; hint: string; href: string; icon: LucideIcon };
 const left: Node[] = [
   { label: "Website", hint: "Custom store build", href: "/services/ruo-peptide-website-development", icon: Globe },
   { label: "Payments", hint: "High-risk processing", href: "/services/payment-processing", icon: CreditCard },
-  { label: "Fulfillment", hint: "US shipping and 3PL", href: "/services/fulfillment-logistics", icon: PackageCheck },
+  { label: "Fulfillment", hint: "US shipping and 3PL", href: "/services/peptide-3pl", icon: PackageCheck },
   { label: "Dashboards", hint: "One reporting layer", href: "/services/business-dashboards", icon: LayoutDashboard },
   { label: "Support", hint: "Order-aware helpdesk", href: "/services/customer-support", icon: Headset },
   { label: "Site audits", hint: "A written fix list", href: "/services/site-audits", icon: ClipboardCheck },

@@ -82,7 +82,7 @@ function graph() {
             ["RUO peptide e-commerce website development", "/services/ruo-peptide-website-development"],
             ["Telehealth platform development", "/services/telehealth-platform-development"],
             ["High-risk payment processing and merchant infrastructure", "/services/payment-processing"],
-            ["Wholesale, dropshipping and 3PL", "/services/wholesale-dropshipping-3pl"],
+            ["Wholesale, dropshipping and 3PL", "/services/wholesale-peptides"],
             ["Supplier sourcing and COA verification", "/services/supplier-verification"],
             ["SEO, GEO and AEO", "/services/seo-geo-aeo"],
           ].map(([name, href]) => ({

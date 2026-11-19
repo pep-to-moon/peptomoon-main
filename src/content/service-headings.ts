@@ -24,6 +24,30 @@ export const defaultServiceHeadings: ServiceHeadings = {
 };
 
 export const serviceHeadings: Record<string, ServiceHeadings> = {
+  "wholesale-peptides": {
+    what: "What wholesale peptide supply for business customers involves",
+    why: "Why business customers need documents with every order",
+    problems: "Where wholesale peptide sourcing usually goes wrong",
+    approach: "How we handle a wholesale order",
+    included: "What our wholesale service includes",
+    tech: "The records and handling behind each order",
+  },
+  "peptide-dropshipping": {
+    what: "What peptide dropshipping involves",
+    why: "Why dropshipping gives up control",
+    problems: "Where peptide dropshipping usually goes wrong",
+    approach: "How we set up a dropshipping arrangement",
+    included: "What a dropshipping setup includes",
+    tech: "Order routing and stock sync details",
+  },
+  "peptide-3pl": {
+    what: "What a 3PL for peptides does",
+    why: "Why peptide brands use a 3PL",
+    problems: "Where peptide 3PL and fulfillment usually go wrong",
+    approach: "How we set up 3PL and fulfillment",
+    included: "What our 3PL and fulfillment work includes",
+    tech: "Integration and exception handling",
+  },
   "white-label-peptides": {
     what: "What white label and private label peptide programs involve",
     why: "Why a peptide brand launch needs its records in order",
@@ -79,22 +103,6 @@ export const serviceHeadings: Record<string, ServiceHeadings> = {
     approach: "How we prepare and implement payment processing",
     included: "What our payment processing work includes",
     tech: "Technical details of payment integration",
-  },
-  "fulfillment-logistics": {
-    what: "What peptide fulfillment and logistics coordination covers",
-    why: "Why RUO brands need a documented fulfillment flow",
-    problems: "Where peptide fulfillment usually goes wrong",
-    approach: "How we set up peptide fulfillment",
-    included: "What fulfillment coordination includes",
-    tech: "Technical details of order and shipping integration",
-  },
-  "wholesale-dropshipping-3pl": {
-    what: "What peptide wholesale, dropshipping and 3PL involve",
-    why: "Why the supply and fulfillment model matters",
-    problems: "Where peptide supply models usually go wrong",
-    approach: "How we choose and set up a supply model",
-    included: "What our wholesale, dropshipping and 3PL work includes",
-    tech: "Technical details of order routing and stock sync",
   },
   "business-dashboards": {
     what: "What business dashboards for RUO peptide stores do",

@@ -79,7 +79,7 @@ export const businessDashboards: Service = {
     { q: "Which five numbers should I look at every morning?", a: "Orders paid, orders shipped, refunds, the amount your payment provider is holding and support tickets waiting. Together they show whether money is arriving, product is moving and customers are being answered. Add advertising spend and affiliate payouts when you run those channels. Anything you would not act on within a week does not need a place on the first screen." },
     { q: "Can a dashboard warn me before a payment provider acts?", a: "It can show the measures providers watch, such as decline rate, refund rate and chargeback ratio, and flag when they move. It cannot predict a provider's decision. What it gives you is time: days in which to find the cause, answer disputes and prepare documents before a review arrives." },
   ],
-  related: ["payment-processing", "fulfillment-logistics", "affiliate-management"],
+  related: ["payment-processing", "peptide-3pl", "affiliate-management"],
   caseStudies: [],
   articles: ["infrastructure-behind-an-ruo-peptide-business"],
   cta: { label: "Plan your reporting" },

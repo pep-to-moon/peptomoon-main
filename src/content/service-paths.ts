@@ -16,7 +16,7 @@ export const servicePaths: ServicePath[] = [
       "vial-label-design",
       "payment-processing",
       "compliance-support",
-      "fulfillment-logistics",
+      "peptide-3pl",
     ],
   },
   {
@@ -29,7 +29,7 @@ export const servicePaths: ServicePath[] = [
     id: "operations",
     label: "I need orders shipped and supported",
     hint: "Decide who holds the stock, connect orders to the shipper, then give customers and your team one clear view.",
-    slugs: ["wholesale-dropshipping-3pl", "fulfillment-logistics", "customer-support", "business-dashboards"],
+    slugs: ["wholesale-peptides", "peptide-dropshipping", "peptide-3pl", "customer-support", "business-dashboards"],
   },
   {
     id: "growth",

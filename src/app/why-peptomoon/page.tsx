@@ -63,7 +63,7 @@ const compare = [
 const builtIn = [
   ["A store built for your catalog", "Product pages, variants and batch documentation as structured data.", "/services/ruo-peptide-website-development"],
   ["Reporting in one place", "Orders, payments, stock, fulfillment and support in one view.", "/services/business-dashboards"],
-  ["Order and stock handling", "Orders routed, stock counted once and tracking sent to the customer.", "/services/fulfillment-logistics"],
+  ["Order and stock handling", "Orders routed, stock counted once and tracking sent to the customer.", "/services/peptide-3pl"],
   ["Affiliate tracking", "Partner links, attribution and payout records.", "/services/affiliate-management"],
   ["Search foundations", "Structure, metadata and markup that search engines and answer tools can read.", "/services/seo-geo-aeo"],
   ["Customer support systems", "A defined way to receive, answer and track customer questions.", "/services/customer-support"],

@@ -19,8 +19,8 @@ test.describe("desktop navigation and components", () => {
   test("the services menu closes after navigating", async ({ page }) => {
     await page.goto("/");
     await page.getByRole("button", { name: "Services" }).click();
-    await page.locator("#mega-menu").getByRole("link", { name: /Fulfillment and logistics/ }).click();
-    await expect(page).toHaveURL(/\/services\/fulfillment-logistics$/);
+    await page.locator("#mega-menu").getByRole("link", { name: /3PL and fulfillment/ }).click();
+    await expect(page).toHaveURL(/\/services\/peptide-3pl$/);
     await expect(page.getByRole("button", { name: "Services" })).toHaveAttribute("aria-expanded", "false");
   });
 

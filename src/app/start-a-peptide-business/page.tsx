@@ -29,7 +29,9 @@ const steps: Step[] = [
     text: "Most founders pick one of four routes: buy wholesale and resell, launch your own brand with your own labels, dropship so a partner ships each order, or use a 3PL to store and ship your stock. Each one trades control against capital and workload, so decide before you spend on a store.",
     links: [
       { href: "/resources/wholesale-vs-dropshipping-vs-3pl-for-ruo-brands", label: "Wholesale, dropshipping or 3PL" },
-      { href: "/services/wholesale-dropshipping-3pl", label: "Wholesale, dropshipping and 3PL service" },
+      { href: "/services/wholesale-peptides", label: "Wholesale peptides" },
+      { href: "/services/peptide-dropshipping", label: "Peptide dropshipping" },
+      { href: "/services/peptide-3pl", label: "3PL and fulfillment" },
     ],
   },
   {
@@ -73,7 +75,7 @@ const steps: Step[] = [
     title: "Organize fulfillment and support",
     text: "Decide who holds stock, who ships and who answers when an order goes wrong, and write it down. Connect your store to your shipper so orders, stock counts and tracking move on their own, and give your team one consistent way to answer customer questions without straying into usage advice.",
     links: [
-      { href: "/services/fulfillment-logistics", label: "Fulfillment and logistics" },
+      { href: "/services/peptide-3pl", label: "3PL and fulfillment" },
       { href: "/services/customer-support", label: "Customer support" },
     ],
   },

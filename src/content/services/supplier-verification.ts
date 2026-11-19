@@ -75,7 +75,7 @@ export const supplierVerification: Service = {
     { q: "How do I check that a certificate of analysis is real?", a: "Contact the laboratory using details you found yourself, quote the report number and ask it to confirm that it issued the report. Then check that the data is consistent: the trace matches the figure, the dates are possible and the batch number matches the vial. Write down what you checked and when." },
     { q: "A new batch arrived and the report looks different from the last one. Should I worry?", a: "Look at what changed: the laboratory, the method, the layout or the figures. A change is not automatically a problem, but treat it as a trigger for a full review. Ask the supplier to explain, compare batch numbers and dates, and hold the stock until you are satisfied." },
   ],
-  related: ["compliance-support", "fulfillment-logistics", "ruo-peptide-website-development"],
+  related: ["compliance-support", "wholesale-peptides", "ruo-peptide-website-development"],
   caseStudies: ["99-purity-peptides"],
   articles: ["review-a-peptide-suppliers-documentation", "infrastructure-behind-an-ruo-peptide-business"],
   cta: { label: "Discuss supplier review" },

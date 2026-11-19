@@ -77,7 +77,7 @@ export const customerSupport: Service = {
     { q: "Where-is-my-order messages flood our inbox. How do we reduce them?", a: "Give customers the answer before they ask: tracking in the confirmation and shipping emails, honest delivery estimates at checkout and a status view that support can see too. Then tag every where-is-my-order ticket and review the tags weekly, because clusters point to a carrier, a product or a delay in your own process." },
     { q: "How do we handle a customer who threatens a chargeback?", a: "Respond quickly and politely, and look for the fix first: a refund, a replacement or a corrected record. Keep the full thread, the order, the tracking and the delivery proof together so they can be sent if a dispute is filed anyway. Do not argue or promise what you cannot deliver, and log every case so the cause can be fixed upstream." },
   ],
-  related: ["business-dashboards", "fulfillment-logistics", "compliance-support"],
+  related: ["business-dashboards", "peptide-3pl", "compliance-support"],
   caseStudies: [],
   articles: ["infrastructure-behind-an-ruo-peptide-business"],
   cta: { label: "Plan your support setup" },

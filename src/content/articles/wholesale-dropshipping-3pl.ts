@@ -18,7 +18,7 @@ export const wholesaleDropshipping3plGuide: Article = {
   topic: "Fulfillment and Supply",
   published: "2026-11-17",
   updated: "2026-11-17",
-  service: "wholesale-dropshipping-3pl",
+  service: "wholesale-peptides",
   related: ["infrastructure-behind-an-ruo-peptide-business", "review-a-peptide-suppliers-documentation"],
   needsCounselReview: false,
   quickAnswer: "Wholesale means you buy and hold the stock. Dropshipping means a partner ships each order, so you hold no stock. A 3PL means you own the stock while a provider stores and ships it. Choose by who must control quality and packaging, how much capital you can tie up and which partner you can hold to a written agreement.",

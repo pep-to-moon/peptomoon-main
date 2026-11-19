@@ -1,4 +1,5 @@
 import {
+  Boxes,
   CreditCard,
   ClipboardCheck,
   FileCheck2,
@@ -28,8 +29,9 @@ export const serviceIcons: Record<string, LucideIcon> = {
   "telehealth-payment-processing": HeartPulse,
   "google-ads": SearchCheck,
   "payment-processing": CreditCard,
-  "fulfillment-logistics": PackageCheck,
-  "wholesale-dropshipping-3pl": Truck,
+  "wholesale-peptides": Truck,
+  "peptide-dropshipping": Boxes,
+  "peptide-3pl": PackageCheck,
   "business-dashboards": LayoutDashboard,
   "customer-support": Headset,
   "meta-advertising": Megaphone,

@@ -15,6 +15,13 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
     qualities: [75, 85],
   },
+  // Two service pages were split into wholesale, dropshipping and 3PL pages. Permanent redirects keep old links working.
+  async redirects() {
+    return [
+      { source: "/services/fulfillment-logistics", destination: "/services/peptide-3pl", permanent: true },
+      { source: "/services/wholesale-dropshipping-3pl", destination: "/services/wholesale-peptides", permanent: true },
+    ];
+  },
   async headers() {
     const rules = [{ source: "/:path*", headers: securityHeaders }];
     // Preview and development deployments must never be indexed.

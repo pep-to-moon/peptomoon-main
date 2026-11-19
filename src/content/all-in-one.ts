@@ -69,7 +69,7 @@ export const layers: { index: string; name: string; cards: LayerCard[] }[] = [
     name: "Run",
     cards: [
       { n: "Payments", t: "High-risk payment processing", d: "Merchant accounts from 3% with no rolling reserve for qualifying merchants, plus integration and monitoring.", href: "/services/payment-processing", link: "Payment processing" },
-      { n: "Logistics", t: "Fulfillment and 3PL", d: "US fulfillment coordination, wholesale supply, dropshipping, tracking and exception workflows.", href: "/services/wholesale-dropshipping-3pl", link: "Wholesale and 3PL" },
+      { n: "Logistics", t: "Fulfillment and 3PL", d: "US fulfillment coordination, wholesale supply, dropshipping, tracking and exception workflows.", href: "/services/wholesale-peptides", link: "Wholesale and 3PL" },
       { n: "Support", t: "Customer support", d: "Order-aware helpdesk workflows and a knowledge base that stays inside research-use positioning.", href: "/services/customer-support", link: "Customer support" },
     ],
   },
