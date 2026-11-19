@@ -4,15 +4,18 @@ import { businessDashboards } from "./business-dashboards";
 import { complianceSupport } from "./compliance-support";
 import { customerSupport } from "./customer-support";
 import { emailMarketing } from "./email-marketing";
+import { googleAds } from "./google-ads";
 import { fulfillmentLogistics } from "./fulfillment-logistics";
 import { metaAdvertising } from "./meta-advertising";
 import { paymentProcessing } from "./payment-processing";
 import { seoGeoAeo } from "./seo-geo-aeo";
 import { siteAudits } from "./site-audits";
 import { supplierVerification } from "./supplier-verification";
+import { telehealthPaymentProcessing } from "./telehealth-payment-processing";
 import { telehealthPlatformDevelopment } from "./telehealth-platform-development";
 import { vialLabelDesign } from "./vial-label-design";
 import { websiteDevelopment } from "./website-development";
+import { whiteLabelPeptides } from "./white-label-peptides";
 import { wholesaleDropshipping3pl } from "./wholesale-dropshipping-3pl";
 
 /** Order matters: it is the order used in navigation, the hub page and the footer. */
@@ -20,12 +23,15 @@ export const services: Service[] = [
   websiteDevelopment,
   telehealthPlatformDevelopment,
   vialLabelDesign,
+  whiteLabelPeptides,
   paymentProcessing,
+  telehealthPaymentProcessing,
   fulfillmentLogistics,
   wholesaleDropshipping3pl,
   businessDashboards,
   customerSupport,
   metaAdvertising,
+  googleAds,
   affiliateManagement,
   emailMarketing,
   seoGeoAeo,

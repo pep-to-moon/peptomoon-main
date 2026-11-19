@@ -24,6 +24,30 @@ export const defaultServiceHeadings: ServiceHeadings = {
 };
 
 export const serviceHeadings: Record<string, ServiceHeadings> = {
+  "white-label-peptides": {
+    what: "What white label and private label peptide programs involve",
+    why: "Why a peptide brand launch needs its records in order",
+    problems: "Where peptide brand launches usually go wrong",
+    approach: "How we launch an RUO peptide brand",
+    included: "What a brand launch project includes",
+    tech: "The records, labels and notices behind the brand",
+  },
+  "google-ads": {
+    what: "What Google's policy says about advertising peptides",
+    why: "Why peptide brands should not depend on Google Ads",
+    problems: "Where peptide Google Ads plans usually go wrong",
+    approach: "How we review a Google Ads plan honestly",
+    included: "What a Google Ads policy review includes",
+    tech: "Measurement that works on any channel",
+  },
+  "telehealth-payment-processing": {
+    what: "What telehealth payment processing and LegitScript involve",
+    why: "Why telehealth businesses plan certification and underwriting together",
+    problems: "Where telehealth payment setups usually go wrong",
+    approach: "How we prepare a telehealth business for payments",
+    included: "What our telehealth payments work includes",
+    tech: "Billing and monitoring details",
+  },
   "ruo-peptide-website-development": {
     what: "What RUO peptide website development covers",
     why: "Why an RUO peptide store needs a custom build",
