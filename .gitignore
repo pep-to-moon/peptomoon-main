@@ -14,3 +14,6 @@ scratch
 
 # Raw Search Console exports contain real queries and page names. Only the cleaned src/content/gsc-data.ts is tracked.
 data/gsc/*/
+
+# Private SEO brief, kept out of the repo
+docs/strategy/peptomoon-audit-prompt.txt
