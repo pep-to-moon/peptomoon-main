@@ -18,6 +18,7 @@ export const companyNav = [
   { label: "Case studies", href: "/case-studies" },
   { label: "Resources", href: "/resources" },
   { label: "Glossary", href: "/glossary" },
+  { label: "Free tools", href: "/tools" },
   { label: "Contact", href: "/contact" },
 ];
 

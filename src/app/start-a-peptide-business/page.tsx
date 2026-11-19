@@ -31,6 +31,7 @@ const steps: Step[] = [
       { href: "/resources/wholesale-vs-dropshipping-vs-3pl-for-ruo-brands", label: "Wholesale, dropshipping or 3PL" },
       { href: "/resources/white-label-vs-private-label-peptides", label: "White label vs private label" },
       { href: "/resources/cost-to-start-a-peptide-business", label: "What it costs to start" },
+      { href: "/tools#budget", label: "Free startup budget worksheet" },
       { href: "/services/wholesale-peptides", label: "Wholesale peptides" },
       { href: "/services/peptide-dropshipping", label: "Peptide dropshipping" },
       { href: "/services/peptide-3pl", label: "3PL and fulfillment" },
@@ -46,6 +47,7 @@ const steps: Step[] = [
     text: "Ask every supplier for batch-specific documents that name the laboratory, show the method and the underlying data, and match the vial you receive. A purity figure on its own is only a claim. Write your standard down before you talk to suppliers, then score each one against it.",
     links: [
       { href: "/resources/how-to-find-a-peptide-supplier", label: "How to find a supplier" },
+      { href: "/tools#scorecard", label: "Free supplier scorecard" },
       { href: "/resources/review-a-peptide-suppliers-documentation", label: "How to review a supplier's documentation" },
       { href: "/services/supplier-verification", label: "Supplier sourcing and verification" },
       { href: "/glossary#certificate-of-analysis", label: "What a COA is" },
@@ -99,6 +101,7 @@ const steps: Step[] = [
     title: "Check everything before you launch",
     text: "Read your own site as a payment reviewer would. Look for copy that points toward personal use, notices that are missing on some pages, claims your documents do not support, and policies that disagree with what you actually do. Fix those before you apply for payments or send traffic.",
     links: [
+      { href: "/tools#checklist", label: "Free launch checklist" },
       { href: "/services/site-audits", label: "Website audit" },
       { href: "/services/compliance-support", label: "Compliance-oriented review" },
     ],

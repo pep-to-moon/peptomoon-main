@@ -36,6 +36,7 @@ export function getStaticRoutes(): RouteEntry[] {
     { path: "/why-peptomoon", lastModified: updatedFor("/why-peptomoon"), priority: 0.8, changeFrequency: "monthly" },
     { path: "/glossary", lastModified: updatedFor("/glossary"), priority: 0.7, changeFrequency: "monthly" },
     { path: "/start-a-peptide-business", lastModified: SITE_UPDATED, priority: 0.9, changeFrequency: "monthly" },
+    { path: "/tools", lastModified: SITE_UPDATED, priority: 0.7, changeFrequency: "monthly" },
     { path: "/about", lastModified: updatedFor("/about"), priority: 0.6, changeFrequency: "yearly" },
     { path: "/contact", lastModified: updatedFor("/contact"), priority: 0.8, changeFrequency: "yearly" },
     { path: "/privacy-policy", lastModified: updatedFor("/privacy-policy"), priority: 0.2, changeFrequency: "yearly" },
