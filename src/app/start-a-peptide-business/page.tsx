@@ -29,6 +29,8 @@ const steps: Step[] = [
     text: "Most founders pick one of four routes: buy wholesale and resell, launch your own brand with your own labels, dropship so a partner ships each order, or use a 3PL to store and ship your stock. Each one trades control against capital and workload, so decide before you spend on a store.",
     links: [
       { href: "/resources/wholesale-vs-dropshipping-vs-3pl-for-ruo-brands", label: "Wholesale, dropshipping or 3PL" },
+      { href: "/resources/white-label-vs-private-label-peptides", label: "White label vs private label" },
+      { href: "/resources/cost-to-start-a-peptide-business", label: "What it costs to start" },
       { href: "/services/wholesale-peptides", label: "Wholesale peptides" },
       { href: "/services/peptide-dropshipping", label: "Peptide dropshipping" },
       { href: "/services/peptide-3pl", label: "3PL and fulfillment" },
@@ -43,6 +45,7 @@ const steps: Step[] = [
     title: "Find and verify your suppliers",
     text: "Ask every supplier for batch-specific documents that name the laboratory, show the method and the underlying data, and match the vial you receive. A purity figure on its own is only a claim. Write your standard down before you talk to suppliers, then score each one against it.",
     links: [
+      { href: "/resources/how-to-find-a-peptide-supplier", label: "How to find a supplier" },
       { href: "/resources/review-a-peptide-suppliers-documentation", label: "How to review a supplier's documentation" },
       { href: "/services/supplier-verification", label: "Supplier sourcing and verification" },
       { href: "/glossary#certificate-of-analysis", label: "What a COA is" },
@@ -57,6 +60,7 @@ const steps: Step[] = [
     title: "Build a store that describes products accurately",
     text: "A research-peptide store is closer to a documented catalog than a lifestyle shop. Each product has sizes, batch records and notices that must stay consistent on every page. Build the structure from records, not by typing each page by hand, and place the research-use notices in the layout.",
     links: [
+      { href: "/resources/shopify-vs-custom-peptide-store", label: "Shopify or a custom store" },
       { href: "/resources/peptide-store-architecture", label: "Peptide store architecture" },
       { href: "/services/ruo-peptide-website-development", label: "Website development" },
     ],

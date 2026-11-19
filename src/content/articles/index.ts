@@ -13,6 +13,11 @@ import { storeArchitecture } from "./store-architecture";
 import { stripeClosedPeptideAccount } from "./stripe-closed-peptide-account";
 import { supplierDocs } from "./supplier-docs";
 import { wholesaleDropshipping3plGuide } from "./wholesale-dropshipping-3pl";
+import { costToStartPeptideBusiness } from "./cost-to-start-a-peptide-business";
+import { whiteLabelVsPrivateLabelPeptides } from "./white-label-vs-private-label-peptides";
+import { howToFindPeptideSupplier } from "./how-to-find-a-peptide-supplier";
+import { shopifyVsCustomPeptideStore } from "./shopify-vs-custom-peptide-store";
+import { isSellingResearchPeptidesLegal } from "./is-selling-research-peptides-legal";
 
 export const allArticles: Article[] = [
   infrastructureMap,
@@ -29,6 +34,11 @@ export const allArticles: Article[] = [
   shopifyPaymentsPeptideStoreDisabled,
   matchListPeptideSellers,
   rollingReserveExplained,
+  costToStartPeptideBusiness,
+  whiteLabelVsPrivateLabelPeptides,
+  howToFindPeptideSupplier,
+  shopifyVsCustomPeptideStore,
+  isSellingResearchPeptidesLegal,
 ];
 
 const isProduction = (process.env.VERCEL_ENV ?? process.env.NODE_ENV) === "production";
