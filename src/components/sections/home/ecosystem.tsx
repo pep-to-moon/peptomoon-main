@@ -31,7 +31,7 @@ export function Ecosystem() {
           titleId="ecosystem-title"
           title={
             <>
-              Beyond the storefront. {numberWord(services.length, true)} systems, one partner.
+              Peptide business services beyond the storefront: {numberWord(services.length)} systems, one partner.
             </>
           }
         >

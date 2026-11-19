@@ -8,7 +8,7 @@ export function Growth() {
   return (
     <Section labelledBy="growth-title">
       <div className="container-x">
-        <SectionIntro label="Grow the audience" titleId="growth-title" title={<>Growth is infrastructure first, promises never.</>}>
+        <SectionIntro label="Grow the audience" titleId="growth-title" title={<>Peptide marketing starts with infrastructure, not promises.</>}>
           <p>
             Tracking, affiliates and email all depend on the same foundation: accurate events tied to real orders. We build
             that foundation, and we are honest about what is not ours to control.

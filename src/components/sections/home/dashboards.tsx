@@ -12,7 +12,7 @@ export function Dashboards() {
             <div className="mx-auto max-w-[56rem] text-center">
               <p className="eyebrow">Reporting and operations</p>
               <h2 id="dash-title" className="display display-xl mt-6">
-                One reporting layer for the whole business.
+                Peptide business dashboards: one reporting layer for everything.
               </h2>
               <p className="mx-auto mt-6 max-w-[56ch] text-[1.1rem] text-ink-soft">
                 One reporting layer across orders, payments, inventory, affiliates, fulfillment and support, built on a shared

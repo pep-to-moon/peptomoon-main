@@ -17,7 +17,7 @@ export function Process() {
           <div className="lg:sticky lg:top-32">
             <p className="eyebrow">Process</p>
             <h2 id="process-title" className="display display-lg mt-6">
-              How a project runs, in five steps.
+              How a peptide business project runs, in five steps.
             </h2>
             <p className="mt-6 max-w-[40ch] text-ink-soft">
               Every project follows the same path, so you always know where it stands and what we need from you next.

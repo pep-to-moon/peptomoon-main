@@ -29,7 +29,7 @@ export function WhatWeBuild() {
   return (
     <Section labelledBy="build-title">
       <div className="container-x">
-        <SectionIntro label="What we build" titleId="build-title" title={<>A store that behaves like a documented catalog.</>}>
+        <SectionIntro label="What we build" titleId="build-title" title={<>A peptide website built as a documented catalog.</>}>
           <p>Four things we get right in every build, each one seen on a site we made.</p>
         </SectionIntro>
 

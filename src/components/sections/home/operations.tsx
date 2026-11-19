@@ -96,7 +96,7 @@ export function Operations() {
   return (
     <Section labelledBy="ops-title">
       <div className="container-x">
-        <SectionIntro label="Run the operation" titleId="ops-title" title={<>Operations that hold up under pressure.</>}>
+        <SectionIntro label="Run the operation" titleId="ops-title" title={<>Peptide payments, supplier checks and fulfillment that hold up under pressure.</>}>
           <p>Three systems where businesses in this industry most often get hurt.</p>
         </SectionIntro>
         <div className="space-y-6 pb-[10vh]">

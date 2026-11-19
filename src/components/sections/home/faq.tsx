@@ -60,7 +60,7 @@ export function HomeFaq() {
           <div className="lg:sticky lg:top-32">
             <p className="eyebrow">Questions</p>
             <h2 id="faq-title" className="display display-lg mt-5">
-              Questions we hear first.
+              Questions about starting and running a peptide business.
             </h2>
             <p className="mt-5 max-w-[34ch] text-ink-soft">The things people ask us first, answered plainly.</p>
           </div>

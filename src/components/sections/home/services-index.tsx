@@ -9,7 +9,7 @@ export function ServicesIndex() {
   return (
     <Section labelledBy="services-index-title">
       <div className="container-x">
-        <SectionIntro label="What we do" titleId="services-index-title" title={<>{numberWord(services.length, true)} services, one team.</>}>
+        <SectionIntro label="What we do" titleId="services-index-title" title={<>{numberWord(services.length, true)} peptide business services, one team.</>}>
           <p>Four groups: build, run, grow and verify. Take one service, or the whole set.</p>
         </SectionIntro>
 

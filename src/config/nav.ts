@@ -11,6 +11,7 @@ export const primaryNav: NavItem[] = [
 ];
 
 export const companyNav = [
+  { label: "Start a peptide business", href: "/start-a-peptide-business" },
   { label: "About", href: "/about" },
   { label: "Why Peptomoon", href: "/why-peptomoon" },
   { label: "All-in-one", href: "/all-in-one" },

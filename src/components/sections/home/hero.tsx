@@ -53,10 +53,10 @@ export function Hero() {
       />
       <div className="container-x relative pt-[clamp(6.25rem,8.5vw,7.75rem)]">
         <p className="hero-fade eyebrow" style={style(0)}>
-          Infrastructure for RUO peptide businesses
+          Peptide business services for RUO brands
         </p>
 
-        <h1 id="hero-title" aria-label="One partner. Every moving part of your RUO peptide business." className="display display-hero mt-5 max-w-[27ch]">
+        <h1 id="hero-title" aria-label="One partner. Start, run and grow your RUO peptide business." className="display display-hero mt-5 max-w-[27ch]">
           {/* Each line rises out of its own mask: the outer span clips, the inner one moves. */}
           <span className="hero-line" style={style(1)}>
             <span className="hero-line-in">
@@ -65,7 +65,7 @@ export function Hero() {
           </span>{" "}
           <span className="hero-line" style={style(2)}>
             <span className="hero-line-in">
-              <ProximityText text="Every moving part of your" />
+              <ProximityText text="Start, run and grow your" />
             </span>
           </span>{" "}
           <span className="hero-line marker" style={style(3)}>

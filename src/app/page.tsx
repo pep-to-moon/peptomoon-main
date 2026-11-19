@@ -17,15 +17,16 @@ import { Dashboards } from "@/components/sections/home/dashboards";
 import { Process } from "@/components/sections/home/process";
 import { WhyUs } from "@/components/sections/home/why-us";
 import { HomeFaq } from "@/components/sections/home/faq";
+import { StartHere } from "@/components/sections/home/start-here";
 import { PaymentsOffer } from "@/components/ui/payments-offer";
 import { siteConfig } from "@/config/site";
 import { gscSites } from "@/content/gsc-data";
 import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = buildMetadata({
-  title: `${siteConfig.name} | RUO Peptide Business Infrastructure`,
+  title: `Peptide Business Services for RUO Brands | ${siteConfig.name}`,
   description:
-    "One partner for RUO peptide businesses: websites, payments, supplier documentation, fulfillment, marketing systems, reporting and compliance review.",
+    "Start and run an RUO peptide business with one partner: website, payments, supplier documents, fulfillment, marketing and compliance review.",
   path: "/",
 });
 
@@ -37,6 +38,7 @@ export default function HomePage() {
       <section aria-label="Payment processing" className="container-x pt-6">
         <PaymentsOffer />
       </section>
+      <StartHere />
       <Statement />
       <Problems />
       <PhotoBand />

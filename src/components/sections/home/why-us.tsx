@@ -16,7 +16,7 @@ export function WhyUs() {
   return (
     <Section labelledBy="why-title">
       <div className="container-x">
-        <SectionIntro label={`Why ${siteConfig.name}`} titleId="why-title" title={<>One accountable team instead of five vendors.</>} />
+        <SectionIntro label={`Why ${siteConfig.name}`} titleId="why-title" title={<>One peptide business partner instead of five vendors.</>} />
 
         <div className="mb-14">
           <Photo name="team" ratio="21 / 8" sizes="(min-width: 1024px) 92vw, 100vw" parallax={7} radius="1.5rem" />
