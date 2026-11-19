@@ -9,17 +9,18 @@ export const paymentProcessing: Service = {
   pillar: "run",
   summary: "Underwriting preparation, provider fit, integration, monitoring and reconciliation. No approval promises.",
   status: "established",
-  primaryKeyword: "peptide payment processing",
+  primaryKeyword: "peptide merchant account",
   seo: {
-    title: `Peptide Payment Processing and Shutdown Recovery | ${brand}`,
+    title: `Peptide Merchant Account and High-Risk Payments | ${brand}`,
     description:
-      "Payment processor shut down your RUO store? We prepare the business and implement a replacement processor. Honest about underwriting, no promises.",
+      "Peptide merchant account and high-risk processing for RUO stores: underwriting prep, provider fit, integration and shutdown recovery. No promises.",
   },
-  h1: "Payment processing infrastructure for RUO peptide businesses",
-  lead: "We help RUO peptide businesses understand how payment underwriting works, prepare for it, integrate the right payment infrastructure and monitor it afterwards. If your payment processor has shut you down, we help you work out why, prepare for a fresh review and implement a new processor on your site. We never promise approval, and we never help misrepresent a business.",
+  h1: "Peptide merchant account and high-risk payment processing for RUO businesses",
+  lead: "We help RUO peptide businesses get a merchant account application ready, integrate payment processing and keep it stable. That covers underwriting preparation, provider fit, checkout setup, monitoring and reconciliation. If your processor shut you down, we help you find out why and prepare a fresh review. We never promise approval.",
   what: [
     "Payment processing is an operational system, not a checkbox. It includes the merchant account, the gateway or hosted checkout, the order and refund logic around it, the monitoring that spots trouble early and the reporting that matches payouts to orders. We consult on provider fit, prepare the business and website for underwriting review, integrate supported payment systems and set up the workflows that keep the money visible.",
     "If your payment processor has shut down your account, ended your merchant agreement or is holding your funds, the first job is to understand why and to protect your cash flow. We help you gather the documents, read the termination terms and prepare the business and the website for a fresh review. Then we help you implement a new payment processor on your site, covering checkout, webhooks, refunds and reconciliation, so you can take orders again. Approval is always the provider's decision, and we never promise it. Our guide to [what to do in the first 72 hours](/resources/payment-processor-shut-down-account) covers the first steps.",
+    "Some businesses also consider bank transfer (ACH) or crypto options alongside cards. They settle and reverse differently from card payments, they sit inside your provider's and your bank's own terms, and they do not replace an application that is accurate and complete. We help you compare them honestly, and we never help hide what a business sells.",
   ],
   why: [
     "Many conventional providers restrict or decline this category, and accounts that were working can be limited, held or closed with little notice. When funds are held or settlement is delayed, the effect on cash flow is immediate. [How underwriting works for RUO stores](/resources/payment-processing-for-ruo-stores) explains what reviewers look at.",
@@ -78,6 +79,7 @@ export const paymentProcessing: Service = {
     { label: "Stripe: prohibited and restricted businesses", url: "https://stripe.com/legal/restricted-businesses", checked: "2026-11-17" },
   ],
   faqs: [
+    { q: "Can I accept ACH or crypto payments?", a: "Some providers offer bank transfer (ACH) and some businesses add crypto, but each has its own terms, costs and risks, and neither replaces an accurate, complete application. Reversals and refunds work differently from card chargebacks. We help you compare the options honestly and never help hide what a business sells." },
     { q: "Can you get my account approved?", a: "No one can promise that, and we do not. We prepare your business and your website so an application is accurate and complete, and we help you choose providers whose published terms fit your model. The decision is always the provider's, and it can change after approval, so we also help you monitor your account afterwards." },
     { q: "Which providers do you work with?", a: "It depends on your business model and on what each provider is willing to support at the time. We discuss specific options within your project instead of publishing a list, because suitability changes and a name that fits one business may not fit another. We tell you what each provider's current terms say before you apply." },
     { q: "What if my account is restricted?", a: "We help you read the notice, gather the documentation the provider asks for, understand your options and put workflows in place so operations are less exposed next time. We cannot overturn a provider's decision or promise that funds will be released by a certain date, because those choices belong to the provider." },

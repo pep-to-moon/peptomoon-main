@@ -9,17 +9,18 @@ export const metaAdvertising: Service = {
   pillar: "grow",
   summary: "Business account structure, pixel and Conversions API tracking, event design and reporting.",
   status: "established",
-  primaryKeyword: "Meta advertising infrastructure for ecommerce",
+  primaryKeyword: "Meta ads for peptides",
   seo: {
-    title: `Meta Advertising Infrastructure for RUO Stores | ${brand}`,
+    title: `Peptide Facebook Ads: Meta Setup and Tracking | ${brand}`,
     description:
-      "Meta Business Manager structure, Pixel and Conversions API tracking, reporting and campaigns for RUO stores. No eligibility promises.",
+      "Meta ads for peptide brands: business account setup, Pixel and Conversions API tracking and help with rejected ads. Meta decides eligibility. No promises.",
   },
-  h1: "Meta advertising infrastructure for RUO peptide stores",
-  lead: "We set up the structure behind advertising and measurement: Business Manager organization, account access, pixel and Conversions API tracking, event design and reporting. We also run campaigns from our own agency ad account. Whether a business can advertise at all is Meta's decision, and we keep infrastructure, management and eligibility clearly apart.",
+  h1: "Meta ads for peptide brands: account setup, tracking and rejected-ad help",
+  lead: "Meta decides whether a peptide brand can advertise, so we focus on what you control: a clean business account, accurate Pixel and Conversions API tracking and reporting that matches real orders. If ads are rejected or an account is restricted, we help you read the notice and fix the cause. We promise no approvals.",
   what: [
     "Three things get confused in this topic. Infrastructure is the account structure, tracking and reporting that make advertising measurable. Management is running campaigns. Eligibility is whether Meta will accept your category and creative in the first place. We build and maintain infrastructure, and we run campaigns from our own agency ad account where that is agreed in scope. Eligibility belongs to Meta, and running ads from an agency account does not change what Meta allows.",
     "Good infrastructure matters even when advertising is limited. Clean event data improves every later decision, and a well-organized business account is easier to maintain and to hand over.",
+    "Meta's published advertising standards say it will not run ads that promote the sale or use of unsafe substances, products or supplements, and that it decides what counts as unsafe at its sole discretion. The page we read does not name peptides, so no one can tell you in advance how Meta will treat a particular ad or store. That is why we plan marketing that does not depend on a single channel.",
   ],
   why: [
     "Advertising platforms apply restrictions to categories they consider sensitive and enforce them at their own discretion. Plan for that uncertainty instead of building a business that depends on one channel.",
@@ -73,6 +74,7 @@ export const metaAdvertising: Service = {
   ],
   visual: "meta",
   faqs: [
+    { q: "Why are my peptide ads being rejected?", a: "Meta says it will not run ads that promote the sale or use of unsafe substances, products or supplements, and it decides what counts as unsafe at its sole discretion. Its published page does not name peptides, so we cannot predict a decision. We help you read the notice, review the ad and its destination page, and plan channels that do not depend on Meta." },
     { q: "Do you run my ads?", a: "Yes, where it is agreed in scope. We run campaigns from our own agency ad account, and we also set up and work inside accounts that your business owns. Either way Meta's rules decide what can run, and an agency account does not change what is allowed for your category. We agree scope and reporting before anything goes live." },
     { q: "Should ads run from your agency account or from our own account?", a: "Both are common. An agency account can be quicker to start and keeps campaign operations in one place. An account your business owns keeps the history, audiences and payment relationship under your own name, which matters if you ever change agency. Whichever you choose, agree in writing who owns the pixel, the data and the audiences, how you will see results and what happens at the end of the engagement." },
     { q: "Can you set up accounts that will not be restricted?", a: "No. We do not promise that and we do not offer workarounds. We set up your own business assets correctly, with proper ownership, access and tracking, and keep them clean. Whether Meta accepts your category and creative is Meta's decision, and running ads from an agency account does not change what Meta allows." },

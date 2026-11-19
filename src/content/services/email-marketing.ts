@@ -11,15 +11,16 @@ export const emailMarketing: Service = {
   status: "established",
   primaryKeyword: "peptide email marketing",
   seo: {
-    title: `Email Infrastructure for RUO Peptide Stores | ${brand}`,
+    title: `Peptide Email Marketing and SMS | ${brand}`,
     description:
-      "Domain authentication, transactional email, automation, segmentation and deliverability for RUO peptide stores. Consent respected, no inbox promises.",
+      "Peptide email marketing and SMS for RUO stores: domain authentication, deliverability, automation and consent-based segmentation. No inbox promises.",
   },
-  h1: "Email infrastructure and marketing for RUO peptide stores",
-  lead: "Email infrastructure covers authenticated sending, transactional messages, automation and customer segmentation. We set up domain authentication so your mail is trusted, build order and account emails that work reliably, and report on results. Consent and unsubscribe rules are respected throughout. We cannot promise inbox placement or open rates.",
+  h1: "Peptide email marketing and SMS for RUO stores",
+  lead: "Email and SMS are channels you own when ad platforms restrict you. We set up authenticated sending, order and account messages, automations and consent-based segmentation, and we check each provider's rules for your category before you build a list on it. We cannot promise inbox placement or open rates.",
   what: [
     "Email is the one channel you own. We set up the foundation first, covering domain authentication, sending reputation and transactional templates, and then the flows that matter: welcome, abandoned cart, post-purchase and retention, plus broadcast campaigns with proper segmentation.",
     "Category rules apply to email too. Sending providers and mailbox services judge content, and the same discipline about claims that applies to your site applies to your messages.",
+    "SMS adds its own consent and carrier requirements, and some providers restrict certain categories, so confirm a provider's current rules before you collect phone numbers. We build consent capture, opt-out handling and message records into the flow, and we keep claims about product use out of every message.",
   ],
   why: [
     "Order confirmations and shipping notices are operational. When they land in spam, support load rises and customers lose confidence.",
@@ -73,6 +74,7 @@ export const emailMarketing: Service = {
   ],
   visual: "email",
   faqs: [
+    { q: "Can you add SMS marketing?", a: "Yes, where a provider accepts your category. SMS needs documented consent, working opt-out and records of what was sent, and carriers and providers set their own rules. We check the current terms before you collect a single number, then connect SMS to the same customer record as your email so messages stay consistent." },
     { q: "Do I need DMARC?", a: "Major mailbox providers expect authenticated mail from bulk senders, and DMARC is part of that. We set it up in stages, starting with monitoring, so legitimate mail is not blocked while you find every service that sends on your behalf. Once the reports are clean, we tighten the policy." },
     { q: "Can you send my campaigns?", a: "We can build and operate campaigns within your approved messaging, or set everything up for your team to run. Either way, consent and unsubscribe rules are built in, and we do not write claims about product use or outcomes. We cannot promise inbox placement or open rates, because mailbox providers decide those." },
     { q: "Which email platform do you use?", a: "We choose based on your volume, your category rules and your integrations, because email providers set their own rules about what they will send and some restrict certain products. We check a provider's current policy before building on it, and we tell you what it costs so there are no surprises later." },

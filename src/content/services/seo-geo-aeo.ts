@@ -9,17 +9,18 @@ export const seoGeoAeo: Service = {
   pillar: "grow",
   summary: "Search, answer-engine and AI-assistant visibility built on clean structure, sourced content and honest measurement.",
   status: "established",
-  primaryKeyword: "SEO for peptide businesses",
+  primaryKeyword: "peptide SEO agency",
   seo: {
-    title: `SEO for Peptide Businesses, Plus GEO and AEO | ${brand}`,
+    title: `Peptide SEO and SEO Agency for RUO Stores | ${brand}`,
     description:
-      "Search, answer-engine and AI-assistant visibility for RUO peptide stores: technical SEO, answer-ready content, structured data and honest measurement.",
+      "Peptide SEO for RUO stores: technical SEO, answer-ready content, structured data and honest measurement, plus GEO and AEO. No ranking promises.",
   },
-  h1: "SEO, GEO and AEO for RUO peptide businesses",
-  lead: "Be found where buyers look: in search results, in direct answers and in the replies of AI assistants. We build the structure, the sourced content and the measurement behind all three, and we never promise a ranking or a citation.",
+  h1: "Peptide SEO agency: SEO, GEO and AEO for RUO businesses",
+  lead: "Peptide SEO that holds up: technical fixes, answer-ready content and measurement for search engines and AI assistants. With paid ads restricted in this category, organic visibility carries more weight. We build the foundation and the sourced content, and we never promise a ranking or a citation.",
   what: [
     "SEO, [GEO](/glossary#geo) and [AEO](/glossary#aeo) are three names for one job: making your pages easy to find, understand and quote. SEO (search engine optimization) is about ranking in conventional search results. AEO (answer engine optimization) is about being the page that answers a question directly, in featured answers, voice results and the summary panels that search engines show. GEO (generative engine optimization) is about being understood and cited accurately by AI assistants and AI-generated search summaries that write answers from many sources.",
     "They share a foundation: a fast, crawlable site with clean addresses, accurate structured data and content that answers real questions plainly and cites its sources. We build that foundation, then shape the content for each of the three. In this industry the content layer needs extra care, because search engines and AI systems treat health-adjacent topics cautiously, and a page that drifts into claims about personal use can lose trust as well as visibility.",
+    "For proof, the homepage shows real Search Console figures for a partner-built RUO store, with the dates shown. Those are that store's results, not Peptomoon's own, and they are not a promise of what yours will do. Search results depend on competition, links and time.",
   ],
   why: [
     "Buyers increasingly start with a question rather than a brand name, and the answer they see may be a summary written by an AI system. If your business is described wrongly there, or not at all, you lose the visit before it begins.",
@@ -78,6 +79,7 @@ export const seoGeoAeo: Service = {
   ],
   visual: "search",
   faqs: [
+    { q: "Do you offer a peptide SEO audit?", a: "Yes. A written audit shows what is indexed, what is blocked or duplicated, how your pages read to search engines and AI assistants, and what to fix first, with evidence for every finding. It is a snapshot on the date of the review, and it promises no rankings." },
     { q: "What is the difference between SEO, GEO and AEO?", a: "SEO aims at ranking in conventional search results. AEO aims at being the direct answer to a question, such as in featured answers, voice results and summary panels. GEO aims at being understood and cited accurately by AI assistants and AI-generated search summaries. They overlap heavily and rest on the same foundation of crawlable structure, accurate data and clear, sourced content." },
     { q: "Can you guarantee that AI assistants will mention or recommend us?", a: "No. These systems choose their own sources and change how they do it often. What we can do is make your content clear, accurate, consistent and easy to quote, check how your business is currently described and fix what is in your control." },
     { q: "Our traffic has stalled. Where do you start?", a: "With what is found. We check which pages are indexed, which are blocked or duplicated, how pages perform on a phone and whether product and category pages have their own addresses and descriptions. Most stalls trace to structure or to thin pages rather than a lack of new content." },
