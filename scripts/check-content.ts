@@ -9,6 +9,7 @@ import { allArticles, articleWordCount } from "../src/content/articles";
 import { caseStudies } from "../src/content/case-studies";
 import { portfolio } from "../src/content/portfolio";
 import { servicePaths } from "../src/content/service-paths";
+import { headingsFor } from "../src/content/service-headings";
 import { services } from "../src/content/services";
 import { getStaticRoutes } from "../src/lib/routes";
 
@@ -82,6 +83,18 @@ for (const s of services) {
   s.caseStudies.forEach((r) => !studySlugs.has(r) && fail(`service ${s.slug}: unknown case study ${r}`));
   s.articles.forEach((r) => !articleSlugs.has(r) && fail(`service ${s.slug}: unknown article ${r}`));
   if (s.problems.length < 3 || s.included.length < 4 || s.faqs.length < 6) fail(`service ${s.slug}: content too thin`);
+}
+// Service section headings must be distinct across services. A shared heading is the identical-template problem this
+// guard prevents, and a new service without its own entry in service-headings.ts falls back to the shared defaults and fails here.
+const headingOwners = new Map<string, string>();
+for (const s of services) {
+  const h = headingsFor(s.slug);
+  for (const t of [h.what, s.whyTitle ?? h.why, h.problems, h.approach, h.included, h.tech]) {
+    const k = t.toLowerCase();
+    const owner = headingOwners.get(k);
+    if (owner) fail(`service ${s.slug}: section heading "${t}" is also used by ${owner}`);
+    else headingOwners.set(k, s.slug);
+  }
 }
 for (const a of allArticles) {
   if (!serviceSlugs.has(a.service)) fail(`article ${a.slug}: unknown service ${a.service}`);

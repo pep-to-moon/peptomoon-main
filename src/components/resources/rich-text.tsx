@@ -3,14 +3,67 @@ import type { ReactNode } from "react";
 import { getArticle } from "@/content/articles";
 import type { Block } from "@/content/types";
 
-/** Inline links in the form [label](url). Links to unpublished articles degrade to plain text. */
-export function Inline({ text }: { text: string }) {
+/**
+ * Terms that have an entry in the glossary. The first mention of each term in a guide links to its definition, so the
+ * glossary receives contextual links from the pages that need it. Slugs match src/content/glossary.ts.
+ */
+const GLOSSARY_TERMS: { re: RegExp; slug: string }[] = [
+  { re: /\bchargeback ratios?\b/i, slug: "chargeback-ratio" },
+  { re: /\b(?:certificates? of analysis|COAs?)\b/, slug: "certificate-of-analysis" },
+  { re: /\bHPLC\b/, slug: "hplc" },
+  { re: /\bmass spectrometry\b/i, slug: "mass-spectrometry" },
+  { re: /\brolling reserves?\b/i, slug: "rolling-reserve" },
+  { re: /\bMATCH list\b/, slug: "match-list" },
+  { re: /\bunderwriting\b/i, slug: "underwriting" },
+  { re: /\bhigh-risk merchant accounts?\b/i, slug: "high-risk-merchant-account" },
+  { re: /\b3PL\b/, slug: "threepl" },
+  { re: /\bdropshipping\b/i, slug: "dropshipping" },
+  { re: /\b(?:batch|lot) numbers?\b/i, slug: "batch-number" },
+  { re: /\bISO\/IEC 17025\b/, slug: "iso-17025" },
+];
+
+const linkClass = "text-blue underline underline-offset-4 decoration-1 hover:decoration-2";
+
+/** Splits plain text and links the first mention of each glossary term not yet linked on this page. */
+function withGlossary(text: string, used: Set<string>, keyBase: string): ReactNode[] {
+  const out: ReactNode[] = [];
+  let rest = text;
+  let n = 0;
+  while (rest) {
+    let best: { index: number; length: number; slug: string } | null = null;
+    for (const g of GLOSSARY_TERMS) {
+      if (used.has(g.slug)) continue;
+      const m = g.re.exec(rest);
+      if (m && (!best || m.index < best.index)) best = { index: m.index, length: m[0].length, slug: g.slug };
+    }
+    if (!best) {
+      out.push(rest);
+      break;
+    }
+    if (best.index > 0) out.push(rest.slice(0, best.index));
+    used.add(best.slug);
+    out.push(
+      <Link key={`${keyBase}-g${n++}`} href={`/glossary#${best.slug}`} className={`${linkClass} decoration-dotted`}>
+        {rest.slice(best.index, best.index + best.length)}
+      </Link>,
+    );
+    rest = rest.slice(best.index + best.length);
+  }
+  return out;
+}
+
+/**
+ * Inline links in the form [label](url). Links to unpublished articles degrade to plain text.
+ * Pass `glossary` (a Set shared across one page) to also link the first mention of each glossary term.
+ */
+export function Inline({ text, glossary }: { text: string; glossary?: Set<string> }) {
   const parts: ReactNode[] = [];
+  const plain = (s: string, key: string) => (glossary ? parts.push(...withGlossary(s, glossary, key)) : parts.push(s));
   let last = 0;
   let match: RegExpExecArray | null;
   const LINK = /\[([^\]]+)\]\(([^)]+)\)/g;
   while ((match = LINK.exec(text)) !== null) {
-    if (match.index > last) parts.push(text.slice(last, match.index));
+    if (match.index > last) plain(text.slice(last, match.index), `t${match.index}`);
     const [, label, url] = match;
     const external = /^https?:\/\//.test(url);
     const articleSlug = url.startsWith("/resources/") ? url.replace("/resources/", "") : null;
@@ -31,11 +84,13 @@ export function Inline({ text }: { text: string }) {
     }
     last = match.index + match[0].length;
   }
-  if (last < text.length) parts.push(text.slice(last));
+  if (last < text.length) plain(text.slice(last), "tail");
   return <>{parts}</>;
 }
 
 export function RichText({ blocks }: { blocks: Block[] }) {
+  // Glossary terms already linked in this guide. The first mention is linked, later ones stay plain text.
+  const glossary = new Set<string>();
   return (
     <div className="prose-article text-[1.125rem] leading-[1.7]">
       {blocks.map((b, i) => {
@@ -43,7 +98,7 @@ export function RichText({ blocks }: { blocks: Block[] }) {
           case "p":
             return (
               <p key={i} className="mt-5">
-                <Inline text={b.text} />
+                <Inline text={b.text} glossary={glossary} />
               </p>
             );
           case "h2":
@@ -63,7 +118,7 @@ export function RichText({ blocks }: { blocks: Block[] }) {
               <ul key={i} className="mt-5 list-disc space-y-2.5 pl-6 marker:text-ink-soft">
                 {b.items.map((t) => (
                   <li key={t}>
-                    <Inline text={t} />
+                    <Inline text={t} glossary={glossary} />
                   </li>
                 ))}
               </ul>
@@ -73,7 +128,7 @@ export function RichText({ blocks }: { blocks: Block[] }) {
               <ol key={i} className="mt-5 list-decimal space-y-3 pl-7 marker:font-display marker:font-bold marker:text-blue">
                 {b.items.map((t) => (
                   <li key={t} className="pl-1.5">
-                    <Inline text={t} />
+                    <Inline text={t} glossary={glossary} />
                   </li>
                 ))}
               </ol>
@@ -83,7 +138,7 @@ export function RichText({ blocks }: { blocks: Block[] }) {
               <aside key={i} className="mt-9 border-y border-ink/25 py-6">
                 <p className="label text-blue-deep">{b.title}</p>
                 <p className="mt-2 text-[1.0625rem] leading-relaxed">
-                  <Inline text={b.text} />
+                  <Inline text={b.text} glossary={glossary} />
                 </p>
               </aside>
             );

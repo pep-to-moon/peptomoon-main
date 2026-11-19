@@ -7,8 +7,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return getIndexableRoutes().map((r) => ({
     url: absoluteUrl(r.path),
     lastModified: r.lastModified,
-    changeFrequency: r.changeFrequency,
-    priority: r.priority,
     images: pageImages(r.path),
   }));
 }

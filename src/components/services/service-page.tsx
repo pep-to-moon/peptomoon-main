@@ -5,11 +5,13 @@ import { ButtonLink, TextLink } from "@/components/ui/button";
 import { CtaBand } from "@/components/ui/cta-band";
 import { FaqList } from "@/components/ui/faq-list";
 import { PageHero } from "@/components/ui/page-hero";
+import { Inline } from "@/components/resources/rich-text";
 import { PaymentsOffer } from "@/components/ui/payments-offer";
 import { Photo } from "@/components/ui/photo";
 import { Reveal, Section } from "@/components/ui/section";
 import { siteConfig } from "@/config/site";
 import { serviceMedia } from "@/content/service-media";
+import { headingsFor } from "@/content/service-headings";
 import { getArticle } from "@/content/articles";
 import { getCaseStudy } from "@/content/case-studies";
 import { getPortfolioItem } from "@/content/portfolio";
@@ -49,6 +51,7 @@ export function ServicePage({ service }: { service: Service }) {
   const studies = service.caseStudies.map((s) => getCaseStudy(s)).filter((c) => c !== undefined);
   const related = service.related.map((s) => getService(s)).filter((s) => s !== undefined);
   const photos = serviceMedia[service.slug];
+  const h = headingsFor(service.slug);
 
   return (
     <>
@@ -89,6 +92,7 @@ export function ServicePage({ service }: { service: Service }) {
             ratio="21 / 9"
             sizes="(min-width: 1024px) 92vw, 100vw"
             priority
+            eager
             radius="1.5rem"
             topic={`illustrating ${service.primaryKeyword} from ${siteConfig.name}`}
           />
@@ -100,12 +104,14 @@ export function ServicePage({ service }: { service: Service }) {
           <Reveal className="min-w-0 lg:col-span-6">
             <Rule>
               <h2 id="what-title" className="display display-md">
-                What it is
+                {h.what}
               </h2>
             </Rule>
             <div className="prose-article mt-7">
               {service.what.map((t) => (
-                <p key={t}>{t}</p>
+                <p key={t}>
+                  <Inline text={t} />
+                </p>
               ))}
             </div>
           </Reveal>
@@ -121,7 +127,7 @@ export function ServicePage({ service }: { service: Service }) {
             <div className="lg:sticky lg:top-32">
               <Rule>
                 <h2 id="why-title" className="display display-md">
-                  {service.whyTitle ?? "Why RUO businesses need it"}
+                  {service.whyTitle ?? h.why}
                 </h2>
               </Rule>
             </div>
@@ -130,7 +136,9 @@ export function ServicePage({ service }: { service: Service }) {
             {service.why.map((t, i) => (
               <Reveal as="li" delay={i} key={t} className="grid grid-cols-[3rem_1fr] gap-4 border-t border-ink/20 py-6 last:border-b">
                 <span className="font-display text-[0.95rem] font-semibold text-ink-soft">{String(i + 1).padStart(2, "0")}</span>
-                <p className="text-[1.0625rem]">{t}</p>
+                <p className="text-[1.0625rem]">
+                  <Inline text={t} />
+                </p>
               </Reveal>
             ))}
             {service.sources && (
@@ -155,7 +163,7 @@ export function ServicePage({ service }: { service: Service }) {
           <Reveal>
             <Rule>
               <h2 id="problems-title" className="display display-md">
-                What usually goes wrong
+                {h.problems}
               </h2>
             </Rule>
           </Reveal>
@@ -163,7 +171,9 @@ export function ServicePage({ service }: { service: Service }) {
             {service.problems.map((p, i) => (
               <Reveal key={p.title} delay={i % 2} className="border-t border-ink/20 pt-6">
                 <h3 className="heading-sm">{p.title}</h3>
-                <p className="mt-3 max-w-[52ch] text-ink-soft">{p.text}</p>
+                <p className="mt-3 max-w-[52ch] text-ink-soft">
+                  <Inline text={p.text} />
+                </p>
               </Reveal>
             ))}
           </div>
@@ -175,7 +185,7 @@ export function ServicePage({ service }: { service: Service }) {
           <Reveal>
             <Rule>
               <h2 id="approach-title" className="display display-md">
-                How we approach it
+                {h.approach}
               </h2>
             </Rule>
           </Reveal>
@@ -184,7 +194,9 @@ export function ServicePage({ service }: { service: Service }) {
               <Reveal as="li" delay={i % 3} key={a.title} className="border-t border-ink/20 pt-6">
                 <span className="font-display text-[0.95rem] font-semibold text-blue">{String(i + 1).padStart(2, "0")}</span>
                 <h3 className="heading-sm mt-3">{a.title}</h3>
-                <p className="mt-3 text-ink-soft">{a.text}</p>
+                <p className="mt-3 text-ink-soft">
+                  <Inline text={a.text} />
+                </p>
               </Reveal>
             ))}
           </ol>
@@ -196,7 +208,7 @@ export function ServicePage({ service }: { service: Service }) {
           <Reveal className="lg:col-span-6">
             <Rule>
               <h2 id="included-title" className="display display-md">
-                What is included
+                {h.included}
               </h2>
             </Rule>
             <ul className="mt-8 divide-y divide-line border-y border-line">
@@ -244,7 +256,7 @@ export function ServicePage({ service }: { service: Service }) {
           <Reveal className="lg:col-span-6">
             <Rule>
               <h2 id="tech-title" className="display display-md">
-                Under the hood
+                {h.tech}
               </h2>
             </Rule>
             <ul className="mt-8 divide-y divide-line border-y border-line">
@@ -286,6 +298,9 @@ export function ServicePage({ service }: { service: Service }) {
                     return <LinkRow key={c.slug} href={`/case-studies/${c.slug}`} kicker={item?.category} title={item?.name ?? c.slug} />;
                   })}
                 </ul>
+                <p className="mt-5">
+                  <TextLink href="/case-studies">All case studies</TextLink>
+                </p>
               </Reveal>
             )}
             {articles.length > 0 && (
@@ -298,6 +313,9 @@ export function ServicePage({ service }: { service: Service }) {
                     <LinkRow key={a.slug} href={`/resources/${a.slug}`} kicker={a.topic} title={a.title} />
                   ))}
                 </ul>
+                <p className="mt-5">
+                  <TextLink href="/resources">All guides</TextLink>
+                </p>
               </Reveal>
             )}
           </div>
