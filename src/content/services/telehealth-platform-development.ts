@@ -147,6 +147,6 @@ export const telehealthPlatformDevelopment: Service = {
   ],
   related: ["payment-processing", "ruo-peptide-website-development", "business-dashboards", "compliance-support"],
   caseStudies: [],
-  articles: [],
+  articles: ["meta-health-and-wellness-restrictions"],
   cta: { label: "Scope a telehealth build" },
 };

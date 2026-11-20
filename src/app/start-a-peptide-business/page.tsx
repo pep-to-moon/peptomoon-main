@@ -98,6 +98,7 @@ const steps: Step[] = [
       { href: "/resources/search-and-ai-visibility-for-ruo-peptide-stores", label: "Search and AI visibility" },
       { href: "/resources/peptide-store-not-ranking", label: "If your store is not ranking" },
       { href: "/resources/meta-ad-account-disabled-peptides", label: "If your Meta ad account is restricted" },
+      { href: "/resources/meta-health-and-wellness-restrictions", label: "What Meta lets you track" },
       { href: "/services/seo-geo-aeo", label: "SEO, GEO and AEO" },
       { href: "/services/meta-advertising", label: "Meta advertising infrastructure" },
       { href: "/services/email-marketing", label: "Email marketing" },

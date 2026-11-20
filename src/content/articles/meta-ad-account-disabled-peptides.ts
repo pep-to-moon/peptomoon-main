@@ -19,7 +19,7 @@ export const metaAdAccountDisabledPeptides: Article = {
   published: "2026-11-20",
   updated: "2026-11-20",
   service: "meta-advertising",
-  related: ["search-and-ai-visibility-for-ruo-peptide-stores", "peptide-store-not-ranking", "ruo-label-is-not-a-compliance-strategy"],
+  related: ["meta-health-and-wellness-restrictions", "search-and-ai-visibility-for-ruo-peptide-stores", "peptide-store-not-ranking"],
   needsCounselReview: false,
   quickAnswer:
     "Meta's advertising standards bar ads for unsafe substances, products or supplements, and Meta decides what counts as unsafe at its sole discretion. Research peptides are a high-risk category for paid ads on Meta. If your account is restricted, use Meta's own appeal tools, keep records, and build channels that do not depend on one platform.",
