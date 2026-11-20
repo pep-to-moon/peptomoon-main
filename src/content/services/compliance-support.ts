@@ -94,6 +94,6 @@ export const complianceSupport: Service = {
   ],
   related: ["site-audits", "supplier-verification", "ruo-peptide-website-development", "customer-support"],
   caseStudies: [],
-  articles: ["ruo-label-is-not-a-compliance-strategy", "503a-503b-and-ruo-retail"],
+  articles: ["is-selling-research-peptides-legal", "ruo-label-is-not-a-compliance-strategy", "503a-503b-and-ruo-retail"],
   cta: { label: "Discuss a content review" },
 };

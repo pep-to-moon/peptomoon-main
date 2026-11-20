@@ -148,7 +148,7 @@ export const glossary: GlossaryTerm[] = [
     term: "Intended use",
     definition:
       "A regulatory idea about what a product is meant for. FDA's regulation says it is judged from objective evidence, such as labeling, advertising and the circumstances of distribution, so a research-use label is one piece of evidence and not the whole picture.",
-    see: { label: "Why a research-use label is not a compliance strategy", href: "/resources/ruo-label-is-not-a-compliance-strategy" },
+    see: { label: "Is selling research peptides legal?", href: "/resources/is-selling-research-peptides-legal" },
   },
   {
     slug: "private-label",
