@@ -22,6 +22,7 @@ import { chargebacksPeptideStore } from "./chargebacks-peptide-store";
 import { peptideStoreNotRanking } from "./peptide-store-not-ranking";
 import { metaAdAccountDisabledPeptides } from "./meta-ad-account-disabled-peptides";
 import { metaHealthAndWellnessRestrictions } from "./meta-health-and-wellness-restrictions";
+import { peptideBusinessSetupChecklist } from "./peptide-business-setup-checklist";
 
 export const allArticles: Article[] = [
   infrastructureMap,
@@ -47,6 +48,7 @@ export const allArticles: Article[] = [
   peptideStoreNotRanking,
   metaAdAccountDisabledPeptides,
   metaHealthAndWellnessRestrictions,
+  peptideBusinessSetupChecklist,
 ];
 
 const isProduction = (process.env.VERCEL_ENV ?? process.env.NODE_ENV) === "production";

@@ -7,6 +7,7 @@ export const journey: JourneyStage[] = [
     title: "Plan the business",
     blurb: "Choose a model, understand the terms and work out what it will cost before you commit.",
     slugs: [
+      "peptide-business-setup-checklist",
       "cost-to-start-a-peptide-business",
       "white-label-vs-private-label-peptides",
       "wholesale-vs-dropshipping-vs-3pl-for-ruo-brands",

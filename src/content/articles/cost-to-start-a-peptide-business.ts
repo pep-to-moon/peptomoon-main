@@ -19,7 +19,7 @@ export const costToStartPeptideBusiness: Article = {
   published: "2026-11-19",
   updated: "2026-11-19",
   service: "white-label-peptides",
-  related: ["rolling-reserve-explained", "wholesale-vs-dropshipping-vs-3pl-for-ruo-brands", "infrastructure-behind-an-ruo-peptide-business"],
+  related: ["peptide-business-setup-checklist", "rolling-reserve-explained", "wholesale-vs-dropshipping-vs-3pl-for-ruo-brands", "infrastructure-behind-an-ruo-peptide-business"],
   needsCounselReview: false,
   quickAnswer:
     "No honest single figure exists, because cost depends on your business model, how much stock you hold, your store, your payment setup, your testing and your packaging. Budget by category, add working capital for stock and held payment balances, and keep a contingency. Ask every vendor for a written scope before you compare prices.",

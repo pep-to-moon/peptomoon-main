@@ -41,6 +41,7 @@ const steps: Step[] = [
     title: "Set up the business and get advice",
     text: "Form the business entity, open business banking, arrange insurance and take advice from qualified counsel before you sell. Requirements depend on your state, your products and how you market them. We do not give legal advice, and nothing here is a substitute for it.",
     links: [
+      { href: "/resources/peptide-business-setup-checklist", label: "LLC, EIN, banking and insurance checklist" },
       { href: "/resources/is-selling-research-peptides-legal", label: "Is selling research peptides legal?" },
       { href: "/services/compliance-support", label: "Compliance-oriented review" },
     ],
