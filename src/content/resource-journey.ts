@@ -45,7 +45,7 @@ export const journey: JourneyStage[] = [
     id: "growth",
     title: "Get found",
     blurb: "Search, answer engines and paid channels, and what to do when one of them fails.",
-    slugs: ["search-and-ai-visibility-for-ruo-peptide-stores", "peptide-store-not-ranking", "meta-ad-account-disabled-peptides", "meta-health-and-wellness-restrictions"],
+    slugs: ["search-and-ai-visibility-for-ruo-peptide-stores", "peptide-store-not-ranking", "meta-ad-account-disabled-peptides", "peptide-blog-content-strategy", "meta-health-and-wellness-restrictions"],
   },
   {
     id: "compliance",
